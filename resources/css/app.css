@@ -1,0 +1,183 @@
+/* CSS GLOBAL SITE ------------------------------------------ */
+* {
+    text-decoration: none;
+}
+
+#app {
+    background-image: url(../../public/assets/photos/canicross-petit-groupe-04-noir.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* NAVBAR ------------------------------------------ */
+.navbar-toggler:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.navbar-toggler {
+    transition: 0.8s;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-item,
+.nav-link {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: black;
+}
+
+.fa-dog {
+    font-size: 10px;
+}
+
+/* EANDEAU RESEAUX ------------------------------------------ */
+#reseaux a i {
+    transition: 0.4s;
+}
+
+#reseaux a i:hover {
+    color: rgb(235, 0, 0);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* TEXTE INTRO ACCUEIL ------------------------------------------ */
+#accueil-canicross {
+    background-image: url('../../public/assets/photos/carre/carre-canicross.jpeg');
+    height: 280px;
+    width: 280px;
+    border-radius: 100%;
+    background-size: cover;
+    transition: 0.4s;
+}
+
+#accueil-canivtt {
+    background-image: url('../../public/assets/photos/carre/carre-canivtt.jpg');
+    height: 280px;
+    width: 280px;
+    border-radius: 100%;
+    background-size: cover;
+    transition: 0.4s;
+}
+
+#accueil-canimarche {
+    background-image: url('../../public/assets/photos/carre/carre-canimarche.jpeg');
+    height: 280px;
+    width: 280px;
+    border-radius: 100%;
+    background-size: cover;
+    transition: 0.4s;
+}
+
+#accueil-canimarche:hover,
+#accueil-canivtt:hover,
+#accueil-canicross:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+#texte-accueil button.faq:hover {
+    background-color: rgb(68, 68, 68) !important;
+}
+
+#texte-accueil button.inscription:hover {
+    background-color: rgb(122, 0, 0) !important;
+}
+
+/* RUBRIQUES ------------------------------------------ */
+
+#rubriques .card {
+    transition: 0.5s;
+}
+
+#rubriques .card:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+/* ACTUALITE ------------------------------------------ */
+#actu .card {
+    transform: scale(0.7);
+    max-height: 30vh;
+    max-width: 80vw;
+    transition: 0.5s;
+}
+
+#actu .card-img {
+    object-fit: cover;
+    opacity: 0.5;
+    max-height: 30vh;
+    max-width: 80vw;
+}
+
+#actu .card:hover {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+/* CAROUSEL PARTENAIRES ------------------------------------------ */
+#partners-carousel {
+    transform: scale(0.7);
+}
+
+#partners-carousel .image-container {
+    overflow-x: hidden;
+    width: 768px;
+    max-width: 100vw;
+}
+
+#partners-carousel .image-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+    grid-gap: 1.5rem;
+    position: relative;
+    left: 0;
+    transition: 0.2s;
+}
+
+#partners-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+/* FOOTER -------------------------------------------------- */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#reseaux-footer a:hover {
+    color: rgb(191, 191, 191);
+}
+
+#menu-footer a:hover {
+    color: rgb(231, 0, 0);
+    font-weight: bold;
+}
+
+#mentions-footer a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERIES -------------------------------------------------- */
+
+@media screen and (max-width: 424px) {
+    .description {
+        font-size: 10px;
+    }
+}
