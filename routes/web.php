@@ -22,3 +22,9 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 // Route vers le BACK OFFICE -----------------------------------
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
 
+// Route USER pour modifier le mot de passe -----------------------------------
+Route::put('/user/modif-password/{user}', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
+
+// ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
+Route::resource('/users', App\Http\Controllers\UserController::class)->except('index', 'create', 'store');
+

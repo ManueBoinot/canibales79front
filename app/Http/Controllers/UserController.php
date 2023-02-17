@@ -1,0 +1,80 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\User;
+
+class UserController extends Controller
+{
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show(User $user)
+    {
+        $user->load('role', 'bureau', 'categorie', 'licence');
+        return view('Pages.Users.mon-compte', ['user' => $user]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        return view('Pages.Users.modifier-infos', ['user.id' => $id]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, User $user)
+    {
+        $request->validate([
+            'prenom' => ['required', 'string', 'max:40'],
+            'nom' => ['required', 'string', 'max:40'],
+            'email' => ['required', 'string', 'email', 'max:40',],
+            'date_naiss' => ['required', 'date', 'before:today'],
+            'adr_ligne_1' => ['required', 'string', 'max:40'],
+            'adr_ligne_2' => ['required', 'string', 'max:40'],
+            'code_postal' => ['required', 'string', 'max:5'],
+            'commune' => ['required', 'string', 'max:40'],
+            'tel' => ['required', 'string', 'max:14'],
+        ]);
+
+        $user->prenom = $request->input('prenom');
+        $user->nom = $request->input('nom');
+        $user->email = $request->input('email');
+        $user->date_naiss = $request->input('date_naiss');
+        $user->adr_ligne_1 = $request->input('adr_ligne_1');
+        $user->adr_ligne_2 = $request->input('adr_ligne_2');
+        $user->code_postal = $request->input('code_postal');
+        $user->commune = $request->input('commune');
+        $user->tel = $request->input('tel');
+
+        $user->save();
+
+        return redirect()->route('users.show', $user)->with('message', 'Modifications effectuées');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(User $user)
+    {
+        $user->delete();
+        return redirect()->route('/home')->with('message', 'Compte utilisateur supprimé');
+    }
+}

@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
             'prenom' => 'admin',
             'date_naiss' => '1990-08-20',
             'adr_ligne_1' => fake()->streetAddress(),
-            'adr_ligne_2' => fake()->streetAddress(),
+            'adr_ligne_2' => null,
             'code_postal' => fake()->postcode(),
             'commune' => fake()->city(),
             'tel' => fake()->phoneNumber(),
