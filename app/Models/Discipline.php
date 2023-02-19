@@ -12,6 +12,6 @@ class Discipline extends Model
     // Fonction qui précise la relation avec la table "Circuits"
     public function circuits()
     {
-        return $this->belongsToMany(Circuit::class)->using(Accessibilite::class);
+        return $this->belongsToMany(Circuit::class)->using(CircuitDiscipline::class);
     }
 }

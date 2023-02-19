@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class StatutVaccinal extends Pivot
+class ChienVaccin extends Pivot
 {
-
+    protected $table = 'chien_vaccin';
 }

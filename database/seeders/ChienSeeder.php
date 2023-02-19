@@ -31,9 +31,44 @@ class ChienSeeder extends Seeder
 
         Chien::create([
             'nom' => 'Kona',
-            'race' => 'Shia-inu',
+            'race' => 'Shiba-inu',
             'categorie_2' => false,
             'date_naiss' => '2017-05-10'
+        ]);
+
+        Chien::create([
+            'nom' => 'Nola',
+            'race' => 'Berger Allemand',
+            'categorie_2' => false,
+            'date_naiss' => '2018-07-23'
+        ]);
+
+        Chien::create([
+            'nom' => 'Nao',
+            'race' => 'Berger Australien',
+            'categorie_2' => false,
+            'date_naiss' => '2018-05-12'
+        ]);
+
+        Chien::create([
+            'nom' => 'Oona',
+            'race' => 'Beauceron',
+            'categorie_2' => true,
+            'date_naiss' => '2019-02-05'
+        ]);
+
+        Chien::create([
+            'nom' => 'Milka',
+            'race' => 'Siberian husky',
+            'categorie_2' => false,
+            'date_naiss' => '2017-03-12'
+        ]);
+
+        Chien::create([
+            'nom' => 'Shadow',
+            'race' => 'Siberian husky',
+            'categorie_2' => false,
+            'date_naiss' => '2021-04-17'
         ]);
     }
 }

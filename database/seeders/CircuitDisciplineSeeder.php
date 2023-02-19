@@ -2,11 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\Accessibilite;
+use App\Models\CircuitDiscipline;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
-class AccessibiliteSeeder extends Seeder
+class CircuitDisciplineSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,23 +16,23 @@ class AccessibiliteSeeder extends Seeder
      */
     public function run()
     {
-        Accessibilite::create([
+        DB::table('circuit_discipline')->insert([
             'discipline_id' => 1,
             'circuit_id' => 1
         ]);
 
-        Accessibilite::create([
+        DB::table('circuit_discipline')->insert([
             'discipline_id' => 2,
             'circuit_id' => 1
         ]);
 
-        Accessibilite::create([
+        DB::table('circuit_discipline')->insert([
             'discipline_id' => 2,
             'circuit_id' => 2
         ]);
 
         
-        Accessibilite::create([
+        DB::table('circuit_discipline')->insert([
             'discipline_id' => 1,
             'circuit_id' => 3
         ]);

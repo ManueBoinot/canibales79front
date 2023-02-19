@@ -27,7 +27,7 @@ class UserFactory extends Factory
             'prenom' => fake()->firstName(),
             'date_naiss' => fake()->date(),
             'adr_ligne_1' => fake()->streetAddress(),
-            'adr_ligne_2' => fake()->streetAddress(),
+            'adr_ligne_2' => '-',
             'code_postal' => fake()->postcode(),
             'commune' => fake()->city(),
             'tel' => fake()->phoneNumber(),

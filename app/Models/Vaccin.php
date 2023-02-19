@@ -16,7 +16,7 @@ class Vaccin extends Model
     // Fonction qui précise la relation avec la table "Chiens"
     public function chiens()
     {
-        return $this->belongsToMany(Chien::class)->using(StatutVaccinal::class);
+        return $this->belongsToMany(Chien::class)->using(ChienVaccin::class)->withPivot('date');
     }
 
 

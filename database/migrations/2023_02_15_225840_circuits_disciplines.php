@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('accessibilite', function (Blueprint $table) {
+        Schema::create('circuit_discipline', function (Blueprint $table) {
             $table->foreignId('discipline_id')->constrained()->cascadeOnUpdate();
             $table->foreignId('circuit_id')->constrained()->cascadeOnUpdate();
             $table->timestamps();
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('accessibilite');
+        Schema::dropIfExists('circuit_discipline');
     }
 };

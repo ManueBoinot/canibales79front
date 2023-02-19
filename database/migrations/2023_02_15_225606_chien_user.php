@@ -13,10 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('statut_vaccinal', function (Blueprint $table) {
+        Schema::create('chien_user', function (Blueprint $table) {
             $table->foreignId('chien_id')->constrained()->cascadeOnUpdate();
-            $table->foreignId('vaccin_id')->constrained()->cascadeOnUpdate();
-            $table->date('date');
+            $table->foreignId('user_id')->constrained()->cascadeOnUpdate();
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('statut_vaccinal');
+        Schema::dropIfExists('chien_user');
     }
 };

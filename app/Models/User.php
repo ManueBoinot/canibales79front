@@ -12,6 +12,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+
     /**
      * The attributes that are mass assignable.
      *
@@ -76,7 +77,7 @@ class User extends Authenticatable
     // Fonction qui précise la relation avec la table "Chiens"
     public function chiens()
     {
-        return $this->hasMany(Chien::class)->using(Equipe::class);
+        return $this->belongsToMany(Chien::class)->using(ChienUser::class);
     }
 
     // Fonction qui définit que le role_id (1) est systématiquement un Admin

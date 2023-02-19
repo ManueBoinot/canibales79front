@@ -45,8 +45,74 @@
                     </li>
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
+                        {{-- Lien vers ESPACE ADHERENT SI CONNECTÉ --------------------- --}}
+                        @if (Auth::user())
+
+                            {{-- Liens USER --------------------- --}}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" title="Espace personnel">
+                                    <i class="fa-regular fa-user p-2"></i>Espace personnel
+                                </a>
+                                <ul class="dropdown-menu text-bg-dark">
+                                    <li><a class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">Mes
+                                            informations
+                                            personnelles</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li> {{-- lien pour se déconnecter --}}
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                                         document.getElementById('logout-form').submit();">
+                                            {{ __('DÉCONNEXION') }}
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            {{-- Lien ADMIN vers BACK OFFICE --------------------- --}}
+                            @if (Auth::user()->isAdmin())
+                                <li class="nav-item">
+                                    <a class="nav-link text-danger" href="/admin" title="Back-office"><i
+                                            class="fa-solid fa-lock p-2"></i>Accès back office</a>
+                                </li>
+                            @endif
+
+                            {{-- Lien vers ESPACE ADHERENT SI PAS CONNECTÉ --------------------- --}}
+                        @else
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+                                <ul class="dropdown-menu text-bg-dark">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            href="{{ route('register') }}">{{ __('Créer un compte') }}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        @endif
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
                         <!-- Lien vers ACCUEIL -->
-                        <li class="nav-item">
+                        <li class="nav-item border-top pt-3">
                             <a class="nav-link" href="/"><i class="fa-solid fa-house"></i></a>
                         </li>
 
@@ -75,8 +141,8 @@
 
                         <!-- Lien vers LES DISCIPLINES -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 LES DISCIPLINES
                             </a>
                             <ul class="dropdown-menu text-bg-dark">
@@ -110,64 +176,7 @@
                                     src="../.././assets/logos/logo_fslc.png" alt="logo FSLC" style="width: 40px"></a>
                         </li>
 
-                        {{-- Lien vers ESPACE ADHERENT SI CONNECTÉ --------------------- --}}
-                        @if (Auth::user())
 
-                            {{-- Liens USER --------------------- --}}
-                            <li class="nav-item dropdown px-4">
-                                <a class="nav-link dropdown-toggle fs-3" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false" title="Espace client">
-                                    <i class="fa-regular fa-user"></i>
-                                </a>
-                                <ul class="dropdown-menu text-bg-dark">
-                                    <li><a class="dropdown-item text-light fs-3"
-                                            href="{{ route('users.show', Auth::user()) }}">Mes informations
-                                            personnelles</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li> {{-- lien pour se déconnecter --}}
-                                        <a class="dropdown-item text-danger fs-3" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                                         document.getElementById('logout-form').submit();">
-                                            {{ __('DÉCONNEXION') }}
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                            class="d-none">
-                                            @csrf
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            {{-- Lien ADMIN vers BACK OFFICE --------------------- --}}
-                            @if (Auth::user()->isAdmin())
-                                <li class="nav-item px-4">
-                                    <a class="nav-link fs-3 text-danger border border-danger rounded" href="/admin"
-                                        title="Back-office"><i class="fa-solid fa-lock p-2"></i></a>
-                                </li>
-                            @endif
-
-                        {{-- Lien vers ESPACE ADHERENT SI PAS CONNECTÉ --------------------- --}}
-                        @else
-                            <li class="nav-item dropdown px-4">
-                                <a class="nav-link dropdown-toggle fs-3" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-regular fa-user"></i>
-                                </a>
-                                <ul class="dropdown-menu text-bg-dark">
-                                    <li class="nav-item">
-                                        <a class="nav-link text-light fs-4"
-                                            href="{{ route('login') }}">{{ __('Se connecter') }}</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-light fs-4"
-                                            href="{{ route('register') }}">{{ __('Créer un compte') }}</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endif
                     </ul>
                 </div>
             </div>

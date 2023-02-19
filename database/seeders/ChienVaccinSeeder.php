@@ -2,11 +2,12 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\StatutVaccinal;
+// use App\Models\ChienVaccin;
+use Illuminate\Support\Facades\DB;
 
-class StatutVaccinalSeeder extends Seeder
+class ChienVaccinSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,43 +16,43 @@ class StatutVaccinalSeeder extends Seeder
      */
     public function run()
     {
-        StatutVaccinal::create([
+        DB::table('chien_vaccin')->insert([
             'chien_id' => 1,
             'vaccin_id' => 1,
             'date' => now(),
         ]);
 
-        StatutVaccinal::create([
+        DB::table('chien_vaccin')->insert([
             'chien_id' => 1,
             'vaccin_id' => 2,
             'date' => now(),
         ]);
 
-        StatutVaccinal::create([
+        DB::table('chien_vaccin')->insert([
             'chien_id' => 1,
             'vaccin_id' => 3,
             'date' => now(),
         ]);
 
-        StatutVaccinal::create([
+        DB::table('chien_vaccin')->insert([
             'chien_id' => 1,
             'vaccin_id' => 4,
             'date' => now(),
         ]);
 
-        StatutVaccinal::create([
+        DB::table('chien_vaccin')->insert([
             'chien_id' => 1,
             'vaccin_id' => 5,
             'date' => now(),
         ]);
 
-        StatutVaccinal::create([
+        DB::table('chien_vaccin')->insert([
             'chien_id' => 1,
             'vaccin_id' => 6,
             'date' => now(),
         ]);
 
-        StatutVaccinal::create([
+        DB::table('chien_vaccin')->insert([
             'chien_id' => 1,
             'vaccin_id' => 7,
             'date' => now(),

@@ -19,12 +19,12 @@ class Chien extends Model
     // Fonction qui précise la relation avec la table "Vaccins"
     public function vaccins()
     {
-        return $this->hasMany(Vaccin::class)->using(StatutVaccinal::class);
+        return $this->belongsToMany(Vaccin::class)->using(ChienVaccin::class)->withPivot('date');
     }
 
     // Fonction qui précise la relation avec la table "Users"
     public function users()
     {
-        return $this->belongsToMany(User::class)->using(Equipe::class);
+        return $this->belongsToMany(User::class)->using(ChienUser::class);
     }
 }
