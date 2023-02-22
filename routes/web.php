@@ -27,5 +27,5 @@ Route::put('/user/modif-password/{user}', [App\Http\Controllers\UserController::
 
 // ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
 Route::resource('/users', App\Http\Controllers\UserController::class)->except('index', 'create', 'store');
-Route::resource('/chiens', App\Http\Controllers\ChienController::class);
+Route::resource('/chiens', App\Http\Controllers\ChienController::class)->except('create');
 

@@ -17,12 +17,12 @@ class ChienUserSeeder extends Seeder
     {
         DB::table('chien_user')->insert([
             'chien_id' => 1,
-            'user_id' => 2,
+            'user_id' => 1,
         ]);
 
         DB::table('chien_user')->insert([
             'chien_id' => 2,
-            'user_id' => 2,
+            'user_id' => 1,
         ]);
 
         DB::table('chien_user')->insert([

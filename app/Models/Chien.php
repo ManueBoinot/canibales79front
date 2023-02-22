@@ -27,4 +27,13 @@ class Chien extends Model
     {
         return $this->belongsToMany(User::class)->using(ChienUser::class);
     }
+
+
+    public function age(Chien $chien)
+    {
+        $anniv = $chien->date_naiss;
+        $auj = now();
+        $interval = $auj->diff($anniv);
+        return $interval->format('%y ans, %m mois');
+    }
 }

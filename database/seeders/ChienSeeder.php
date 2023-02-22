@@ -18,7 +18,7 @@ class ChienSeeder extends Seeder
         Chien::create([
             'nom' => 'Jirka',
             'race' => 'Berge belge Malinois',
-            'categorie_2' => false,
+            'categorie_2' => true,
             'date_naiss' => '2014-10-08'
         ]);
 
