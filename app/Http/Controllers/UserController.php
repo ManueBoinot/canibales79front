@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Chien;
 
 class UserController extends Controller
 {
@@ -15,7 +16,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        $user->load('role', 'bureau', 'categorie', 'licence');
+        $user->load('role', 'bureau', 'categorie', 'licence', 'chiens');
         return view('Pages.Users.mon-compte', ['user' => $user]);
     }
 
