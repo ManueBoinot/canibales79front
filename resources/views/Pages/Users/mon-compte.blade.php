@@ -4,6 +4,13 @@
     <div class="container min-vh-100 p-3 p-lg-5 text-bg-light">
         <h1 class="text-center mb-4">Bienvenue sur ton espace <span class="fw-bold"> {{ $user->prenom }} </span>!</h1>
 
+        {{-- Message lorsqu'un chien a été ajouté au profil --}}
+        @if (session('status'))
+            <div class="alert alert-success text-center">
+                {{ session('status') }}
+            </div>
+        @endif
+
         {{-- INFORMATIONS PERSONNELLES --}}
         <div class="row border py-3 px-xl-3 mx-auto align-items-center overflow-auto mb-5 rounded"
             style="background-color: white">
@@ -179,8 +186,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>

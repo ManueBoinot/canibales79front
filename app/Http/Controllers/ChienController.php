@@ -32,7 +32,7 @@ class ChienController extends Controller
     public function store(Request $request)
     {
         $user = Auth::user();
-        
+
         $request->validate([
             'nom' => 'required | min:2 | max:40',
             'race' => 'required | min:3 | max:50',
@@ -42,8 +42,8 @@ class ChienController extends Controller
 
         $chien = Chien::create([
             'user_id' => $user->id,
-            'nom' => $request->input('nom'),
-            'race' => $request->input('race'),
+            'nom' => ucwords($request->input('nom')),
+            'race' => ucwords($request->input('race')),
             'categorie_2' => $request->input('categorie_2'),
             'date_naiss' => $request->input('date_naiss')
         ]);
@@ -52,7 +52,7 @@ class ChienController extends Controller
         $userDb = User::find($user->id);
         $userDb->save();
 
-        return redirect()->route('chiens.index')->with('message', $request->nom . 'a rejoint l\'équipe !');
+        return redirect()->route('chiens.index')->with('status', $request->nom . ' a rejoint l\'équipe !');
     }
 
 }
