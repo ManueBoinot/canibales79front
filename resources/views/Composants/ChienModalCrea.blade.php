@@ -1,6 +1,6 @@
 <div class="text-center">
     <!-- Button trigger modal CREATE CHIEN -->
-    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <button type="button" class="btn btn-danger my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Ajouter un chien
     </button>
     <!-- Modal -->
@@ -35,9 +35,9 @@
                         <div class="mb-3">
                             <label for="categorie_2" class="form-label">Chien de catégorie 2 ?</label>
                             <select class="form-select" aria-label="categorie_2" name="categorie_2" required>
-                                <option selected>Choisir une réponse</option>
-                                <option value="1">Oui</option>
+                                <option value="0" selected>Choisir une réponse</option>
                                 <option value="0">Non</option>
+                                <option value="1">Oui</option>
                             </select>
                         </div>
                         <div class="text-center">

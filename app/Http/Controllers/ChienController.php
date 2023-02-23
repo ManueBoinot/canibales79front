@@ -33,7 +33,8 @@ class ChienController extends Controller
     {
         $user = Auth::user();
         $chien->load('vaccins', 'users');
-        return view('Pages.Users.mon-compte', ['chien' => $chien, 'user' => $user]);
+        $vaccins = $chien->vaccins;
+        return view('Pages.Users.mon-compte', ['chien' => $chien, 'user' => $user, 'vaccins' => $vaccins]);
     }
 
     // ___________________________________________________________________________
@@ -66,7 +67,14 @@ class ChienController extends Controller
         $userDb = User::find($user->id);
         $userDb->save();
 
-        return redirect()->route('chiens.index')->with('status', $request->nom . ' a rejoint l\'équipe !');
+
+        foreach ($chien->vaccins as $vaccin) {
+            $chien->vaccins()->attach($vaccin->id, ['date' => $vaccin->date]);
+            $vaccinInDB = Vaccin::find($vaccin->id);
+            $vaccinInDB->save();
+        }
+
+        return redirect()->route('users.show', ['user' => $user])->with('status', $request->nom . ' a rejoint l\'équipe !');
     }
  
     // ___________________________________________________________________________
@@ -109,7 +117,7 @@ class ChienController extends Controller
             'date_naiss' => $request->input('date_naiss'),
         ]);
 
-        return redirect()->route('chiens.index')->with('status', 'Les informations concernant ' . $request->nom . ' ont bien été mises à jour.');
+        return redirect()->route('users.show', ['user' => $user])->with('status', 'Les informations concernant ' . $request->nom . ' ont bien été mises à jour.');
     }
 
     // ___________________________________________________________________________
@@ -121,9 +129,10 @@ class ChienController extends Controller
      */
     public function destroy($id)
     {
+        $user = Auth::user();
         $chien = Chien::find($id);
         $chien->delete();
-        return redirect()->route('chiens.index')->with('status', $chien->nom . ' a bien été supprimé');
+        return redirect()->route('users.show', ['user' => $user])->with('status', $chien->nom . ' a bien été supprimé');
     }
 
 }

@@ -36,11 +36,11 @@ class VaccinSeeder extends Seeder
         ]);
 
         Vaccin::create([
-            'nom' => 'Toux de chenil -: Parainfluenza',
+            'nom' => 'Toux de chenil (Parainfluenza)',
         ]);
 
         Vaccin::create([
-            'nom' => 'Toux de chenil : Bordotella bronchoseptica',
+            'nom' => 'Toux de chenil (Bordotella bronchoseptica)',
         ]);
     }
 }

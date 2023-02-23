@@ -26,6 +26,6 @@ Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->na
 Route::put('/user/modif-password/{user}', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
 
 // ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
-Route::resource('/users', App\Http\Controllers\UserController::class)->except('index', 'create', 'store');
+Route::resource('/users', App\Http\Controllers\UserController::class);
 Route::resource('/chiens', App\Http\Controllers\ChienController::class);
 

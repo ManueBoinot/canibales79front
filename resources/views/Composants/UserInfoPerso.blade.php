@@ -6,84 +6,128 @@
 @endif
 
 {{-- INFORMATIONS PERSONNELLES DE L'USER --}}
-<div class="row border py-3 px-xl-3 mx-auto align-items-center overflow-auto mb-5 rounded"
-    style="background-color: white">
+<div class="row py-3 px-xl-5 mx-auto align-items-center overflow-auto mb-5 rounded gap-3">
 
-    <div class="col-12">
-        <h2 class="text-center pb-4">Informations personnelles</h2>
-    </div>
-
-    {{-- NOM USER --}}
-    <div class="col-lg-6 d-flex">
-        <div class="col-5">
-            <p>NOM</p>
+    {{-- INFOS CLUB ================ --}}
+    <div class="row border rounded mx-auto p-sm-4 text-bg-light">
+        <h4 class="text-center text-uppercase mb-4 mt-2">PROFIL SPORTIF</h4>
+        {{-- NOM USER --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Nom</p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->nom }}</p>
+            </div>
         </div>
-        <div class="col-7">
-            <p class="fw-bold">{{ $user->nom }}</p>
+        {{-- PRENOM USER --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Prénom</p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->prenom }}</p>
+            </div>
         </div>
-    </div>
-    {{-- PRENOM USER --}}
-    <div class="col-lg-6 d-flex">
-        <div class="col-5">
-            <p>PRÉNOM</p>
+        {{-- N° LICENCE --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>N° licence
+                </p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->licence->numero }}</p>
+            </div>
         </div>
-        <div class="col-7">
-            <p class="fw-bold">{{ $user->prenom }}</p>
+        {{-- TYPE LICENCE --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Type licence
+                </p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->licence->type }}</p>
+            </div>
         </div>
-    </div>
-    {{-- EMAIL USER --}}
-    <div class="col-lg-6 d-flex">
-        <div class="col-5">
-            <p>EMAIL</p>
+        {{-- DATE NAISSANCE --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Date de naissance
+                </p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ date('d-m-Y', strtotime($user->date_naiss)) }}</p>
+            </div>
         </div>
-        <div class="col-7">
-            <p class="fw-bold">{{ $user->email }}</p>
-        </div>
-    </div>
-    {{-- TELEPHONE USER --}}
-    <div class="col-lg-6 d-flex">
-        <div class="col-5">
-            <p>TÉLÉPHONE</p>
-        </div>
-        <div class="col-7">
-            <p class="fw-bold">{{ $user->tel }}</p>
-        </div>
-    </div>
-    {{-- ADR 1 USER --}}
-    <div class="col-lg-6 d-flex">
-        <div class="col-5">
-            <p>ADRESSE</p>
-        </div>
-        <div class="col-7">
-            <p class="fw-bold">{{ $user->adr_ligne_1 }}</p>
-        </div>
-    </div>
-    {{-- ADR 2 USER --}}
-    <div class="col-lg-6 d-flex">
-        <div class="col-5">
-            <p>COMPL. ADR.</p>
-        </div>
-        <div class="col-7">
-            <p class="fw-bold">{{ $user->adr_ligne_2 }}</p>
-        </div>
-    </div>
-    {{-- CODE POSTAL USER --}}
-    <div class="col-lg-6 d-flex">
-        <div class="col-5">
-            <p>CODE POSTAL</p>
-        </div>
-        <div class="col-7">
-            <p class="fw-bold">{{ $user->code_postal }}</p>
-        </div>
-    </div>
-    {{-- COMMUNE USER --}}
-    <div class="col-lg-6 d-flex">
-        <div class="col-5">
-            <p>COMMUNE</p>
-        </div>
-        <div class="col-7">
-            <p class="fw-bold">{{ $user->commune }}</p>
+        {{-- CATEGORIE --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Catégorie
+                </p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->categorie->categorie }}</p>
+            </div>
         </div>
     </div>
 
+    {{-- INFOS PERSONNELLES ================ --}}
+    <div class="row border rounded mx-auto p-sm-4 text-bg-light">
+        <h4 class="text-center text-uppercase mb-4 mt-2">COORDONNÉES</h4>
+
+        {{-- EMAIL USER --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Email</p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->email }}</p>
+            </div>
+        </div>
+        {{-- TELEPHONE USER --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Téléphone</p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->tel }}</p>
+            </div>
+        </div>
+        {{-- ADR 1 USER --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Adresse</p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->adr_ligne_1 }}</p>
+            </div>
+        </div>
+        {{-- ADR 2 USER --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Suite adr.</p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->adr_ligne_2 }}</p>
+            </div>
+        </div>
+        {{-- CODE POSTAL USER --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Code postal</p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->code_postal }}</p>
+            </div>
+        </div>
+        {{-- COMMUNE USER --}}
+        <div class="col-lg-6 d-flex">
+            <div class="col-5">
+                <p>Commune</p>
+            </div>
+            <div class="col-7">
+                <p class="fw-bold">{{ $user->commune }}</p>
+            </div>
+        </div>
+    </div>
 </div>
