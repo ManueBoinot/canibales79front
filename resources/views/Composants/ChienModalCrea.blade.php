@@ -3,6 +3,7 @@
     <button type="button" class="btn btn-danger my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Ajouter un chien
     </button>
+
     <!-- Modal -->
     <div class="modal fade text-dark" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -45,17 +46,19 @@
                         </div>
                         {{-- input VACCINS --}}
                         <div class="my-2">
-                            <label for="vaccins" class="form-label fw-bold">Vaccins</label>
+                            <label for="vaccins" class="form-label fw-bold">Carnet de vaccination</label>
                             <input name="vaccins" type="file" class="form-control text-secondary" id="vaccins">
                             <div class="form-text">Fichiers image uniquement (jpeg, jpg, png, gif, svg) | Max 2 Mo</div>
                         </div>
+                        {{-- bouton VALIDER --}}
                         <div class="text-center">
                             <button type="submit" class="btn btn-danger btn-lg">Ajouter mon
                                 chien</button>
                         </div>
                     </form>
-
                 </div>
+
+                {{-- bouton ANNULER --}}
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                 </div>

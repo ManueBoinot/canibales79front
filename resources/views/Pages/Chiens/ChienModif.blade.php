@@ -9,7 +9,7 @@
         {{-- Bouton modal SUPPRESSION CHIEN --}}
         @include('Composants.ChienModalDelete')
 
-        <form method="post" action="{{ route('chiens.update', $chien) }}" class="text-start">
+        <form method="post" action="{{ route('chiens.update', $chien) }}" class="text-start" enctype="multipart/form-data">
             @method('put')
             <div class="row">
                 @csrf
@@ -40,6 +40,12 @@
                         <option value="0">Non</option>
                         <option value="1">Oui</option>
                     </select>
+                </div>
+                {{-- input VACCINS --}}
+                <div class="col-sm-6 mb-3">
+                    <label for="vaccins" class="form-label fw-bold">Carnet de vaccination</label>
+                    <input name="vaccins" type="file" class="form-control text-secondary" id="vaccins" value="{{ $chien->vaccins }}">
+                    <div class="form-text">Fichiers image uniquement (jpeg, jpg, png, gif, svg) | Max 2 Mo</div>
                 </div>
                 <div class="text-center">
                     <button type="submit" class="btn btn-success my-3">Valider la mise à jour des informations</button>

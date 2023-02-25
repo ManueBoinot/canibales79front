@@ -62,7 +62,7 @@ class ChienController extends Controller
             'date_naiss' => $request->input('date_naiss')
         ]);
 
-        $chien->vaccins = isset($request['vaccins']) ? uploadFile($request['vaccins']) : null;
+        $chien->vaccins = isset($request['vaccins']) ? uploadVaccinsChiens($request['vaccins']) : null;
         $chien->save();
 
         $chien->users()->attach($user->id);
@@ -71,7 +71,7 @@ class ChienController extends Controller
 
         return redirect()->route('users.show', ['user' => $user])->with('status', $request->nom . ' a rejoint l\'équipe !');
     }
- 
+
     // ___________________________________________________________________________
     /**
      * Show the form for editing the specified resource.
@@ -101,6 +101,7 @@ class ChienController extends Controller
             'race' => 'required | min:3 | max:50',
             'categorie_2' => 'required ',
             'date_naiss' => 'required ',
+            'vaccins' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:2048'
         ]);
 
         $chien->update([
@@ -108,8 +109,11 @@ class ChienController extends Controller
             'nom' => ucwords($request->input('nom')),
             'race' => ucwords($request->input('race')),
             'categorie_2' => $request->input('categorie_2'),
-            'date_naiss' => $request->input('date_naiss'),
+            'date_naiss' => $request->input('date_naiss')
         ]);
+
+        $chien->vaccins = isset($request['vaccins']) ? uploadVaccinsChiens($request['vaccins']) : null;
+        $chien->save();
 
         return redirect()->route('users.show', ['user' => $user])->with('status', 'Les informations concernant ' . $request->nom . ' ont bien été mises à jour.');
     }
@@ -128,5 +132,4 @@ class ChienController extends Controller
         $chien->delete();
         return redirect()->route('users.show', ['user' => $user])->with('status', $chien->nom . ' a bien été supprimé');
     }
-
 }

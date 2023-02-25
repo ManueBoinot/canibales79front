@@ -29,7 +29,10 @@ class User extends Authenticatable
         'commune',
         'tel',
         'email',
-        'password'
+        'password',
+        'certifMedic',
+        'autorisParent',
+        'attRespCiv'
     ];
 
     /**

@@ -37,7 +37,6 @@ class UserSeeder extends Seeder
 
         User::create([
             'role_id' => 2,
-            'bureau_membre_id' => null,
             'categorie_id' => 3,
             'licence_id' => random_int(1, 4),
             'nom' => 'Boinot',
@@ -94,7 +93,6 @@ class UserSeeder extends Seeder
 
         User::create([
             'role_id' => 3,
-            'bureau_membre_id' => null,
             'categorie_id' => 3,
             'licence_id' => random_int(1, 4),
             'nom' => 'Paradelo',

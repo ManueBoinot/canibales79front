@@ -20,7 +20,6 @@ class UserFactory extends Factory
     {
         return [
             'role_id' => 2,
-            'bureau_membre_id' => null,
             'categorie_id' => random_int(1, 9),
             'licence_id' => random_int(1, 4),
             'nom' => fake()->lastName(),
