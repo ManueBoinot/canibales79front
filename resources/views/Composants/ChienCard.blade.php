@@ -33,29 +33,6 @@
                         </div>
                     @endif
 
-                    {{-- Vaccins --}} <p>
-                        <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#vaccins{{ $chien->id }}" aria-expanded="false"
-                            aria-controls="vaccins{{ $chien->id }}">
-                            Vaccins
-                        </button>
-                    </p>
-                    <div>
-                        <div class="collapse collapse-horizontal" id="vaccins{{ $chien->id }}">
-                            <div class="card card-body overflow-scroll" style="width: 100%;">
-                                <div class="d-flex row" style="font-size: 0.8rem">
-                                    <div class="col-7">VACCIN</div>
-                                    <div class="col-5">DERNIER RAPPEL</div>
-                                </div>
-                                @foreach ($chien->vaccins as $vaccin)
-                                <div class="d-flex row" style="font-size: 0.8rem">
-                                    <p class="col-sm-7">{{ $vaccin->nom }}</p>
-                                    <p class="col-sm-5">{{ date('d-m-Y', ($vaccin->date)) }}</p>
-                                </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         @endforeach

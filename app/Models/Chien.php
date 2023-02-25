@@ -13,14 +13,10 @@ class Chien extends Model
         'nom',
         'race',
         'categorie_2',
-        'date_naiss'
+        'date_naiss',
+        'vaccins'
     ];
 
-    // Fonction qui précise la relation avec la table "Vaccins"
-    public function vaccins()
-    {
-        return $this->belongsToMany(Vaccin::class)->using(ChienVaccin::class)->withPivot('date');
-    }
 
     // Fonction qui précise la relation avec la table "Users"
     public function users()

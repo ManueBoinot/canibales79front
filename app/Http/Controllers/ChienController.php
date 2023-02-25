@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Chien;
-use App\Models\Vaccin;
 
 class ChienController extends Controller
 {
@@ -32,9 +31,8 @@ class ChienController extends Controller
     public function show(Chien $chien)
     {
         $user = Auth::user();
-        $chien->load('vaccins', 'users');
-        $vaccins = $chien->vaccins;
-        return view('Pages.Users.mon-compte', ['chien' => $chien, 'user' => $user, 'vaccins' => $vaccins]);
+        $chien->load('users');
+        return view('Pages.Users.mon-compte', ['chien' => $chien, 'user' => $user]);
     }
 
     // ___________________________________________________________________________
@@ -53,6 +51,7 @@ class ChienController extends Controller
             'race' => 'required | min:3 | max:50',
             'categorie_2' => 'required ',
             'date_naiss' => 'required ',
+            'vaccins' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:2048'
         ]);
 
         $chien = Chien::create([
@@ -63,16 +62,12 @@ class ChienController extends Controller
             'date_naiss' => $request->input('date_naiss')
         ]);
 
+        $chien->vaccins = isset($request['vaccins']) ? uploadFile($request['vaccins']) : null;
+        $chien->save();
+
         $chien->users()->attach($user->id);
         $userDb = User::find($user->id);
         $userDb->save();
-
-
-        foreach ($chien->vaccins as $vaccin) {
-            $chien->vaccins()->attach($vaccin->id, ['date' => $vaccin->date]);
-            $vaccinInDB = Vaccin::find($vaccin->id);
-            $vaccinInDB->save();
-        }
 
         return redirect()->route('users.show', ['user' => $user])->with('status', $request->nom . ' a rejoint l\'équipe !');
     }
@@ -84,10 +79,9 @@ class ChienController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Chien $chien , Vaccin $vaccins)
+    public function edit(Chien $chien)
     {
-        $vaccins = Vaccin::get();
-        return view('Pages.Chiens.ChienModif', ['chien' => $chien, 'vaccins' => $vaccins]);
+        return view('Pages.Chiens.ChienModif', ['chien' => $chien]);
     }
 
     // ___________________________________________________________________________

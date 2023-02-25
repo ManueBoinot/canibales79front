@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('race');
             $table->boolean('categorie_2');
             $table->date('date_naiss');
+            $table->string('vaccins')->nullable();
             $table->timestamps();
         });
     }
