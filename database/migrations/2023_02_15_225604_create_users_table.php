@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('role_id')->default(2)->constrained()->cascadeOnUpdate();
-            $table->foreignId('bureau_membre_id')->nullable()->constrained()->cascadeOnUpdate();
-            $table->foreignId('categorie_id')->nullable()->constrained()->cascadeOnUpdate();
-            $table->foreignId('licence_id')->nullable()->constrained()->cascadeOnUpdate();
+            $table->foreignId('role_id')->default(2);
+            $table->foreignId('bureau_membre_id')->nullable();
+            $table->foreignId('licence_id')->nullable();
+            $table->enum('categorie', ['Benjamin', 'Minime', 'Cadet', 'Junior', 'Adulte', 'Sénior', 'Vétéran 1', 'Vétéran 2', 'Vétéran 3']);
             $table->string('nom');
             $table->string('prenom');
             $table->date('date_naiss');

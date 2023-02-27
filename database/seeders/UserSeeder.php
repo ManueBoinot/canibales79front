@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
         User::create([
             'role_id' => 1,
             'bureau_membre_id' => 1,
-            'categorie_id' => 1,
+            'categorie' => 'Vétéran 1',
             'licence_id' => random_int(1, 4),
             'nom' => 'admin',
             'prenom' => 'admin',
@@ -36,8 +36,8 @@ class UserSeeder extends Seeder
         ]);
 
         User::create([
-            'role_id' => 2,
-            'categorie_id' => 3,
+            'role_id' => 1,
+            'categorie' => 'Sénior',
             'licence_id' => random_int(1, 4),
             'nom' => 'Boinot',
             'prenom' => 'Emmanuelle',
@@ -54,9 +54,9 @@ class UserSeeder extends Seeder
         ]);
 
         User::create([
-            'role_id' => 7,
+            'role_id' =>17,
             'bureau_membre_id' => 4,
-            'categorie_id' => 3,
+            'categorie' => 'Vétéran 1',
             'licence_id' => random_int(1, 4),
             'nom' => 'Didier',
             'prenom' => 'Stéphane',
@@ -73,9 +73,9 @@ class UserSeeder extends Seeder
         ]);
 
         User::create([
-            'role_id' => 4,
+            'role_id' => 2,
             'bureau_membre_id' => 1,
-            'categorie_id' => 3,
+            'categorie' => 'Sénior',
             'licence_id' => random_int(1, 4),
             'nom' => 'Guilbert',
             'prenom' => 'Laura',
@@ -92,8 +92,8 @@ class UserSeeder extends Seeder
         ]);
 
         User::create([
-            'role_id' => 3,
-            'categorie_id' => 3,
+            'role_id' => 2,
+            'categorie' => 'Sénior',
             'licence_id' => random_int(1, 4),
             'nom' => 'Paradelo',
             'prenom' => 'Ivan',

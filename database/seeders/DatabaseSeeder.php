@@ -19,7 +19,6 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             LicenceSeeder::class,
             BureauMembreSeeder::class,
-            CategorieSeeder::class,
             UserSeeder::class,
             ChienUserSeeder::class,
             ChienSeeder::class,

@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('chien_user', function (Blueprint $table) {
-            $table->foreignId('chien_id')->constrained()->cascadeOnUpdate();
-            $table->foreignId('user_id')->constrained()->cascadeOnUpdate();
+            $table->foreignId('chien_id');
+            $table->foreignId('user_id');
             $table->timestamps();
         });
     }
