@@ -93,9 +93,11 @@
                                     <i class="fa-regular fa-user"></i>
                                 </a>
                                 <ul class="dropdown-menu text-bg-dark">
+                                    {{-- Lien pour se connecter --}}
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
                                     </li>
+                                    {{-- Lien pour créer un compte --}}
                                     <li class="nav-item">
                                         <a class="nav-link"
                                             href="{{ route('register') }}">{{ __('Créer un compte') }}</a>

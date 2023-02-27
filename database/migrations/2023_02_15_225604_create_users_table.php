@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('role_id')->default(2)->constrained()->cascadeOnUpdate();
             $table->foreignId('bureau_membre_id')->nullable()->constrained()->cascadeOnUpdate();
-            $table->foreignId('categorie_id')->constrained()->cascadeOnUpdate();
-            $table->foreignId('licence_id')->constrained()->cascadeOnUpdate();
+            $table->foreignId('categorie_id')->nullable()->constrained()->cascadeOnUpdate();
+            $table->foreignId('licence_id')->nullable()->constrained()->cascadeOnUpdate();
             $table->string('nom');
             $table->string('prenom');
             $table->date('date_naiss');
@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('certif_medic')->nullable();
             $table->string('autoris_parent')->nullable();
             $table->string('att_resp_civ')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at')->default(now());
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

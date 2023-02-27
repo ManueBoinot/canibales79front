@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('categorie');
-            $table->boolean('handi');
+            $table->boolean('handi')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

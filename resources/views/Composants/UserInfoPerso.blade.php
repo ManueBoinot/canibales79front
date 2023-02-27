@@ -11,6 +11,17 @@
     {{-- INFOS CLUB ================ --}}
     <div class="row border rounded mx-auto p-sm-4 text-bg-light">
         <h4 class="text-center text-uppercase mb-4 mt-2">PROFIL SPORTIF</h4>
+
+        {{-- Boutons MODIF et SUPPRESSION user --}}
+        <div class="text-end d-flex justify-content-end gap-1">
+            <form method="post" action="{{ route('users.edit', $user) }}">
+                @method('get')
+                @csrf
+                <input type="hidden" name="user_id" value="{{ $user->id }}">
+                <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
+            </form>
+        </div>
+
         {{-- NOM USER --}}
         <div class="col-lg-6 d-flex">
             <div class="col-5">
@@ -36,7 +47,7 @@
                 </p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->licence->numero }}</p>
+                <p class="fw-bold">{{ $user->licence->numero ?? 'Non renseigné' }}</p>
             </div>
         </div>
         {{-- TYPE LICENCE --}}
@@ -46,7 +57,7 @@
                 </p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->licence->type }}</p>
+                <p class="fw-bold">{{ $user->licence->type ?? 'Non renseigné' }}</p>
             </div>
         </div>
         {{-- DATE NAISSANCE --}}
@@ -66,7 +77,7 @@
                 </p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->categorie->categorie }}</p>
+                <p class="fw-bold">{{ $user->categorie->categorie ?? 'Non renseignée' }}</p>
             </div>
         </div>
     </div>
@@ -108,7 +119,7 @@
                 <p>Suite adr.</p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->adr_ligne_2 }}</p>
+                <p class="fw-bold">{{ $user->adr_ligne_2 ?? '-' }}</p>
             </div>
         </div>
         {{-- CODE POSTAL USER --}}

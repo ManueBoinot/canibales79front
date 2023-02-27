@@ -48,7 +48,7 @@
                         <div class="my-2">
                             <label for="vaccins" class="form-label fw-bold">Carnet de vaccination</label>
                             <input name="vaccins" type="file" class="form-control text-secondary" id="vaccins">
-                            <div class="form-text">Fichiers image uniquement (jpeg, jpg, png, gif, svg) | Max 2 Mo</div>
+                            <div class="form-text">Fichiers images uniquement (jpeg, jpg, png, gif, svg) | Max 2 Mo</div>
                         </div>
                         {{-- bouton VALIDER --}}
                         <div class="text-center">

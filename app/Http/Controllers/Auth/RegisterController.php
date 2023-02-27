@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\Password;
 
 class RegisterController extends Controller
 {
@@ -50,9 +51,19 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'prenom' => ['required', 'string', 'max:40'],
+            'nom' => ['required', 'string', 'max:40'],
+            'email' => ['required', 'string', 'email', 'max:40', 'unique:users'],
+            'date_naiss' => ['required', 'date', 'before:today'],
+            'adr_ligne_1' => ['required', 'string', 'max:40'],
+            'adr_ligne_2' => ['nullable', 'string', 'max:40'],
+            'code_postal' => ['required', 'string', 'max:5'],
+            'commune' => ['required', 'string', 'max:40'],
+            'tel' => ['required', 'string', 'max:14'],
+            'att_resp_civ' => ['nullable', 'file', 'mimes:jpeg,jpg,png,gif,svg,pdf', 'max:2048'],
+            'certif_medic' => ['nullable', 'file', 'mimes:jpeg,jpg,png,gif,svg,pdf', 'max:2048'],
+            'autoris_parent' => ['nullable', 'file', 'mimes:jpeg,jpg,png,gif,svg,pdf', 'max:2048'],
+            'password' => ['required', 'string', 'confirmed', Password::min(8)->mixedCase()->numbers()->symbols()]
         ]);
     }
 
@@ -64,10 +75,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+        return $user = User::create([
+            'nom' => $data['nom'],
+            'prenom' => $data['prenom'],
             'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+            'date_naiss' => $data['date_naiss'],
+            'adr_ligne_1' => $data['adr_ligne_1'],
+            'adr_ligne_2' => $data['adr_ligne_2'],
+            'code_postal' => $data['code_postal'],
+            'commune' => $data['commune'],
+            'tel' => $data['tel'],
+            'password' => Hash::make($data['password'])
         ]);
     }
 }

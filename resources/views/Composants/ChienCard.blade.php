@@ -3,43 +3,47 @@
 
     <div class="row justify-content-center gap-3 mx-auto p-sm-4 border rounded">
         <h2 class="text-center my-4">Coéquipier(s) à 4 pattes</h2>
-        @foreach ($user->chiens as $chien)
-            <div class="card col-12 col-md-5 text-bg-light">
-                <div class="card-body">
-                    {{-- Boutons MODIF et SUPPRESSION chien --}}
-                    <div class="text-end d-flex justify-content-end gap-1">
-                        <form method="post" action="{{ route('chiens.edit', $chien) }}">
-                            @method('get')
-                            @csrf
-                            <input type="hidden" name="chien_id" value="{{ $chien->id }}">
-                            <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
-                        </form>
-                    </div>
 
-                    {{-- Infos du chien --}}
-                    <h5 class="card-title fw-bold">{{ $chien->nom }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ $chien->race }}</h6>
-                    <p class="card-text">Né(e) le {{ date('d-m-Y', strtotime($chien->date_naiss)) }}
-                        <span class="fst-italic"> ({{ $chien->age($chien) }}) </span>
-                    </p>
-                    <p></p>
-
-                    {{-- Si chien catégorie 2 --}}
-                    @if ($chien->categorie_2 == true)
-                        <div class="col-11">
-                            <p class="text-info">{{ $chien->nom }} est un chien de CATÉGORIE 2 : merci de
-                                respecter la
-                                réglementation en vigueur</p>
+        {{-- S'il n'y a pas de chien enregistré --}}
+        @if (count($user->chiens) <= 0)
+            <h5 class="text-center text-white">Tu n'as pas encore enregistré de chien !</h5>
+            
+        @else{{-- S'il y a un/des chiens enregistrés --}}
+            @foreach ($user->chiens as $chien)
+                <div class="card col-12 col-md-5 text-bg-light">
+                    <div class="card-body">
+                        {{-- Boutons MODIF et SUPPRESSION chien --}}
+                        <div class="text-end d-flex justify-content-end gap-1">
+                            <form method="post" action="{{ route('chiens.edit', $chien) }}">
+                                @method('get')
+                                @csrf
+                                <input type="hidden" name="chien_id" value="{{ $chien->id }}">
+                                <button class="btn btn-outline-dark"><i
+                                        class="fa-regular fa-pen-to-square"></i></button>
+                            </form>
                         </div>
-                    @endif
 
+                        {{-- Infos du chien --}}
+                        <h5 class="card-title fw-bold">{{ $chien->nom }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ $chien->race }}</h6>
+                        <p class="card-text">Né(e) le {{ date('d-m-Y', strtotime($chien->date_naiss)) }}
+                            <span class="fst-italic"> ({{ $chien->age($chien) }}) </span>
+                        </p>
+                        <p></p>
+
+                        {{-- Si chien catégorie 2 --}}
+                        @if ($chien->categorie_2 == true)
+                            <div class="col-11">
+                                <p class="text-info">{{ $chien->nom }} est un chien de CATÉGORIE 2 : merci de
+                                    respecter la
+                                    réglementation en vigueur</p>
+                            </div>
+                        @endif
+
+                    </div>
                 </div>
-            </div>
-        @endforeach
-
-        {{-- AJOUTER UNE METHODE POUR AFFICHER " PAS DE CHIEN ENREGISTRÉ " --}}
-
+            @endforeach
+        @endif
         @include('Composants.ChienModalCrea')
-
     </div>
 </div>

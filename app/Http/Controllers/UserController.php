@@ -26,9 +26,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
-        return view('Pages.Users.modifier-infos', ['user.id' => $id]);
+        return view('Pages.Users.modifier-infos', ['user' => $user]);
     }
 
     /**
@@ -46,10 +46,13 @@ class UserController extends Controller
             'email' => ['required', 'string', 'email', 'max:40',],
             'date_naiss' => ['required', 'date', 'before:today'],
             'adr_ligne_1' => ['required', 'string', 'max:40'],
-            'adr_ligne_2' => ['required', 'string', 'max:40'],
+            'adr_ligne_2' => ['string', 'max:40'],
             'code_postal' => ['required', 'string', 'max:5'],
             'commune' => ['required', 'string', 'max:40'],
-            'tel' => ['required', 'string', 'max:14'],
+            'tel' => ['required', 'string', 'max:20'],
+            'att_resp_civ' => ['nullable', 'image', 'mimes:jpeg,jpg,png,gif,svg', 'max:2048'],
+            'certif_medic' => ['nullable', 'image', 'mimes:jpeg,jpg,png,gif,svg', 'max:2048'],
+            'autoris_parent' => ['nullable', 'image', 'mimes:jpeg,jpg,png,gif,svg', 'max:2048']
         ]);
 
         $user->prenom = $request->input('prenom');
@@ -62,6 +65,9 @@ class UserController extends Controller
         $user->commune = $request->input('commune');
         $user->tel = $request->input('tel');
 
+        $user->att_resp_civ = uploadAttRespCiv($request['att_resp_civ']);
+        // $user->certif_medic = isset($request['certif_medic']) ? uploadCertifMedic($request['certif_medic']) : null;
+        // $user->autoris_parent = isset($request['autoris_parent']) ? uploadAutorisParent($request['autoris_parent']) : null;
         $user->save();
 
         return redirect()->route('users.show', $user)->with('message', 'Modifications effectuées');
