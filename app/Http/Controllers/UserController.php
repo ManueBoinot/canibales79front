@@ -16,7 +16,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        $user->load('role', 'bureau', 'categorie', 'licence', 'chiens');
+        $user->load('role', 'bureau', 'licence', 'chiens');
         return view('Pages.Users.mon-compte', ['user' => $user]);
     }
 

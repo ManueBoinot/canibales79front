@@ -77,7 +77,7 @@
                 </p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->categorie->categorie ?? 'Non renseignée' }}</p>
+                <p class="fw-bold">{{ $user->categorie }}</p>
             </div>
         </div>
     </div>

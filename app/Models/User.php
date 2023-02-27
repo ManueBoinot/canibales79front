@@ -66,12 +66,6 @@ class User extends Authenticatable
         return $this->belongsTo(BureauMembre::class);
     }
 
-    // Fonction qui précise la relation avec la table "Categories"
-    public function categorie()
-    {
-        return $this->belongsTo(Categorie::class);
-    }
-
     // Fonction qui précise la relation avec la table "Licences"
     public function licence()
     {

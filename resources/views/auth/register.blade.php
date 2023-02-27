@@ -18,7 +18,7 @@
                                 <div class="col-md-6">
                                     <input id="nom" type="text"
                                         class="form-control @error('nom') is-invalid @enderror" name="nom"
-                                        value="{{ old('nom') }}" required autocomplete="nom" autofocus>
+                                        value="{{ old('nom') }}" required autocomplete="nom">
 
                                     @error('nom')
                                         <span class="invalid-feedback" role="alert">
@@ -35,7 +35,7 @@
                                 <div class="col-md-6">
                                     <input id="prenom" type="text"
                                         class="form-control @error('prenom') is-invalid @enderror" name="prenom"
-                                        value="{{ old('prenom') }}" required autocomplete="prenom" autofocus>
+                                        value="{{ old('prenom') }}" required autocomplete="prenom">
 
                                     @error('prenom')
                                         <span class="invalid-feedback" role="alert">
@@ -53,7 +53,7 @@
                                 <div class="col-md-6">
                                     <input id="date_naiss" type="date"
                                         class="form-control @error('date_naiss') is-invalid @enderror" name="date_naiss"
-                                        value="{{ old('date_naiss') }}" required autocomplete="date_naiss" autofocus>
+                                        value="{{ old('date_naiss') }}" required autocomplete="date_naiss">
 
                                     @error('date_naiss')
                                         <span class="invalid-feedback" role="alert">
@@ -62,6 +62,66 @@
                                     @enderror
                                 </div>
                             </div>
+
+                            {{-- Champ CATEGORIE --}}
+                            <div class="row mb-3">
+                                <label for="categorie" class="col-md-4 col-form-label text-md-end">Catégorie</label>
+
+                                <div class="col-md-6">
+                                    <select id="categorie" class="form-select @error('categorie') is-invalid @enderror"
+                                        name="categorie" value="{{ old('categorie') }}" required autocomplete="categorie">
+                                        <option selected>Sélectionner une catégorie</option>
+                                        <option value="benjamin">Benjamin(e)</option>
+                                        <option value="minime">Minime</option>
+                                        <option value="cadet">Cadet(te)</option>
+                                        <option value="junior">Junior</option>
+                                        <option value="adulte">Adulte</option>
+                                        <option value="sénior">Sénior</option>
+                                        <option value="vétéran 1">Vétéran(e) 1</option>
+                                        <option value="vétéran 2">Vétéran(e) 2</option>
+                                        <option value="vétéran 3">Vétéran(e) 3</option>
+                                    </select>
+
+                                    <!-- Button trigger modal -->
+                                    <a class="link-danger fst-italic" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Un doute sur ta catégorie ?
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Les catégories d'âge
+                                                        en
+                                                        sport</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body overflow-scroll text-center">
+                                                    <img src="../assets/categories-fslc.png" style="width: fit-content"
+                                                        alt="infos sur les catégories d'âge en sport">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Super
+                                                        merci !</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @error('categorie')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+
 
                             {{-- Champ EMAIL --}}
                             <div class="row mb-3">
@@ -87,7 +147,7 @@
                                 <div class="col-md-6">
                                     <input id="tel" type="tel"
                                         class="form-control @error('tel') is-invalid @enderror" name="tel"
-                                        value="{{ old('tel') }}" required autocomplete="tel" autofocus>
+                                        value="{{ old('tel') }}" required autocomplete="tel">
 
                                     @error('tel')
                                         <span class="invalid-feedback" role="alert">
@@ -104,7 +164,7 @@
                                 <div class="col-md-6">
                                     <input id="adr_ligne_1" type="text"
                                         class="form-control @error('adr_ligne_1') is-invalid @enderror" name="adr_ligne_1"
-                                        value="{{ old('adr_ligne_1') }}" required autocomplete="adr_ligne_1" autofocus>
+                                        value="{{ old('adr_ligne_1') }}" required autocomplete="adr_ligne_1">
 
                                     @error('adr_ligne_1')
                                         <span class="invalid-feedback" role="alert">
@@ -122,7 +182,7 @@
                                 <div class="col-md-6">
                                     <input id="adr_ligne_2" type="text"
                                         class="form-control @error('adr_ligne_2') is-invalid @enderror" name="adr_ligne_2"
-                                        value="{{ old('adr_ligne_2') }}" autocomplete="adr_ligne_2" autofocus>
+                                        value="{{ old('adr_ligne_2') }}" autocomplete="adr_ligne_2">
 
                                     @error('adr_ligne_2')
                                         <span class="invalid-feedback" role="alert">
@@ -139,7 +199,7 @@
                                 <div class="col-md-6">
                                     <input id="code_postal" type="text"
                                         class="form-control @error('code_postal') is-invalid @enderror" name="code_postal"
-                                        value="{{ old('code_postal') }}" required autocomplete="code_postal" autofocus>
+                                        value="{{ old('code_postal') }}" required autocomplete="code_postal">
 
                                     @error('code_postal')
                                         <span class="invalid-feedback" role="alert">
@@ -156,7 +216,7 @@
                                 <div class="col-md-6">
                                     <input id="commune" type="text"
                                         class="form-control @error('commune') is-invalid @enderror" name="commune"
-                                        value="{{ old('commune') }}" required autocomplete="commune" autofocus>
+                                        value="{{ old('commune') }}" required autocomplete="commune">
 
                                     @error('commune')
                                         <span class="invalid-feedback" role="alert">
