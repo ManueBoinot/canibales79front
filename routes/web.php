@@ -19,6 +19,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::view('/les-disciplines', 'Pages/LesDisciplines');
+Route::view('/la-federation','Pages.LaFederation');
+Route::view('/le-club', 'Pages.LeClub');
+Route::view('/le-materiel','Pages.LeMateriel');
+Route::view('/mentions-legales','Pages.MentionsLegales');
+
 // Route vers le BACK OFFICE -----------------------------------
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
 

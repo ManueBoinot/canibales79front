@@ -151,9 +151,7 @@
                                 <li><a class="dropdown-item" href="/les-disciplines#canicross">Canicross et
                                         Canitrail<i class="ms-2 fa-solid fa-person-running"></i><i
                                             class="fa-solid fa-dog"></i></a></li>
-                                <li><a class="dropdown-item" href="/les-disciplines#canivtt">Canivtt
-                                        et
-                                        Canipédicycle<i class="ms-2 fa-solid fa-person-biking"></i><i
+                                <li><a class="dropdown-item" href="/les-disciplines#canivtt">Canivtt<i class="ms-2 fa-solid fa-person-biking"></i><i
                                             class="fa-solid fa-dog"></i></a></li>
                                 <li><a class="dropdown-item" href="/les-disciplines#canimarche">Canimarche<i
                                             class="ms-2 fa-solid fa-person-walking"></i><i

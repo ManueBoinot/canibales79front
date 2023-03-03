@@ -1,5 +1,5 @@
 <section id="intro-accueil" class="container-md py-5 mx-auto" style="background-color: rgba(255, 255, 255, 0.95)">
-    
+
     <div id="disciplines-accueil" class="row g-3 py-4">
         <!-- Phrase d'accueil -->
         <h1 class="fw-bold text-center my-auto pb-3">Bienvenue chez les Canibales 79 !</h1>

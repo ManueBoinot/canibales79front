@@ -1,14 +1,5 @@
-<template>
-    <div id="le-club">
+@extends('layouts.app')
 
-        <main class="container-md py-5 mx-auto">
-            <h1 class="fw-bold text-center my-auto pb-3">LE CLUB</h1>
-        </main>
-    </div>
-</template>
+@section('content')
 
-<script>
-export default {
-    name: 'LeClub'
-}
-</script>
+@endsection
