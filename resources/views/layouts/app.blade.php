@@ -18,8 +18,8 @@
 
 </head>
 
-<body>
-    <div id="app" class="w-100 min-vh-100">
+<body class="vw-100 min-vh-100">
+    <div id="app">
 
         {{-- Header ------------------------------------- --}}
         @include('Composants.ComposantsCommuns.Header')

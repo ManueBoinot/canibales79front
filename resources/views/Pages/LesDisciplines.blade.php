@@ -57,7 +57,7 @@
             </div>
             <div class="col mx-lg-5">
                 <h3>LE CANIVTT</h3>
-                <P>Le CaniVTT est une discipline <span class="fw-bold">réservée aux adultes et juniors (à partir de 15
+                <p>Le CaniVTT est une discipline <span class="fw-bold">réservée aux adultes et juniors (à partir de 15
                         ans)</span>, le chien est relié au VTT par une longe de 1m50 à 2m00 maximum.<br>
                     Le vététiste doit suivre le rythme de son chien sur des parcours de <span class="fw-bold">5 à 9
                         km</span>.<br>
@@ -67,7 +67,9 @@
                     Le port du casque et des gants est obligatoire pour pratiquer ce sport à sensations fortes.<br>
                     <span class="fw-bold">Le chien doit avoir au minimum 18 mois</span> pour le pratiquer.<br>
                     Cette discipline s’adresse à tous les humains et à toutes les races de chiens (sauf catégorie 1).
-                </P>
+                </p>
+                <p>NB : il existe une autre discipline semblable au canivtt mais qui se pratique avec une trottinette
+                    spécifique : le <strong>CANIPÉDICYCLE</strong>. Méconnu, il nécessite une certaine technique et demande un plus gros effort encore que le canivtt. Les prérequis sont les mêmes que pour le canivtt.</p>
             </div>
         </div>
 
@@ -88,7 +90,7 @@
                 </p>
             </div>
         </div>
-        
+
         <div class="row mt-5 text-center">
             <small class="text-secondary">(Source : <a href="https://www.fslc-canicross.net/les-disciplines/"
                     class="text-secondary"> https://www.fslc-canicross.net/les-disciplines/)</a></small>
