@@ -17,7 +17,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 30%, rgba(255,0,0,0.9) 100%);"
                         disciplines</a></li>
                 <li class="list-item"><a href="/le-materiel">Le
                         matériel</a></li>
-                <li class="list-item"><a href="/la-federation">La FSLC</a>
+                <li class="list-item"><a href="/la-federation">Réglementation</a>
                 </li>
                 <li class="list-item"><a href="/faq">Foire
                         aux

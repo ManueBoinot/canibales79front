@@ -172,7 +172,7 @@
 
                         <!-- Lien vers FEDERATION -->
                         <li class="nav-item">
-                            <a class="nav-link" href="/la-reglementation">LA FÉDÉRATION <img
+                            <a class="nav-link" href="/la-federation">RÉGLEMENTATION <img
                                     src="../.././assets/logos/logo_fslc.png" alt="logo FSLC" style="width: 40px"></a>
                         </li>
 
