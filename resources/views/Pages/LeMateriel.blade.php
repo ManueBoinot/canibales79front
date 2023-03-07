@@ -7,67 +7,109 @@
         {{-- Intro sur FENRIL --}}
         <div class="row mb-5">
             <div class="row mb-4">
-                <h3 class="fw-bold text-center mb-4">ÉQUIPEMENT DU CHIEN ET DE L'HUMAIN</h3>
                 <h5 class="text-center">Les sports de traction en binôme nécessitent un matériel adapté pour garantir confort
                     et bien-être du chien
                     comme de l'humain.</h5>
             </div>
 
-            <div class="row mb-4">
-                <h4 class="pb-2"><i class="fa-solid fa-person-running"></i><i class="fa-solid fa-dog"></i> CANICROSS |
-                    CANIMARCHE</h4>
-                <p><strong>Pour le chien, il faut <span class="text-decoration-underline">un harnais</span></strong> dont le choix est
-                    primordial pour éviter toute blessure et lui permettre de libérer son
-                    énergie sans limite.<br>
-                    Il doit être adapté à la morphologie de votre chien.<br>
-                    <span class="fw-bold" style="color:#e70000"><i class="fa-solid fa-triangle-exclamation"></i> Les harnais
-                        de
-                        type " JULIUS K-9 " SONT TOTALEMENT PROSCRITS ! <i
-                            class="fa-solid fa-triangle-exclamation"></i></span>
-                </p>
-                <p><strong>Pour l'humain, il y a le
-                        choix entre <span class="text-decoration-underline">baudrier et ceinture</span></strong> : c'est avant tout une question de goût !<br>
-                    L'idéal
-                    est de pouvoir essayer différents modèles pour trouver celui qui vous convient le mieux (nous pouvons
-                    vous
-                    en prêter sur demande).
-                </p>
-                <p>Enfin, <strong>pour relier chien et humain on utilise <span class="text-decoration-underline">une laisse spécifique à amortisseur</span></strong> qui
-                    permet d'absorber les chocs lors des variations d'allure.</p>
+            {{-- Matériel CANICROSS --}}
+            <div class="row mb-5 mt-5">
+                <div class="col-auto">
+                    <figure>
+                        <a target="blank" href="https://www.fenril.fr/kit-canicross/1438-kit-canicross-inlandsis-3760264640080.html"
+                            target="blank"><img src="../assets/photos/materiel/kit-canicross-inlandsis.jpg"
+                                alt="kit complet canicross" title="Kit complet CANICROSS de Inlandsis"></a>
+                        <figcaption class="fst-italic text-secondary"><small>Le kit complet Canicross de Inlandsis</small>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <h4 class="pb-3"><i class="fa-solid fa-person-running"></i><i class="fa-solid fa-dog"></i> CANICROSS |
+                        CANIMARCHE</h4>
+                    <p><strong>Pour le chien, il faut <span class="text-decoration-underline">un harnais</span></strong>
+                        dont le
+                        choix est
+                        primordial pour éviter toute blessure et lui permettre de libérer son
+                        énergie sans limite.<br>
+                        Il doit être adapté à la morphologie de votre chien.<br>
+                        <span class="fw-bold" style="color:#e70000"><i class="fa-solid fa-triangle-exclamation"></i> Les
+                            harnais
+                            de
+                            type " JULIUS K-9 " SONT TOTALEMENT PROSCRITS ! <i
+                                class="fa-solid fa-triangle-exclamation"></i></span>
+                    </p>
+                    <p><strong>Pour l'humain, il y a le
+                            choix entre <span class="text-decoration-underline">baudrier et ceinture</span></strong> : c'est
+                        avant tout une question de goût !<br>
+                        L'idéal
+                        est de pouvoir essayer différents modèles pour trouver celui qui vous convient le mieux (nous
+                        pouvons
+                        vous
+                        en prêter sur demande).<br>
+                        Il ne faut pas non plus négliger le choix de ses <strong class="text-decoration-underline">chaussures</strong> !<br>
+                        Et pour cela, nous vous invitons à rencontrer Yannick à son magasin <strong><a
+                        class="link-secondary" href="https://foulees.com/-niort-" target="blank">FOUL&ES</a></strong>, il vous donnera les meilleurs conseils pour trouver votre paire idéale.
+                    </p>
+                    <p>Enfin, <strong>pour relier chien et humain on utilise <span class="text-decoration-underline">une
+                                laisse à amortisseur</span></strong> qui
+                        permet d'absorber les chocs lors des variations d'allure.<br>
+                        Elle possède un mousqueton à chaque extrémité pour pouvoir être attachée au baudrier et au harnais.
+                    </p>
+                </div>
             </div>
 
-            <div class="row">
-                <h4 class="pb-2"><i class="fa-solid fa-person-biking"></i> <i class="fa-solid fa-dog"></i> CANIVTT</h4>
-                <p><strong>Pour le canivtt, le harnais du chien est le même que pour le canicross/la canimarche mais
-                        <span class="text-decoration-underline">la laisse est plus longue</span></strong>.<br>
-                    Si vous comptez pratiquer les deux disciplines il faudra vous équiper de 2 laisses différentes.<br>
-                    De plus, <strong>le port d'<span class="text-decoration-underline">un casque et de gants</span> est obligatoire</strong> en canivtt car la vitesse
-                    pouvant atteindre 60
-                    km/h pour les plus aguerris, les chutes peuvent être dangereuses.</p>
-                <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Équipement supplémentaire du canivtt : <span class="text-decoration-underline">la
-                        barre canivtt</span>.</strong><br>
-                    C'est une tige souple fixée sous le guidon du VTT dans laquelle on fait passer la laisse afin qu'elle ne
-                    se prenne pas dans la roue avant.<br>La barre canivtt permet également d'apporter un amortissement
-                    supplémentaire en cas de brusque changement de direction du chien.</p>
+            {{-- Matériel CANIVTT --}}
+            <div class="row mt-3">
+                <div class="col-auto">
+                    <figure><a target="blank" href="https://www.fenril.fr/kits-cani-vtt/1425-kit-canivtt-inlandsis.html" target="blank">
+                            <img src="../assets/photos/materiel/kit-canivtt-inlandsis.jpg" alt="kit complet canivtt"
+                                title="Kit complet CANIVTT de Inlandsis"></a>
+                        <figcaption class="fst-italic text-secondary"><small>Le kit complet CaniVTT de Inlandsis</small>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <h4 class="pb-3"><i class="fa-solid fa-person-biking"></i> <i class="fa-solid fa-dog"></i> CANIVTT
+                    </h4>
+                    <p><strong>Pour le canivtt, le harnais du chien est le même que pour le canicross/la canimarche mais
+                            <span class="text-decoration-underline">la laisse est plus longue</span></strong>.<br>
+                        Elle possède un mousqueton à l'extrémité côté chien, et une boucle/poignée à l'autre extrémité pour
+                        être passée autour du guidon du VTT.<br>
+                        Si vous comptez pratiquer les deux disciplines il faudra vous équiper de 2 laisses différentes.<br>
+                        De plus, <strong>le port d'<span class="text-decoration-underline">un casque et de gants</span> est
+                            obligatoire</strong> en canivtt car la vitesse
+                        pouvant atteindre 60
+                        km/h pour les plus aguerris, les chutes peuvent être dangereuses.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Équipement supplémentaire du canivtt : <span
+                                class="text-decoration-underline">la
+                                barre canivtt</span>.</strong><br>
+                        C'est une tige souple fixée sous le guidon du VTT dans laquelle on fait passer la laisse afin
+                        qu'elle ne
+                        se prenne pas dans la roue avant.<br>La barre canivtt permet également d'apporter un amortissement
+                        supplémentaire en cas de brusque changement de direction du chien.</p>
+                </div>
             </div>
         </div>
 
         {{-- CONSEILS SUR CHOIX DE HARNAIS PAR FENRIL --}}
         {{-- Harnais X-BACK --}}
-        <div class="row mb-5 border-bottom border-top pt-5">
+        <div class="row mb-5 border-top pt-5">
             <h3 class="fw-bold text-center mb-4">CHOISIR LE BON HARNAIS POUR SON CHIEN</h3>
-            <h5 class="text-center">Notre partenaire <strong>FENRIL</strong>, spécialiste des sports tractés canins, vous offre ses conseils pour choisir le meilleur harnais pour votre partenaire à quatre pattes.</h5>
-            <h5 class="text-center">Retrouvez son guide de choix ci-dessous puis rendez-vous dans sa <a href="https://www.fenril.fr/">boutique en ligne</a> pour choisir votre équipement parmi les plus grandes marques !<br>
-                Et bénéficiez de réductions exclusives gr</h5>
+            <h5 class="text-center">Vous trouverez ci-dessous les conseils de notre partenaire <strong><a target="blank" class="link-secondary" href="https://www.fenril.fr/">FENRIL</a></strong> pour vous aider à choisir
+                le meilleur harnais pour votre chien.<br>
+            </h5>
+        </div>
+
+        <div class="row">
             <div class="col">
                 <h5 class="fw-bold" style="color:#e70000">LES HARNAIS DE TYPE " X-BACK "</h5>
                 <p>Dénommés ainsi en raison du X que forment les sangles sur le dos du chien, les harnais x-back sont le
                     type de
                     harnais le plus éprouvé et le plus populaire.</p>
-                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a class="link-dark"
+                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/1303-harnais-polar-quest.html">Inlandsis
                         Polar
-                        Quest</a>, <a class="link-dark"
+                        Quest</a>, <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/378-x-back-sprint.html?search_query=lightweight&results=1">Manmat
                         Lightweight</a></p>
                 <ul>
@@ -101,9 +143,9 @@
         <div class="row mb-5 border-bottom">
             <div class="col">
                 <h5 class="fw-bold" style="color:#e70000">LES HARNAIS COURTS</h5>
-                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a class="link-dark"
+                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/107-harnais-canicross-zerodcshort.html">DC
-                        Short</a>, <a class="link-dark"
+                        Short</a>, <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-chien-traineau/1362-long-distance-harness-manmat.html">Manmat
                         Long Distance</a></p>
                 <ul>
@@ -131,9 +173,9 @@
         <div class="row mb-5 border-bottom">
             <div class="col">
                 <h5 class="fw-bold" style="color:#e70000;">LES HARNAIS MULTI-RÉGLAGES</h5>
-                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a class="link-dark"
+                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/1270-omnijore-ruffwear-harnais.html">Ruffwear
-                        Omnijore</a>, <a class="link-dark"
+                        Omnijore</a>, <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/876-confort-harnais-canicross.html">Difac Confort</a>
                 </p>
                 <ul>
@@ -151,7 +193,7 @@
         {{-- Cas particuliers --}}
         <div class="row mb-5">
             <h5 class="fw-bold" style="color:#e70000">CAS PARTICULIERS</h5>
-            <p><i class="fa-regular fa-hand-pointer"></i> <a class="link-dark"
+            <p><i class="fa-regular fa-hand-pointer"></i> <a target="blank" class="link-dark"
                     href="https://www.fenril.fr/harnais-canicross/1788-inlandsis-open-back.html">Inlandsis Open-Back</a>
             </p>
             <ul>
@@ -161,7 +203,7 @@
                     sera
                     plus stable</li>
             </ul>
-            <p><i class="fa-regular fa-hand-pointer"></i><a class="link-dark"
+            <p><i class="fa-regular fa-hand-pointer"></i><a target="blank" class="link-dark"
                     href="https://www.fenril.fr/harnais-canicross/110-harnais-zerodc-faster.html">Zero DC
                     Faster</a>
             </p>
@@ -174,7 +216,7 @@
                     comprimer
                     la gorge.</li>
             </ul>
-            <p><i class="fa-regular fa-hand-pointer"></i> <a class="link-dark"
+            <p><i class="fa-regular fa-hand-pointer"></i> <a target="blank" class="link-dark"
                     href="https://www.fenril.fr/harnais-canicross/443-harnais-free-motion.html">Non Stop Free
                     Motion</a></p>
             <ul>
@@ -184,7 +226,8 @@
         </div>
 
         <div class="row mb-5 border-top pt-3 overflow-scroll">
-            <h5 class="fw-bold text-center mb-4" style="color:#e70000;">Tableau de synthèse avec les modèles de harnais les
+            <h5 class="fw-bold text-center mb-4" style="color:#e70000;">Tableau de synthèse avec les modèles de harnais
+                les
                 plus populaires</h5>
             <table class="table table-striped-columns" style="height:259px;" width="888">
                 <thead>
@@ -194,51 +237,51 @@
                         </th>
 
                         <th scope="col text-center align-items-center">
-                            <a class="btn btn-default"
+                            <a target="blank" class="btn btn-default"
                                 href="https://www.fenril.fr/harnais-canicross/1303-harnais-polar-quest.html">Inlandsis
                                 Polar
                                 Quest</a>
                         </th>
 
                         <th scope="col">
-                            <a class="btn btn-default"
+                            <a target="blank" class="btn btn-default"
                                 href="https://www.fenril.fr/harnais-canicross/325-x-back-classique.html">Manmat X-back
                                 classique</a>
                         </th>
 
                         <th scope="col">
-                            <a class="btn btn-default"
+                            <a target="blank" class="btn btn-default"
                                 href="https://www.fenril.fr/harnais-canicross/1788-inlandsis-open-back.html">Inlandsis
                                 Open-Back</a>
                         </th>
 
                         <th scope="col">
-                            <a class="btn btn-default"
+                            <a target="blank" class="btn btn-default"
                                 href="https://www.fenril.fr/harnais-canicross/325-x-back-classique.html">Inlandsis
                                 Blizzard
                                 Beast</a>
                         </th>
 
                         <th scope="col">
-                            <a class="btn btn-default"
+                            <a target="blank" class="btn btn-default"
                                 href="https://www.fenril.fr/harnais-canicross/107-harnais-canicross-zerodcshort.html">Zero
                                 DC Short</a>
                         </th>
 
                         <th scope="col">
-                            <a class="btn btn-default"
+                            <a target="blank" class="btn btn-default"
                                 href="https://www.fenril.fr/harnais-canicross/110-harnais-zerodc-faster.html">Zero DC
                                 Faster</a>
                         </th>
 
                         <th scope="col">
-                            <a class="btn btn-default"
+                            <a target="blank" class="btn btn-default"
                                 href="https://www.fenril.fr/harnais-canicross/378-x-back-sprint.html">Manmat x-back
                                 Lightweight</a>
                         </th>
 
                         <th scope="col">
-                            <a class="btn btn-default"
+                            <a target="blank" class="btn btn-default"
                                 href="https://www.fenril.fr/harnais-chien-traineau/1362-long-distance-harness-manmat.html">Manmat
                                 Long Distance</a>
                         </th>
