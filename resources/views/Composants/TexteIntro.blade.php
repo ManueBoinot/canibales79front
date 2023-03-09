@@ -69,7 +69,7 @@
             </div>
             <div class="col-12 col-sm-6">
                 <a href="/nous-rejoindre"><button type="button" class="btn text-white inscription"
-                        style="background-color: rgb(255,0,0)">PRÉ-INSCRIPTION</button></a>
+                        style="background-color: rgb(255,0,0)">CONTACT</button></a>
             </div>
         </div>
     </div>

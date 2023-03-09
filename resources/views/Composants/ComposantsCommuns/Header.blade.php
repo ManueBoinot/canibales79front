@@ -122,7 +122,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                LE CLUB
+                                INFOS PRATIQUES ET INSCRIPTION
                             </a>
                             <ul class="dropdown-menu text-bg-dark">
                                 <li><a class="dropdown-item" href="/le-club#asso">L'association CANIBALES
@@ -135,7 +135,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item text-uppercase" href="/le-club#licence"><i
+                                <li><a class="dropdown-item text-uppercase" href="/nous-rejoindre"><i
                                             class="fa-solid fa-star me-2"></i>Rejoindre le
                                         club</a></li>
                             </ul>

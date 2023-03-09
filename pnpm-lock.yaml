@@ -4,6 +4,7 @@ specifiers:
   '@popperjs/core': ^2.11.6
   axios: ^1.3.4
   bootstrap: ^5.2.3
+  bootstrap-icons: ^1.10.3
   laravel-vite-plugin: ^0.7.4
   lodash: ^4.17.21
   postcss: ^8.4.21
@@ -12,6 +13,7 @@ specifiers:
   vue-cli: ^2.9.6
 
 dependencies:
+  bootstrap-icons: 1.10.3
   vue-cli: 2.9.6_lodash@4.17.21
 
 devDependencies:
@@ -377,6 +379,10 @@ packages:
 
   /bluebird/3.7.2:
     resolution: {integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==}
+    dev: false
+
+  /bootstrap-icons/1.10.3:
+    resolution: {integrity: sha512-7Qvj0j0idEm/DdX9Q0CpxAnJYqBCFCiUI6qzSPYfERMcokVuV9Mdm/AJiVZI8+Gawe4h/l6zFcOzvV7oXCZArw==}
     dev: false
 
   /bootstrap/5.2.3_@popperjs+core@2.11.6:

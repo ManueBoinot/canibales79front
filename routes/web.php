@@ -24,6 +24,8 @@ Route::view('/la-federation','Pages.LaFederation');
 Route::view('/le-club', 'Pages.LeClub');
 Route::view('/le-materiel','Pages.LeMateriel');
 Route::view('/mentions-legales','Pages.MentionsLegales');
+Route::view('/nous-rejoindre','Pages.NousRejoindre');
+Route::view('/contact','Pages.NousContacter');
 
 // Route vers le BACK OFFICE -----------------------------------
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');

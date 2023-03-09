@@ -15,6 +15,7 @@
         "vite": "^4.1.4"
     },
     "dependencies": {
+        "bootstrap-icons": "^1.10.3",
         "vue-cli": "^2.9.6"
     }
 }
