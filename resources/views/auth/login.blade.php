@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -11,6 +11,7 @@
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 
+                            {{-- Email --}}
                             <div class="row mb-3">
                                 <label for="email"
                                     class="col-md-4 col-form-label text-md-end">{{ __('Email') }}</label>
@@ -28,6 +29,7 @@
                                 </div>
                             </div>
 
+                            {{-- Mot de passe --}}
                             <div class="row mb-3">
                                 <label for="password"
                                     class="col-md-4 col-form-label text-md-end">{{ __('Mot de passe') }}</label>
@@ -45,6 +47,7 @@
                                 </div>
                             </div>
 
+                            {{-- Case à cocher " se souvenir de moi " --}}
                             <div class="row mb-3">
                                 <div class="col-md-6 offset-md-4">
                                     <div class="form-check">
@@ -58,14 +61,16 @@
                                 </div>
                             </div>
 
+                            {{-- Bouton connexion --}}
                             <div class="row mb-0">
                                 <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-dark">
                                         {{ __('Connexion') }}
                                     </button>
 
+                                    {{-- Oubli mot de passe --}}
                                     @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        <a class="btn btn-link link-dark" href="{{ route('password.request') }}">
                                             {{ __('Mot de passe oublié') }}
                                         </a>
                                     @endif
@@ -73,6 +78,7 @@
                                 </div>
                             </div>
 
+                            {{-- Création de compte --}}
                             <div class="row mt-4">
                                 <div class="col-md-8 offset-md-4 d-flex align-items-center gap-3">
                                     <p class="p-0 m-0 fst-italic">Pas encore de compte ?</p>

@@ -7,6 +7,7 @@
         <div class="visually-hidden" style="margin-top: -150px; padding-top: 150px" id="club"></div>
         <h1 class="pt-5 text-center">LE CLUB</h1>
 
+        {{-- Nav page CLUB --}}
         <ul class="nav justify-content-center pb-5 gap-3">
             <li class="nav-item">
                 <a class="nav-link text-dark border border-dark" href="#asso">L'association</a>
@@ -22,10 +23,12 @@
             </li>
         </ul>
 
+        {{-- Section ASSO --}}
         <section class="mb-5 border-top">
             <div style="margin-top: -150px; padding-top: 150px" id="asso"></div>
             <h2 class="text-center fw-bold my-5">ASSOCIATION SPORTIVE CANIBALES 79</h2>
 
+            {{-- BUREAU --}}
             <div class="row mb-5">
                 <h4>LE BUREAU</h4>
                 <p>Le club des Canibales79 a été créé le 12 août 2017 et est le premier club de canicross à avoir été créé
@@ -69,6 +72,7 @@
                 </div>
             </div>
 
+            {{-- REFERENTS --}}
             <div class="row">
                 <h4>LES RÉFÉRENTS DU CLUB</h4>
                 <p>Ils servent à accompagner les différentes activités que propose le club.</p>
@@ -111,6 +115,7 @@
                     selon les disponibilités.</p>
             </div>
 
+            {{-- Lien vers haut de page --}}
             <div class="text-center">
                 <a href="#club" class="text-decoration-none text-secondary">
                     <i class="fa-solid fa-angles-up"></i> Haut de page
@@ -118,11 +123,17 @@
             </div>
         </section>
 
+        {{-- ENTRAINEMENTS ET SORTIES --}}
         <section class="mb-5 border-top">
             <div style="margin-top: -150px; padding-top: 150px" id="entrainements"></div>
             <h2 class="text-center fw-bold my-5">ENTRAÎNEMENTS ET SORTIES</h2>
 
-            <p><strong>Le mardi et le jeudi à 19h00</strong> : entraînement/sortie canicross<br>
+            <p>
+                Chez les CANIBALES 79, nous faisons des sorties et entraînements toute l'année et par tous les temps !<br>
+                Enfin, presque : nous ne sortons pas avec les chiens en cas de forte chaleur et faisons généralement une pause en juillet et août.<br>
+                <br>
+                Les horaires des sorties sont les suivants :<br>
+                <strong>Le mardi et le jeudi à 19h00</strong> : entraînement/sortie canicross<br>
                 <strong>Le samedi à 10h00</strong> : sortie canicross<br>
                 <strong>Le dimanche à 09h00</strong> : sortie canimarche<br>
                 <strong>Le dimanche à 10h00</strong> : sortie canivtt<br>
@@ -140,6 +151,7 @@
                 rythme :)
             </p>
 
+            {{-- VACCINS OBLIGATOIRES --}}
             <div class="mx-auto" style="width: 100%; max-width: 800px">
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="check-circle-fill" viewBox="0 0 16 16">
@@ -166,6 +178,7 @@
                 </div>
             </div>
 
+            {{-- Lien vers haut de page --}}
             <div class="text-center">
                 <a href="#club" class="text-decoration-none text-secondary">
                     <i class="fa-solid fa-angles-up"></i> Haut de page
@@ -173,6 +186,7 @@
             </div>
         </section>
 
+        {{-- COMPETITION --}}
         <section class="text-center mb-5 border-top">
 
             <div style="margin-top: -150px; padding-top: 150px" id="compet"></div>
@@ -191,6 +205,7 @@
                     d'information sur le trophée Chien d'Or</a>
             </p>
 
+            {{-- Calendrier COMPET --}}
             <h5 class="fw-bold">Retrouvez ci-dessous le calendrier des compétitions de la FSLC</h5>
             <a class="btn btn-outline-danger" type="button" href="https://courses.fslc-canicross.net/fr/"
                 target="blank">CALENDRIER
@@ -198,6 +213,7 @@
             </a>
         </section>
 
+        {{-- NOUS REJOINDRE --}}
         <section class="pb-5 border-top text-center">
             <div style="margin-top: -150px; padding-top: 150px" id="licence"></div>
             <div class="w-75 mx-auto">
@@ -210,7 +226,8 @@
                             style="background-color: rgb(255,0,0)">INFOS INSCRIPTION</button></a>
             </div>
 
-            <div class="text-center">
+            {{-- Lien vers haut de page --}}
+            <div class="text-center pt-5">
                 <a href="#club" class="text-decoration-none text-secondary">
                     <i class="fa-solid fa-angles-up"></i> Haut de page
                 </a>
