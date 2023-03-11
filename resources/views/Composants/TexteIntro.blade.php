@@ -68,8 +68,10 @@
                         QUESTIONS</button></a>
             </div>
             <div class="col-12 col-sm-6">
-                <a href="/nous-rejoindre"><button type="button" class="btn text-white inscription"
-                        style="background-color: rgb(255,0,0)">CONTACT</button></a>
+                
+                <a href="/contact"><button type="button" class="btn text-white contact"
+                        style="background-color: rgb(255,0,0)"><i
+                            class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
             </div>
         </div>
     </div>

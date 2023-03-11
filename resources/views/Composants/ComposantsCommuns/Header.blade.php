@@ -122,7 +122,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                LE CLUB | INFOS ET INSCRIPTION
+                                LE CLUB | INFOS PRATIQUES
                             </a>
                             <ul class="dropdown-menu text-bg-dark">
                                 <li><a class="dropdown-item" href="/le-club#asso">L'association CANIBALES
@@ -132,12 +132,8 @@
                                 <li><a class="dropdown-item" href="/le-club#compet">Compétition<i
                                             class="ms-2 fa-solid fa-trophy"></i></a>
                                 </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item text-uppercase" href="/nous-rejoindre"><i
-                                            class="fa-solid fa-star me-2"></i>Rejoindre le
-                                        club</a></li>
+                                <li><a class="dropdown-item" href="/nous-rejoindre">Licences et inscription<i
+                                            class="fa-solid fa-star ms-2"></i></a></li>
                             </ul>
                         </li>
 
@@ -151,7 +147,8 @@
                                 <li><a class="dropdown-item" href="/les-disciplines#canicross">Canicross et
                                         Canitrail<i class="ms-2 fa-solid fa-person-running"></i><i
                                             class="fa-solid fa-dog"></i></a></li>
-                                <li><a class="dropdown-item" href="/les-disciplines#canivtt">Canivtt<i class="ms-2 fa-solid fa-person-biking"></i><i
+                                <li><a class="dropdown-item" href="/les-disciplines#canivtt">Canivtt<i
+                                            class="ms-2 fa-solid fa-person-biking"></i><i
                                             class="fa-solid fa-dog"></i></a></li>
                                 <li><a class="dropdown-item" href="/les-disciplines#canimarche">Canimarche<i
                                             class="ms-2 fa-solid fa-person-walking"></i><i
@@ -176,12 +173,16 @@
                                     src="../.././assets/logos/logo_fslc.png" alt="logo FSLC" style="width: 40px"></a>
                         </li>
 
+                        <li class="nav-item border-top pt-3">
+                            <a class="nav-link text-uppercase" href="/nous-rejoindre"><i
+                                    class="fa-solid fa-star me-2"></i>Rejoindre le
+                                club</a>
+                        </li>
 
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- BANDEAU SOUS NAVBAR RESEAUX SOCIAUX -->
+        @include('Composants.BandeauReseaux')
     </header>
-
-    <!-- BANDEAU SOUS NAVBAR RESEAUX SOCIAUX -->
-    @include('Composants.BandeauReseaux')

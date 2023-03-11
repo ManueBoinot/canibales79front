@@ -3,7 +3,7 @@
 @section('content')
     <div class="text-bg-light">
         <div class="row">
-            <h1 class="text-center mb-4">MON ESPACE PERSONNEL</h1>
+            <h1 class="text-center mb-4 fw-bold">MON ESPACE PERSONNEL</h1>
         </div>
 
         {{-- INFORMATIONS ENREGISTRÉES USER --}}
@@ -64,7 +64,7 @@
         {{-- MODIFICATION D'INFORMATIONS -------------------------- --}}
         <div class="row text-center border-top">
             <div class="row">
-                <h1 class="mt-3 my-4">MODIFIER LES INFORMATIONS</h1>
+                <h1 class="mt-3 my-4 fw-bold">MODIFIER LES INFORMATIONS</h1>
             </div>
 
             <div class="col-12 col-lg-6">

@@ -22,7 +22,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 30%, rgba(255,0,0,0.9) 100%);"
                 <li class="list-item"><a href="/faq">Foire
                         aux
                         questions</a></li>
-                <li class="list-item"><a href="/nous-contacter">Contact</a>
+                <li class="list-item"><a href="/contact">Contact</a>
                 </li>
             </ul>
         </div>

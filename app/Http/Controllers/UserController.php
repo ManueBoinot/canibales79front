@@ -8,6 +8,17 @@ use App\Models\Chien;
 
 class UserController extends Controller
 {
+        /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $users = User::all();
+        return view('Pages.Admin.BackOfficeGestionUsers', ['users' => $users]);
+    }
     /**
      * Display the specified resource.
      *

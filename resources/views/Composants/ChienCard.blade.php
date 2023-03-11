@@ -2,7 +2,7 @@
 <div class="row py-3 px-xl-5 mx-auto align-items-center overflow-auto mb-5 rounded">
 
     <div class="row justify-content-center gap-3 mx-auto p-sm-4 border rounded">
-        <h2 class="text-center my-4">Coéquipier(s) à 4 pattes</h2>
+        <h2 class="text-center my-4 fw-bold">Coéquipier(s) à 4 pattes</h2>
 
         {{-- S'il n'y a pas de chien enregistré --}}
         @if (count($user->chiens) <= 0)

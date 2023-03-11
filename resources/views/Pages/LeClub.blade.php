@@ -3,9 +3,8 @@
 @section('content')
     <div class="container bg-white px-lg-5">
 
-
         <div class="visually-hidden" style="margin-top: -150px; padding-top: 150px" id="club"></div>
-        <h1 class="pt-5 text-center">LE CLUB</h1>
+        <h1 class="pt-5 text-center fw-bold">LE CLUB</h1>
 
         {{-- Nav page CLUB --}}
         <ul class="nav justify-content-center pb-5 gap-3">
@@ -24,12 +23,12 @@
         </ul>
 
         {{-- Section ASSO --}}
-        <section class="mb-5 border-top">
+        <section class="mb-3 border-top">
             <div style="margin-top: -150px; padding-top: 150px" id="asso"></div>
             <h2 class="text-center fw-bold my-5">ASSOCIATION SPORTIVE CANIBALES 79</h2>
 
             {{-- BUREAU --}}
-            <div class="row mb-5">
+            <div class="row mb-3">
                 <h4>LE BUREAU</h4>
                 <p>Le club des Canibales79 a été créé le 12 août 2017 et est le premier club de canicross à avoir été créé
                     dans les
@@ -115,44 +114,119 @@
                     selon les disponibilités.</p>
             </div>
 
+            <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
+                        style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
+            </div>
+
             {{-- Lien vers haut de page --}}
-            <div class="text-center">
+            <div class="text-end mt-5">
                 <a href="#club" class="text-decoration-none text-secondary">
-                    <i class="fa-solid fa-angles-up"></i> Haut de page
+                    <i class="fa-solid fa-angles-up"></i> <small class="fst-italic">Haut de page</small>
                 </a>
             </div>
         </section>
 
         {{-- ENTRAINEMENTS ET SORTIES --}}
-        <section class="mb-5 border-top">
+        <section class="mb-3 border-top">
             <div style="margin-top: -150px; padding-top: 150px" id="entrainements"></div>
             <h2 class="text-center fw-bold my-5">ENTRAÎNEMENTS ET SORTIES</h2>
 
-            <p>
-                Chez les CANIBALES 79, nous faisons des sorties et entraînements toute l'année et par tous les temps !<br>
-                Enfin, presque : nous ne sortons pas avec les chiens en cas de forte chaleur et faisons généralement une pause en juillet et août.<br>
-                <br>
-                Les horaires des sorties sont les suivants :<br>
-                <strong>Le mardi et le jeudi à 19h00</strong> : entraînement/sortie canicross<br>
-                <strong>Le samedi à 10h00</strong> : sortie canicross<br>
-                <strong>Le dimanche à 09h00</strong> : sortie canimarche<br>
-                <strong>Le dimanche à 10h00</strong> : sortie canivtt<br>
-                Lorsque les températures commencent à monter, l'heure des sorties du matin est adaptée en fonction de la
-                méteo.<br>
-                <br>
-                En semaine nous nous séparons en deux groupes de canicross en fonction de l'objectif visé :<br>
-                - <strong>un groupe " entraînement "</strong> qui va travailler en fractionné<br>
-                - <strong>un groupe " sortie "</strong> pour le plaisir<br>
-                Les séances de fractionné permettent au maître et à son chien de progresser, tout en gardant un esprit
-                ludique et en veillant à ce que le plaisir du chien reste intact.<br>
-                Les référents peuvent proposer des petits ateliers de quelques minutes lors de l’entraînement
-                pour les intéressés (travail de dépassements, départs, côtes, descentes, etc.).<br>
-                Des <strong>groupes d’allure</strong> peuvent également être formés afin que chacun puisse aller à son
-                rythme :)
-            </p>
+            <div class="row mx-auto text-center mb-4">
+                <div class="col">
+                    <img class="m-2" src="../assets/photos/canicross-montage-01.jpeg"
+                        alt="en course, du point de vue de l'humain" width="250px"
+                        style="border-radius: 10%; max-width: 50vw">
+                </div>
+                <div class="col">
+                    <img class="m-2" src="../assets/photos/photo_entrainement.jpg" alt="les canibales 79 font du gainage"
+                        width="250px" style="border-radius: 10%; max-width: 50vw">
+                </div>
+                <div class="col">
+                    <img class="m-2" src="../assets/photos/photo_entrainement_pluie.jpg"
+                        alt="les canibales 79 en sortie même sous la pluie" width="250px"
+                        style="border-radius: 10%; max-width: 50vw">
+                </div>
+                <p class="py-3">
+                    Chez les CANIBALES 79, nous faisons des sorties et entraînements toute l'année et par tous les temps
+                    !<br>
+                    Enfin, presque : nous ne sortons pas avec les chiens en cas de forte chaleur et faisons généralement une
+                    pause en juillet et août.</p>
+            </div>
+
+            {{-- Horaires --}}
+            <div class="row mb-5 text-center">
+                <h4>HORAIRES DES ENTRAÎNEMENTS</h4>
+                <div class="col-12 col-md-6 mx-auto">
+                    <table class="table table-striped table-secondary">
+                        <thead>
+                            <tr>
+                                <th scope="col">Jour</th>
+                                <th scope="col">Heure</th>
+                                <th scope="col">Discipline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MARDI</td>
+                                <td>19h00</td>
+                                <td>CANICROSS</td>
+                            </tr>
+                            <tr>
+                                <td>JEUDI</td>
+                                <td>19h00</td>
+                                <td>CANICROSS</td>
+                            </tr>
+                            <tr>
+                                <td>SAMEDI</td>
+                                <td>10h00</td>
+                                <td>CANICROSS</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="p-4">DIMANCHE</td>
+                                <td>09h00</td>
+                                <td>CANIMARCHE</td>
+                            </tr>
+                            <tr>
+                                <td>10h00</td>
+                                <td>CANIVTT</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <small class="fst-italic">
+                    NB : Lorsque les températures commencent à monter, l'heure des sorties du matin est adaptée en fonction
+                    de la
+                    méteo.
+                </small>
+            </div>
+
+            <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
+                <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+            </a></div>
+
+            {{-- Types de sorties --}}
+            <div class="row">
+                <h4>TYPES D'ENTRAINEMENTS</h4>
+                <p>
+                    En semaine, nous nous répartissons en deux groupes en fonction de l'objectif visé :</p>
+                <p>
+                    - <strong>un groupe " entraînement "</strong> qui va effectuer des exercices de perfectionnement
+                    (fractionné par exemple)<br>
+                    - <strong>un groupe " sortie tranquille "</strong> pour se faire plaisir sans trop de difficulté</p>
+                <p>
+                    Les séances de fractionné permettent au maître et à son chien de progresser, tout en gardant un esprit
+                    ludique et en veillant à ce que le plaisir du chien reste intact.</p>
+                <p>
+                    Les référents peuvent proposer des petits ateliers de quelques minutes lors de l’entraînement
+                    pour les intéressés (travail de dépassements, départs, côtes, descentes, etc.).</p>
+                <p>
+                    Des <strong>groupes d’allure</strong> peuvent également être formés afin que chacun puisse aller à son
+                    rythme :)
+                </p>
+            </div>
 
             {{-- VACCINS OBLIGATOIRES --}}
-            <div class="mx-auto" style="width: 100%; max-width: 800px">
+            <div class="mx-auto" style="width: 100%; max-width: 600px">
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="check-circle-fill" viewBox="0 0 16 16">
                         <path
@@ -172,25 +246,39 @@
                         <use xlink:href="#exclamation-triangle-fill" />
                     </svg>
                     <div>
-                        Les chiens doivent être à jour de leurs vaccins pour pouvoir participer à tout entraînement,
+                        <strong>Les chiens doivent être à jour de leurs vaccins</strong> pour pouvoir participer à tout
+                        entraînement,
                         sortie ou compétition sous la responsabilité des CANIBALES 79.
                     </div>
                 </div>
             </div>
 
+            <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
+                        style="background-color: rgb(255,0,0)"><i
+                            class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
+            </div>
+
             {{-- Lien vers haut de page --}}
-            <div class="text-center">
+            <div class="text-end mt-5">
                 <a href="#club" class="text-decoration-none text-secondary">
-                    <i class="fa-solid fa-angles-up"></i> Haut de page
+                    <i class="fa-solid fa-angles-up"></i> <small class="fst-italic">Haut de page</small>
                 </a>
             </div>
         </section>
 
         {{-- COMPETITION --}}
-        <section class="text-center mb-5 border-top">
+        <section class="text-center mb-3 border-top">
 
             <div style="margin-top: -150px; padding-top: 150px" id="compet"></div>
-            <h2 class="text-center fw-bold my-5">COMPÉTITION</h2>
+            <h2 class="text-center fw-bold mt-5">COMPÉTITION</h2>
+
+            {{-- Logos compet --}}
+            <div class="d-flex justify-content-center gap-5 my-4">
+                <img src="../assets/logos/logo_fslc.png" alt="logo fslc" width="100px" style="border-radius: 100%">
+                <img src="../assets/logos/chien-or.jpg" alt="logo trophée chien d'or" width="100px"
+                    style="border-radius: 100%">
+            </div>
+
             <p class="text-start mb-5">Les CANIBALES 79 étant adhérents de la Fédération des Sports et Loisirs Canins,
                 toutes les
                 compétitions de la FSLC sont accessibles à nos licenciés.<br>
@@ -201,35 +289,55 @@
                 Le trophée Chien d'Or est un classement national de tous les licenciés affiliés à la FSLC, basé sur leurs 5
                 meilleurs résultats de la saison sur les courses concernées par ce trophée.<br>
                 <i class="fa-regular fa-hand-pointer"></i> <a class="link-secondary"
-                    href="https://www.fslc-canicross.net/wp-content/uploads/2021/05/REG-03.C02-Mode-demploi-Chien-dOr.pdf">Plus
+                    href="https://www.fslc-canicross.net/wp-content/uploads/2021/05/REG-03.C02-Mode-demploi-Chien-dOr.pdf"
+                    target="blank">Plus
                     d'information sur le trophée Chien d'Or</a>
             </p>
 
             {{-- Calendrier COMPET --}}
-            <h5 class="fw-bold">Retrouvez ci-dessous le calendrier des compétitions de la FSLC</h5>
+            <h5 class="fw-bold" style="color: rgb(230, 0, 0)">Retrouvez ci-dessous le calendrier des compétitions de la FSLC</h5>
             <a class="btn btn-outline-danger" type="button" href="https://courses.fslc-canicross.net/fr/"
                 target="blank">CALENDRIER
                 DES COMPÉTITIONS FSLC
             </a>
+
+            {{-- Lien vers haut de page --}}
+            <div class="text-end pt-5">
+                <a href="#club" class="text-decoration-none text-secondary">
+                    <i class="fa-solid fa-angles-up"></i> <small class="fst-italic">Haut de page</small>
+                </a>
+            </div>
         </section>
 
         {{-- NOUS REJOINDRE --}}
         <section class="pb-5 border-top text-center">
             <div style="margin-top: -150px; padding-top: 150px" id="licence"></div>
             <div class="w-75 mx-auto">
-                <h2 class="fw-bold my-5">NOUS REJOINDRE</h2>
-                <p>Tu veux découvrir nos disciplines ou tu les pratiques déjà, et tu souhaites venir faire une séance
-                    d'essai
-                    ?<br>
+
+                {{-- Image club plage --}}
+                <h2 class="fw-bold mt-5">NOUS REJOINDRE</h2>
+                <img class="img-fluid" src="../assets/photos/club-plage.jpg" alt="les canibales79 sur la plage"
+                    style="max-width: 100%" width="700px">
+
+                {{-- Invitation à nous rejoindre --}}
+                <p class="pt-5">Tu veux découvrir nos disciplines ou tu les pratiques déjà, et tu souhaites venir faire
+                    une <strong>séance
+                        d'essai</strong>
+                    ?</p>
+                <p>
                     Les infos sur nos licences et comment s'inscrire, c'est par ici :
-                    <a href="/nous-rejoindre"><button type="button" class="btn text-white inscription"
-                            style="background-color: rgb(255,0,0)">INFOS INSCRIPTION</button></a>
+                    <a href="/nous-rejoindre"><button type="button" class="btn text-white inscription fw-bold"
+                            style="background-color: rgb(255,0,0)">INFOS ET TARIFS</button></a>
             </div>
 
+            <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
+                <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+            </a></div>
+
             {{-- Lien vers haut de page --}}
-            <div class="text-center pt-5">
+            <div class="text-end pt-5">
                 <a href="#club" class="text-decoration-none text-secondary">
-                    <i class="fa-solid fa-angles-up"></i> Haut de page
+                    <i class="fa-solid fa-angles-up"></i> <small class="fst-italic">Haut de page</small>
                 </a>
             </div>
         </section>

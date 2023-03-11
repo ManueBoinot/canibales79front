@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container min-vh-100 p-3 p-lg-4 text-bg-light mx-auto">
-        <h2 class="my-4 text-center">MODIFIER MES INFORMATIONS</h2>
+        <h2 class="my-4 text-center fw-bold">MODIFIER MES INFORMATIONS</h2>
 
 
         {{-- MODIFICATION D'INFORMATIONS PERSONNELLES -------------------------- --}}

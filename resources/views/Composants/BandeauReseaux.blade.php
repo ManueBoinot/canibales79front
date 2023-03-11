@@ -9,6 +9,6 @@
     <a href="https://www.instagram.com/canibales_79/" class="text-white" style="font-size: 40px"><i
             class="fa-brands fa-square-instagram"></i>
     </a>
-    <a href="/nous-contacter" class="text-white" style="font-size: 38px"><i class="fa-solid fa-envelope"></i>
+    <a href="/contact" class="text-white" style="font-size: 38px"><i class="fa-solid fa-envelope"></i>
     </a>
 </section>

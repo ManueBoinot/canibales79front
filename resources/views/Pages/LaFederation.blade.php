@@ -5,7 +5,7 @@
         <div class="row mx-auto">
 
 
-            <h1 class="py-5 text-center">LA FÉDÉRATION DES SPORTS ET LOISIRS CANINS</h1>
+            <h1 class="py-5 text-center fw-bold">LA FÉDÉRATION DES SPORTS ET LOISIRS CANINS</h1>
 
             <div class="row text-center">
                 <div class="video-fslc">
@@ -43,6 +43,10 @@
                     La <strong>réglementation</strong> appliquée par les CANIBALES 79 est celle définie par la FSLC, dont vous trouverez tous les détails <a class="link-secondary fw-bold" href="https://www.fslc-canicross.net/espace-reglementation/"
                        >ICI</a>.
                 </p>
+
+                <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
+                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                </a></div>
             </div>
 
 

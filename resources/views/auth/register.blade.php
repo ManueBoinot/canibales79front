@@ -100,7 +100,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
-                                                <div class="modal-body overflow-scroll text-center">
+                                                <div class="modal-body overflow-auto text-center">
                                                     <img src="../assets/categories-fslc.png" style="width: fit-content"
                                                         alt="infos sur les catégories d'âge en sport">
                                                 </div>

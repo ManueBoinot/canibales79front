@@ -26,14 +26,17 @@ Route::view('/le-materiel','Pages.LeMateriel');
 Route::view('/mentions-legales','Pages.MentionsLegales');
 Route::view('/nous-rejoindre','Pages.NousRejoindre');
 Route::view('/contact','Pages.NousContacter');
+Route::view('/les-partenaires','Pages.LesPartenaires');
+Route::view('/faq','Pages.FAQ');
 
 // Route vers le BACK OFFICE -----------------------------------
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
 
 // Route USER pour modifier le mot de passe -----------------------------------
-Route::put('/user/modif-password/{user}', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
+Route::put('/user/{user}/modif-password', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
 
 // ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
 Route::resource('/users', App\Http\Controllers\UserController::class);
 Route::resource('/chiens', App\Http\Controllers\ChienController::class);
+Route::resource('/faq', App\Http\Controllers\FAQController::class);
 

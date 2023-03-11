@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container bg-white px-lg-5">
-        <h1 class="py-5 text-center">LE MATÉRIEL</h1>
+        <h1 class="py-5 text-center fw-bold">LE MATÉRIEL</h1>
 
         {{-- Intro sur FENRIL --}}
         <div class="row mb-5">
@@ -16,7 +16,8 @@
             <div class="row mb-5 mt-5">
                 <div class="col-auto">
                     <figure>
-                        <a target="blank" href="https://www.fenril.fr/kit-canicross/1438-kit-canicross-inlandsis-3760264640080.html"
+                        <a target="blank"
+                            href="https://www.fenril.fr/kit-canicross/1438-kit-canicross-inlandsis-3760264640080.html"
                             target="blank"><img src="../assets/photos/materiel/kit-canicross-inlandsis.jpg"
                                 alt="kit complet canicross" title="Kit complet CANICROSS de Inlandsis"></a>
                         <figcaption class="fst-italic text-secondary"><small>Le kit complet Canicross de Inlandsis</small>
@@ -46,9 +47,12 @@
                         pouvons
                         vous
                         en prêter sur demande).<br>
-                        Il ne faut pas non plus négliger le choix de ses <strong class="text-decoration-underline">chaussures</strong> !<br>
+                        Il ne faut pas non plus négliger le choix de ses <strong
+                            class="text-decoration-underline">chaussures</strong> !<br>
                         Et pour cela, nous vous invitons à rencontrer Yannick à son magasin <strong><a
-                        class="link-secondary" href="https://foulees.com/-niort-" target="blank">FOUL&ES</a></strong>, il vous donnera les meilleurs conseils pour trouver votre paire idéale.
+                                class="link-secondary" href="https://foulees.com/-niort-"
+                                target="blank">FOUL&ES</a></strong>, il vous donnera les meilleurs conseils pour trouver
+                        votre paire idéale.
                     </p>
                     <p>Enfin, <strong>pour relier chien et humain on utilise <span class="text-decoration-underline">une
                                 laisse à amortisseur</span></strong> qui
@@ -61,7 +65,8 @@
             {{-- Matériel CANIVTT --}}
             <div class="row mt-3">
                 <div class="col-auto">
-                    <figure><a target="blank" href="https://www.fenril.fr/kits-cani-vtt/1425-kit-canivtt-inlandsis.html" target="blank">
+                    <figure><a target="blank" href="https://www.fenril.fr/kits-cani-vtt/1425-kit-canivtt-inlandsis.html"
+                            target="blank">
                             <img src="../assets/photos/materiel/kit-canivtt-inlandsis.jpg" alt="kit complet canivtt"
                                 title="Kit complet CANIVTT de Inlandsis"></a>
                         <figcaption class="fst-italic text-secondary"><small>Le kit complet CaniVTT de Inlandsis</small>
@@ -89,13 +94,23 @@
                         supplémentaire en cas de brusque changement de direction du chien.</p>
                 </div>
             </div>
+
+            <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
+                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                </a></div>
+
+
+            <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
+                        style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
+            </div>
         </div>
 
         {{-- CONSEILS SUR CHOIX DE HARNAIS PAR FENRIL --}}
         {{-- Harnais X-BACK --}}
         <div class="row mb-5 border-top pt-5">
             <h3 class="fw-bold text-center mb-4">CHOISIR LE BON HARNAIS POUR SON CHIEN</h3>
-            <h5 class="text-center">Vous trouverez ci-dessous les conseils de notre partenaire <strong><a target="blank" class="link-secondary" href="https://www.fenril.fr/">FENRIL</a></strong> pour vous aider à choisir
+            <h5 class="text-center">Vous trouverez ci-dessous les conseils de notre partenaire <strong><a target="blank"
+                        class="link-secondary" href="https://www.fenril.fr/">FENRIL</a></strong> pour vous aider à choisir
                 le meilleur harnais pour votre chien.<br>
             </h5>
         </div>
@@ -106,7 +121,8 @@
                 <p>Dénommés ainsi en raison du X que forment les sangles sur le dos du chien, les harnais x-back sont le
                     type de
                     harnais le plus éprouvé et le plus populaire.</p>
-                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank" class="link-dark"
+                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank"
+                        class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/1303-harnais-polar-quest.html">Inlandsis
                         Polar
                         Quest</a>, <a target="blank" class="link-dark"
@@ -143,7 +159,8 @@
         <div class="row mb-5 border-bottom">
             <div class="col">
                 <h5 class="fw-bold" style="color:#e70000">LES HARNAIS COURTS</h5>
-                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank" class="link-dark"
+                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank"
+                        class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/107-harnais-canicross-zerodcshort.html">DC
                         Short</a>, <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-chien-traineau/1362-long-distance-harness-manmat.html">Manmat
@@ -173,7 +190,8 @@
         <div class="row mb-5 border-bottom">
             <div class="col">
                 <h5 class="fw-bold" style="color:#e70000;">LES HARNAIS MULTI-RÉGLAGES</h5>
-                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank" class="link-dark"
+                <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank"
+                        class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/1270-omnijore-ruffwear-harnais.html">Ruffwear
                         Omnijore</a>, <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/876-confort-harnais-canicross.html">Difac Confort</a>
@@ -225,7 +243,7 @@
             </ul>
         </div>
 
-        <div class="row mb-5 border-top pt-3 overflow-scroll">
+        <div class="row mb-5 border-top pt-3 overflow-auto">
             <h5 class="fw-bold text-center mb-4" style="color:#e70000;">Tableau de synthèse avec les modèles de harnais
                 les
                 plus populaires</h5>
@@ -406,8 +424,12 @@
             </table>
         </div>
 
+        <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
+                    style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
+        </div>
+
         {{-- Crédits --}}
-        <div class="row pb-5 text-center">
+        <div class="row pb-5 text-end">
             <small class="fst-italic text-secondary">(Source : <a
                     href="https://www.fenril.fr/content/59-choix-harnais-canicross"
                     class="link-secondary">https://www.fenril.fr/content/59-choix-harnais-canicross)</a>
