@@ -26,7 +26,7 @@
 
                 {{-- bouton SUBMIT --}}
                 <div class="text-center">
-                    <button type="submit" class="btn btn-success my-3">Valider la mise à jour des informations</button>
+                    <button type="submit" class="btn btn-success my-3">Valider la mise à jour de la question/réponse</button>
                 </div>
         </div>
     </div>

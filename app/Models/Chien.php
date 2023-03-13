@@ -32,4 +32,13 @@ class Chien extends Model
         $interval = $auj->diff($anniv);
         return $interval->format('%y ans, %m mois');
     }
+
+    public function afficherVaccins() {
+        $vaccins = 'uploads\\vaccinsChiens\\1677334031.jpg';
+        $file_descriptor = fopen($vaccins, 'r');
+        $size = filesize($vaccins);
+        $data = fread($file_descriptor, $size);
+        return $data;
+    }
+
 }

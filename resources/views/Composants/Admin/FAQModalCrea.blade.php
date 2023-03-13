@@ -1,11 +1,11 @@
 <div class="text-center">
     <!-- Button trigger modal CREATE QR -->
-    <button type="button" class="btn btn-info my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <button type="button" class="btn btn-info btn-lg my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Ajouter une QUESTION / RÉPONSE
     </button>
 
     <!-- Modal -->
-    <div class="modal fade text-dark" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal modal-xl fade text-dark" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

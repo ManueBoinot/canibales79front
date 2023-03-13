@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Chien;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -16,8 +17,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        return view('Pages.Admin.BackOfficeGestionUsers', ['users' => $users]);
+        $users = DB::table('users')
+        ->orderBy('nom', 'asc')
+        ->get();
+        return view('Pages.Admin.BackOfficeIndex', ['users' => $users]);
     }
     /**
      * Display the specified resource.
@@ -84,15 +87,17 @@ class UserController extends Controller
         return redirect()->route('users.show', $user)->with('message', 'Modifications effectuées');
     }
 
+    // ___________________________________________________________________________
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy($id)
     {
+        $user = User::find($id);
         $user->delete();
-        return redirect()->route('/home')->with('message', 'Compte utilisateur supprimé');
+        return redirect()->route('admin.index')->with('status', 'L\'utilisateur a bien été supprimé');
     }
 }
