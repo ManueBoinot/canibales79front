@@ -60,9 +60,6 @@ class RegisterController extends Controller
             'code_postal' => ['required', 'string', 'max:5'],
             'commune' => ['required', 'string', 'max:40'],
             'tel' => ['required', 'string', 'max:14'],
-            'att_resp_civ' => ['nullable', 'file', 'mimes:jpeg,jpg,png,gif,svg,pdf', 'max:2048'],
-            'certif_medic' => ['nullable', 'file', 'mimes:jpeg,jpg,png,gif,svg,pdf', 'max:2048'],
-            'autoris_parent' => ['nullable', 'file', 'mimes:jpeg,jpg,png,gif,svg,pdf', 'max:2048'],
             'password' => ['required', 'string', 'confirmed', Password::min(8)->mixedCase()->numbers()->symbols()]
         ]);
     }

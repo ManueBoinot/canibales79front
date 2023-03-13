@@ -31,10 +31,7 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/Helpers/UploadVaccinsChiens.php",
-            "app/Helpers/UploadAutorisParent.php",
-            "app/Helpers/UploadCertifMedic.php",
-            "app/Helpers/UploadAttRespCiv.php"
+            "app/Helpers/UploadVaccinsChiens.php"
         ]
     },
     "autoload-dev": {
@@ -42,10 +39,7 @@
             "Tests\\": "tests/"
         },
         "files": [
-            "app/Helpers/UploadVaccinsChiens.php",
-            "app/Helpers/UploadAutorisParent.php",
-            "app/Helpers/UploadCertifMedic.php",
-            "app/Helpers/UploadAttRespCiv.php"
+            "app/Helpers/UploadVaccinsChiens.php"
         ]
     },
     "scripts": {

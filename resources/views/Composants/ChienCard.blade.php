@@ -7,8 +7,8 @@
         {{-- S'il n'y a pas de chien enregistré --}}
         @if (count($user->chiens) <= 0)
             <h5 class="text-center text-white">Tu n'as pas encore enregistré de chien !</h5>
-            
-        @else{{-- S'il y a un/des chiens enregistrés --}}
+
+            @else{{-- S'il y a un/des chiens enregistrés --}}
             @foreach ($user->chiens as $chien)
                 <div class="card col-12 col-md-5 text-bg-light">
                     <div class="card-body">
@@ -29,7 +29,21 @@
                         <p class="card-text">Né(e) le {{ date('d-m-Y', strtotime($chien->date_naiss)) }}
                             <span class="fst-italic"> ({{ $chien->age($chien) }}) </span>
                         </p>
-                        <p></p>
+
+                        @isset($chien->vaccins)
+                            <p>
+                                <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Carnet de vaccination
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <img src="{{ '../../uploads/vaccinsChiens/' . $chien->vaccins }}"
+                                        alt="Justificatif des vaccins">
+                                </div>
+                            </div>
+                        @endisset
 
                         {{-- Si chien catégorie 2 --}}
                         @if ($chien->categorie_2 == true)

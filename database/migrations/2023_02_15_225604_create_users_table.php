@@ -28,9 +28,6 @@ return new class extends Migration
             $table->string('commune');
             $table->string('tel');
             $table->string('email')->unique();
-            $table->string('certif_medic')->nullable();
-            $table->string('autoris_parent')->nullable();
-            $table->string('att_resp_civ')->nullable();
             $table->timestamp('email_verified_at')->default(now());
             $table->string('password');
             $table->rememberToken();

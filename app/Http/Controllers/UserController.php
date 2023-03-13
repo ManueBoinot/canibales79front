@@ -63,10 +63,7 @@ class UserController extends Controller
             'adr_ligne_2' => ['string', 'max:40'],
             'code_postal' => ['required', 'string', 'max:5'],
             'commune' => ['required', 'string', 'max:40'],
-            'tel' => ['required', 'string', 'max:20'],
-            'att_resp_civ' => ['nullable', 'image', 'mimes:jpeg,jpg,png,gif,svg', 'max:2048'],
-            'certif_medic' => ['nullable', 'image', 'mimes:jpeg,jpg,png,gif,svg', 'max:2048'],
-            'autoris_parent' => ['nullable', 'image', 'mimes:jpeg,jpg,png,gif,svg', 'max:2048']
+            'tel' => ['required', 'string', 'max:20']
         ]);
 
         $user->prenom = $request->input('prenom');
@@ -78,10 +75,6 @@ class UserController extends Controller
         $user->code_postal = $request->input('code_postal');
         $user->commune = $request->input('commune');
         $user->tel = $request->input('tel');
-
-        $user->att_resp_civ = uploadAttRespCiv($request['att_resp_civ']);
-        // $user->certif_medic = isset($request['certif_medic']) ? uploadCertifMedic($request['certif_medic']) : null;
-        // $user->autoris_parent = isset($request['autoris_parent']) ? uploadAutorisParent($request['autoris_parent']) : null;
         $user->save();
 
         return redirect()->route('users.show', $user)->with('message', 'Modifications effectuées');
