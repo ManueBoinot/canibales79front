@@ -5,11 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Chien;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-        /**
+    public function __construct()
+    {
+        return $this->middleware('auth');
+    }
+    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -18,8 +23,8 @@ class UserController extends Controller
     public function index()
     {
         $users = DB::table('users')
-        ->orderBy('nom', 'asc')
-        ->get();
+            ->orderBy('nom', 'asc')
+            ->get();
         return view('Pages.Admin.BackOfficeIndex', ['users' => $users]);
     }
     /**
@@ -30,6 +35,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
+        $this->authorize('view', $user);
         $user->load('role', 'bureau', 'licence', 'chiens');
         return view('Pages.Users.mon-compte', ['user' => $user]);
     }
@@ -42,6 +48,8 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+        $this->authorize('edit');
+
         return view('Pages.Users.modifier-infos', ['user' => $user]);
     }
 
@@ -54,6 +62,8 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
+        $this->authorize('update', $user);
+
         $request->validate([
             'prenom' => ['required', 'string', 'max:40'],
             'nom' => ['required', 'string', 'max:40'],
@@ -87,8 +97,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id, $user)
     {
+        $this->authorize('delete', $user);
         $user = User::find($id);
         $user->delete();
         return redirect()->route('admin.index')->with('status', 'L\'utilisateur a bien été supprimé');

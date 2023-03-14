@@ -17,6 +17,24 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
+            'role_id' => 2,
+            'categorie' => 'Vétéran 1',
+            'licence_id' => random_int(1, 4),
+            'nom' => 'user',
+            'prenom' => 'user',
+            'date_naiss' => '1990-08-20',
+            'adr_ligne_1' => fake()->streetAddress(),
+            'adr_ligne_2' => '-',
+            'code_postal' => fake()->postcode(),
+            'commune' => fake()->city(),
+            'tel' => fake()->phoneNumber(),
+            'email' => 'user@user.fr',
+            'email_verified_at' => now(),
+            'password' => Hash::make("User123!"),
+            'remember_token' => Str::random(10)
+        ]);
+
+        User::create([
             'role_id' => 1,
             'bureau_membre_id' => 1,
             'categorie' => 'Vétéran 1',
@@ -54,7 +72,7 @@ class UserSeeder extends Seeder
         ]);
 
         User::create([
-            'role_id' =>17,
+            'role_id' =>1,
             'bureau_membre_id' => 4,
             'categorie' => 'Vétéran 1',
             'licence_id' => random_int(1, 4),

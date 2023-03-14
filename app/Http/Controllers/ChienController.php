@@ -6,22 +6,16 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Chien;
+use Illuminate\Support\Facades\Gate;
 
 class ChienController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function __construct()
     {
-        $userId = Auth::user()->id; // récupération de l'id du user connecté
-        $user = User::find($userId); // récupération du user en base de données avec la fonction find()
-        $user->load('chiens'); // chargement de ses chiens avec un eager loading
-        return view('Pages.Users.mon-compte', ['user' => $user]); // on retourne la vue pour afficher les chiens en y injectant le user
+        return $this->middleware('auth');
     }
 
+    // ___________________________________________________________________________
     /**
      * Display the specified resource.
      *
@@ -30,6 +24,10 @@ class ChienController extends Controller
      */
     public function show(Chien $chien)
     {
+        if (!Gate::allows('view', $chien)) {
+            abort(403);
+        }
+
         $user = Auth::user();
         $chien->load('users');
         return view('Pages.Users.mon-compte', ['chien' => $chien, 'user' => $user]);
@@ -42,8 +40,12 @@ class ChienController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Chien $chien)
     {
+        if (!Gate::allows('create', $chien)) {
+            abort(403);
+        }
+
         $user = Auth::user();
 
         $request->validate([
@@ -81,6 +83,9 @@ class ChienController extends Controller
      */
     public function edit(Chien $chien)
     {
+        if (!Gate::allows('edit', $chien)) {
+            abort(403);
+        }
         return view('Pages.Chiens.ChienModif', ['chien' => $chien]);
     }
 
@@ -94,6 +99,11 @@ class ChienController extends Controller
      */
     public function update(Request $request, Chien $chien)
     {
+
+        if (!Gate::allows('update', $chien)) {
+            abort(403);
+        }
+
         $user = Auth::user();
 
         $request->validate([
@@ -125,8 +135,12 @@ class ChienController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id, Chien $chien)
     {
+        if (!Gate::allows('delete', $chien)) {
+            abort(403);
+        }
+
         $user = Auth::user();
         $chien = Chien::find($id);
         $chien->delete();
