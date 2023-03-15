@@ -13,15 +13,14 @@
                 <div class="card col-12 col-md-5 text-bg-light">
                     <div class="card-body">
                         {{-- Boutons MODIF et SUPPRESSION chien --}}
-                        <div class="text-end d-flex justify-content-end gap-1">
-                            <form method="post" action="{{ route('chiens.edit', $chien) }}">
-                                @method('get')
-                                @csrf
-                                <input type="hidden" name="chien_id" value="{{ $chien->id }}">
-                                <button class="btn btn-outline-dark"><i
-                                        class="fa-regular fa-pen-to-square"></i></button>
-                            </form>
-                        </div>
+                            <div class="text-end d-flex justify-content-end gap-1">
+                                <a href="{{ route('chiens.edit', $chien) }}">
+                                    @method('get')
+                                    @csrf
+                                    <button class="btn btn-outline-dark"><i
+                                            class="fa-regular fa-pen-to-square"></i></button>
+                                </a>
+                            </div>
 
                         {{-- Infos du chien --}}
                         <h5 class="card-title fw-bold">{{ $chien->nom }}</h5>
@@ -58,6 +57,6 @@
                 </div>
             @endforeach
         @endif
-        @include('Composants.ChienModalCrea')
+            @include('Composants.ChienModalCrea')
     </div>
 </div>

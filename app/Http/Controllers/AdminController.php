@@ -9,7 +9,6 @@ use App\Models\FAQ;
 class AdminController extends Controller
 {
     public function index(){
-
         $users = User::all()->sortBy('nom');
         $entrainements = Entrainement::all();
         $faqs = FAQ::all();

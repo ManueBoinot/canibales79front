@@ -1,31 +1,27 @@
-{{-- Message lorsqu'un chien a été ajouté au profil --}}
-@if (session('status'))
-    <div class="alert alert-success text-center">
-        {{ session('status') }}
-    </div>
-@endif
-
 {{-- INFORMATIONS PERSONNELLES DE L'USER --}}
 <div class="row py-3 px-xl-5 mx-auto align-items-center overflow-auto mb-5 rounded gap-3">
 
     {{-- INFOS CLUB ================ --}}
     <div class="row border rounded mx-auto p-sm-4 text-bg-light">
-        <h4 class="text-center text-uppercase mb-4 mt-2">PROFIL SPORTIF</h4>
+        <div class="d-flex justify-content-between">
+            <h4 class="text-center text-uppercase mb-4 mt-2">PROFIL SPORTIF</h4>
 
-        {{-- Boutons MODIF et SUPPRESSION user --}}
-        <div class="text-end d-flex justify-content-end gap-1">
-            <form method="post" action="{{ route('users.edit', $user) }}">
-                @method('get')
-                @csrf
-                <input type="hidden" name="user_id" value="{{ $user->id }}">
-                <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
-            </form>
+                {{-- Boutons MODIF et SUPPRESSION user --}}
+                <div class="text-end d-flex justify-content-end gap-1">
+                    <form method="post" action="{{ route('users.edit', $user) }}">
+                        @method('get')
+                        @csrf
+                        <input type="hidden" name="user_id" value="{{ $user->id }}">
+                        <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
+                    </form>
+                </div>
+
         </div>
 
         {{-- NOM USER --}}
         <div class="col-lg-6 d-flex">
             <div class="col-5">
-                <p>Nom</p>
+                <p class="text-uppercase">Nom</p>
             </div>
             <div class="col-7">
                 <p class="fw-bold">{{ $user->nom }}</p>
@@ -84,7 +80,7 @@
 
     {{-- INFOS PERSONNELLES ================ --}}
     <div class="row border rounded mx-auto p-sm-4 text-bg-light">
-        <h4 class="text-center text-uppercase mb-4 mt-2">COORDONNÉES</h4>
+        <h4 class="text-uppercase mb-4 mt-2">COORDONNÉES</h4>
 
         {{-- EMAIL USER --}}
         <div class="col-lg-6 d-flex">

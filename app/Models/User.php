@@ -78,7 +78,7 @@ class User extends Authenticatable
     // Fonction qui définit que le role_id (1) est systématiquement un Admin
     public function isAdmin()
     {
-        return $this->role_id === 1;
+        return $this->role_id == 1;
     }
 
 }

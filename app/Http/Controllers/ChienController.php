@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Chien;
-use Illuminate\Support\Facades\Gate;
 
 class ChienController extends Controller
 {
@@ -24,10 +23,6 @@ class ChienController extends Controller
      */
     public function show(Chien $chien)
     {
-        if (!Gate::allows('view', $chien)) {
-            abort(403);
-        }
-
         $user = Auth::user();
         $chien->load('users');
         return view('Pages.Users.mon-compte', ['chien' => $chien, 'user' => $user]);
@@ -42,10 +37,6 @@ class ChienController extends Controller
      */
     public function store(Request $request, Chien $chien)
     {
-        if (!Gate::allows('create', $chien)) {
-            abort(403);
-        }
-
         $user = Auth::user();
 
         $request->validate([
@@ -83,9 +74,6 @@ class ChienController extends Controller
      */
     public function edit(Chien $chien)
     {
-        if (!Gate::allows('edit', $chien)) {
-            abort(403);
-        }
         return view('Pages.Chiens.ChienModif', ['chien' => $chien]);
     }
 
@@ -99,10 +87,6 @@ class ChienController extends Controller
      */
     public function update(Request $request, Chien $chien)
     {
-
-        if (!Gate::allows('update', $chien)) {
-            abort(403);
-        }
 
         $user = Auth::user();
 
@@ -137,9 +121,6 @@ class ChienController extends Controller
      */
     public function destroy($id, Chien $chien)
     {
-        if (!Gate::allows('delete', $chien)) {
-            abort(403);
-        }
 
         $user = Auth::user();
         $chien = Chien::find($id);

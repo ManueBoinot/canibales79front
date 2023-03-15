@@ -50,9 +50,9 @@
 
                             {{-- Liens USER --------------------- --}}
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false" title="Espace personnel">
-                                    <i class="fa-regular fa-user p-2"></i>Espace personnel
+                                    <i class="fa-regular fa-user p-2"></i>ESPACE PERSONNEL
                                 </a>
                                 <ul class="dropdown-menu text-bg-dark">
                                     <li><a class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">Mes
@@ -90,7 +90,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-regular fa-user"></i>
+                                    <i class="fa-regular fa-user fs-4 me-3 fw-bold"></i>ESPACE PERSONNEL
                                 </a>
                                 <ul class="dropdown-menu text-bg-dark">
                                     {{-- Lien pour se connecter --}}
@@ -115,7 +115,7 @@
 
                         <!-- Lien vers ACCUEIL -->
                         <li class="nav-item border-top pt-3">
-                            <a class="nav-link" href="/"><i class="fa-solid fa-house"></i></a>
+                            <a class="nav-link" href="/"><i class="fa-solid fa-house me-3"></i>ACCUEIL</a>
                         </li>
 
                         <!-- Lien vers LE CLUB -->
@@ -174,7 +174,7 @@
                         </li>
 
                         <li class="nav-item border-top pt-3">
-                            <a class="nav-link text-uppercase" href="/nous-rejoindre"><i
+                            <a class="nav-link text-uppercase fw-bold" href="/nous-rejoindre"><i
                                     class="fa-solid fa-star me-2"></i>Rejoindre le
                                 club</a>
                         </li>

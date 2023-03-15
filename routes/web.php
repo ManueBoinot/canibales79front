@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Auth;
 
 // Routes vers l'accueil
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::view('/les-disciplines', 'Pages/LesDisciplines');
 Route::view('/la-federation','Pages.LaFederation');
@@ -30,10 +30,10 @@ Route::view('/les-partenaires','Pages.LesPartenaires');
 Route::view('/faq','Pages.FAQ');
 
 // Route vers le BACK OFFICE -----------------------------------
-Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index')->middleware(Admin::class);
 
 // Route USER pour modifier le mot de passe -----------------------------------
-Route::put('/user/{user}/modif-password', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
+Route::put('/users/{user}/modif-password', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
 
 // ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
 Route::resource('/users', App\Http\Controllers\UserController::class);

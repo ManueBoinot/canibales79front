@@ -4,6 +4,7 @@ namespace App\Policies;
 
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Auth\Access\Response;
 
 class UserPolicy
 {
@@ -23,7 +24,7 @@ class UserPolicy
         }
     }
 
-
+    // ____________________________________________________________________________
     /**
      * Determine whether the user can view the model.
      *
@@ -33,20 +34,12 @@ class UserPolicy
      */
     public function view(User $connected_user, User $user)
     {
-        return $connected_user->id === $user->id;
+        return $connected_user->id === $user->id
+            ? Response::allow()
+            : Response::denyWithStatus(403);
     }
 
-    /**
-     * Determine whether the user can create models.
-     *
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Auth\Access\Response|bool
-     */
-    public function create(User $connected_user, User $user)
-    {
-        return $connected_user->id === $user->id;
-    }
-
+    // ____________________________________________________________________________
     /**
      * Determine whether the user can update the model.
      *
@@ -59,6 +52,7 @@ class UserPolicy
         return $connected_user->id === $user->id;
     }
 
+    // ____________________________________________________________________________
     /**
      * Determine whether the user can update the model.
      *
@@ -71,6 +65,20 @@ class UserPolicy
         return $connected_user->id === $user->id;
     }
 
+        // ____________________________________________________________________________
+    /**
+     * Determine whether the user can update the model.
+     *
+     * @param  \App\Models\User  $user
+     * @param  \App\Models\User  $model
+     * @return \Illuminate\Auth\Access\Response|bool
+     */
+    public function updatePassword(User $connected_user, User $user)
+    {
+        return $connected_user->id === $user->id;
+    }
+
+    // ____________________________________________________________________________
     /**
      * Determine whether the user can delete the model.
      *
@@ -82,5 +90,4 @@ class UserPolicy
     {
         return $connected_user->id === $user->id;
     }
-
 }

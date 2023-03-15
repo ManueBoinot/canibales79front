@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Chien;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rules\Password;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
@@ -14,10 +14,10 @@ class UserController extends Controller
     {
         return $this->middleware('auth');
     }
+
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -27,53 +27,60 @@ class UserController extends Controller
             ->get();
         return view('Pages.Admin.BackOfficeIndex', ['users' => $users]);
     }
+
+    // ____________________________________________________________________________
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show(Request $request, User $user)
     {
-        $this->authorize('view', $user);
+        if ($request->user()->cannot('view', $user)) {
+            abort(403);
+        }
+
         $user->load('role', 'bureau', 'licence', 'chiens');
         return view('Pages.Users.mon-compte', ['user' => $user]);
     }
 
+    // ____________________________________________________________________________
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit(Request $request, User $user)
     {
-        $this->authorize('edit');
-
+        if ($request->user()->cannot('edit', $user)) {
+            abort(403);
+        }
         return view('Pages.Users.modifier-infos', ['user' => $user]);
     }
 
+    // ____________________________________________________________________________
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, User $user)
     {
-        $this->authorize('update', $user);
+
+        if ($request->user()->cannot('update', $user)) {
+            abort(403);
+        }
 
         $request->validate([
-            'prenom' => ['required', 'string', 'max:40'],
-            'nom' => ['required', 'string', 'max:40'],
-            'email' => ['required', 'string', 'email', 'max:40',],
-            'date_naiss' => ['required', 'date', 'before:today'],
-            'adr_ligne_1' => ['required', 'string', 'max:40'],
+            'prenom' => ['string', 'max:40'],
+            'nom' => ['string', 'max:40'],
+            'email' => ['string', 'email', 'max:40',],
+            'date_naiss' => ['date', 'before:today'],
+            'adr_ligne_1' => ['string', 'max:40'],
             'adr_ligne_2' => ['string', 'max:40'],
-            'code_postal' => ['required', 'string', 'max:5'],
-            'commune' => ['required', 'string', 'max:40'],
-            'tel' => ['required', 'string', 'max:20']
+            'code_postal' => ['string', 'max:6'],
+            'commune' => ['string', 'max:40'],
+            'tel' => ['string', 'max:20']
         ]);
 
         $user->prenom = $request->input('prenom');
@@ -90,6 +97,41 @@ class UserController extends Controller
         return redirect()->route('users.show', $user)->with('message', 'Modifications effectuées');
     }
 
+    // _________________________________________________________________________
+    /**
+     * Met à jour le PASSWORD
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function updatePassword(Request $request, User $user)
+    {
+
+        if ($request->user()->cannot('updatePassword', $user)) {
+            abort(403);
+        }
+
+        $this->validate($request, [
+            'new_password' => ['required', Password::min(8)->mixedCase()->numbers()->symbols()]
+        ]);
+
+        $hashedPassword = $user->password;
+        if (Hash::check($request->old_password, $hashedPassword)) {
+            if (!Hash::check($request->password_confirmation, $hashedPassword)) {
+
+                $user->password = Hash::make($request->password_confirmation);
+                $user->save();
+                session()->flash('message', 'Le mot de passe a bien été modifié');
+                return redirect()->back();
+            } else {
+                session()->flash('message', 'Le nouveau mot de passe doit être différent de l\'ancien');
+                return redirect()->back();
+            }
+        } else {
+            session()->flash('message', 'L\'ancien mot de passe est incorrect');
+            return redirect()->back();
+        }
+    }
+
     // ___________________________________________________________________________
     /**
      * Remove the specified resource from storage.
@@ -97,10 +139,12 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id, $user)
+    public function destroy(Request $request, User $user)
     {
-        $this->authorize('delete', $user);
-        $user = User::find($id);
+        if ($request->user()->cannot('delete', $user)) {
+            abort(403);
+        }
+
         $user->delete();
         return redirect()->route('admin.index')->with('status', 'L\'utilisateur a bien été supprimé');
     }
