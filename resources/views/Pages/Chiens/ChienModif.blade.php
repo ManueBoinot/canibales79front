@@ -1,6 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
+
     <div class="container min-vh-100 p-3 p-lg-5 text-bg-dark bg-black">
 
         <h2 class="text-center mb-4 fw-bold">Mettre à jour les infos de <span class="fw-bold">{{ $chien->nom }}</span> </h2>
@@ -61,4 +62,5 @@
         </form>
 
     </div>
+
 @endsection

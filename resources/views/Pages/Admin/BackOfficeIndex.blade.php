@@ -18,6 +18,8 @@
         {{-- LISTE DES QUESTIONS/REPONSES FAQ --}}
         @include('Composants.Admin.FAQList')
 
+        <a class="btn btn-danger btn-lg" href="{{ route('register') }}">{{ __('Créer un nouveau licencié') }}</a>
+
 
 
         {{-- <form method="get" action="{{ route('entrainements.index') }}">

@@ -13,12 +13,12 @@
                 <div class="card col-12 col-md-5 text-bg-light">
                     <div class="card-body">
                         {{-- Boutons MODIF et SUPPRESSION chien --}}
+
                             <div class="text-end d-flex justify-content-end gap-1">
-                                <a href="{{ route('chiens.edit', $chien) }}">
+                                <a href="{{ route('chiens.edit', $chien, $user) }}">
                                     @method('get')
                                     @csrf
-                                    <button class="btn btn-outline-dark"><i
-                                            class="fa-regular fa-pen-to-square"></i></button>
+                                    <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
                                 </a>
                             </div>
 
@@ -57,6 +57,6 @@
                 </div>
             @endforeach
         @endif
-            @include('Composants.ChienModalCrea')
+        @include('Composants.ChienModalCrea')
     </div>
 </div>

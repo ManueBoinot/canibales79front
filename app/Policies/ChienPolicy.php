@@ -2,11 +2,12 @@
 
 namespace App\Policies;
 
+use App\Models\Chien;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
 
-class UserPolicy
+class ChienPolicy
 {
     use HandlesAuthorization;
 
@@ -29,11 +30,12 @@ class UserPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
+     * @param  \App\Models\Chien  $chien
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $connected_user, User $user)
+    public function view(User $user, Chien $chien)
     {
-        return $connected_user->id === $user->id
+        return $chien->user_id === $user->id
             ? Response::allow()
             : Response::denyWithStatus(403);
     }
@@ -43,12 +45,25 @@ class UserPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\User  $model
+     * @param  \App\Models\Chien  $chien
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function edit(User $connected_user, User $user)
+    public function create(User $user)
     {
-        return $connected_user->id === $user->id
+        return true;
+    }
+
+    // ____________________________________________________________________________
+    /**
+     * Determine whether the user can update the model.
+     *
+     * @param  \App\Models\User  $user
+     * @param  \App\Models\Chien  $chien
+     * @return \Illuminate\Auth\Access\Response|bool
+     */
+    public function store(User $user, Chien $chien)
+    {
+        return $chien->user_id === $user->id
             ? Response::allow()
             : Response::denyWithStatus(403);
     }
@@ -58,14 +73,12 @@ class UserPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\User  $model
+     * @param  \App\Models\Chien  $chien
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $connected_user, User $user)
+    public function edit(User $user)
     {
-        return $connected_user->id === $user->id
-            ? Response::allow()
-            : Response::denyWithStatus(403);
+        return true;
     }
 
     // ____________________________________________________________________________
@@ -73,12 +86,12 @@ class UserPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\User  $model
+     * @param  \App\Models\Chien  $chien
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function updatePassword(User $connected_user, User $user)
+    public function update(User $user, Chien $chien)
     {
-        return $connected_user->id === $user->id
+        return $chien->user_id === $user->id
             ? Response::allow()
             : Response::denyWithStatus(403);
     }
@@ -88,12 +101,12 @@ class UserPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\User  $model
+     * @param  \App\Models\Chien  $chien
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $connected_user, User $user)
+    public function delete(User $user, Chien $chien)
     {
-        return $connected_user->id === $user->id
+        return $chien->user_id === $user->id
             ? Response::allow()
             : Response::denyWithStatus(403);
     }

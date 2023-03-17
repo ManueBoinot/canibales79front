@@ -41,7 +41,7 @@ class UserController extends Controller
         }
 
         $user->load('role', 'bureau', 'licence', 'chiens');
-        return view('Pages.Users.mon-compte', ['user' => $user]);
+        return view('pages.users.mon-compte', ['user' => $user]);
     }
 
     // ____________________________________________________________________________
@@ -55,7 +55,7 @@ class UserController extends Controller
         if ($request->user()->cannot('edit', $user)) {
             abort(403);
         }
-        return view('Pages.Users.modifier-infos', ['user' => $user]);
+        return view('pages.users.modifier-infos', ['user' => $user]);
     }
 
     // ____________________________________________________________________________
@@ -94,7 +94,7 @@ class UserController extends Controller
         $user->tel = $request->input('tel');
         $user->save();
 
-        return redirect()->route('users.show', $user)->with('message', 'Modifications effectuées');
+        return redirect()->route('user.show', $user)->with('message', 'Modifications effectuées');
     }
 
     // _________________________________________________________________________

@@ -16,7 +16,7 @@
                 <div class="modal-body">
 
                     {{-- début formulaire création CHIEN --}}
-                    <form method="post" action="{{ route('chiens.store') }}" class="text-start"
+                    <form method="post" action="{{ route('chiens.store', $chien) }}" class="text-start"
                         enctype="multipart/form-data">
                         @csrf
                         {{-- input NOM CHIEN --}}

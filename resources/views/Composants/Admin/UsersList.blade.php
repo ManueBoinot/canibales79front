@@ -2,7 +2,7 @@
     <p>
         <button class="btn btn-danger btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUser"
             aria-expanded="false" aria-controls="collapseUser">
-            Liste des utilisateurs
+            Liste des licenciés
         </button>
     </p>
     <div>

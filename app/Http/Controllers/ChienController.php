@@ -21,11 +21,11 @@ class ChienController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Chien $chien)
+    public function show(Chien $chien, User $user)
     {
         $user = Auth::user();
         $chien->load('users');
-        return view('Pages.Users.mon-compte', ['chien' => $chien, 'user' => $user]);
+        return view('pages.users.mon-compte', ['user' => $user]);
     }
 
     // ___________________________________________________________________________
@@ -35,9 +35,14 @@ class ChienController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Chien $chien)
+    public function store(Request $request, Chien $chien, User $user)
     {
+
         $user = Auth::user();
+
+        if ($request->user()->cannot('create', $chien)) {
+            abort(403);
+        }
 
         $request->validate([
             'nom' => 'required | min:2 | max:40',
@@ -62,7 +67,7 @@ class ChienController extends Controller
         $userDb = User::find($user->id);
         $userDb->save();
 
-        return redirect()->route('users.show', ['user' => $user])->with('status', $request->nom . ' a rejoint l\'équipe !');
+        return redirect()->route('user.show', ['user' => $user])->with('status', $request->nom . ' a rejoint l\'équipe !');
     }
 
     // ___________________________________________________________________________
@@ -85,10 +90,14 @@ class ChienController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Chien $chien)
+    public function update(Request $request, Chien $chien, User $user)
     {
 
         $user = Auth::user();
+
+        if ($request->user()->cannot('edit', $chien)) {
+            abort(403);
+        }
 
         $request->validate([
             'nom' => 'required | min:2 | max:40',
@@ -109,7 +118,7 @@ class ChienController extends Controller
         $chien->vaccins = isset($request['vaccins']) ? uploadVaccinsChiens($request['vaccins']) : null;
         $chien->save();
 
-        return redirect()->route('users.show', ['user' => $user])->with('status', 'Les informations concernant ' . $request->nom . ' ont bien été mises à jour.');
+        return redirect()->route('user.show', ['user' => $user])->with('status', 'Les informations concernant ' . $request->nom . ' ont bien été mises à jour.');
     }
 
     // ___________________________________________________________________________
@@ -119,12 +128,15 @@ class ChienController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id, Chien $chien)
+    public function destroy(Request $request, Chien $chien, User $user)
     {
-
         $user = Auth::user();
-        $chien = Chien::find($id);
+
+        if ($request->user()->cannot('delete', $chien)) {
+            abort(403);
+        }
+
         $chien->delete();
-        return redirect()->route('users.show', ['user' => $user])->with('status', $chien->nom . ' a bien été supprimé');
+        return redirect()->route('user.show', ['user' => $user])->with('status', 'Le chien a bien été supprimé');
     }
 }

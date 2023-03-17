@@ -18,7 +18,7 @@
                     ?<br>
                     <strong>Cette action est irréversible.</strong>
                 </p>
-                <form method="post" action="{{ route('users.destroy', $user) }}">
+                <form method="post" action="{{ route('user.destroy', $user) }}">
                     @method('delete')
                     @csrf
                     <input type="hidden" name="user" value="{{ $user->id }}">

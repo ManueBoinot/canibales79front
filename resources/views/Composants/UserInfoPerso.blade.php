@@ -8,7 +8,7 @@
 
                 {{-- Boutons MODIF et SUPPRESSION user --}}
                 <div class="text-end d-flex justify-content-end gap-1">
-                    <form method="post" action="{{ route('users.edit', $user) }}">
+                    <form method="post" action="{{ route('user.edit', $user) }}">
                         @method('get')
                         @csrf
                         <input type="hidden" name="user_id" value="{{ $user->id }}">

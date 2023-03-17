@@ -7,7 +7,7 @@
 
         {{-- MODIFICATION D'INFORMATIONS PERSONNELLES -------------------------- --}}
         <div class="row py-3">
-            <form method="POST" action="{{ route('users.update', $user) }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('user.update', $user) }}" enctype="multipart/form-data">
                 @csrf @method('put')
 
                 {{-- input NOM --}}
@@ -258,7 +258,7 @@
         {{-- Suppression de compte --}}
         <div class="row py-3 mx-auto text-center">
             <div class="col">
-                <form action="{{ route('users.destroy', $user) }}" method="POST">
+                <form action="{{ route('user.destroy', $user) }}" method="POST">
                     @csrf @method('delete')
                     <button type="submit" class="btn btn-danger">
                         {{ __('Supprimer mon compte') }}

@@ -55,7 +55,7 @@
                                     <i class="fa-regular fa-user p-2"></i>ESPACE PERSONNEL
                                 </a>
                                 <ul class="dropdown-menu text-bg-dark">
-                                    <li><a class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">Mes
+                                    <li><a class="dropdown-item" href="{{ route('user.show', Auth::user()) }}">Mes
                                             informations
                                             personnelles</a></li>
                                     <li>
@@ -96,11 +96,6 @@
                                     {{-- Lien pour se connecter --}}
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
-                                    </li>
-                                    {{-- Lien pour créer un compte --}}
-                                    <li class="nav-item">
-                                        <a class="nav-link"
-                                            href="{{ route('register') }}">{{ __('Créer un compte') }}</a>
                                     </li>
                                 </ul>
                             </li>
