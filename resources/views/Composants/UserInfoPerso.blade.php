@@ -6,16 +6,15 @@
         <div class="d-flex justify-content-between">
             <h4 class="text-center text-uppercase mb-4 mt-2">PROFIL SPORTIF</h4>
 
-                {{-- Boutons MODIF et SUPPRESSION user --}}
-                <div class="text-end d-flex justify-content-end gap-1">
-                    <form method="post" action="{{ route('user.edit', $user) }}">
-                        @method('get')
-                        @csrf
-                        <input type="hidden" name="user_id" value="{{ $user->id }}">
-                        <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
-                    </form>
-                </div>
-
+            {{-- Boutons MODIF et SUPPRESSION user --}}
+            <div class="text-end d-flex justify-content-end gap-1">
+                <form method="post" action="{{ route('user.edit', $user) }}">
+                    @method('get')
+                    @csrf
+                    <input type="hidden" name="user_id" value="{{ $user->id }}">
+                    <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
+                </form>
+            </div>
         </div>
 
         {{-- NOM USER --}}
@@ -43,7 +42,7 @@
                 </p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->licence->numero ?? 'Non renseigné' }}</p>
+                <p class="fw-bold">{{ $user->numero_licence ?? 'Non renseigné' }}</p>
             </div>
         </div>
         {{-- TYPE LICENCE --}}
@@ -53,7 +52,7 @@
                 </p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->licence->type ?? 'Non renseigné' }}</p>
+                <p class="fw-bold">{{ $user->type_licence ?? 'Non renseigné' }}</p>
             </div>
         </div>
         {{-- DATE NAISSANCE --}}
@@ -63,13 +62,13 @@
                 </p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ date('d-m-Y', strtotime($user->date_naiss)) }}</p>
+                <p class="fw-bold">{{ date('d-m-Y', strtotime($user->date_naissance)) }}</p>
             </div>
         </div>
         {{-- CATEGORIE --}}
         <div class="col-lg-6 d-flex">
             <div class="col-5">
-                <p>Catégorie
+                <p>Catégorie sportive
                 </p>
             </div>
             <div class="col-7">
@@ -106,7 +105,7 @@
                 <p>Adresse</p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->adr_ligne_1 }}</p>
+                <p class="fw-bold">{{ $user->adresse_ligne_1 }}</p>
             </div>
         </div>
         {{-- ADR 2 USER --}}
@@ -115,7 +114,7 @@
                 <p>Suite adr.</p>
             </div>
             <div class="col-7">
-                <p class="fw-bold">{{ $user->adr_ligne_2 ?? '-' }}</p>
+                <p class="fw-bold">{{ $user->adresse_ligne_2 ?? '-' }}</p>
             </div>
         </div>
         {{-- CODE POSTAL USER --}}

@@ -32,10 +32,10 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 30%, rgba(255,0,0,0.9) 100%);"
             <a href="/">
                 <img src="../../assets/logos/logo-canibales-contour.png" style="width: 150px">
             </a>
-            <div><a href="https://www.facebook.com/Canibales79"><i class="logo-footer fa-brands fa-square-facebook"
-                        style="font-size: 30px"></i>
+            <div><a href="https://www.facebook.com/Canibales79" target="blank"><i
+                        class="logo-footer fa-brands fa-square-facebook" style="font-size: 30px"></i>
                 </a>
-                <a href="https://www.instagram.com/canibales_79/"><i
+                <a href="https://www.instagram.com/canibales_79/" target="blank"><i
                         class="logo-footer fa-brands fa-square-instagram p-1" style="font-size: 30px"></i>
                 </a>
             </div>

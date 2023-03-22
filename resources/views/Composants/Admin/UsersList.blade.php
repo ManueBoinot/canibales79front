@@ -58,7 +58,8 @@
                                                     </p>
                                                 </div>
                                                 <div class="col-7">
-                                                    <p class="fw-bold">{{ date('d-m-Y', strtotime($user->date_naiss)) }}
+                                                    <p class="fw-bold">
+                                                        {{ date('d-m-Y', strtotime($user->date_naissance)) }}
                                                     </p>
                                                 </div>
                                             </div>
@@ -97,7 +98,7 @@
                                                     <p>Adresse</p>
                                                 </div>
                                                 <div class="col-7">
-                                                    <p class="fw-bold">{{ $user->adr_ligne_1 }}</p>
+                                                    <p class="fw-bold">{{ $user->adresse_ligne_1 }}</p>
                                                 </div>
                                             </div>
                                             {{-- ADR 2 USER --}}
@@ -106,7 +107,7 @@
                                                     <p>Suite adr.</p>
                                                 </div>
                                                 <div class="col-7">
-                                                    <p class="fw-bold">{{ $user->adr_ligne_2 ?? '-' }}</p>
+                                                    <p class="fw-bold">{{ $user->adresse_ligne_2 ?? '-' }}</p>
                                                 </div>
                                             </div>
                                             {{-- CODE POSTAL USER --}}

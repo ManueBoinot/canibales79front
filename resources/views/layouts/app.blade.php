@@ -19,13 +19,21 @@
 </head>
 
 <body class="vw-100 min-vh-100">
-    <div class="container-fluid text-center">
+    <div id="app">
+
+        {{-- Header ------------------------------------- --}}
+        @include('Composants.ComposantsCommuns.Header')
+
         @if (session()->has('message'))
-            <p class="alert alert-success">{{ session()->get('message') }}</p>
+            <p class="alert alert-success text-center">{{ session()->get('message') }}</p>
+        @endif
+
+        @if (session()->has('status'))
+            <p class="alert alert-success text-center">{{ session()->get('status') }}</p>
         @endif
 
         @if ($errors->any())
-            <div class="alert alert-danger">
+            <div class="alert alert-danger text-center">
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -33,11 +41,6 @@
                 </ul>
             </div>
         @endif
-    </div>
-    <div id="app">
-
-        {{-- Header ------------------------------------- --}}
-        @include('Composants.ComposantsCommuns.Header')
 
         {{-- Corps de la page selon la route ------------------------------------- --}}
         <main>

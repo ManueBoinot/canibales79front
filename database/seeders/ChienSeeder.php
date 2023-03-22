@@ -19,56 +19,56 @@ class ChienSeeder extends Seeder
             'nom' => 'Jirka',
             'race' => 'Berge belge Malinois',
             'categorie_2' => true,
-            'date_naiss' => '2014-10-08'
+            'date_naissance' => '2014-10-08'
         ]);
 
         Chien::create([
             'nom' => 'Mako',
             'race' => 'X basset',
             'categorie_2' => false,
-            'date_naiss' => '2016-01-01'
+            'date_naissance' => '2016-01-01'
         ]);
 
         Chien::create([
             'nom' => 'Kona',
             'race' => 'Shiba-inu',
             'categorie_2' => false,
-            'date_naiss' => '2017-05-10'
+            'date_naissance' => '2017-05-10'
         ]);
 
         Chien::create([
             'nom' => 'Nola',
             'race' => 'Berger Allemand',
             'categorie_2' => false,
-            'date_naiss' => '2018-07-23'
+            'date_naissance' => '2018-07-23'
         ]);
 
         Chien::create([
             'nom' => 'Nao',
             'race' => 'Berger Australien',
             'categorie_2' => false,
-            'date_naiss' => '2018-05-12'
+            'date_naissance' => '2018-05-12'
         ]);
 
         Chien::create([
             'nom' => 'Oona',
             'race' => 'Beauceron',
             'categorie_2' => true,
-            'date_naiss' => '2019-02-05'
+            'date_naissance' => '2019-02-05'
         ]);
 
         Chien::create([
             'nom' => 'Milka',
             'race' => 'Siberian husky',
             'categorie_2' => false,
-            'date_naiss' => '2017-03-12'
+            'date_naissance' => '2017-03-12'
         ]);
 
         Chien::create([
             'nom' => 'Shadow',
             'race' => 'Siberian husky',
             'categorie_2' => false,
-            'date_naiss' => '2021-04-17'
+            'date_naissance' => '2021-04-17'
         ]);
     }
 }

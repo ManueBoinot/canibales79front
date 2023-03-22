@@ -1,7 +1,7 @@
 <div class="text-center">
     <!-- Button trigger modal CREATE CHIEN -->
     <button type="button" class="btn btn-danger my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Ajouter un chien
+        Créer un chien
     </button>
 
     <!-- Modal -->
@@ -22,23 +22,27 @@
                         {{-- input NOM CHIEN --}}
                         <div class="mb-3">
                             <label for="nom" class="form-label fw-bold">Nom</label>
-                            <input class="form-control" id="nom" name="nom" type="text" value="{{ old('nom') }}" required>
+                            <input class="form-control" id="nom" name="nom" type="text"
+                                value="{{ old('nom') }}" required>
                         </div>
                         {{-- input RACE --}}
                         <div class="mb-3">
                             <label for="race" class="form-label fw-bold">Race</label>
                             <input type="text" class="form-control" id="race" name="race"
-                                placeholder="Ex. : ' Border collie ' ou ' Malinois X Labrador '" value="{{ old('race') }}" required>
+                                placeholder="Ex. : ' Border collie ' ou ' Malinois X Labrador '"
+                                value="{{ old('race') }}" required>
                         </div>
                         {{-- input DATE NAISSANCE CHIEN --}}
                         <div class="mb-3">
-                            <label for="date_naiss" class="form-label fw-bold">Date de naissance</label>
-                            <input class="form-control" id="date_naiss" name="date_naiss" type="date" value="{{ old('date_naiss') }}" required>
+                            <label for="date_naissance" class="form-label fw-bold">Date de naissance</label>
+                            <input class="form-control" id="date_naissance" name="date_naissance" type="date"
+                                value="{{ old('date_naiss') }}" required>
                         </div>
                         {{-- input CATEGORIE 2 --}}
                         <div class="mb-3">
                             <label for="categorie_2" class="form-label fw-bold">Chien de catégorie 2 ?</label>
-                            <select class="form-select" aria-label="categorie_2" name="categorie_2" value="{{ old('categorie_2') }}" required>
+                            <select class="form-select" aria-label="categorie_2" name="categorie_2"
+                                value="{{ old('categorie_2') }}" required>
                                 <option value="0" selected>Choisir une réponse</option>
                                 <option value="0">Non</option>
                                 <option value="1">Oui</option>
@@ -47,8 +51,10 @@
                         {{-- input VACCINS --}}
                         <div class="my-2">
                             <label for="vaccins" class="form-label fw-bold">Carnet de vaccination</label>
-                            <input name="vaccins" type="file" class="form-control text-secondary" id="vaccins" value="{{ old('vaccins') }}">
-                            <div class="form-text">Fichiers images uniquement (jpeg, jpg, png, gif, svg) | Max 2 Mo</div>
+                            <input name="vaccins" type="file" class="form-control text-secondary" id="vaccins"
+                                value="{{ old('vaccins') }}">
+                            <div class="form-text">Fichiers images uniquement (jpeg, jpg, png, gif, svg) | Max 2 Mo
+                            </div>
                         </div>
                         {{-- bouton VALIDER --}}
                         <div class="text-center">
@@ -62,6 +68,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                 </div>
+                
             </div>
         </div>
     </div>

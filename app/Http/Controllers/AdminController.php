@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Entrainement;
 use App\Models\FAQ;
+use Auth;
 
 class AdminController extends Controller
 {
@@ -22,9 +22,11 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $users = User::all()->sortBy('nom');
-        $entrainements = Entrainement::all();
-        $faqs = FAQ::all();
-        return view('Pages.Admin.BackOfficeIndex', ['users' => $users, 'entrainements' => $entrainements, 'faqs' => $faqs]);
+        if (Auth::user()->isAdmin()) {
+            $users = User::all()->sortBy('nom');
+            $faqs = FAQ::all();
+            return view('Pages.Admin.BackOfficeIndex', ['users' => $users, 'faqs' => $faqs]);
+        }
+        abort(403);
     }
 }

@@ -5,6 +5,7 @@
 
         <h1 class="text-center my-5 fw-bold">LES DISCIPLINES</h1>
 
+        {{-- INFO CANICROSS --}}
         <div class="row pt-4 pb-5 align-items-center">
             <div class="col-auto mx-auto mb-3">
                 <img src="../../../assets/photos/carre/carre-canicross.jpeg" alt="illustration canicross"
@@ -19,7 +20,8 @@
                     Seule une complicité avec son partenaire canin permet de tels résultats.<br>
                     Un équipement spécifique s’impose pour accompagner les performances des athlètes (harnais, baudrier,
                     ceinture, ligne de trait).<br>
-                    <span class="fw-bold" style="color: rgb(230, 0, 0)">Le chien doit avoir 18 mois</span> pour commencer la compétition.<br>
+                    <span class="fw-bold" style="color: rgb(230, 0, 0)">Le chien doit avoir 18 mois</span> pour commencer la
+                    compétition.<br>
                     Le canicross s’adresse à tous les humains et toutes les races de chiens (sauf catégorie 1). Les
                     chaussures à pointes sont strictement interdites pour éviter de blesser nos compagnons canins.<br>
                     La distance du parcours en Canicross est comprise <span class="fw-bold">entre 5 et 9 km</span> en
@@ -28,6 +30,7 @@
             </div>
         </div>
 
+        {{-- INFO CANITRAIL --}}
         <div class="row pt-4 pb-5 align-items-center">
             <div class="col-auto mx-auto mb-3">
                 <img src="../../../assets/photos/carre/carre-canitrail.jpg" alt="illustration canitrail"
@@ -43,12 +46,14 @@
                     Il est prudent d’emporter son ravitaillement et notamment de l’eau pour pouvoir hydrater son chien.<br>
                     Les règles sont identiques à celles du canicross : il faut respecter son chien, on ne doit pas le tirer,
                     l’empêcher de faire ses besoins ou de se ravitailler et on doit l’attendre si nécessaire.<br>
-                    Pour commencer la compétition, <span class="fw-bold" style="color: rgb(230, 0, 0)">le chien doit avoir au moins 24 mois.</span><br>
+                    Pour commencer la compétition, <span class="fw-bold" style="color: rgb(230, 0, 0)">le chien doit avoir
+                        au moins 24 mois.</span><br>
                     Cette discipline s’adresse à tous les humains et toutes les races de chiens (sauf catégorie 1).
                 </p>
             </div>
         </div>
 
+        {{-- INFO CANIVTT --}}
         <div class="row pt-4 pb-5 align-items-center">
             <div style="margin-top: -200px; padding-top: 200px" id="canivtt"></div>
             <div class="col-auto mx-auto mb-3">
@@ -65,7 +70,8 @@
                     km/h et des vitesses moyennes allant jusqu’à 35 km/h.<br>
                     L’homme ne doit faire qu’un avec son chien et surtout être au niveau de son chien.<br>
                     Le port du casque et des gants est obligatoire pour pratiquer ce sport à sensations fortes.<br>
-                    <span class="fw-bold" style="color: rgb(230, 0, 0)">Le chien doit avoir au minimum 18 mois</span> pour le pratiquer.<br>
+                    <span class="fw-bold" style="color: rgb(230, 0, 0)">Le chien doit avoir au minimum 18 mois</span> pour
+                    le pratiquer.<br>
                     Cette discipline s’adresse à tous les humains et à toutes les races de chiens (sauf catégorie 1).
                 </p>
                 <p>NB : il existe une autre discipline semblable au canivtt mais qui se pratique avec une trottinette
@@ -74,6 +80,7 @@
             </div>
         </div>
 
+        {{-- INFO CANIMARCHE --}}
         <div class="row pt-4 pb-5 align-items-center">
             <div style="margin-top: -200px; padding-top: 200px" id="canimarche"></div>
             <div class="col-auto mx-auto">
@@ -87,15 +94,18 @@
                     La canimarche est un mariage entre la marche (qu’elle soit rapide ou non) et votre chien. Cela se
                     pratique le plus souvent en pleine nature, en compétition ou en loisir ce sport permet de renforcer le
                     lien entre vous et votre animal.<br>
-                    <span class="fw-bold" style="color: rgb(230, 0, 0)">Le chien doit avoir 18 mois</span> pour commencer la compétition.
+                    <span class="fw-bold" style="color: rgb(230, 0, 0)">Le chien doit avoir 18 mois</span> pour commencer la
+                    compétition.
                 </p>
             </div>
         </div>
 
+        {{-- Bouton CONTACT --}}
         <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
                     style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
         </div>
 
+        {{-- Lien vers la source FSLC --}}
         <div class="row mt-5 text-end">
             <small class="text-secondary">(Source : <a href="https://www.fslc-canicross.net/les-disciplines/"
                     class="text-secondary"> https://www.fslc-canicross.net/les-disciplines/)</a></small>

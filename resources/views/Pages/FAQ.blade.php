@@ -6,6 +6,7 @@
             <h1>FOIRE AUX QUESTIONS</h1>
             <h5 class="my-3">Réponses aux questions les plus fréquemment posées</h5>
         </div>
+        
         {{-- FAQ LOOP --}}
         @foreach ($faqs as $faq)
             <div class="accordion" id="accordionExample">

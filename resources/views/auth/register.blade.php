@@ -47,15 +47,56 @@
 
                             {{-- Champ DATE NAISSANCE --}}
                             <div class="row mb-3">
-                                <label for="date_naiss" class="col-md-4 col-form-label text-md-end">Date de
+                                <label for="date_naissance" class="col-md-4 col-form-label text-md-end">Date de
                                     naissance</label>
 
                                 <div class="col-md-6">
-                                    <input id="date_naiss" type="date"
-                                        class="form-control @error('date_naiss') is-invalid @enderror" name="date_naiss"
-                                        value="{{ old('date_naiss') }}" required autocomplete="date_naiss">
+                                    <input id="date_naissance" type="date"
+                                        class="form-control @error('date_naissance') is-invalid @enderror"
+                                        name="date_naissance" value="{{ old('date_naissance') }}" required>
 
-                                    @error('date_naiss')
+                                    @error('date_naissance')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            {{-- Champ NUMERO LICENCE --}}
+                            <div class="row mb-3">
+                                <label for="numero_licence" class="col-md-4 col-form-label text-md-end">Numéro de
+                                    licence</label>
+
+                                <div class="col-md-6">
+                                    <input id="numero_licence" type="text"
+                                        class="form-control @error('numero_licence') is-invalid @enderror"
+                                        name="numero_licence" value="{{ old('numero_licence') }}" required>
+
+                                    @error('numero_licence')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            {{-- Champ TYPE LICENCE --}}
+                            <div class="row mb-3">
+                                <label for="type_licence" class="col-md-4 col-form-label text-md-end">Type de
+                                    licence</label>
+
+                                <div class="col-md-6">
+                                    <select id="type_licence"
+                                        class="form-select @error('type_licence') is-invalid @enderror" name="type_licence"
+                                        value="{{ old('type_licence') }}" required>
+                                        <option selected>Sélectionner un type de licence</option>
+                                        <option value="Loisir">Loisir</option>
+                                        <option value="Compétition">Compétition</option>
+                                        <option value="Junior">Junior</option>
+                                    </select>
+
+                                    @error('type_licence')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -65,12 +106,13 @@
 
                             {{-- Champ CATEGORIE --}}
                             <div class="row mb-3">
-                                <label for="categorie" class="col-md-4 col-form-label text-md-end">Catégorie</label>
+                                <label for="categorie" class="col-md-4 col-form-label text-md-end">Catégorie
+                                    sportive</label>
 
                                 <div class="col-md-6">
                                     <select id="categorie" class="form-select @error('categorie') is-invalid @enderror"
-                                        name="categorie" value="{{ old('categorie') }}" required autocomplete="categorie">
-                                        <option selected>Sélectionner une catégorie</option>
+                                        name="categorie" value="{{ old('categorie') }}" required>
+                                        <option selected>Sélectionner une catégorie sportive</option>
                                         <option value="benjamin">Benjamin(e)</option>
                                         <option value="minime">Minime</option>
                                         <option value="cadet">Cadet(te)</option>
@@ -94,7 +136,8 @@
                                         <div class="modal-dialog modal-xl">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Les catégories d'âge
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Les catégories
+                                                        d'âge
                                                         en
                                                         sport</h1>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -128,7 +171,7 @@
                                 <div class="col-md-6">
                                     <input id="email" type="email"
                                         class="form-control @error('email') is-invalid @enderror" name="email"
-                                        value="{{ old('email') }}" required autocomplete="email">
+                                        value="{{ old('email') }}" required>
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -145,7 +188,7 @@
                                 <div class="col-md-6">
                                     <input id="tel" type="tel"
                                         class="form-control @error('tel') is-invalid @enderror" name="tel"
-                                        value="{{ old('tel') }}" required autocomplete="tel">
+                                        value="{{ old('tel') }}" required>
 
                                     @error('tel')
                                         <span class="invalid-feedback" role="alert">
@@ -157,14 +200,14 @@
 
                             {{-- Champ ADRESSE LIGNE 1 --}}
                             <div class="row mb-3">
-                                <label for="adr_ligne_1" class="col-md-4 col-form-label text-md-end">Adresse</label>
+                                <label for="adresse_ligne_1" class="col-md-4 col-form-label text-md-end">Adresse</label>
 
                                 <div class="col-md-6">
-                                    <input id="adr_ligne_1" type="text"
-                                        class="form-control @error('adr_ligne_1') is-invalid @enderror" name="adr_ligne_1"
-                                        value="{{ old('adr_ligne_1') }}" required autocomplete="adr_ligne_1">
+                                    <input id="adresse_ligne_1" type="text"
+                                        class="form-control @error('adresse_ligne_1') is-invalid @enderror"
+                                        name="adresse_ligne_1" value="{{ old('adresse_ligne_1') }}" required>
 
-                                    @error('adr_ligne_1')
+                                    @error('adresse_ligne_1')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -174,15 +217,15 @@
 
                             {{-- Champ ADRESSE LIGNE 2 --}}
                             <div class="row mb-3">
-                                <label for="adr_ligne_2" class="col-md-4 col-form-label text-md-end">Complément
+                                <label for="adresse_ligne_2" class="col-md-4 col-form-label text-md-end">Complément
                                     d'adresse</label>
 
                                 <div class="col-md-6">
-                                    <input id="adr_ligne_2" type="text"
-                                        class="form-control @error('adr_ligne_2') is-invalid @enderror" name="adr_ligne_2"
-                                        value="{{ old('adr_ligne_2') }}" autocomplete="adr_ligne_2">
+                                    <input id="adresse_ligne_2" type="text"
+                                        class="form-control @error('adresse_ligne_2') is-invalid @enderror"
+                                        name="adresse_ligne_2" value="{{ old('adresse_ligne_2') }}">
 
-                                    @error('adr_ligne_2')
+                                    @error('adresse_ligne_2')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -196,8 +239,8 @@
 
                                 <div class="col-md-6">
                                     <input id="code_postal" type="text"
-                                        class="form-control @error('code_postal') is-invalid @enderror" name="code_postal"
-                                        value="{{ old('code_postal') }}" required autocomplete="code_postal">
+                                        class="form-control @error('code_postal') is-invalid @enderror"
+                                        name="code_postal" value="{{ old('code_postal') }}" required>
 
                                     @error('code_postal')
                                         <span class="invalid-feedback" role="alert">
@@ -214,7 +257,7 @@
                                 <div class="col-md-6">
                                     <input id="commune" type="text"
                                         class="form-control @error('commune') is-invalid @enderror" name="commune"
-                                        value="{{ old('commune') }}" required autocomplete="commune">
+                                        value="{{ old('commune') }}" required>
 
                                     @error('commune')
                                         <span class="invalid-feedback" role="alert">
@@ -231,7 +274,11 @@
                                 <div class="col-md-6">
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="new-password">
+                                        required aria-describedby="passwordHelp">
+
+                                    <div id="passwordHelp" class="form-text text-start">Le mot de passe doit contenir au
+                                        moins 8
+                                        caractères dont au moins 1 majuscule, 1 chiffre et 1 caractère spécial</div>
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -247,7 +294,7 @@
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control"
-                                        name="password_confirmation" required autocomplete="new-password">
+                                        name="password_confirmation" required>
                                 </div>
                             </div>
 

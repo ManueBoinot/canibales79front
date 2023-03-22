@@ -20,13 +20,14 @@ class UserFactory extends Factory
     {
         return [
             'role_id' => 2,
-            'licence_id' => random_int(1, 4),
+            'numero_licence' => random_int(111111, 999999),
+            'type_licence' => 'Loisir',
             'categorie' => 'Sénior',
             'nom' => fake()->lastName(),
             'prenom' => fake()->firstName(),
-            'date_naiss' => fake()->date(),
-            'adr_ligne_1' => fake()->streetAddress(),
-            'adr_ligne_2' => '-',
+            'date_naissance' => fake()->date(),
+            'adresse_ligne_1' => fake()->streetAddress(),
+            'adresse_ligne_2' => '-',
             'code_postal' => fake()->postcode(),
             'commune' => fake()->city(),
             'tel' => fake()->phoneNumber(),

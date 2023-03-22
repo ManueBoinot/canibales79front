@@ -201,8 +201,8 @@
             </div>
 
             <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
-                <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
-            </a></div>
+                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                </a></div>
 
             {{-- Types de sorties --}}
             <div class="row">
@@ -295,7 +295,8 @@
             </p>
 
             {{-- Calendrier COMPET --}}
-            <h5 class="fw-bold" style="color: rgb(230, 0, 0)">Retrouvez ci-dessous le calendrier des compétitions de la FSLC</h5>
+            <h5 class="fw-bold" style="color: rgb(230, 0, 0)">Retrouvez ci-dessous le calendrier des compétitions de la
+                FSLC</h5>
             <a class="btn btn-outline-danger" type="button" href="https://courses.fslc-canicross.net/fr/"
                 target="blank">CALENDRIER
                 DES COMPÉTITIONS FSLC
@@ -331,8 +332,8 @@
             </div>
 
             <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
-                <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
-            </a></div>
+                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                </a></div>
 
             {{-- Lien vers haut de page --}}
             <div class="text-end pt-5">
@@ -341,6 +342,6 @@
                 </a>
             </div>
         </section>
-
+        
     </div>
 @endsection

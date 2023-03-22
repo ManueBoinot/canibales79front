@@ -13,10 +13,9 @@ class Chien extends Model
         'nom',
         'race',
         'categorie_2',
-        'date_naiss',
+        'date_naissance',
         'vaccins'
     ];
-
 
     // Fonction qui précise la relation avec la table "Users"
     public function users()
@@ -24,21 +23,12 @@ class Chien extends Model
         return $this->belongsToMany(User::class)->using(ChienUser::class);
     }
 
-
+    // Fonction qui calcule l'âge d'un chien
     public function age(Chien $chien)
     {
-        $anniv = $chien->date_naiss;
+        $anniv = $chien->date_naissance;
         $auj = now();
         $interval = $auj->diff($anniv);
         return $interval->format('%y ans, %m mois');
     }
-
-    public function afficherVaccins() {
-        $vaccins = 'uploads\\vaccinsChiens\\1677334031.jpg';
-        $file_descriptor = fopen($vaccins, 'r');
-        $size = filesize($vaccins);
-        $data = fread($file_descriptor, $size);
-        return $data;
-    }
-
 }

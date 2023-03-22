@@ -51,10 +51,12 @@
                 </div>
             </div>
 
+            {{-- Lien vers DISCIPLINES --}}
             <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
-                <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
-            </a></div>
+                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                </a></div>
 
+            {{-- Lien vers ENTRAINEMENTS --}}
             <a class="link-secondary" href="/le-club#entrainements">Horaires des entraînements<i
                     class="ms-2 fa-solid fa-clock"></i></a>
 
@@ -125,6 +127,7 @@
                 </div>
             </section>
 
+            {{-- Bouton CONTACT --}}
             <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
                         style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
             </div>

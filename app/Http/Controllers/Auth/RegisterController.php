@@ -54,9 +54,10 @@ class RegisterController extends Controller
             'prenom' => ['required', 'string', 'max:40'],
             'nom' => ['required', 'string', 'max:40'],
             'email' => ['required', 'string', 'email', 'max:40', 'unique:users'],
-            'date_naiss' => ['required', 'date', 'before:today'],
-            'adr_ligne_1' => ['required', 'string', 'max:40'],
-            'adr_ligne_2' => ['nullable', 'string', 'max:40'],
+            'numero_licence' => ['required', 'string', 'max:6', 'unique:users'],
+            'date_naissance' => ['required', 'date', 'before:today'],
+            'adresse_ligne_1' => ['required', 'string', 'max:40'],
+            'adresse_ligne_2' => ['nullable', 'string', 'max:40'],
             'code_postal' => ['required', 'string', 'max:5'],
             'commune' => ['required', 'string', 'max:40'],
             'tel' => ['required', 'string', 'max:14'],
@@ -72,13 +73,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return $user = User::create([
+        return User::create([
             'nom' => $data['nom'],
             'prenom' => $data['prenom'],
             'email' => $data['email'],
-            'date_naiss' => $data['date_naiss'],
-            'adr_ligne_1' => $data['adr_ligne_1'],
-            'adr_ligne_2' => $data['adr_ligne_2'],
+            'numero_licence' => $data['numero_licence'],
+            'type_licence' => $data['type_licence'],
+            'date_naissance' => $data['date_naissance'],
+            'adresse_ligne_1' => $data['adresse_ligne_1'],
+            'adresse_ligne_2' => $data['adresse_ligne_2'],
             'code_postal' => $data['code_postal'],
             'commune' => $data['commune'],
             'tel' => $data['tel'],

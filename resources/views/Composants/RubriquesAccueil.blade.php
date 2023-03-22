@@ -39,8 +39,7 @@
         <div class="col-12 col-md-6">
             <a href="/le-materiel">
                 <div class="card">
-                    <img src="../assets/photos/card/card-materiel.jpg" class="card-img-top"
-                        alt="binôme en canicross">
+                    <img src="../assets/photos/card/card-materiel.jpg" class="card-img-top" alt="binôme en canicross">
                     <div class="card-body px-lg-4 text-black">
                         <h5 class="fw-bold">LE MATÉRIEL</h5>
                         <p class="card-text">Sécurité et bien-être du binôme ! Vous trouverez ici des conseils pour

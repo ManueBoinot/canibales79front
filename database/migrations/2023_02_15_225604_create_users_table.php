@@ -16,14 +16,14 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->foreignId('role_id')->default(2);
-            $table->foreignId('bureau_membre_id')->nullable();
-            $table->foreignId('licence_id')->nullable();
+            $table->string('numero_licence')->nullable();
+            $table->enum('type_licence', ['Loisir', 'Compétition', 'Junior'])->nullable();
             $table->enum('categorie', ['Benjamin', 'Minime', 'Cadet', 'Junior', 'Adulte', 'Sénior', 'Vétéran 1', 'Vétéran 2', 'Vétéran 3']);
             $table->string('nom');
             $table->string('prenom');
-            $table->date('date_naiss');
-            $table->string('adr_ligne_1');
-            $table->string('adr_ligne_2')->nullable();
+            $table->date('date_naissance');
+            $table->string('adresse_ligne_1');
+            $table->string('adresse_ligne_2')->nullable();
             $table->string('code_postal');
             $table->string('commune');
             $table->string('tel');

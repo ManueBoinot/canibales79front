@@ -14,18 +14,18 @@
                     <div class="card-body">
                         {{-- Boutons MODIF et SUPPRESSION chien --}}
 
-                            <div class="text-end d-flex justify-content-end gap-1">
-                                <a href="{{ route('chiens.edit', $chien, $user) }}">
-                                    @method('get')
-                                    @csrf
-                                    <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
-                                </a>
-                            </div>
+                        <div class="text-end d-flex justify-content-end gap-1">
+                            <a href="{{ route('chiens.edit', $chien, $user) }}">
+                                @method('get')
+                                @csrf
+                                <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
+                            </a>
+                        </div>
 
                         {{-- Infos du chien --}}
                         <h5 class="card-title fw-bold">{{ $chien->nom }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ $chien->race }}</h6>
-                        <p class="card-text">Né(e) le {{ date('d-m-Y', strtotime($chien->date_naiss)) }}
+                        <p class="card-text">Né(e) le {{ date('d-m-Y', strtotime($chien->date_naissance)) }}
                             <span class="fst-italic"> ({{ $chien->age($chien) }}) </span>
                         </p>
 
@@ -57,6 +57,11 @@
                 </div>
             @endforeach
         @endif
+        
+        {{-- Bouton pour créer un chien --}}
         @include('Composants.ChienModalCrea')
+
+        {{-- Bouton pour ajouter un chien existant --}}
+        @include('Composants.ChienModalAjout')
     </div>
 </div>

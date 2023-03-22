@@ -9,7 +9,6 @@
 
 function uploadVaccinsChiens($file)
 {
-
     // on donne un nom à l'image en temps Unix + extension
     $fileName = time() . '.' . $file->extension();
 

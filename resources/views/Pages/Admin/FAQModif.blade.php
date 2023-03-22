@@ -4,7 +4,8 @@
     <div class="container text-bg-dark py-5 px-md-5">
         <h1 class="text-center mb-5">MODIFICATION D'UNE QUESTION/RÉPONSE</h1>
         <div class="text-center">
-            {{-- début formulaire modif QR --}}
+
+            {{-- début formulaire modif QUESTION/REPONSE --}}
             <form method="post" action="{{ route('faq.update', $faq) }}" class="text-start">
                 @method('put')
                 @csrf
@@ -26,8 +27,10 @@
 
                 {{-- bouton SUBMIT --}}
                 <div class="text-center">
-                    <button type="submit" class="btn btn-success my-3">Valider la mise à jour de la question/réponse</button>
+                    <button type="submit" class="btn btn-success my-3">Valider la mise à jour de la
+                        question/réponse</button>
                 </div>
+            </form>
         </div>
     </div>
 @endsection

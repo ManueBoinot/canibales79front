@@ -4,7 +4,6 @@
     <div class="container min-vh-100 p-3 p-lg-4 text-bg-light mx-auto">
         <h2 class="my-4 text-center fw-bold">MODIFIER MES INFORMATIONS</h2>
 
-
         {{-- MODIFICATION D'INFORMATIONS PERSONNELLES -------------------------- --}}
         <div class="row py-3">
             <form method="POST" action="{{ route('user.update', $user) }}" enctype="multipart/form-data">
@@ -44,13 +43,15 @@
 
                 {{-- input DATE NAISSANCE --}}
                 <div class="row mb-5">
-                    <label for="date_naiss" class="col-md-4 col-form-label text-md-end fw-bold">{{ __('Date de naissance') }}</label>
+                    <label for="date_naissance"
+                        class="col-md-4 col-form-label text-md-end fw-bold">{{ __('Date de naissance') }}</label>
 
                     <div class="col-md-6">
-                        <input id="date_naiss" type="date" class="form-control @error('date_naiss') is-invalid @enderror"
-                            name="date_naiss" value="{{ $user->date_naiss }}" autocomplete="date_naiss">
+                        <input id="date_naissance" type="date"
+                            class="form-control @error('date_naissance') is-invalid @enderror" name="date_naissance"
+                            value="{{ $user->date_naissance }}" autocomplete="date_naissance">
 
-                        @error('date_naiss')
+                        @error('date_naissance')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -90,17 +91,116 @@
                     </div>
                 </div>
 
+                {{-- Champ NUMERO LICENCE --}}
+                <div class="row mb-3">
+                    <label for="numero_licence" class="col-md-4 col-form-label text-md-end">Numéro de
+                        licence</label>
+
+                    <div class="col-md-6">
+                        <input id="numero_licence" type="text"
+                            class="form-control @error('numero_licence') is-invalid @enderror" name="numero_licence"
+                            value="{{ $user->numero_licence }}" required>
+
+                        @error('numero_licence')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+                {{-- Champ TYPE LICENCE --}}
+                <div class="row mb-3">
+                    <label for="type_licence" class="col-md-4 col-form-label text-md-end">Type de
+                        licence</label>
+
+                    <div class="col-md-6">
+                        <select aria-label="type_licence" id="type_licence"
+                            class="form-select @error('type_licence') is-invalid @enderror" name="type_licence" required>
+                            <option value="{{ $user->type_licence }}" selected>Sélectionner un type de licence</option>
+                            <option value="Loisir">Loisir</option>
+                            <option value="Compétition">Compétition</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+
+                        @error('type_licence')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+                {{-- Champ CATEGORIE --}}
+                <div class="row mb-3">
+                    <label for="categorie" class="col-md-4 col-form-label text-md-end">Catégorie
+                        sportive</label>
+
+                    <div class="col-md-6">
+                        <select id="categorie" class="form-select @error('categorie') is-invalid @enderror" name="categorie"
+                            value="{{ old('categorie') }}" required>
+                            <option selected>Sélectionner une catégorie sportive</option>
+                            <option value="benjamin">Benjamin(e)</option>
+                            <option value="minime">Minime</option>
+                            <option value="cadet">Cadet(te)</option>
+                            <option value="junior">Junior</option>
+                            <option value="adulte">Adulte</option>
+                            <option value="sénior">Sénior</option>
+                            <option value="vétéran 1">Vétéran(e) 1</option>
+                            <option value="vétéran 2">Vétéran(e) 2</option>
+                            <option value="vétéran 3">Vétéran(e) 3</option>
+                        </select>
+
+                        <!-- Button trigger modal -->
+                        <a class="link-danger fst-italic" href="#" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Un doute sur ta catégorie ?
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Les catégories
+                                            d'âge
+                                            en
+                                            sport</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body overflow-auto text-center">
+                                        <img src="../assets/categories-fslc.png" style="width: fit-content"
+                                            alt="infos sur les catégories d'âge en sport">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Super
+                                            merci !</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @error('categorie')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
                 {{-- input ADRESSE LIGNE 1 --}}
                 <div class="row mb-3">
-                    <label for="adr_ligne_1"
+                    <label for="adresse_ligne_1"
                         class="col-md-4 col-form-label text-md-end fw-bold">{{ __('Adresse') }}</label>
 
                     <div class="col-md-6">
-                        <input id="adr_ligne_1" type="text"
-                            class="form-control @error('adr_ligne_1') is-invalid @enderror" name="adr_ligne_1"
-                            value="{{ $user->adr_ligne_1 }}" autocomplete="adr_ligne_1">
+                        <input id="adresse_ligne_1" type="text"
+                            class="form-control @error('adresse_ligne_1') is-invalid @enderror" name="adresse_ligne_1"
+                            value="{{ $user->adresse_ligne_1 }}" autocomplete="adresse_ligne_1">
 
-                        @error('adr_ligne_1')
+                        @error('adresse_ligne_1')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -110,15 +210,15 @@
 
                 {{-- input ADRESSE LIGNE 2 --}}
                 <div class="row mb-3">
-                    <label for="adr_ligne_2"
+                    <label for="adresse_ligne_2"
                         class="col-md-4 col-form-label text-md-end fw-bold">{{ __('Complément d\'adresse') }}</label>
 
                     <div class="col-md-6">
-                        <input id="adr_ligne_2" type="text"
-                            class="form-control @error('adr_ligne_2') is-invalid @enderror" name="adr_ligne_2"
-                            value="{{ $user->adr_ligne_2 }}" autocomplete="adr_ligne_2">
+                        <input id="adresse_ligne_2" type="text"
+                            class="form-control @error('adresse_ligne_2') is-invalid @enderror" name="adresse_ligne_2"
+                            value="{{ $user->adresse_ligne_2 }}" autocomplete="adresse_ligne_2">
 
-                        @error('adr_ligne_2')
+                        @error('adresse_ligne_2')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -172,8 +272,7 @@
             </form>
         </div>
 
-
-
+        {{-- _________________________________________________________________________________________________ --}}
         {{-- MODIFICATION MOT DE PASSE -------------------------- --}}
         <div class="row border rounded py-3">
 

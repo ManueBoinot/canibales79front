@@ -22,9 +22,11 @@ class User extends Authenticatable
     protected $fillable = [
         'nom',
         'prenom',
-        'date_naiss',
-        'adr_ligne_1',
-        'adr_ligne_2',
+        'date_naissance',
+        'numero_licence',
+        'type_licence',
+        'adresse_ligne_1',
+        'adresse_ligne_2',
         'code_postal',
         'commune',
         'tel',
@@ -55,18 +57,6 @@ class User extends Authenticatable
     public function role()
     {
         return $this->belongsTo(Role::class);
-    }
-
-    // Fonction qui précise la relation avec la table "BureauMembres"
-    public function bureau()
-    {
-        return $this->belongsTo(BureauMembre::class);
-    }
-
-    // Fonction qui précise la relation avec la table "Licences"
-    public function licence()
-    {
-        return $this->belongsTo(Licence::class);
     }
 
     // Fonction qui précise la relation avec la table "Chiens"

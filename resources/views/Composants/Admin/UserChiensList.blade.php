@@ -14,17 +14,15 @@
                     <h5 class="card-title fw-bold">{{ $chien->nom }}</h5>
                     <h6 class="card-subtitle mb-2">{{ $chien->race }}</h6>
                     <p class="card-text">Né(e) le
-                        {{ date('d-m-Y', strtotime($chien->date_naiss)) }}
+                        {{ date('d-m-Y', strtotime($chien->date_naissance)) }}
                         <span class="fst-italic"> ({{ $chien->age($chien) }})
                         </span>
                     </p>
 
                     @isset($chien->vaccins)
                         <p>
-                            <button class="btn btn-dark" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseVaccins" aria-expanded="false"
-                                aria-controls="collapseVaccins">
+                            <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseVaccins" aria-expanded="false" aria-controls="collapseVaccins">
                                 Carnet de vaccination
                             </button>
                         </p>

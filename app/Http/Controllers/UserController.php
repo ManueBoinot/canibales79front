@@ -24,7 +24,8 @@ class UserController extends Controller
     {
         $users = DB::table('users')
             ->orderBy('nom', 'asc')
-            ->get();
+            ->get()
+            ->load('role', 'chiens');
         return view('Pages.Admin.BackOfficeIndex', ['users' => $users]);
     }
 
@@ -40,7 +41,7 @@ class UserController extends Controller
             abort(403);
         }
 
-        $user->load('role', 'bureau', 'licence', 'chiens');
+        $user->load('role', 'chiens');
         return view('pages.users.mon-compte', ['user' => $user]);
     }
 
@@ -74,10 +75,11 @@ class UserController extends Controller
         $request->validate([
             'prenom' => ['string', 'max:40'],
             'nom' => ['string', 'max:40'],
-            'email' => ['string', 'email', 'max:40',],
-            'date_naiss' => ['date', 'before:today'],
-            'adr_ligne_1' => ['string', 'max:40'],
-            'adr_ligne_2' => ['string', 'max:40'],
+            'email' => ['required', 'string', 'email', 'max:40'],
+            'numero_licence' => ['required', 'string', 'max:6'],
+            'date_naissance' => ['date', 'before:today'],
+            'adresse_ligne_1' => ['string', 'max:40'],
+            'adresse_ligne_2' => ['nullable', 'string', 'max:40'],
             'code_postal' => ['string', 'max:6'],
             'commune' => ['string', 'max:40'],
             'tel' => ['string', 'max:20']
@@ -86,9 +88,11 @@ class UserController extends Controller
         $user->prenom = $request->input('prenom');
         $user->nom = $request->input('nom');
         $user->email = $request->input('email');
-        $user->date_naiss = $request->input('date_naiss');
-        $user->adr_ligne_1 = $request->input('adr_ligne_1');
-        $user->adr_ligne_2 = $request->input('adr_ligne_2');
+        $user->numero_licence = $request->input('numero_licence');
+        $user->type_licence = $request->input('type_licence');
+        $user->date_naissance = $request->input('date_naissance');
+        $user->adresse_ligne_1 = $request->input('adresse_ligne_1');
+        $user->adresse_ligne_2 = $request->input('adresse_ligne_2');
         $user->code_postal = $request->input('code_postal');
         $user->commune = $request->input('commune');
         $user->tel = $request->input('tel');

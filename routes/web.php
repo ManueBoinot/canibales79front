@@ -30,7 +30,7 @@ Route::view('/les-partenaires','Pages.LesPartenaires');
 Route::view('/faq','Pages.FAQ');
 
 // Route vers le BACK OFFICE -----------------------------------
-Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index')->middleware('auth');
 
 // Route USER pour modifier le mot de passe -----------------------------------
 Route::put('/users/{user}/modif-password', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
@@ -39,4 +39,5 @@ Route::put('/users/{user}/modif-password', [App\Http\Controllers\UserController:
 Route::resource('/user', App\Http\Controllers\UserController::class)->middleware('auth');
 Route::resource('/chiens', App\Http\Controllers\ChienController::class)->middleware('auth');
 Route::resource('/faq', App\Http\Controllers\FAQController::class);
+Route::resource('/chienuser', App\Http\Controllers\ChienUserController::class);
 

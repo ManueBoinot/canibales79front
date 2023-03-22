@@ -24,6 +24,7 @@
             <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel" data-bs-scroll="true">
                 <div class="offcanvas-header">
+
                     <!-- Logo du menu -->
                     <a class="nav-link" href="/">
                         <img src="../.././assets/logos/logo-canibales-contour.png" style="width: 210px">
@@ -96,6 +97,10 @@
                                     {{-- Lien pour se connecter --}}
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            href="{{ route('register') }}">{{ __('Créer un compte') }}</a>
                                     </li>
                                 </ul>
                             </li>

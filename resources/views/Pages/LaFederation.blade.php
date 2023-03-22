@@ -4,9 +4,9 @@
     <div class="container bg-white pb-5 px-lg-5">
         <div class="row mx-auto">
 
-
             <h1 class="py-5 text-center fw-bold">LA FÉDÉRATION DES SPORTS ET LOISIRS CANINS</h1>
 
+            {{-- Vidéo de la FSLC --}}
             <div class="row text-center">
                 <div class="video-fslc">
                     <iframe width="100%" style="aspect-ratio: 16/9; max-width: 1024px"
@@ -16,14 +16,19 @@
                 </div>
             </div>
 
+            {{-- Logo de la FSLC --}}
             <div class="logo-fslc text-center">
                 <img src="../assets/logos/logo_fslc.png" alt="logo de la FSLC" height="200px">
             </div>
+
+            {{-- Texte intro sur la FSLC --}}
             <div class="row">
-                <h5 class="my-5 text-center">L'association sportive CANIBALES 79 est adhérente de la <strong>Fédération des Sports
-                    et Loisirs
-                    Canins
-                    : la FSLC</strong>.</h5>
+
+                <h5 class="my-5 text-center">L'association sportive CANIBALES 79 est adhérente de la <strong>Fédération des
+                        Sports
+                        et Loisirs
+                        Canins
+                        : la FSLC</strong>.</h5>
 
                 <p>La FSLC a pour objet :</p>
                 <ul>
@@ -40,15 +45,17 @@
                 </p>
 
                 <p>
-                    La <strong>réglementation</strong> appliquée par les CANIBALES 79 est celle définie par la FSLC, dont vous trouverez tous les détails <a class="link-secondary fw-bold" href="https://www.fslc-canicross.net/espace-reglementation/"
-                       >ICI</a>.
+                    La <strong>réglementation</strong> appliquée par les CANIBALES 79 est celle définie par la FSLC, dont
+                    vous trouverez tous les détails <a class="link-secondary fw-bold"
+                        href="https://www.fslc-canicross.net/espace-reglementation/">ICI</a>.
                 </p>
 
+                {{-- Lien vers le site de la FSLC --}}
                 <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
-                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
-                </a></div>
+                        <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                    </a>
+                </div>
+
             </div>
-
-
         </div>
     @endsection
