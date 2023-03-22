@@ -24,6 +24,8 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 30%, rgba(255,0,0,0.9) 100%);"
                         questions</a></li>
                 <li class="list-item"><a href="/contact">Contact</a>
                 </li>
+                <li class="list-item"><a href="/mentions-legales">Mentions légales</a>
+                </li>
             </ul>
         </div>
 

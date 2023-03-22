@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container bg-white px-lg-5">
+    <div class="container bg-white py-5 px-lg-5">
 
-        <div class="visually-hidden" style="margin-top: -150px; padding-top: 150px" id="club"></div>
-        <h1 class="pt-5 text-center fw-bold">LE CLUB</h1>
+        <div style="margin-top: -150px; padding-top: 150px" id="club"></div>
+        <h1 class="py-4 text-center fw-bold">LE CLUB CANIBALES79 - INFO PRATIQUES</h1>
 
         {{-- Nav page CLUB --}}
         <ul class="nav justify-content-center pb-5 gap-3">
@@ -25,7 +25,7 @@
         {{-- Section ASSO --}}
         <section class="mb-3 border-top">
             <div style="margin-top: -150px; padding-top: 150px" id="asso"></div>
-            <h2 class="text-center fw-bold my-5">ASSOCIATION SPORTIVE CANIBALES 79</h2>
+            <h2 class="text-center fw-bold my-5">L'ASSOCIATION</h2>
 
             {{-- BUREAU --}}
             <div class="row mb-3">
