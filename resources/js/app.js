@@ -1,4 +1,5 @@
 import './bootstrap';
+import '../css/app.css'; 
 
 // Mise en place du carousel
 const imageWrapper = document.querySelector('.image-wrapper')

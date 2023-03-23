@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 // Routes vers l'accueil
 Auth::routes();
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::view('/les-disciplines', 'Pages/LesDisciplines');

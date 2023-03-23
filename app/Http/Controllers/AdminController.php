@@ -8,7 +8,6 @@ use Auth;
 
 class AdminController extends Controller
 {
-
     public function __construct()
     {
         return $this->middleware('auth');
