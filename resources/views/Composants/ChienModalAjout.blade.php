@@ -17,7 +17,7 @@
 
                     {{-- RATTACHER UN CHIEN EXISTANT --}}
                     <div class="p-3 mb-5 mx-auto border rounded text-bg-light">
-                        <form method="post" action="{{ route('chienuser.store', $user, $chien) }}" class="text-start">
+                        <form method="post" action="{{ route('chienuser.store', $user) }}" class="text-start">
                             @csrf
 
                             <div class="mb-3">

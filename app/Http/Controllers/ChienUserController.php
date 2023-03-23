@@ -7,6 +7,7 @@ use App\Models\ChienUser;
 use Auth;
 use App\Models\User;
 use App\Models\Chien;
+use Illuminate\Support\Arr;
 
 class ChienUserController extends Controller
 {
@@ -18,14 +19,19 @@ class ChienUserController extends Controller
      */
     public function store(Request $request)
     {
+        $user = Auth::user();
+        $chien = Chien::find($request->chien_id);
+        $chiens = Arr::pluck($user->chiens, 'id');
+
+        if (in_array($chien->id, $chiens)) {
+            return redirect()->route('user.show', ['user' => $user])->with('status', $chien->nom . ' est déjà présent(e) dans ton équipe !');
+        }
         ChienUser::create([
             'user_id' => Auth::id(),
             'chien_id' => $request->chien_id
         ]);
 
-        $user = Auth::user();
-
-        return redirect()->route('user.show', ['user' => $user])->with('status', 'Chien ajouté à l\'équipe');
+        return redirect()->route('user.show', ['user' => $user])->with('status', $chien->nom . ' a bien été ajouté(e) à l\'équipe');
     }
 
     // ___________________________________________________________________________
