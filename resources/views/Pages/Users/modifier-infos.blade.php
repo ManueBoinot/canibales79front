@@ -354,16 +354,10 @@
             </div>
         </div>
 
+        {{-- ________________________________________________________________________________________________ --}}
         {{-- Suppression de compte --}}
         <div class="row py-3 mx-auto text-center">
-            <div class="col">
-                <form action="{{ route('user.destroy', $user) }}" method="POST">
-                    @csrf @method('delete')
-                    <button type="submit" class="btn btn-danger">
-                        {{ __('Supprimer mon compte') }}
-                    </button>
-                </form>
-            </div>
+            @include('Composants.UserModalDelete')
         </div>
     </div>
 @endsection

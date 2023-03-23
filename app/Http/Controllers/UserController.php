@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
+use Auth;
 
 class UserController extends Controller
 {
@@ -149,6 +150,11 @@ class UserController extends Controller
             abort(403);
         }
         $user->delete();
-        return redirect()->route('admin.index')->with('status', 'L\'utilisateur a bien été supprimé');
+
+        if (Auth::user()->isAdmin()) {
+
+            return redirect()->route('admin.index')->with('status', 'L\'utilisateur a bien été supprimé');
+        }
+        return redirect()->route('home')->with('status', 'Ton compte a bien été supprimé');
     }
 }

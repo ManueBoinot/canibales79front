@@ -5,7 +5,7 @@
     </button>
 
     <!-- Modal -->
-    <div class="modal fade text-dark" id="ChienDeleteModal" tabindex="-1" aria-labelledby="ChienDeleteModalLabel"
+    <div class="modal modal-lg fade text-dark" id="ChienDeleteModal" tabindex="-1" aria-labelledby="ChienDeleteModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
