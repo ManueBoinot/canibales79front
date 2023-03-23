@@ -34,13 +34,6 @@
                 </div>
                 <div class="offcanvas-body">
 
-                    {{-- <!-- Barre de recherche -->
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit"><i
-                                class="fa-solid fa-magnifying-glass" title="Rechercher"></i></button>
-                    </form> --}}
-
                     <li>
                         <hr class="divider">
                     </li>
@@ -52,8 +45,8 @@
                             {{-- Liens USER --------------------- --}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false" title="Espace personnel">
-                                    <i class="fa-regular fa-user p-2" title="Compte personnel"></i>ESPACE PERSONNEL
+                                    data-bs-toggle="dropdown" aria-expanded="false" title="Réservé aux licenciés">
+                                    <i class="fa-regular fa-user p-2"></i>ESPACE PERSONNEL
                                 </a>
                                 <ul class="dropdown-menu text-bg-dark">
                                     <li><a class="dropdown-item" href="{{ route('user.show', Auth::user()) }}">Mes
@@ -81,8 +74,8 @@
                             {{-- Lien ADMIN vers BACK OFFICE --------------------- --}}
                             @if (Auth::user()->isAdmin())
                                 <li class="nav-item">
-                                    <a class="nav-link text-danger" href="/admin" title="Back-office"><i
-                                            class="fa-solid fa-lock p-2" title="Accès BACK OFFICE"></i>Accès back office</a>
+                                    <a class="nav-link text-danger" href="/admin"><i
+                                            class="fa-solid fa-lock p-2"></i>Accès back office</a>
                                 </li>
                             @endif
 
@@ -90,7 +83,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false" title="Accès ESPACE PERSONNEL">
+                                    data-bs-toggle="dropdown" aria-expanded="false"  title="Réservé aux licenciés">
                                     <i class="fa-regular fa-user fs-4 me-3 fw-bold"></i>ESPACE PERSONNEL
                                 </a>
                                 <ul class="dropdown-menu text-bg-dark">

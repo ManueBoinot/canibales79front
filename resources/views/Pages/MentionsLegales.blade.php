@@ -46,8 +46,7 @@
         </p>
 
         <div ng-bind-html="linkHTML">
-            <p>Ces mentions légales RGPD sont issues du <a href="https://fr.orson.io/1371/generateur-mentions-legales"
-                    title="générateur gratuit offert par Orson.io">générateur gratuit offert par Orson.io</a></p>
+            <p>Ces mentions légales RGPD sont issues du <a href="https://fr.orson.io/1371/generateur-mentions-legales">générateur gratuit offert par Orson.io</a></p>
         </div>
 
 

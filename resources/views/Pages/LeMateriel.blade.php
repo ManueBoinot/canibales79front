@@ -19,7 +19,7 @@
                         <a target="blank"
                             href="https://www.fenril.fr/kit-canicross/1438-kit-canicross-inlandsis-3760264640080.html"
                             target="blank"><img src="../assets/photos/materiel/kit-canicross-inlandsis.jpg"
-                                alt="kit complet canicross" title="Kit complet CANICROSS de Inlandsis"></a>
+                                alt="kit complet canicross"></a>
                         <figcaption class="fst-italic text-secondary"><small>Le kit complet Canicross de Inlandsis</small>
                         </figcaption>
                     </figure>

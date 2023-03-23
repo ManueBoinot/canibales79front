@@ -24,7 +24,7 @@
                                     @method('get')
                                     @csrf
                                     <input type="hidden" name="faq_id" value="{{ $faq->id }}">
-                                    <button class="btn btn-warning"><i class="fa-solid fa-pen" title="Modifier la question/réponse"></i>
+                                    <button class="btn btn-warning"><i class="fa-solid fa-pen"></i>
                                         Modifier</button>
                                 </form>
 
