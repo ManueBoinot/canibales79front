@@ -65,7 +65,7 @@ class User extends Authenticatable
         return $this->belongsToMany(Chien::class)->using(ChienUser::class);
     }
 
-    // Fonction qui définit que le role_id (1) est systématiquement un Admin
+    // Fonction qui définit que le role_id (1) est un Admin
     public function isAdmin()
     {
         return $this->role_id == 1;

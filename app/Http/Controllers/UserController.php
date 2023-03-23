@@ -148,7 +148,6 @@ class UserController extends Controller
         if ($request->user()->cannot('delete', $user)) {
             abort(403);
         }
-
         $user->delete();
         return redirect()->route('admin.index')->with('status', 'L\'utilisateur a bien été supprimé');
     }

@@ -1,6 +1,6 @@
 <div class="text-end">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" data-bs-target="#ChienDeleteModal">
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#ChienDeleteModal">
         <i class="fa-regular fa-trash-can"></i>
     </button>
 
@@ -10,18 +10,18 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="ChienDeleteModalLabel">Supprimer un chien</h1>
+                    <h1 class="modal-title fs-5" id="ChienDeleteModalLabel">Retirer un chien</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-center text-danger">
-                    <p>Es-tu sûr(e) de vouloir supprimer <span class="fw-bold">{{ $chien->nom }}</span> ?<br>
-                        <strong>Cette action est irréversible et supprimera {{ $chien->nom }} de la base de données, y compris pour ses autres maîtres(ses).</strong>
+                <div class="modal-body text-center">
+                    <p>Es-tu sûr(e) de vouloir retirer <span class="fw-bold">{{ $chien->nom }}</span> de ton équipe
+                        ?</strong>
                     </p>
-                    <form method="post" action="{{ route('chiens.destroy', $chien) }}">
+                    <form method="post" action="{{ route('chienuser.destroy', $chien) }}">
                         @method('delete')
                         @csrf
                         <input type="hidden" name="chien_id" value="{{ $chien->id }}">
-                        <button type="submit" class="btn btn-danger">Je confirme vouloir supprimer
+                        <button type="submit" class="btn btn-danger">Je confirme vouloir retirer
                             {{ $chien->nom }}</button>
                     </form>
                 </div>

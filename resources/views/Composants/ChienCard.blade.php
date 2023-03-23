@@ -12,14 +12,16 @@
             @foreach ($user->chiens as $chien)
                 <div class="card col-12 col-md-5 text-bg-light">
                     <div class="card-body">
-                        {{-- Boutons MODIF et SUPPRESSION chien --}}
 
+                        {{-- Boutons MODIF et SUPPRESSION chien --}}
                         <div class="text-end d-flex justify-content-end gap-1">
                             <a href="{{ route('chiens.edit', $chien, $user) }}">
                                 @method('get')
                                 @csrf
                                 <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
                             </a>
+                            {{-- Bouton pour ajouter un chien existant --}}
+                            @include('Composants.ChienModalRetirer')
                         </div>
 
                         {{-- Infos du chien --}}
@@ -57,7 +59,7 @@
                 </div>
             @endforeach
         @endif
-        
+
         {{-- Bouton pour créer un chien --}}
         @include('Composants.ChienModalCrea')
 

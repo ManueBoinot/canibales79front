@@ -128,7 +128,7 @@ class ChienController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request, Chien $chien, User $user)
+    public function destroy(Chien $chien, User $user)
     {
         $user = Auth::user();
         $chien->delete();
