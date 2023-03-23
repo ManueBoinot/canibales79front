@@ -1,7 +1,7 @@
 <div class="text-end">
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" data-bs-target="#FAQDeleteModal">
-        <i class="fa-regular fa-trash-can"></i>
+        <i class="fa-regular fa-trash-can" title="Supprimer la question/réponse"></i>
     </button>
 
     <!-- Modal -->

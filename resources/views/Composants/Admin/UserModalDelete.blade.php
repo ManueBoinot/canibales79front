@@ -1,6 +1,6 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" data-bs-target="#UserDeleteModal">
-    <i class="fa-regular fa-trash-can"></i>
+    <i class="fa-regular fa-trash-can" title="Supprimer l'utilisateur'"></i>
 </button>
 
 <!-- Modal -->

@@ -332,7 +332,7 @@
             </div>
 
             <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
-                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                    <h5><i class="fa-regular fa-hand-pointer" title="Aller à la rubrique LES DISCIPLINES"></i> Disciplines et conditions d'accès</h5>
                 </a></div>
 
             {{-- Lien vers haut de page --}}

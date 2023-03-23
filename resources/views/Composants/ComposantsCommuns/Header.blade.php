@@ -8,14 +8,14 @@
             <div
                 class="container-fluid d-flex flex-wrap justify-content-center justify-content-sm-end align-items-center">
                 <!-- LOGO CANIBALES -->
-                <a class="nav-link" href="/">
+                <a class="nav-link" href="/" title="Retour à l'accueil">
                     <img src="../.././assets/logos/logo-canibales-contour.png" style="width: 200px">
                 </a>
 
                 <!-- TOGGLER NAVBAR -->
                 <button class="navbar-toggler mx-auto me-sm-5 bg-white" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    style="box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.658);--bs-bg-opacity: 0.1">
+                    style="box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.658);--bs-bg-opacity: 0.1" title="Menu">
                     <i class="fa-solid fa-bars text-white fs-2 p-1"></i>
                 </button>
             </div>
@@ -34,12 +34,12 @@
                 </div>
                 <div class="offcanvas-body">
 
-                    <!-- Barre de recherche -->
+                    {{-- <!-- Barre de recherche -->
                     <form class="d-flex mt-3" role="search">
                         <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
                         <button class="btn btn-outline-light" type="submit"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
+                                class="fa-solid fa-magnifying-glass" title="Rechercher"></i></button>
+                    </form> --}}
 
                     <li>
                         <hr class="divider">
@@ -53,7 +53,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false" title="Espace personnel">
-                                    <i class="fa-regular fa-user p-2"></i>ESPACE PERSONNEL
+                                    <i class="fa-regular fa-user p-2" title="Compte personnel"></i>ESPACE PERSONNEL
                                 </a>
                                 <ul class="dropdown-menu text-bg-dark">
                                     <li><a class="dropdown-item" href="{{ route('user.show', Auth::user()) }}">Mes
@@ -82,7 +82,7 @@
                             @if (Auth::user()->isAdmin())
                                 <li class="nav-item">
                                     <a class="nav-link text-danger" href="/admin" title="Back-office"><i
-                                            class="fa-solid fa-lock p-2"></i>Accès back office</a>
+                                            class="fa-solid fa-lock p-2" title="Accès BACK OFFICE"></i>Accès back office</a>
                                 </li>
                             @endif
 
@@ -90,7 +90,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    data-bs-toggle="dropdown" aria-expanded="false" title="Accès ESPACE PERSONNEL">
                                     <i class="fa-regular fa-user fs-4 me-3 fw-bold"></i>ESPACE PERSONNEL
                                 </a>
                                 <ul class="dropdown-menu text-bg-dark">

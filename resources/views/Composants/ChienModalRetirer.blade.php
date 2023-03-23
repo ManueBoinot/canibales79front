@@ -1,16 +1,16 @@
 <div class="text-end">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#ChienDeleteModal">
-        <i class="fa-regular fa-trash-can"></i>
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#ChienRetirerModal">
+        <i class="fa-regular fa-trash-can" title="Retirer le chien"></i>
     </button>
 
     <!-- Modal -->
-    <div class="modal fade text-dark" id="ChienDeleteModal" tabindex="-1" aria-labelledby="ChienDeleteModalLabel"
+    <div class="modal fade text-dark" id="ChienRetirerModal" tabindex="-1" aria-labelledby="ChienRetirerModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="ChienDeleteModalLabel">Retirer un chien</h1>
+                    <h1 class="modal-title fs-5" id="ChienRetirerModalLabel">Retirer un chien</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">

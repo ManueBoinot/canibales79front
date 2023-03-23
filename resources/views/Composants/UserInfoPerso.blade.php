@@ -12,7 +12,7 @@
                     @method('get')
                     @csrf
                     <input type="hidden" name="user_id" value="{{ $user->id }}">
-                    <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
+                    <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square" title="Modifier mes informations"></i></button>
                 </form>
             </div>
         </div>

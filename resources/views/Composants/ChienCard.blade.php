@@ -18,7 +18,7 @@
                             <a href="{{ route('chiens.edit', $chien, $user) }}">
                                 @method('get')
                                 @csrf
-                                <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square" title="Modifier le chien"></i></button>
                             </a>
                             {{-- Bouton pour ajouter un chien existant --}}
                             @include('Composants.ChienModalRetirer')
