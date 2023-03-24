@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\FAQ;
+use App\Models\Faq;
 use Auth;
 
-class FAQController extends Controller
+class FaqController extends Controller
 {
 
 
@@ -17,7 +17,7 @@ class FAQController extends Controller
      */
     public function index()
     {
-        $faqs = FAQ::all();
+        $faqs = Faq::all();
         return view('Pages.FAQ', ['faqs' => $faqs]);
     }
 
@@ -28,7 +28,7 @@ class FAQController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(FAQ $faq)
+    public function edit(Faq $faq)
     {
         if (Auth::user()->isAdmin()) {
             return view('Pages.Admin.FAQModif', ['faq' => $faq]);
@@ -52,7 +52,7 @@ class FAQController extends Controller
                 'reponse' => 'required',
             ]);
 
-            FAQ::create([
+            Faq::create([
                 'question' => $request->question,
                 'reponse' => $request->reponse
             ]);
@@ -69,7 +69,7 @@ class FAQController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, FAQ $faq)
+    public function update(Request $request, Faq $faq)
     {
         if (Auth::user()->isAdmin()) {
             $request->validate([
@@ -99,7 +99,7 @@ class FAQController extends Controller
     public function destroy($id)
     {
         if (Auth::user()->isAdmin()) {
-            $faq = FAQ::find($id);
+            $faq = Faq::find($id);
             $faq->delete();
             return redirect()->route('admin.index')->with('status', 'La question/réponse a bien été supprimée');
         }

@@ -13,15 +13,14 @@
                 <div class="card col-12 col-md-5 text-bg-light">
                     <div class="card-body">
 
-                        {{-- Boutons MODIF et SUPPRESSION chien --}}
+                        {{-- Boutons MODIF chien --}}
                         <div class="text-end d-flex justify-content-end gap-1">
                             <a href="{{ route('chiens.edit', $chien, $user) }}">
                                 @method('get')
                                 @csrf
-                                <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square" title="Modifier le chien"></i></button>
+                                <button class="btn btn-outline-dark"><i class="fa-regular fa-pen-to-square"
+                                        title="Modifier le chien"></i></button>
                             </a>
-                            {{-- Bouton pour ajouter un chien existant --}}
-                            @include('Composants.ChienModalRetirer')
                         </div>
 
                         {{-- Infos du chien --}}
@@ -60,10 +59,12 @@
             @endforeach
         @endif
 
-        {{-- Bouton pour créer un chien --}}
-        @include('Composants.ChienModalCrea')
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            {{-- Bouton pour créer un chien --}}
+            @include('Composants.ChienModalCrea')
 
-        {{-- Bouton pour ajouter un chien existant --}}
-        @include('Composants.ChienModalAjout')
+            {{-- Bouton pour ajouter un chien existant --}}
+            @include('Composants.ChienModalAjout')
+        </div>
     </div>
 </div>

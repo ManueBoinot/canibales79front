@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\FAQ;
+use App\Models\Faq;
 use Auth;
 
 class AdminController extends Controller
@@ -23,7 +23,7 @@ class AdminController extends Controller
     {
         if (Auth::user()->isAdmin()) {
             $users = User::all()->sortBy('nom');
-            $faqs = FAQ::all();
+            $faqs =Faq::all();
             return view('Pages.Admin.BackOfficeIndex', ['users' => $users, 'faqs' => $faqs]);
         }
         abort(403);

@@ -1,7 +1,7 @@
 <div class="text-end">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#ChienRetirerModal">
-        <i class="fa-regular fa-trash-can" title="Retirer le chien"></i>
+    <button type="button" class="btn btn-lg btn-outline-warning" data-bs-toggle="modal" data-bs-target="#ChienRetirerModal">
+        <i class="fa-solid fa-ban" title="Retirer le chien"></i>
     </button>
 
     <!-- Modal -->

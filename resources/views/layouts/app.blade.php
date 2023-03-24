@@ -18,9 +18,12 @@
 
 </head>
 
-<body class="vw-100 min-vh-100">
+<body class="max-vw-100 min-vh-100">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v16.0&appId=726488655856436&autoLogAppEvents=1"
+        nonce="ktuzrnbz"></script>
     <div id="app">
-
         {{-- Header ------------------------------------- --}}
         @include('Composants.ComposantsCommuns.Header')
 

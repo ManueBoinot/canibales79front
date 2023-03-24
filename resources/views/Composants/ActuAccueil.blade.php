@@ -9,22 +9,33 @@
                 courant
                 de toutes nos actualités !</h5>
             {{-- Intégration FACEBOOK --}}
-            <div class="col-xl-6 mx-auto overflow-hidden">
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCanibales79%2Fposts%2Fpfbid02sr7ZhVENsJZDZCG1PctcAgnZuCFhvFixGev6f2r9e8g65pS2XBEEmuknqqQGHWVql&show_text=true&width=538"
-                    width="538" height="760" style="border:none; max-width: 90vw" scrolling="no" frameborder="0"
-                    allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <div class="col-xl-6 mx-auto">
+                <div class="fb-post"
+                    data-href="https://www.facebook.com/Canibales79/posts/pfbid033ZyPWroVK4jAt38YtC8LcDTTUTMKxmWkcpUbSJhXBdoDKrL4scNsMbqTjc17BqoLl"
+                    data-width="500" data-show-text="true">
+                    <blockquote cite="https://www.facebook.com/Canibales79/posts/702854828362142"
+                        class="fb-xfbml-parse-ignore">
+                        <p>🐕INTERCLUBS🐕
+
+                            Demain, dimanche 19 mars, interclubs Nouvelle Aquitaine !
+
+                            👉 Briefing sans chiens à 9h45
+
+                            👉 Départ...</p>Publiée par <a href="https://www.facebook.com/Canibales79">Canibales 79</a>
+                        sur&nbsp;<a href="https://www.facebook.com/Canibales79/posts/702854828362142">Samedi 18 mars
+                            2023</a>
+                    </blockquote>
+                </div>
             </div>
 
             {{-- Intégration INSTAGRAM --}}
-            <div class="col-xl-6 mx-auto overflow-hidden">
-                <blockquote class="instagram-media mx-auto max-width:90vw"
-                    data-instgrm-permalink="https://www.instagram.com/p/CicN5QmNWBD/?utm_source=ig_embed&amp;utm_campaign=loading"
+            <div class="col-xl-6 mx-auto">
+                <blockquote class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/Cpe4QhaNsUi/?utm_source=ig_embed&amp;utm_campaign=loading"
                     data-instgrm-version="14"
                     style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                     <div style="padding:16px;"> <a
-                            href="https://www.instagram.com/p/CicN5QmNWBD/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            href="https://www.instagram.com/p/Cpe4QhaNsUi/?utm_source=ig_embed&amp;utm_campaign=loading"
                             style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
                             target="_blank">
                             <div style=" display: flex; flex-direction: row; align-items: center;">
@@ -105,7 +116,7 @@
                         </a>
                         <p
                             style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                            <a href="https://www.instagram.com/p/CicN5QmNWBD/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            <a href="https://www.instagram.com/p/Cpe4QhaNsUi/?utm_source=ig_embed&amp;utm_campaign=loading"
                                 style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                                 target="_blank">Une publication partagée par canicross_canivtt_canirando
                                 (@canibales_79)</a>

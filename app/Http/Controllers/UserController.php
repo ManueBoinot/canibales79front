@@ -43,7 +43,7 @@ class UserController extends Controller
         }
 
         $user->load('role', 'chiens');
-        return view('pages.users.mon-compte', ['user' => $user]);
+        return view('Pages.Users.mon-compte', ['user' => $user]);
     }
 
     // ____________________________________________________________________________
@@ -57,7 +57,7 @@ class UserController extends Controller
         if ($request->user()->cannot('edit', $user)) {
             abort(403);
         }
-        return view('pages.users.modifier-infos', ['user' => $user]);
+        return view('Pages.Users.modifier-infos', ['user' => $user]);
     }
 
     // ____________________________________________________________________________
@@ -76,8 +76,9 @@ class UserController extends Controller
         $request->validate([
             'prenom' => ['string', 'max:40'],
             'nom' => ['string', 'max:40'],
-            'email' => ['required', 'string', 'email', 'max:40'],
-            'numero_licence' => ['required', 'string', 'max:6'],
+            'email' => ['string', 'email', 'max:40'],
+            'numero_licence' => ['string', 'max:6'],
+            'type_licence' => ['string'],
             'date_naissance' => ['date', 'before:today'],
             'adresse_ligne_1' => ['string', 'max:40'],
             'adresse_ligne_2' => ['nullable', 'string', 'max:40'],

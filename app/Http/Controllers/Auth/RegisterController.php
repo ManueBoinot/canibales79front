@@ -55,6 +55,7 @@ class RegisterController extends Controller
             'nom' => ['required', 'string', 'max:40'],
             'email' => ['required', 'string', 'email', 'max:40', 'unique:users'],
             'numero_licence' => ['required', 'string', 'max:6', 'unique:users'],
+            'type_licence' => ['required', 'string'],
             'date_naissance' => ['required', 'date', 'before:today'],
             'adresse_ligne_1' => ['required', 'string', 'max:40'],
             'adresse_ligne_2' => ['nullable', 'string', 'max:40'],

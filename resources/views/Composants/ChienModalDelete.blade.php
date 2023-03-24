@@ -1,6 +1,6 @@
 <div class="text-end">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" data-bs-target="#ChienDeleteModal">
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#ChienDeleteModal">
         <i class="fa-regular fa-trash-can" title="Supprimer le chien"></i>
     </button>
 

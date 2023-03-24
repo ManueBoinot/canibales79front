@@ -5,8 +5,13 @@
 
         <h2 class="text-center mb-4 fw-bold">Mettre à jour les infos de <span class="fw-bold">{{ $chien->nom }}</span> </h2>
 
-        {{-- Bouton modal SUPPRESSION CHIEN --}}
-        @include('Composants.ChienModalDelete')
+        <div class="d-flex justify-content-end gap-5">
+            {{-- Bouton pour RETIRER le chien de l'équipe --}}
+            @include('Composants.ChienModalRetirer')
+
+            {{-- Bouton modal SUPPRESSION CHIEN --}}
+            @include('Composants.ChienModalDelete')
+        </div>
 
         <form method="post" action="{{ route('chiens.update', $chien) }}" class="text-start" enctype="multipart/form-data">
             @method('put')

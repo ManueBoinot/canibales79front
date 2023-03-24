@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ChienUser;
 use Auth;
-use App\Models\User;
 use App\Models\Chien;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\DB;
 
 class ChienUserController extends Controller
 {
@@ -41,11 +41,11 @@ class ChienUserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Chien $chien)
+    public function destroy(Request $request)
     {
         $user = Auth::user();
-        $user->chiens()->detach();
-        $chien->users()->detach();
+
+        DB::table('chien_user')->where(['chien_id' => $request->chien_id, 'user_id' => $user->id])->delete();
 
         return redirect()->route('user.show', ['user' => $user])->with('status', 'Le chien a bien été retiré de l\'équipe');
     }

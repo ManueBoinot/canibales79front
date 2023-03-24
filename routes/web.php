@@ -38,6 +38,6 @@ Route::put('/users/{user}/modif-password', [App\Http\Controllers\UserController:
 // ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
 Route::resource('/user', App\Http\Controllers\UserController::class)->middleware('auth');
 Route::resource('/chiens', App\Http\Controllers\ChienController::class)->middleware('auth');
-Route::resource('/faq', App\Http\Controllers\FAQController::class);
+Route::resource('/faq', App\Http\Controllers\FaqController::class);
 Route::resource('/chienuser', App\Http\Controllers\ChienUserController::class)->middleware('auth');
 
