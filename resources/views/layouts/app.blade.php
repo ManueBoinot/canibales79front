@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+    content="CANIBALES79 est un club de CANICROSS - CANIVTT - CANIMARCHE basé près de Niort dans les Deux-Sèvres (79), pour la pratique en loisir comme en compétition. Venez nous rencontrer et essayer nos sports !">
     <title>CANIBALES 79 NIORT - Canicross canivtt canimarche Deux-Sèvres</title>
 
     <!-- Banque d'icônes -->
