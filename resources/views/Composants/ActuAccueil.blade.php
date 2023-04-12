@@ -8,8 +8,20 @@
             <h5 class="mb-3">Suivez-nous sur <strong>Facebook</strong> et <strong>Instagram</strong> pour être au
                 courant
                 de toutes nos actualités !</h5>
+
+            <div class="d-flex justify-content-center gap-5 fs-1" id="logos-reseaux">
+                <a href="https://www.facebook.com/Canibales79" class="text-dark" style="font-size: 60px" target="blank"
+                    title="Notre page Facebook"><i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/canibales_79/" class="text-dark" style="font-size: 60px"
+                    target="blank" title="Notre page Instagram"><i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+
+
+
             {{-- Intégration FACEBOOK --}}
-            <div class="col-xl-6 mx-auto">
+            {{-- <div class="col-xl-6 mx-auto">
                 <div class="fb-post"
                     data-href="https://www.facebook.com/Canibales79/posts/pfbid033ZyPWroVK4jAt38YtC8LcDTTUTMKxmWkcpUbSJhXBdoDKrL4scNsMbqTjc17BqoLl"
                     data-width="500" data-show-text="true">
@@ -26,9 +38,9 @@
                             2023</a>
                     </blockquote>
                 </div>
-            </div>
+            </div> --}}
 
-            {{-- Intégration INSTAGRAM --}}
+            {{-- Intégration INSTAGRAM
             <div class="col-xl-6 mx-auto">
                 <blockquote class="instagram-media"
                     data-instgrm-permalink="https://www.instagram.com/p/Cpe4QhaNsUi/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -124,12 +136,12 @@
                     </div>
                 </blockquote>
                 <script async src="//www.instagram.com/embed.js"></script>
-            </div>
+            </div> --}}
         </div>
     </div>
 
     {{-- ARTICLES PRESSE ================================================================== --}}
-    <div class="row text-center border-top" id="actu">
+    {{-- <div class="row text-center border-top" id="actu">
         <h3 class="pt-5">ON PARLE DE NOUS</h3>
         <!-- Article presse 1 -->
         <div class="col-lg-4">
@@ -182,5 +194,5 @@
                 </div>
             </a>
         </div>
-    </div>
+    </div> --}}
 </section>

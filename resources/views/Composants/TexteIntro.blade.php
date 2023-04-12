@@ -1,4 +1,4 @@
-<section id="intro-accueil" class="container-md py-5 mx-auto" style="background-color: rgba(255, 255, 255, 0.95)">
+<section id="intro-accueil" class="container-fluid py-5 mx-auto" style="background-color: rgba(255, 255, 255, 0.95)">
 
     <div id="disciplines-accueil" class="row g-3 py-4">
         <!-- Phrase d'accueil -->
