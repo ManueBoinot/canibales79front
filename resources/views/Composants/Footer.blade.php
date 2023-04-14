@@ -12,16 +12,17 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 30%, rgba(255,0,0,0.9) 100%);"
             <ul class="list-unstyled">
                 <li class="list-item"><a href="/">Accueil</a>
                 </li>
-                <li class="list-item"><a href="/le-club">Le club</a></li>
-                <li class="list-item"><a href="/les-disciplines">Les
-                        disciplines</a></li>
-                <li class="list-item"><a href="/le-materiel">Le
-                        matériel</a></li>
+                <li class="list-item"><a href="/le-club">Qui sommes-nous ?</a></li>
+                <li class="list-item"><a href="/infos-pratiques">Infos pratiques</a>
+                </li>
+                <li class="list-item"><a href="/les-disciplines">Disciplines et équipement</a></li>
                 <li class="list-item"><a href="/la-federation">Réglementation</a>
                 </li>
                 <li class="list-item"><a href="/faq">Foire
                         aux
                         questions</a></li>
+                <li class="list-item"><a href="/nos-partenaires">Nos partenaires</a>
+                </li>
                 <li class="list-item"><a href="/contact">Contact</a>
                 </li>
                 <li class="list-item"><a href="/mentions-legales">Mentions légales</a>
@@ -32,13 +33,16 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 30%, rgba(255,0,0,0.9) 100%);"
         <!-- Colonne LOGO FOOTER -->
         <div id="reseaux-footer" class="col-12 col-sm-4 text-center">
             <a href="/">
-                <img src="../../assets/logos/logo-canibales-contour.png" style="width: 150px" title="Retour à l'accueil">
+                <img src="../../assets/logos/logo-canibales-contour.png" style="width: 150px"
+                    title="Retour à l'accueil">
             </a>
             <div><a href="https://www.facebook.com/Canibales79" target="blank"><i
-                        class="logo-footer fa-brands fa-square-facebook" style="font-size: 30px" title="Notre page Facebook"></i>
+                        class="logo-footer fa-brands fa-square-facebook" style="font-size: 30px"
+                        title="Notre page Facebook"></i>
                 </a>
                 <a href="https://www.instagram.com/canibales_79/" target="blank"><i
-                        class="logo-footer fa-brands fa-square-instagram p-1" style="font-size: 30px" title="Notre page Instagram"></i>
+                        class="logo-footer fa-brands fa-square-instagram p-1" style="font-size: 30px"
+                        title="Notre page Instagram"></i>
                 </a>
             </div>
             <p class="m-2">Site réalisé par : Manue</p>

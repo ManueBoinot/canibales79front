@@ -6,39 +6,61 @@
     font-family: 'Poppins', sans-serif;
 }
 
-button.contact:hover {
-    background-color: rgb(122, 0, 0) !important;
+.red-button {
+    background-color: rgb(217, 0, 0);
+    color: white;
 }
 
-h1, h2, h3, h4 {
+.red-button:hover {
+    background-color: rgb(91, 0, 0);
+    color: white;
+}
+
+.black-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.black-button:hover {
+    background-color: rgb(91, 0, 0);
+    color: white;
+}
+
+h1,
+h2 {
     font-weight: bold;
 }
 
+.ancre {
+    margin-top: -150px;
+    padding-top: 150px;
+}
+
 /* NAVBAR ------------------------------------------ */
-.navbar-toggler:hover {
+#header-nav .navbar-toggler:hover {
     transform: scale(1.1);
     transition: 0.4s;
 }
 
-.navbar-toggler {
+#header-nav .navbar-toggler {
     transition: 0.8s;
 }
 
-.nav-link:hover {
+#header-nav .nav-link:hover {
     color: white;
     font-weight: bold;
 }
 
-.dropdown-item,
-.nav-link {
+#header-nav .dropdown-item,
+#header-nav .nav-link {
     color: white;
 }
 
-.dropdown-item:hover {
+#header-nav .dropdown-item:hover {
     color: black;
 }
 
-.fa-dog {
+#header-nav .fa-dog {
     font-size: 10px;
 }
 
@@ -58,54 +80,50 @@ h1, h2, h3, h4 {
 /* TEXTE INTRO ACCUEIL ------------------------------------------ */
 #accueil-canicross {
     background-image: url('../../public/assets/photos/carre/carre-canicross.jpeg');
-    height: 280px;
-    width: 280px;
-    border-radius: 100%;
-    background-size: cover;
-    transition: 0.4s;
 }
 
 #accueil-canivtt {
     background-image: url('../../public/assets/photos/carre/carre-canivtt.jpg');
-    height: 280px;
-    width: 280px;
-    border-radius: 100%;
-    background-size: cover;
-    transition: 0.4s;
 }
 
 #accueil-canimarche {
     background-image: url('../../public/assets/photos/carre/carre-canimarche.jpeg');
+}
+
+.intro-sports {
     height: 280px;
     width: 280px;
     border-radius: 100%;
     background-size: cover;
     transition: 0.4s;
+    position: relative;
 }
 
-#accueil-canimarche:hover,
-#accueil-canivtt:hover,
-#accueil-canicross:hover {
+.intro-sports:hover {
     transform: scale(1.1);
     transition: 0.4s;
 }
 
-#texte-accueil button.faq:hover {
-    background-color: rgb(68, 68, 68) !important;
+.logo-60 {
+    height: 60px;
+    width: 60px;
+    transition: 0.4s;
 }
 
-#texte-accueil button.inscription:hover {
-    background-color: rgb(122, 0, 0) !important;
+.logo-60:hover {
+    height: 60px;
+    width: 60px;
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 /* RUBRIQUES ------------------------------------------ */
-
 #rubriques .card {
     transition: 0.5s;
 }
 
-#rubriques .card-body {
-    height: 200px;
+#rubriques .card-text {
+    height: 150px;
 }
 
 #rubriques .card:hover {
@@ -118,7 +136,7 @@ h1, h2, h3, h4 {
 }
 
 /* ACTUALITE ------------------------------------------ */
-#actu .card {
+/* #actu .card {
     transform: scale(0.9);
     max-height: 30vh;
     max-width: 80vw;
@@ -135,7 +153,7 @@ h1, h2, h3, h4 {
 #actu .card:hover {
     transform: scale(1);
     transition: 0.5s;
-}
+} */
 
 /* CAROUSEL PARTENAIRES ------------------------------------------ */
 #partners-carousel {
@@ -166,13 +184,44 @@ h1, h2, h3, h4 {
     border-radius: 0.5rem;
 }
 
-/* CONTACT --------------------------------------------------------------------- */
+/* LE CLUB ------------------------------------------ */
+.illu-bureau {
+    width: 200px;
+    border-radius: 100%;
+}
 
+/* INFOS PRATIQUES --------------------------------------------------------------------- */
+.illu-sorties {
+    border-radius: 10%;
+    max-width: 50vw;
+    width: 250px;
+}
+
+.logo-compet {
+    border-radius: 100%;
+    width: 100px;
+}
+
+#nav-pill .nav-link.active {
+background-color: rgb(28, 28, 28);
+color: white;
+}
+
+#nav-pill .nav-link {
+color: black;
+background-color: rgb(215, 212, 212);
+}
+
+/* DISCIPLINES --------------------------------------------------------------------- */
+.illu-disciplines {
+    border-radius: 100%;
+    width: 250px;
+}
+
+/* CONTACT --------------------------------------------------------------------- */
 #contact button.faq:hover {
     background-color: rgb(164, 0, 0) !important;
 }
-
-
 
 /* FOOTER -------------------------------------------------- */
 footer a {
@@ -197,13 +246,9 @@ footer a {
 
 /* MEDIA QUERIES -------------------------------------------------- */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {}
 
-}
-
-@media screen and (min-width: 375px) {
-
-}
+@media screen and (min-width: 375px) {}
 
 
 @media screen and (min-width: 424px) {
@@ -212,13 +257,8 @@ footer a {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {}
 
-}
-
-@media screen and (min-width: 1024px) {
-
-}
+@media screen and (min-width: 1024px) {}
 
 /* VIDEO FSLC ------------------------------------------ */
-

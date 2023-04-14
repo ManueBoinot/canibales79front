@@ -6,10 +6,10 @@
         <h1>INTERFACE ADMINISTRATEUR</h1>
 
         {{-- LISTE DES UTILISATEURS --}}
-        @include('Composants.Admin.UsersList')
+        @include('Composants.BackOffice.UsersList')
 
         {{-- LISTE DES QUESTIONS/REPONSES FAQ --}}
-        @include('Composants.Admin.FAQList')
+        @include('Composants.BackOffice.FAQList')
 
     </div>
 @endsection

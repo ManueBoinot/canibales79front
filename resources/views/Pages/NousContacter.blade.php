@@ -1,23 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container bg-white py-5 px-md-5" id="contact">
+    <div class="container py-5 px-md-5 text-center" id="contact">
         <h1 class="text-center mb-5">FORMULAIRE DE CONTACT</h1>
 
+            <h2 class="fst-italic fw-light text-danger">(Cette section du site est en construction)</h2>
+
+            <p class="my-4 fs-5">En attendant, merci de nous contacter par email à <a class="text-decoration-none text-dark fw-bold" href="mailto:canibales79@gmail.com">canibales79@gmail.com</a><i class="ms-2 fs-3 fa-regular fa-face-smile-beam"></i></p>
+
         {{-- Lien vers la FAQ --}}
-        <div class="text-center">
-            <h5 class="mb-5" style="color: red">Tu as une question ? Pense à consulter notre <a href="/faq"><button
-                        type="button" class="btn text-white faq" style="background-color: red">FOIRE
+        {{-- <div class="text-center">
+            <p class="mb-5 text-danger">Tu as une question ? Pense à consulter notre <a href="/faq"><button
+                        type="button" class="btn red-button">FOIRE
                         AUX
-                        QUESTIONS</button></a></h5>
-            <h5 class="border-top pt-5">Tu n'as pas trouvé ta réponse et/ou tu as <strong>envie de nous rejoindre</strong> ?
-            </h5>
-            <h5 class="pb-3">Alors remplis le formulaire ci-dessous et nous te répondrons dans les meilleurs délais <i
-                    class="fa-regular fa-face-smile-beam"></i></h5>
-        </div>
+                        QUESTIONS</button></a></p>
+            <p class="border-top pt-5">Tu n'as pas trouvé ta réponse et/ou tu as <strong>envie de nous rejoindre</strong> ?
+            </p>
+            <p class="pb-3">Alors remplis le formulaire ci-dessous et nous te répondrons dans les meilleurs délais <i
+                    class="fa-regular fa-face-smile-beam"></i></p>
+        </div> --}}
 
         {{-- FORMULAIRE DE CONTACT --}}
-        <form method="post" action="mailto:canibales79@mail.com">
+        {{-- <form method="post" action="mailto:canibales79@mail.com">
             @csrf
             <div class="row">
                 <div class="form-floating mb-3 col-md-6">
@@ -45,6 +49,6 @@
                     <button type="submit" class="btn btn-dark">Envoyer mon message</button>
                 </div>
             </div>
-        </form>
+        </form> --}}
     </div>
 @endsection

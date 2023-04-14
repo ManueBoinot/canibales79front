@@ -357,7 +357,7 @@
         {{-- ________________________________________________________________________________________________ --}}
         {{-- Suppression de compte --}}
         <div class="row py-3 mx-auto text-center">
-            @include('Composants.UserModalDelete')
+            @include('Composants.User.UserModalDelete')
         </div>
     </div>
 @endsection

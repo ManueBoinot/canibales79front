@@ -20,9 +20,10 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::view('/les-disciplines', 'Pages/LesDisciplines');
-Route::view('/la-federation','Pages.LaFederation');
+Route::view('/reglementation','Pages.LaFederation');
 Route::view('/le-club', 'Pages.LeClub');
-Route::view('/le-materiel','Pages.LeMateriel');
+Route::view('/infos-pratiques', 'Pages.InfosPratiques');
+Route::view('/equipement','Pages.Equipement');
 Route::view('/mentions-legales','Pages.MentionsLegales');
 Route::view('/nous-rejoindre','Pages.NousRejoindre');
 Route::view('/contact','Pages.NousContacter');
@@ -33,7 +34,7 @@ Route::view('/faq','Pages.FAQ');
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index')->middleware('auth');
 
 // Route USER pour modifier le mot de passe -----------------------------------
-Route::put('/users/{user}/modif-password', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
+Route::put('/users/{user}/modifier-mot-de-passe', [App\Http\Controllers\UserController::class, 'updatePassword'])->name('updatePassword');
 
 // ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
 Route::resource('/user', App\Http\Controllers\UserController::class)->middleware('auth');

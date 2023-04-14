@@ -61,10 +61,10 @@
 
         <div class="d-flex flex-wrap justify-content-center gap-3">
             {{-- Bouton pour créer un chien --}}
-            @include('Composants.ChienModalCrea')
+            @include('Composants.User.ChienModalCrea')
 
             {{-- Bouton pour ajouter un chien existant --}}
-            @include('Composants.ChienModalAjout')
+            @include('Composants.User.ChienModalAjout')
         </div>
     </div>
 </div>

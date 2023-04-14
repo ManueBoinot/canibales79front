@@ -1,18 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container bg-white px-lg-5">
-        <h1 class="py-5 text-center fw-bold">LE MATÉRIEL</h1>
+    <div class="container px-lg-5">
+        <h1 class="py-5 text-center fw-bold">L'ÉQUIPEMENT</h1>
 
-        {{-- Intro sur FENRIL --}}
+        {{-- Intro --}}
         <div class="row mb-5">
             <div class="row mb-4">
-                <h5 class="text-center">Les sports de traction en binôme nécessitent un matériel adapté pour garantir confort
+                <p class="text-center">Les sports de traction en binôme nécessitent un équipement adapté pour garantir
+                    confort
                     et bien-être du chien
-                    comme de l'humain.</h5>
+                    comme de l'humain.</p>
             </div>
 
-            {{-- Matériel CANICROSS --}}
+            {{-- Equipement CANICROSS --}}
             <div class="row mb-5 mt-5">
                 <div class="col-auto">
                     <figure>
@@ -25,8 +26,8 @@
                     </figure>
                 </div>
                 <div class="col">
-                    <h4 class="pb-3"><i class="fa-solid fa-person-running"></i><i class="fa-solid fa-dog"></i> CANICROSS |
-                        CANIMARCHE</h4>
+                    <h2 class="pb-3"><i class="fa-solid fa-person-running"></i><i class="fa-solid fa-dog"></i> CANICROSS |
+                        CANIMARCHE</h2>
                     <p><strong>Pour le chien, il faut <span class="text-decoration-underline">un harnais</span></strong>
                         dont le
                         choix est
@@ -62,7 +63,7 @@
                 </div>
             </div>
 
-            {{-- Matériel CANIVTT --}}
+            {{-- Equipement CANIVTT --}}
             <div class="row mt-3">
                 <div class="col-auto">
                     <figure><a target="blank" href="https://www.fenril.fr/kits-cani-vtt/1425-kit-canivtt-inlandsis.html"
@@ -74,8 +75,8 @@
                     </figure>
                 </div>
                 <div class="col">
-                    <h4 class="pb-3"><i class="fa-solid fa-person-biking"></i> <i class="fa-solid fa-dog"></i> CANIVTT
-                    </h4>
+                    <h2 class="pb-3"><i class="fa-solid fa-person-biking"></i> <i class="fa-solid fa-dog"></i> CANIVTT
+                    </h2>
                     <p><strong>Pour le canivtt, le harnais du chien est le même que pour le canicross/la canimarche mais
                             <span class="text-decoration-underline">la laisse est plus longue</span></strong>.<br>
                         Elle possède un mousqueton à l'extrémité côté chien, et une boucle/poignée à l'autre extrémité pour
@@ -96,28 +97,31 @@
             </div>
 
             <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
-                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                    <p><i class="fa-regular fa-hand-pointer"></i> Infos sur nos disciplines</p>
                 </a></div>
 
 
-            <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
-                        style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
+            <div class="d-flex justify-content-around">
+                <a href="/infos-pratiques" type="button" class="btn black-button">INFOS PRATIQUES</a>
+                <a href="/contact" type="button" class="btn red-button"><i
+                        class="fa-solid fa-envelope me-2"></i>CONTACT</a>
             </div>
+
         </div>
 
         {{-- CONSEILS SUR CHOIX DE HARNAIS PAR FENRIL --}}
         {{-- Harnais X-BACK --}}
         <div class="row mb-5 border-top pt-5">
-            <h3 class="fw-bold text-center mb-4">CHOISIR LE BON HARNAIS POUR SON CHIEN</h3>
-            <h5 class="text-center">Vous trouverez ci-dessous les conseils de notre partenaire <strong><a target="blank"
+            <h2 class="fw-bold text-center mb-4">CHOISIR LE BON HARNAIS POUR SON CHIEN</h2>
+            <p class="text-center">Vous trouverez ci-dessous les conseils de notre partenaire <strong><a target="blank"
                         class="link-secondary" href="https://www.fenril.fr/">FENRIL</a></strong> pour vous aider à choisir
                 le meilleur harnais pour votre chien.<br>
-            </h5>
+            </p>
         </div>
 
-        <div class="row">
+        <div class="row mb-5 pb-3 border-bottom">
             <div class="col">
-                <h5 class="fw-bold" style="color:#e70000">LES HARNAIS DE TYPE " X-BACK "</h5>
+                <h3 class="fw-bold">LES HARNAIS DE TYPE " X-BACK "</h3>
                 <p>Dénommés ainsi en raison du X que forment les sangles sur le dos du chien, les harnais x-back sont le
                     type de
                     harnais le plus éprouvé et le plus populaire.</p>
@@ -129,10 +133,12 @@
                         href="https://www.fenril.fr/harnais-canicross/378-x-back-sprint.html?search_query=lightweight&results=1">Manmat
                         Lightweight</a></p>
                 <ul>
-                    <li>Avantages : répartition optimale de la traction, confortables même sur de longues distances,
+                    <li><span class="fw-bold">Avantages</span> : répartition optimale de la traction, confortables même sur
+                        de longues distances,
                         plusieurs
                         coupes disponibles en fonction des différents morphotypes, relativement stables</li>
-                    <li>Inconvénients : pendouillent si le chien ne tracte pas, pas de tailles pour les très petits ou
+                    <li><span class="fw-bold">Inconvénients</span> : pendouillent si le chien ne tracte pas, pas de tailles
+                        pour les très petits ou
                         très
                         grands chiens, inadaptés aux chiens compacts type staff/staffie</li>
                 </ul>
@@ -156,9 +162,9 @@
         </div>
 
         {{-- Harnais COURTS --}}
-        <div class="row mb-5 border-bottom">
+        <div class="row mb-5 pb-3 border-bottom">
             <div class="col">
-                <h5 class="fw-bold" style="color:#e70000">LES HARNAIS COURTS</h5>
+                <h3 class="fw-bold">LES HARNAIS COURTS</h3>
                 <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank"
                         class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/107-harnais-canicross-zerodcshort.html">DC
@@ -166,7 +172,8 @@
                         href="https://www.fenril.fr/harnais-chien-traineau/1362-long-distance-harness-manmat.html">Manmat
                         Long Distance</a></p>
                 <ul>
-                    <li>Avantages : pas de pression sur les hanches, polyvalence vers la marche et la promenade, tailles
+                    <li><span class="fw-bold">Avantages</span> : pas de pression sur les hanches, polyvalence vers la marche
+                        et la promenade, tailles
                         disponibles pour tous les gabarits de chiens, réglables</li>
                     <li>Inconvénient: tendance à remonter sous la gorge, moindre puissance, inadaptés à la traction de
                         charges
@@ -179,17 +186,18 @@
                     <li>les activités au long cours (cani-rando, traineau longue distance)</li>
                     <li>les chiens présentant une sensibilité particulière au niveau des hanches ou de la colonne vertébrale
                     </li>
-                    <li>globelement pour une utilisation loisir polyvalente.</li>
+                    <li>globalement pour une utilisation loisir polyvalente.</li>
                 </ul>
             </div>
             <div class="col-auto mx-auto"><img src="http://www.fenril.fr/img/cms/griff-in-zero-short.jpg"
-                    alt="Zero DC Short" width="300"></div>
+                    alt="Zero DC Short" width="300">
+            </div>
         </div>
 
         {{-- Harnais REGLABLES --}}
-        <div class="row mb-5 border-bottom">
+        <div class="row mb-5 pb-3 border-bottom">
             <div class="col">
-                <h5 class="fw-bold" style="color:#e70000;">LES HARNAIS MULTI-RÉGLAGES</h5>
+                <h3 class="fw-bold">LES HARNAIS MULTI-RÉGLAGES</h3>
                 <p class="fst-italic"><i class="fa-regular fa-hand-pointer"></i> Exemples : <a target="blank"
                         class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/1270-omnijore-ruffwear-harnais.html">Ruffwear
@@ -197,56 +205,80 @@
                         href="https://www.fenril.fr/harnais-canicross/876-confort-harnais-canicross.html">Difac Confort</a>
                 </p>
                 <ul>
-                    <li>Avantages : réglables</li>
-                    <li>Inconvénients : réglablesJ =&gt; les réglages se desserrent à l’utilisation et les boucles
+                    <li><span class="fw-bold">Avantages</span> : réglables</li>
+                    <li><span class="fw-bold">Inconvénients</span> : réglablesJ =&gt; les réglages se desserrent à
+                        l’utilisation et les boucles
                         peuvent provoquer des blessures par pression et/ou frottement</li>
                 </ul>
                 <p><em>Conclusion:</em> pour possesseurs de plusieurs chiens souhaitant acquérir 1 seul harnais pour tous
                     leurs chiens ou pour une utilisation loisir.</p>
             </div>
             <div class="col-auto mx-auto"><img style="margin-left:auto;margin-right:auto;"
-                    src="http://www.fenril.fr/img/cms/1237_1.jpg" alt="Ruffwear Omnijore harnais" width="300"></div>
+                    src="http://www.fenril.fr/img/cms/1237_1.jpg" alt="Ruffwear Omnijore harnais" width="300">
+            </div>
         </div>
 
         {{-- Cas particuliers --}}
-        <div class="row mb-5">
-            <h5 class="fw-bold" style="color:#e70000">CAS PARTICULIERS</h5>
-            <p><i class="fa-regular fa-hand-pointer"></i> <a target="blank" class="link-dark"
-                    href="https://www.fenril.fr/harnais-canicross/1788-inlandsis-open-back.html">Inlandsis Open-Back</a>
-            </p>
-            <ul>
-                <li>Avantages : conception idéale petits chiens et chiens compacts, réglage longueur de dos + cage
-                    thoracique</li>
-                <li>Inconvénients : moins adapté pour les chiens de taille moyenne et grande pour lesquels un x-back
-                    sera
-                    plus stable</li>
-            </ul>
-            <p><i class="fa-regular fa-hand-pointer"></i><a target="blank" class="link-dark"
-                    href="https://www.fenril.fr/harnais-canicross/110-harnais-zerodc-faster.html">Zero DC
-                    Faster</a>
-            </p>
-            <ul>
-                <li>Avantages : modèle le plus stable sur lescages thoraciques profondes– le Faster a été
-                    à la base conçuspécifiquement pour les Greysters et Braques avec une cage thoracique très
-                    volumineuse
-                </li>
-                <li>Inconvénients : encolure ronde et large ayant tendance à gêner le mouvement des épaules et à
-                    comprimer
-                    la gorge.</li>
-            </ul>
-            <p><i class="fa-regular fa-hand-pointer"></i> <a target="blank" class="link-dark"
-                    href="https://www.fenril.fr/harnais-canicross/443-harnais-free-motion.html">Non Stop Free
-                    Motion</a></p>
-            <ul>
-                <li>Avantages : relativement stable, partie arrière réglable en longueur</li>
-                <li>Inconvénients : encombrant et rigide</li>
-            </ul>
+        <div class="row mb-5 pb-3 border-bottom">
+            <h3 class="fw-bold">CAS PARTICULIERS</h3>
+            <div class="col">
+                <p><i class="fa-regular fa-hand-pointer"></i> <a target="blank" class="link-dark"
+                        href="https://www.fenril.fr/harnais-canicross/1788-inlandsis-open-back.html">Inlandsis
+                        Open-Back</a>
+                </p>
+                <ul>
+                    <li><span class="fw-bold">Avantages</span> : conception idéale petits chiens et chiens compacts,
+                        réglage
+                        longueur de dos + cage
+                        thoracique</li>
+                    <li><span class="fw-bold">Inconvénients</span> : moins adapté pour les chiens de taille moyenne et
+                        grande
+                        pour lesquels un x-back
+                        sera
+                        plus stable</li>
+                </ul>
+            </div>
+            <div class="col">
+                <p><i class="fa-regular fa-hand-pointer"></i><a target="blank" class="link-dark"
+                        href="https://www.fenril.fr/harnais-canicross/110-harnais-zerodc-faster.html">Zero DC
+                        Faster</a>
+                </p>
+                <ul>
+                    <li><span class="fw-bold">Avantages</span> : modèle le plus stable sur lescages thoraciques profondes–
+                        le
+                        Faster a été
+                        à la base conçuspécifiquement pour les Greysters et Braques avec une cage thoracique très
+                        volumineuse
+                    </li>
+                    <li><span class="fw-bold">Inconvénients</span> : encolure ronde et large ayant tendance à gêner le
+                        mouvement des épaules et à
+                        comprimer
+                        la gorge.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <p><i class="fa-regular fa-hand-pointer"></i> <a target="blank" class="link-dark"
+                        href="https://www.fenril.fr/harnais-canicross/443-harnais-free-motion.html">Non Stop Free
+                        Motion</a></p>
+                <ul>
+                    <li><span class="fw-bold">Avantages</span> : relativement stable, partie arrière réglable en longueur
+                    </li>
+                    <li><span class="fw-bold">Inconvénients</span> : encombrant et rigide</li>
+                </ul>
+            </div>
+
+            <div class="d-flex justify-content-around mt-3">
+                <a href="/infos-pratiques" type="button" class="btn black-button">INFOS PRATIQUES</a>
+                <a href="/contact" type="button" class="btn red-button"><i
+                        class="fa-solid fa-envelope me-2"></i>CONTACT</a>
+            </div>
         </div>
 
-        <div class="row mb-5 border-top pt-3 overflow-auto">
-            <h5 class="fw-bold text-center mb-4" style="color:#e70000;">Tableau de synthèse avec les modèles de harnais
+        {{-- Tableau de synthèse harnais --}}
+        <div class="row overflow-auto">
+            <h3 class="fw-bold text-center mb-4">Tableau de synthèse avec les modèles de harnais
                 les
-                plus populaires</h5>
+                plus populaires</h3>
             <table class="table table-striped-columns" style="height:259px;" width="888">
                 <thead>
                     <tr>
@@ -422,10 +454,6 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-
-        <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
-                    style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
         </div>
 
         {{-- Crédits --}}

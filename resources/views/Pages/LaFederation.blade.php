@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container bg-white pb-5 px-lg-5">
+    <div class="container pb-5 px-lg-5">
         <div class="row mx-auto">
 
             <h1 class="py-5 text-center fw-bold">LA FÉDÉRATION DES SPORTS ET LOISIRS CANINS</h1>
@@ -52,7 +52,7 @@
 
                 {{-- Lien vers le site de la FSLC --}}
                 <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
-                        <h5><i class="fa-regular fa-hand-pointer" title="Aller à la rubrique LES DISCIPLINES"></i> Disciplines et conditions d'accès</h5>
+                        <h5><i class="fa-regular fa-hand-pointer" title="Aller à la rubrique LES DISCIPLINES"></i> Infos sur nos disciplines</h5>
                     </a>
                 </div>
 

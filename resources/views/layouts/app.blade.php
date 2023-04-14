@@ -25,9 +25,9 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v16.0&appId=726488655856436&autoLogAppEvents=1"
         nonce="ktuzrnbz"></script>
-    <div class="bg-white" id="app">
+    <div id="app">
         {{-- Header ------------------------------------- --}}
-        @include('Composants.ComposantsCommuns.Header')
+        @include('Composants.Header')
 
         @if (session()->has('message'))
             <p class="alert alert-success text-center">{{ session()->get('message') }}</p>
@@ -53,7 +53,7 @@
         </main>
 
         {{-- Header ------------------------------------- --}}
-        @include('Composants.ComposantsCommuns.Footer')
+        @include('Composants.Footer')
     </div>
 </body>
 

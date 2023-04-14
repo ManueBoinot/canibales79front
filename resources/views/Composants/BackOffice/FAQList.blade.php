@@ -10,11 +10,11 @@
             <div class="card card-body">
 
                 {{-- Bouton de modification --}}
-                @include('Composants.Admin.FAQModalCrea')
+                @include('Composants.BackOffice.FAQModalCrea')
 
                 {{-- FAQ LOOP --}}
                 @foreach ($faqs as $faq)
-                    <div class="card text-bg-light my-3 mx-auto" style="width: 800px; max-width: 80vw">
+                    <div class="card my-3 mx-auto" style="width: 800px; max-width: 80vw">
                         <div class="card-body">
                             <h5 class="card-title">Question n°{{ $loop->iteration }} : {{ $faq->question }}</h5>
                             <p class="card-text">{{ substr($faq->reponse, 0, 100) . ' ... ' }}</p>
@@ -29,7 +29,7 @@
                                 </form>
 
                                 {{-- Bouton modal SUPPRESSION QUESTION/REPONSE --}}
-                                @include('Composants.Admin.FAQModalDelete')
+                                @include('Composants.BackOffice.FAQModalDelete')
 
                             </div>
                         </div>

@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container bg-white p-3 p-md-5" id="canicross">
+    <div class="container p-3 p-md-5" id="canicross">
 
-        <h1 class="text-center my-5 fw-bold">LES DISCIPLINES</h1>
+        <h1 class="text-center mb-5 fw-bold">LES DISCIPLINES</h1>
 
         {{-- INFO CANICROSS --}}
         <div class="row pt-4 pb-5 align-items-center">
             <div class="col-auto mx-auto mb-3">
                 <img src="../../../assets/photos/carre/carre-canicross.jpeg" alt="illustration canicross"
-                    style="width: 250px; border-radius: 100%;" class="align-middle">
+                    class="illu-disciplines">
             </div>
             <div class="col mx-lg-5">
-                <h3>LE CANICROSS</h3>
+                <h2>LE CANICROSS</h2>
                 <p>
                     Le Canicross est une course à pied, coureur et chien sont reliés par une longe avec amortisseur.<br>
                     C’est une <span class="fw-bold">discipline de vitesse</span>. L’athlète éprouve des sensations
@@ -27,6 +27,7 @@
                     La distance du parcours en Canicross est comprise <span class="fw-bold">entre 5 et 9 km</span> en
                     fonction des températures.
                 </p>
+                <a href="/equipement" type="button" class="btn black-button">Infos ÉQUIPEMENT</a>
             </div>
         </div>
 
@@ -34,12 +35,12 @@
         <div class="row pt-4 pb-5 align-items-center">
             <div class="col-auto mx-auto mb-3">
                 <img src="../../../assets/photos/carre/carre-canitrail.jpg" alt="illustration canitrail"
-                    style="width: 250px; border-radius: 100%;">
+                    class="illu-disciplines">
             </div>
             <div class="col mx-lg-5">
-                <h3>LE CANITRAIL</h3>
+                <h2>LE CANITRAIL</h2>
                 <p>
-                    Le Canitrail est plus une <span class="fw-bold">discipline d’endurance</span>. Le matériel est le même
+                    Le Canitrail est plus une <span class="fw-bold">discipline d’endurance</span>. L'équipement est le même
                     que pour le Canicross. Le parcours de Canitrail est plus long que celui du Canicross avec une distance
                     comprise <span class="fw-bold">entre 10 et 20 km</span> et un dénivelé plus important. L’allure est par
                     contre différente car il faut en général alterner course et marche.<br>
@@ -50,18 +51,18 @@
                         au moins 24 mois.</span><br>
                     Cette discipline s’adresse à tous les humains et toutes les races de chiens (sauf catégorie 1).
                 </p>
+                <a href="/equipement" type="button" class="btn black-button">Infos ÉQUIPEMENT</a>
             </div>
         </div>
 
         {{-- INFO CANIVTT --}}
         <div class="row pt-4 pb-5 align-items-center">
-            <div style="margin-top: -200px; padding-top: 200px" id="canivtt"></div>
             <div class="col-auto mx-auto mb-3">
                 <img src="../../../assets/photos/carre/carre-canivtt.jpg" alt="illustration canivtt"
-                    style="width: 250px; border-radius: 100%;">
+                    class="illu-disciplines">
             </div>
             <div class="col mx-lg-5">
-                <h3>LE CANIVTT</h3>
+                <h2>LE CANIVTT</h2>
                 <p>Le CaniVTT est une discipline <span class="fw-bold">réservée aux adultes et juniors (à partir de 15
                         ans)</span>, le chien est relié au VTT par une longe de 1m50 à 2m00 maximum.<br>
                     Le vététiste doit suivre le rythme de son chien sur des parcours de <span class="fw-bold">5 à 9
@@ -77,18 +78,18 @@
                 <p>NB : il existe une autre discipline semblable au canivtt mais qui se pratique avec une trottinette
                     spécifique : le <strong>CANIPÉDICYCLE</strong>. Méconnu, il nécessite une certaine technique et demande
                     un plus gros effort encore que le canivtt. Les prérequis sont les mêmes que pour le canivtt.</p>
+                <a href="/equipement" type="button" class="btn black-button">Infos ÉQUIPEMENT</a>
             </div>
         </div>
 
         {{-- INFO CANIMARCHE --}}
         <div class="row pt-4 pb-5 align-items-center">
-            <div style="margin-top: -200px; padding-top: 200px" id="canimarche"></div>
             <div class="col-auto mx-auto">
                 <img src="../../../assets/photos/carre/carre-canimarche.jpg" alt="illustration canimarche"
-                    style="width: 250px; border-radius: 100%;">
+                    class="illu-disciplines">
             </div>
             <div class="col mx-lg-5">
-                <h3>LA CANIMARCHE</h3>
+                <h2>LA CANIMARCHE</h2>
                 <p>La Canimarche (ou Canirando) est une activité qui met l’accent sur la beauté du paysage.<br>
                     L’équipement est le même que celui du Canicross ou Canitrail.<br>
                     La canimarche est un mariage entre la marche (qu’elle soit rapide ou non) et votre chien. Cela se
@@ -97,12 +98,13 @@
                     <span class="fw-bold" style="color: rgb(230, 0, 0)">Le chien doit avoir 18 mois</span> pour commencer la
                     compétition.
                 </p>
+                <a href="/equipement" type="button" class="btn black-button">Infos ÉQUIPEMENT</a>
             </div>
         </div>
 
-        {{-- Bouton CONTACT --}}
-        <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
-                    style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
+        {{-- Boutons EQUIPEMENT et CONTACT --}}
+        <div class="text-center">
+            <a href="/contact" type="button" class="btn red-button"><i class="fa-solid fa-envelope me-2"></i>CONTACT</a>
         </div>
 
         {{-- Lien vers la source FSLC --}}

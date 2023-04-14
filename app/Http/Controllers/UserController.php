@@ -27,7 +27,7 @@ class UserController extends Controller
             ->orderBy('nom', 'asc')
             ->get()
             ->load('role', 'chiens');
-        return view('Pages.Admin.BackOfficeIndex', ['users' => $users]);
+        return view('Pages.BackOffice.BackOfficeIndex', ['users' => $users]);
     }
 
     // ____________________________________________________________________________
@@ -43,7 +43,7 @@ class UserController extends Controller
         }
 
         $user->load('role', 'chiens');
-        return view('Pages.Users.mon-compte', ['user' => $user]);
+        return view('Pages.User.UserCompte', ['user' => $user]);
     }
 
     // ____________________________________________________________________________
@@ -57,7 +57,7 @@ class UserController extends Controller
         if ($request->user()->cannot('edit', $user)) {
             abort(403);
         }
-        return view('Pages.Users.modifier-infos', ['user' => $user]);
+        return view('Pages.User.UserModif', ['user' => $user]);
     }
 
     // ____________________________________________________________________________

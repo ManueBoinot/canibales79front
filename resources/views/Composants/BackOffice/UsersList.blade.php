@@ -24,7 +24,7 @@
                                             class="fa-solid fa-chevron-down ms-3"></i></button>
 
                                     {{-- Bouton modal SUPPRESSION USER --}}
-                                    @include('Composants.Admin.UserModalDelete')
+                                    @include('Composants.BackOffice.UserModalDelete')
                                 </div>
 
                                 <div class="collapse p-1" id="collapseUser{{ $loop->iteration }}">
@@ -132,7 +132,7 @@
                                     </div>
 
                                     {{-- Chiens de l'utilisateur --}}
-                                    @include('Composants.Admin.UserChiensList')
+                                    @include('Composants.BackOffice.UserChiensList')
 
                                 </div>
                             </div>

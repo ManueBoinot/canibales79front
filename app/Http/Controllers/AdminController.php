@@ -24,7 +24,7 @@ class AdminController extends Controller
         if (Auth::user()->isAdmin()) {
             $users = User::all()->sortBy('nom');
             $faqs =Faq::all();
-            return view('Pages.Admin.BackOfficeIndex', ['users' => $users, 'faqs' => $faqs]);
+            return view('Pages.BackOffice.BackOfficeIndex', ['users' => $users, 'faqs' => $faqs]);
         }
         abort(403);
     }

@@ -5,7 +5,7 @@
     </button>
 
     <!-- Modal -->
-    <div class="modal modal-xl fade text-dark" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+    <div class="modal modal-xl fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

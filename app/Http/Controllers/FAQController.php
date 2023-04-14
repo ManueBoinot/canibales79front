@@ -31,7 +31,7 @@ class FaqController extends Controller
     public function edit(Faq $faq)
     {
         if (Auth::user()->isAdmin()) {
-            return view('Pages.Admin.FAQModif', ['faq' => $faq]);
+            return view('Pages.BackOffice.FAQModif', ['faq' => $faq]);
         }
         abort(403);
     }

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container px-2 px-lg-3 py-5 bg-white px-lg-5 text-center">
+    <div class="container px-2 px-lg-3 py-5 px-lg-5 text-center">
 
         <h1 class=" fw-bold">NOUS REJOINDRE</h1>
 
@@ -11,9 +11,9 @@
                 style="max-width: 100%" width="700px">
         </div>
 
-        <section class="mt-5">
-            <h3 class="fw-bold">Envie de nous rejoindre ?</h3>
-            <h5>Rien de plus simple !</h5>
+        <section class="mt-5 pb-4">
+            <h2 class="fw-bold">Envie de nous rejoindre ?</h2>
+            <p class="fs-5">Rien de plus simple !</p>
             <p>Écris-nous via notre <a href="/contact" class="link-danger fw-bold">formulaire de contact</a> et nous
                 planifierons ensemble tes <strong style="color: rgb(230, 0, 0)">séances d'essai gratuites</strong>
                 <small>(voir
@@ -53,7 +53,7 @@
 
             {{-- Lien vers DISCIPLINES --}}
             <div class="text-center py-4"><a class="link-danger" href="/les-disciplines">
-                    <h5><i class="fa-regular fa-hand-pointer"></i> Disciplines et conditions d'accès</h5>
+                    <p><i class="fa-regular fa-hand-pointer"></i> Infos sur nos disciplines</p>
                 </a></div>
 
             {{-- Lien vers ENTRAINEMENTS --}}
@@ -62,76 +62,74 @@
 
         </section>
 
-        <div class="row gap-2 border-top mt-3 mx-auto">
+        {{-- SEANCES ESSAIS --}}
+        <section class="mx-auto border-top pb-4">
 
-            {{-- LICENCES --}}
-            <section class="col-lg-5 mx-auto">
+            <h2 class="fw-bold my-5">SÉANCES D'ESSAI</h2>
 
-                <h2 class="fw-bold my-5">TARIFS LICENCES</h2>
+            <p>La FSLC propose un <strong>PASS DÉCOUVERTE</strong> qui te permet de profiter de non pas une, non pas
+                deux, mais bien
+                <strong style="color: rgb(230, 0, 0)">3 SÉANCES
+                    D'ESSAI GRATUITES</strong> avec prise en charge par ses assurances Responsabilité Civile et
+                Corporelle incluse !
+            </p>
+            <p>Nous t'expliquerons comment cela fonctionne lorsque tu viendras à ton premier essai :)</p>
 
-                <div class="mx-auto overflow-auto" style="max-width: 700px">
-                    <table class="table table-striped table-hover">
-                        <thead class="text-bg-dark">
-                            <tr>
-                                <th scope="col" class="text-start">Type de licence</th>
-                                <th scope="col" class="text-end">Part FSLC</th>
-                                <th scope="col" class="text-end">Part club</th>
-                                <th scope="col" class="text-end">Cotisation totale annuelle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-start fw-bold">Loisir</td>
-                                <td class="text-end">20 €</td>
-                                <td class="text-end">20 €</td>
-                                <td class="text-end fw-bold">40 €</td>
-                            </tr>
-                            <tr>
-                                <td class="text-start fw-bold">Compétition</td>
-                                <td class="text-end">30 €</td>
-                                <td class="text-end">20 €</td>
-                                <td class="text-end fw-bold">50 €</td>
-                            </tr>
-                            <tr>
-                                <td class="text-start fw-bold">- 18 ans</td>
-                                <td class="text-end">15 €</td>
-                                <td class="text-end">10 €</td>
-                                <td class="text-end fw-bold">25 €</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p>Ces tarifs s'appliquent <strong>quelles que soient les disciplines pratiquées</strong> et sont
-                    identiques
-                    pour la catégorie Handisport.</p>
-
-            </section>
-
-            {{-- SEANCES ESSAIS --}}
-            <section class="col-lg-5 mx-auto">
-
-                <h2 class="fw-bold my-5">SÉANCES D'ESSAI</h2>
-
-                <p>La FSLC propose un <strong>PASS DÉCOUVERTE</strong> qui te permet de profiter de non pas une, non pas
-                    deux, mais bien
-                    <strong style="color: rgb(230, 0, 0)">3 SÉANCES
-                        D'ESSAI GRATUITES</strong> avec prise en charge par ses assurances Responsabilité Civile et
-                    Corporelle incluse !
-                </p>
-                <p>Nous t'expliquerons comment cela fonctionne lorsque tu viendras à ton premier essai :)</p>
-
-                <div class="alert alert-danger mx-auto" role="alert" style="width: 450px; max-width: 80vw">
-                    <strong>Tu n'as pas encore de matériel ?</strong> Pas de panique !<br>
-                    Nous avons un large choix de harnais et accessoires pour que tu puisses t'initier avant
-                    d'investir.
-                </div>
-            </section>
-
-            {{-- Bouton CONTACT --}}
-            <div class="text-center"> <a href="/contact"><button type="button" class="btn text-white contact"
-                        style="background-color: rgb(255,0,0)"><i class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
+            <div class="alert alert-danger mx-auto" role="alert" style="width: 450px; max-width: 80vw">
+                <strong>Tu n'as pas encore d'équipement adapté ?</strong> Pas de panique !<br>
+                Nous avons un large choix de harnais et accessoires pour que tu puisses t'initier avant
+                d'investir.
             </div>
 
-        </div>
+            {{-- Bouton CONTACT --}}
+            <div class="text-center">
+                <a href="/contact" type="button" class="btn red-button">
+                    <i class="fa-solid fa-envelope me-2"></i>CONTACT</a>
+            </div>
+
+        </section>
+
+        {{-- LICENCES --}}
+        <section class="mx-auto border-top pb-4">
+
+            <h2 class="fw-bold my-5">TARIFS LICENCES</h2>
+
+            <div class="mx-auto overflow-auto" style="max-width: 700px">
+                <table class="table table-striped table-hover">
+                    <thead class="text-bg-dark">
+                        <tr>
+                            <th scope="col" class="text-start">Type de licence</th>
+                            <th scope="col" class="text-end">Part FSLC</th>
+                            <th scope="col" class="text-end">Part club</th>
+                            <th scope="col" class="text-end">Cotisation totale annuelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-start fw-bold">Loisir</td>
+                            <td class="text-end">20 €</td>
+                            <td class="text-end">20 €</td>
+                            <td class="text-end fw-bold">40 €</td>
+                        </tr>
+                        <tr>
+                            <td class="text-start fw-bold">Compétition</td>
+                            <td class="text-end">30 €</td>
+                            <td class="text-end">20 €</td>
+                            <td class="text-end fw-bold">50 €</td>
+                        </tr>
+                        <tr>
+                            <td class="text-start fw-bold">- 18 ans</td>
+                            <td class="text-end">15 €</td>
+                            <td class="text-end">10 €</td>
+                            <td class="text-end fw-bold">25 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Ces tarifs s'appliquent <strong>quelles que soient les disciplines pratiquées</strong> et sont
+                identiques
+                pour la catégorie Handisport.</p>
+        </section>
+
     </div>
 @endsection

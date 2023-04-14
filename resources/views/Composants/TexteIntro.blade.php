@@ -1,4 +1,4 @@
-<section id="intro-accueil" class="container-fluid py-5 mx-auto" style="background-color: rgba(255, 255, 255, 0.95)">
+<section id="intro-accueil" class="container py-5 mx-auto">
 
     <div id="disciplines-accueil" class="row g-3 py-4">
         <!-- Phrase d'accueil -->
@@ -8,7 +8,7 @@
 
         <div class="col-12 col-lg-4">
             <a href="/les-disciplines#canivtt#canicross">
-                <div id="accueil-canicross" class="position-relative mx-auto">
+                <div id="accueil-canicross" class="intro-sports mx-auto">
                     <h3 class="position-absolute top-50 start-50 translate-middle fw-bold text-white my-auto">
                         CANICROSS
                     </h3>
@@ -18,16 +18,17 @@
 
         <div class="col-12 col-lg-4">
             <a class="text-white" href="/les-disciplines#canivtt">
-                <div id="accueil-canivtt" class="position-relative mx-auto">
+                <div id="accueil-canivtt" class="intro-sports mx-auto">
                     <h3 class="position-absolute top-50 start-50 translate-middle fw-bold text-white my-auto">
                         CANIVTT
                     </h3>
                 </div>
             </a>
         </div>
+
         <div class="col-12 col-lg-4">
             <a class="text-white" href="/les-disciplines#canimarche">
-                <div id="accueil-canimarche" class="position-relative mx-auto">
+                <div id="accueil-canimarche" class="intro-sports mx-auto">
                     <h3 class="position-absolute top-50 start-50 translate-middle fw-bold text-white my-auto">
                         CANIMARCHE
                     </h3>
@@ -63,15 +64,14 @@
 
         <div class="row g-3 mt-4">
             <div class="col-12 col-sm-6">
-                <a href="/faq"><button type="button" class="btn text-white bg-black faq">FOIRE
-                        AUX
-                        QUESTIONS</button></a>
+                <a href="/faq" type="button" class="btn black-button">FOIRE
+                    AUX
+                    QUESTIONS</a>
             </div>
             <div class="col-12 col-sm-6">
 
-                <a href="/contact"><button type="button" class="btn text-white contact"
-                        style="background-color: rgb(255,0,0)"><i
-                            class="fa-solid fa-envelope me-2"></i>CONTACT</button></a>
+                <a href="/contact" type="button" class="btn red-button"><i
+                        class="fa-solid fa-envelope me-2"></i>CONTACT</a>
             </div>
         </div>
     </div>

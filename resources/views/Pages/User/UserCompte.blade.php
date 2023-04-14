@@ -6,10 +6,10 @@
         <h1 class="text-center mb-4 fw-bold">Bienvenue sur ton espace <span class="fw-bold"> {{ $user->prenom }} </span>!</h1>
 
         {{-- Informations de l'utilisateur --}}
-        @include('Composants.UserInfoPerso')
+        @include('Composants.User.UserInfoPerso')
 
         {{-- Chien(s) de l'utilisateur' --}}
-        @include('Composants.ChienCard')
+        @include('Composants.User.ChienCard')
 
     </div>
 @endsection

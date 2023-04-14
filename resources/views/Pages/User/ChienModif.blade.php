@@ -7,10 +7,10 @@
 
         <div class="d-flex justify-content-end gap-5">
             {{-- Bouton pour RETIRER le chien de l'équipe --}}
-            @include('Composants.ChienModalRetirer')
+            @include('Composants.User.ChienModalRetirer')
 
             {{-- Bouton modal SUPPRESSION CHIEN --}}
-            @include('Composants.ChienModalDelete')
+            @include('Composants.User.ChienModalDelete')
         </div>
 
         <form method="post" action="{{ route('chiens.update', $chien) }}" class="text-start" enctype="multipart/form-data">

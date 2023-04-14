@@ -81,7 +81,7 @@ class ChienController extends Controller
         $users = Arr::pluck($chien->users, 'id');
 
         if (in_array($user->id, $users)) {
-            return view('Pages.Chiens.ChienModif', ['chien' => $chien]);
+            return view('Pages.User.ChienModif', ['chien' => $chien]);
         }
         abort(403);
     }
