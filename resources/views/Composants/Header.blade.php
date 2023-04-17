@@ -6,7 +6,7 @@
 
                 <!-- LOGO CANIBALES -->
                 <a class="nav-link" href="/" title="Retour à l'accueil">
-                    <img src="../.././assets/logos/logo-canibales-contour.png" style="width: 200px">
+                    <img src="../.././assets/logos/logo-canibales-contour.png" class="py-1" style="width: 200px">
                 </a>
 
                 <!-- TOGGLER NAVBAR -->
@@ -105,17 +105,22 @@
 
                             <!-- Lien vers ACCUEIL -->
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/"><i class="fa-solid fa-house me-3 d-lg-none"></i>ACCUEIL</a>
+                                <a class="nav-link active" aria-current="page" href="/"><i
+                                        class="fa-solid fa-house me-3 d-lg-none"></i>ACCUEIL</a>
                             </li>
 
-                            <!-- Lien vers QUI SOMMES NOUS -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="/le-club">QUI SOMMES-NOUS ?</a>
-                            </li>
-
-                            <!-- Lien vers DISCIPLINES -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="/les-disciplines">NOS DISCIPLINES</a>
+                            <!-- Liens vers LE CLUB -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    LE CLUB
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                                    <li><a class="dropdown-item" href="/le-club">Qui sommes-nous ?</a></li>
+                                    <li><a class="dropdown-item" href="/les-disciplines">Nos disciplines</a></li>
+                                    <li><a class="dropdown-item" href="/les-partenaires">Nos partenaires</a></li>
+                                    <li><a class="dropdown-item" href="/reglementation">Réglementation</a></li>
+                                </ul>
                             </li>
 
                             <!-- Liens vers INFOS PRATIQUES -->
@@ -125,11 +130,9 @@
                                     INFOS PRATIQUES
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                                    <li><a class="dropdown-item" href="/infos-pratiques">Horaires et compétition</a></li>
+                                    <li><a class="dropdown-item" href="/nous-rejoindre">Infos licences</a></li>
                                     <li><a class="dropdown-item" href="/equipement">Équipement</a></li>
-                                    <li><a class="dropdown-item" href="/infos-pratiques">Horaires et compétition</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="/nous-rejoindre">Inscription</a></li>
-                                    <li><a class="dropdown-item" href="/reglementation">Réglementation</a></li>
                                 </ul>
                             </li>
 
@@ -139,8 +142,8 @@
                             </li>
 
                             <!-- Lien vers PARTENAIRES -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="/les-partenaires">NOS PARTENAIRES</a>
+                            <li class="nav-item ">
+                                <a class="nav-link fw-bold" href="/nous-rejoindre">NOUS REJOINDRE</a>
                             </li>
 
                         </ul>

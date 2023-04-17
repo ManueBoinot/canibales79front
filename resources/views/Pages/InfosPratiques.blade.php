@@ -28,7 +28,7 @@
 
                 {{-- NAV ===================================================================================================== --}}
                 <nav class="mb-5">
-                    <div class="nav nav-pills me-3 justify-content-start gap-1" role="tablist" id="nav-pill">
+                    <div class="nav nav-pills me-3 justify-content-center gap-1" role="tablist" id="nav-pill">
 
                         <button class="nav-link active" id="nav-horaires-pill" data-bs-toggle="tab"
                             data-bs-target="#pills-horaires" type="button" role="tab" aria-controls="pills-horaires"
@@ -103,12 +103,12 @@
                             </tbody>
                         </table>
 
-                        <small class="fst-italic">
+                        <p class="fst-italic text-center">
                             NB : Lorsque les températures commencent à monter, l'heure des sorties du matin est adaptée en
                             fonction
                             de la
                             méteo.
-                        </small>
+                        </p>
 
                         <div class="py-3"><a class="link-dark fw-bold" href="/les-disciplines"
                                 title="Aller à la rubrique LES DISCIPLINES">

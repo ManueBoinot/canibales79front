@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container py-5 px-lg-5">
+    <div class="container text-center py-5 px-lg-5">
 
-        <h1 class="mb-5 text-center fw-bold">NOUS REJOINDRE</h1>
+        <h1 class="mb-5 fw-bold">NOUS REJOINDRE</h1>
 
         {{-- Image club plage --}}
-        <div class="text-center">
+        <div>
             <img class="img-fluid" src="../assets/photos/club-plage.jpg" alt="les canibales79 sur la plage"
                 style="max-width: 100%" width="700px">
         </div>
@@ -36,7 +36,7 @@
             </div>
 
 
-            <div class="d-flex justify-content-center gap-4 text-center">
+            <div class="d-flex justify-content-center gap-4">
                 {{-- Lien vers DISCIPLINES --}}
                 <a class="link-danger" href="/les-disciplines">
                     <i class="me-2 fa-regular fa-hand-pointer"></i> Infos sur nos disciplines
@@ -76,7 +76,7 @@
 
 
             {{-- Bouton CONTACT --}}
-            <div class="text-center">
+            <div>
                 <a href="/contact" type="button" class="btn red-button">
                     <i class="fa-solid fa-envelope me-2"></i>CONTACT</a>
             </div>
@@ -84,7 +84,7 @@
         </section>
 
         {{-- LICENCES --}}
-        <section class="mx-auto border-top pb-4 text-center">
+        <section class="mx-auto border-top pb-4">
 
             <h2 class="fw-bold mt-5 mb-3">TARIFS LICENCES</h2>
 

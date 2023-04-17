@@ -50,6 +50,10 @@ h2 {
     transition: 0.5s;
 }
 
+#header-nav {
+    border-bottom: 2px solid rgb(217, 0, 0);
+}
+
 /* TEXTE INTRO ACCUEIL ------------------------------------------ */
 #accueil-canicross {
     background-image: url('../../public/assets/photos/carre/carre-canicross.jpeg');
