@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container py-5 px-md-5 text-center" id="contact">
-        <h1 class="text-center mb-5">FORMULAIRE DE CONTACT</h1>
+    <div class="container py-5 px-lg-5" id="contact">
+        <h1 class="mb-5 text-center fw-bold">FORMULAIRE DE CONTACT</h1>
 
             <h2 class="fst-italic fw-light text-danger">(Cette section du site est en construction)</h2>
 

@@ -1,14 +1,11 @@
 <!-- LIENS RESEAUX SOCIAUX -->
-<section id="reseaux"
-    class="container-fluid d-flex justify-content-center justify-content-sm-end align-items-center gap-4 bg-black px-md-5"
-    style="height: 43px">
-    <small class="description text-white m-0">CANICROSS - CANIVTT - CANIMARCHE | NIORT (79)</small>
-    <a href="https://www.facebook.com/Canibales79" class="text-white" style="font-size: 40px" target="blank" title="Notre page Facebook"><i
-            class="fa-brands fa-square-facebook"></i>
+<div class="d-none d-md-flex position-absolute end-0 flex-column align-items-center me-3">
+    <a href="/contact" title="Nous écrire"><i class="fa-solid fa-envelope reseaux-header"></i>
     </a>
-    <a href="https://www.instagram.com/canibales_79/" class="text-white" style="font-size: 40px" target="blank" title="Notre page Instagram"><i
-            class="fa-brands fa-square-instagram"></i>
+    <a href="https://www.facebook.com/Canibales79" target="blank" title="Notre page Facebook"><i
+            class="fa-brands fa-square-facebook reseaux-header"></i>
     </a>
-    <a href="/contact" class="text-white" style="font-size: 38px"><i class="fa-solid fa-envelope"></i>
+    <a href="https://www.instagram.com/canibales_79/"target="blank" title="Notre page Instagram"><i
+            class="fa-brands fa-square-instagram reseaux-header"></i>
     </a>
-</section>
+</div>

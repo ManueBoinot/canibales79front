@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container py-5 px-md-5">
+        
         <div class="text-center mb-5">
             <h1>FOIRE AUX QUESTIONS</h1>
             <h5 class="my-3">Réponses aux questions les plus fréquemment posées</h5>

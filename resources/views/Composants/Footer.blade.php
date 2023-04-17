@@ -8,25 +8,25 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 30%, rgba(255,0,0,0.9) 100%);"
     <div class="row mx-auto">
         <!-- Colonne PLAN DU SITE FOOTER -->
         <div id="menu-footer" class="col-12 col-sm-4 text-center text-sm-start">
-            <h5 class="my-1" style="font-size: 0.8rem">PLAN DU SITE</h5>
-            <ul class="list-unstyled">
-                <li class="list-item"><a href="/">Accueil</a>
-                </li>
-                <li class="list-item"><a href="/le-club">Qui sommes-nous ?</a></li>
-                <li class="list-item"><a href="/infos-pratiques">Infos pratiques</a>
-                </li>
-                <li class="list-item"><a href="/les-disciplines">Disciplines et équipement</a></li>
-                <li class="list-item"><a href="/la-federation">Réglementation</a>
-                </li>
-                <li class="list-item"><a href="/faq">Foire
-                        aux
-                        questions</a></li>
-                <li class="list-item"><a href="/nos-partenaires">Nos partenaires</a>
-                </li>
-                <li class="list-item"><a href="/contact">Contact</a>
-                </li>
-                <li class="list-item"><a href="/mentions-legales">Mentions légales</a>
-                </li>
+            <h5 class="my-1 col-12" style="font-size: 0.8rem">PLAN DU SITE</h5>
+            <ul class="list-unstyled row">
+                <div class="col-md-6">
+                    <li class="list-item"><a href="/">Accueil</a></li>
+                    <li class="list-item"><a href="/le-club">Qui sommes-nous ?</a></li>
+                    <li class="list-item"><a href="/les-disciplines">Nos disciplines</a></li>
+                    <li class="list-item"><a href="/infos-pratiques">Infos pratiques</a></li>
+                    <li class="list-item"><a href="/equipement">Équipement</a></li>
+                    <li class="list-item"><a href="/nous-rejoindre">Inscription</a></li>
+                </div>
+                <div class="col-md-6">
+                    <li class="list-item"><a href="/la-federation">Réglementation</a></li>
+                    <li class="list-item"><a href="/faq">Foire
+                            aux
+                            questions</a></li>
+                    <li class="list-item"><a href="/nos-partenaires">Nos partenaires</a></li>
+                    <li class="list-item"><a href="/contact">Contact</a></li>
+                    <li class="list-item"><a href="/mentions-legales">Mentions légales</a></li>
+                </div>
             </ul>
         </div>
 

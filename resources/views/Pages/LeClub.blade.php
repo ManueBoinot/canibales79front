@@ -3,8 +3,7 @@
 @section('content')
     <div class="container py-5 px-lg-5">
 
-        <div class="ancre" id="club"></div>
-        <h1 class="py-4 text-center fw-bold">LE CLUB CANIBALES79</h1>
+        <h1 class="mb-5 text-center fw-bold">LE CLUB CANIBALES79</h1>
 
         {{-- BUREAU --}}
         <div class="row mb-4">
@@ -89,7 +88,7 @@
 
             <div class="mb-3">
                 <h3>RÉFÉRENTE CANIVTT</h3>
-                <p><strong>Léa est la référente canivtt</strong>, elle organise plusieurs dimanches par mois des
+                <p><strong>Léa est la référente caniVTT</strong>, elle organise plusieurs dimanches par mois des
                     entraînements.
                     Les entrainements ont lieu le dimanche matin à 10h00, certaines sorties peuvent être proposées en
                     semaine

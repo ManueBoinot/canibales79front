@@ -21,7 +21,7 @@ class FaqSeeder extends Seeder
         ]);
 
         Faq::create([
-            'question' => 'Puis-je faire du canicross / canivtt avec mon chien de 6 mois ?',
+            'question' => 'Puis-je faire du canicross / caniVTT avec mon chien de 6 mois ?',
             'reponse' => 'Non, il faut attendre que le chien ait totalement terminé sa croissance avant de pratiquer nos disciplines (voir notre rubrique " LES DISCIPLINES ").
             Toutefois, vous pouvez commencer à entraîner votre chien SANS TRACTION en le laissant courir à vos côtés s\'il a un bon rappel, sur des distances d\'abord courtes puis de plus en plus longues, afin qu\'il puisse développer son endurance et sa musculature sans risque de développer des problèmes de santé en grandissant.'
         ]);

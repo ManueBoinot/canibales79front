@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container pb-5 px-lg-5">
+    <div class="container py-5 px-lg-5">
         <div class="row mx-auto">
 
-            <h1 class="py-5 text-center fw-bold">LA FÉDÉRATION DES SPORTS ET LOISIRS CANINS</h1>
+            <h1 class="mb-5 text-center fw-bold">LA FÉDÉRATION DES SPORTS ET LOISIRS CANINS</h1>
 
             {{-- Vidéo de la FSLC --}}
             <div class="row text-center">

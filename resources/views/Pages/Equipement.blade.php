@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container px-lg-5">
-        <h1 class="py-5 text-center fw-bold">L'ÉQUIPEMENT</h1>
+    <div class="container py-5 px-lg-5">
+        
+        <h1 class="mb-5 text-center fw-bold">L'ÉQUIPEMENT</h1>
 
         {{-- Intro --}}
         <div class="row mb-5">
@@ -77,21 +78,21 @@
                 <div class="col">
                     <h2 class="pb-3"><i class="fa-solid fa-person-biking"></i> <i class="fa-solid fa-dog"></i> CANIVTT
                     </h2>
-                    <p><strong>Pour le canivtt, le harnais du chien est le même que pour le canicross/la canimarche mais
+                    <p><strong>Pour le caniVTT, le harnais du chien est le même que pour le canicross/la canimarche mais
                             <span class="text-decoration-underline">la laisse est plus longue</span></strong>.<br>
                         Elle possède un mousqueton à l'extrémité côté chien, et une boucle/poignée à l'autre extrémité pour
                         être passée autour du guidon du VTT.<br>
                         Si vous comptez pratiquer les deux disciplines il faudra vous équiper de 2 laisses différentes.<br>
                         De plus, <strong>le port d'<span class="text-decoration-underline">un casque et de gants</span> est
-                            obligatoire</strong> en canivtt car la vitesse
+                            obligatoire</strong> en caniVTT car la vitesse
                         pouvant atteindre 60
                         km/h pour les plus aguerris, les chutes peuvent être dangereuses.</p>
-                    <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Équipement supplémentaire du canivtt : <span
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Équipement supplémentaire du caniVTT : <span
                                 class="text-decoration-underline">la
-                                barre canivtt</span>.</strong><br>
+                                barre caniVTT</span>.</strong><br>
                         C'est une tige souple fixée sous le guidon du VTT dans laquelle on fait passer la laisse afin
                         qu'elle ne
-                        se prenne pas dans la roue avant.<br>La barre canivtt permet également d'apporter un amortissement
+                        se prenne pas dans la roue avant.<br>La barre caniVTT permet également d'apporter un amortissement
                         supplémentaire en cas de brusque changement de direction du chien.</p>
                 </div>
             </div>
@@ -142,7 +143,7 @@
                         très
                         grands chiens, inadaptés aux chiens compacts type staff/staffie</li>
                 </ul>
-                <p><em>Conclusion:</em></p>
+                <p><span class="fw-bold">Conclusion</span> :</p>
                 <ul>
                     <li>Harnais idéal pour 90% des chiens entre 14 et 45 Kg que ce soit en canicross, cani-VTT ou
                         attelage
@@ -179,10 +180,10 @@
                         charges
                         basses.</li>
                 </ul>
-                <p><em>Conclusion:</em> nous recommandons les harnais courts pour </p>
+                <p><span class="fw-bold">Conclusion</span> : nous recommandons les harnais courts pour </p>
                 <ul>
                     <li>les chiens compacts (staffie, staff, etc)</li>
-                    <li>les petits chiens &lt;14 Kg ou les très grands chiens &gt;45 Kg</li>
+                    <li>les petits chiens de moins de 14 kg ou les très grands chiens  de plus de 45 kg</li>
                     <li>les activités au long cours (cani-rando, traineau longue distance)</li>
                     <li>les chiens présentant une sensibilité particulière au niveau des hanches ou de la colonne vertébrale
                     </li>
@@ -206,11 +207,11 @@
                 </p>
                 <ul>
                     <li><span class="fw-bold">Avantages</span> : réglables</li>
-                    <li><span class="fw-bold">Inconvénients</span> : réglablesJ =&gt; les réglages se desserrent à
+                    <li><span class="fw-bold">Inconvénients</span> : les réglages se desserrent à
                         l’utilisation et les boucles
                         peuvent provoquer des blessures par pression et/ou frottement</li>
                 </ul>
-                <p><em>Conclusion:</em> pour possesseurs de plusieurs chiens souhaitant acquérir 1 seul harnais pour tous
+                <p><span class="fw-bold">Conclusion</span> : pour possesseurs de plusieurs chiens souhaitant acquérir 1 seul harnais pour tous
                     leurs chiens ou pour une utilisation loisir.</p>
             </div>
             <div class="col-auto mx-auto"><img style="margin-left:auto;margin-right:auto;"
@@ -228,14 +229,9 @@
                 </p>
                 <ul>
                     <li><span class="fw-bold">Avantages</span> : conception idéale petits chiens et chiens compacts,
-                        réglage
-                        longueur de dos + cage
-                        thoracique</li>
+                        réglage longueur de dos + cage thoracique</li>
                     <li><span class="fw-bold">Inconvénients</span> : moins adapté pour les chiens de taille moyenne et
-                        grande
-                        pour lesquels un x-back
-                        sera
-                        plus stable</li>
+                        grande pour lesquels un x-back sera plus stable</li>
                 </ul>
             </div>
             <div class="col">
@@ -244,16 +240,12 @@
                         Faster</a>
                 </p>
                 <ul>
-                    <li><span class="fw-bold">Avantages</span> : modèle le plus stable sur lescages thoraciques profondes–
-                        le
-                        Faster a été
-                        à la base conçuspécifiquement pour les Greysters et Braques avec une cage thoracique très
-                        volumineuse
+                    <li><span class="fw-bold">Avantages</span> : modèle le plus stable sur les cages thoraciques profondes,
+                        le Faster a été à la base conçu spécifiquement pour les Greysters et Braques avec une cage
+                        thoracique très volumineuse
                     </li>
                     <li><span class="fw-bold">Inconvénients</span> : encolure ronde et large ayant tendance à gêner le
-                        mouvement des épaules et à
-                        comprimer
-                        la gorge.</li>
+                        mouvement des épaules et à comprimer la gorge.</li>
                 </ul>
             </div>
             <div class="col">

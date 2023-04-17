@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container p-3 p-md-5" id="canicross">
+    <div class="container py-5 px-lg-5" id="canicross">
 
-        <h1 class="text-center mb-5 fw-bold">LES DISCIPLINES</h1>
+        <h1 class="mb-5 text-center fw-bold">LES DISCIPLINES</h1>
 
         {{-- INFO CANICROSS --}}
         <div class="row pt-4 pb-5 align-items-center">
@@ -75,9 +75,9 @@
                     le pratiquer.<br>
                     Cette discipline s’adresse à tous les humains et à toutes les races de chiens (sauf catégorie 1).
                 </p>
-                <p>NB : il existe une autre discipline semblable au canivtt mais qui se pratique avec une trottinette
+                <p>NB : il existe une autre discipline semblable au caniVTT mais qui se pratique avec une trottinette
                     spécifique : le <strong>CANIPÉDICYCLE</strong>. Méconnu, il nécessite une certaine technique et demande
-                    un plus gros effort encore que le canivtt. Les prérequis sont les mêmes que pour le canivtt.</p>
+                    un plus gros effort encore que le caniVTT. Les prérequis sont les mêmes que pour le caniVTT.</p>
                 <a href="/equipement" type="button" class="btn black-button">Infos ÉQUIPEMENT</a>
             </div>
         </div>

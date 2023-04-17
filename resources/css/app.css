@@ -37,44 +37,17 @@ h2 {
 }
 
 /* NAVBAR ------------------------------------------ */
-#header-nav .navbar-toggler:hover {
-    transform: scale(1.1);
-    transition: 0.4s;
+
+.reseaux-header {
+    color: rgb(217, 0, 0);
+    font-size: 50px;
+    transition: 0.5s;
+    padding: 3px;
 }
 
-#header-nav .navbar-toggler {
-    transition: 0.8s;
-}
-
-#header-nav .nav-link:hover {
-    color: white;
-    font-weight: bold;
-}
-
-#header-nav .dropdown-item,
-#header-nav .nav-link {
-    color: white;
-}
-
-#header-nav .dropdown-item:hover {
-    color: black;
-}
-
-#header-nav .fa-dog {
-    font-size: 10px;
-}
-
-/* BANDEAU RESEAUX ------------------------------------------ */
-#reseaux a i,
-#logos-reseaux a i {
-    transition: 0.4s;
-}
-
-#reseaux a i:hover,
-#logos-reseaux a i:hover {
-    color: rgb(235, 0, 0);
-    transform: scale(1.1);
-    transition: 0.4s;
+.reseaux-header:hover {
+    color: rgb(91, 0, 0);
+    transition: 0.5s;
 }
 
 /* TEXTE INTRO ACCUEIL ------------------------------------------ */
@@ -194,7 +167,7 @@ h2 {
 .illu-sorties {
     border-radius: 10%;
     max-width: 50vw;
-    width: 250px;
+    width: 200px;
 }
 
 .logo-compet {
