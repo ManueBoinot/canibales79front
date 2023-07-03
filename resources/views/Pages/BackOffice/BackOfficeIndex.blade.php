@@ -6,7 +6,7 @@
         <h1>INTERFACE ADMINISTRATEUR</h1>
 
         {{-- LISTE DES UTILISATEURS --}}
-        @include('Composants.BackOffice.UsersList')
+       {{-- @include('Composants.BackOffice.UsersList') --}}
 
         {{-- LISTE DES QUESTIONS/REPONSES FAQ --}}
         @include('Composants.BackOffice.FAQList')

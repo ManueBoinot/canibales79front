@@ -1,6 +1,6 @@
-<div class="text-end">
+<div class="text-center">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" data-bs-target="#FAQDeleteModal">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#FAQDeleteModal">
         <i class="fa-regular fa-trash-can" title="Supprimer la question/réponse"></i>
     </button>
 
@@ -15,7 +15,11 @@
                 </div>
                 <div class="modal-body text-center">
                     <p>Es-tu sûr(e) de vouloir retirer supprimer cette question/réponse
-                        ?<br>
+                        ?<br></p>
+                    <p class="fst-italic text-secondary">Rappel : <br>
+                    Question : {{ $faq->question }}<br>
+                    Réponse : {{ $faq->reponse }}</p>
+                    <p>
                         <strong>Cette action est irréversible.</strong>
                     </p>
                     <form method="post" action="{{ route('faq.destroy', $faq) }}">

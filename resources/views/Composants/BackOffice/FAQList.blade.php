@@ -14,7 +14,7 @@
 
                 {{-- FAQ LOOP --}}
                 @foreach ($faqs as $faq)
-                    <div class="card my-3 mx-auto" style="width: 800px; max-width: 80vw">
+                    <div class="card my-3 mx-auto text-dark" style="width: 800px; max-width: 80vw">
                         <div class="card-body">
                             <h5 class="card-title">Question n°{{ $loop->iteration }} : {{ $faq->question }}</h5>
                             <p class="card-text">{{ substr($faq->reponse, 0, 100) . ' ... ' }}</p>
@@ -25,11 +25,8 @@
                                     @csrf
                                     <input type="hidden" name="faq_id" value="{{ $faq->id }}">
                                     <button class="btn btn-warning"><i class="fa-solid fa-pen"></i>
-                                        Modifier</button>
+                                        Modifier / supprimer</button>
                                 </form>
-
-                                {{-- Bouton modal SUPPRESSION QUESTION/REPONSE --}}
-                                @include('Composants.BackOffice.FAQModalDelete')
 
                             </div>
                         </div>

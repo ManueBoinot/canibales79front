@@ -31,10 +31,6 @@
                         question/réponse</button>
                 </div>
             </form>
-
-            {{-- Bouton modal SUPPRESSION QUESTION/REPONSE --}}
-            @include('Composants.BackOffice.FAQModalDelete')
-            
         </div>
     </div>
 @endsection
