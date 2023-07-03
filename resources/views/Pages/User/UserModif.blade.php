@@ -282,7 +282,9 @@
 
             {{-- Formulaire --}}
             <div class="row mx-auto text-center">
-                <form method="POST" action="{{ route('updatePassword', $user) }}"> @csrf @method('put')
+                <form method="POST" action="{{ route('updatePassword', $user) }}">
+                    @csrf
+                    @method('put')
 
                     {{-- Ancien mot de passe --}}
                     <div class="row mb-3">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BureauMembre;
 use App\Models\User;
 use App\Models\Faq;
 use Auth;
@@ -23,8 +24,9 @@ class AdminController extends Controller
     {
         if (Auth::user()->isAdmin()) {
             $users = User::all()->sortBy('nom');
-            $faqs =Faq::all();
-            return view('Pages.BackOffice.BackOfficeIndex', ['users' => $users, 'faqs' => $faqs]);
+            $faqs = Faq::all();
+            $bureaumembres = BureauMembre::all();
+            return view('Pages.BackOffice.BackOfficeIndex', ['users' => $users, 'faqs' => $faqs, 'bureaumembres' => $bureaumembres]);
         }
         abort(403);
     }

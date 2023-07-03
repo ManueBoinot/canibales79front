@@ -9,7 +9,6 @@
             <form method="post" action="{{ route('faq.update', $faq) }}" class="text-start">
                 @method('put')
                 @csrf
-                <input type="hidden" name="faq_id" value="{{ $faq->id }}">
 
                 {{-- input QUESTION --}}
                 <div class="mb-3">

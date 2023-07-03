@@ -41,4 +41,5 @@ Route::resource('/user', App\Http\Controllers\UserController::class)->middleware
 Route::resource('/chiens', App\Http\Controllers\ChienController::class)->middleware('auth');
 Route::resource('/faq', App\Http\Controllers\FaqController::class);
 Route::resource('/chienuser', App\Http\Controllers\ChienUserController::class)->middleware('auth');
+Route::resource('/bureaumembre', App\Http\Controllers\BureauMembreController::class)->middleware('auth')->except(['create', 'show', 'store', 'destroy']);
 

@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             ChienUserSeeder::class,
             ChienSeeder::class,
             FaqSeeder::class,
+            BureauMembreSeeder::class
         ]);
     }
 }

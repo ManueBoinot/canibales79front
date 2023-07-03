@@ -9,7 +9,7 @@
         <div class="collapse" id="collapseWidthExample">
             <div class="card card-body">
 
-                {{-- Bouton de modification --}}
+                {{-- Bouton de création --}}
                 @include('Composants.BackOffice.FAQModalCrea')
 
                 {{-- FAQ LOOP --}}
@@ -23,7 +23,6 @@
                                 <form method="post" action="{{ route('faq.edit', $faq) }}">
                                     @method('get')
                                     @csrf
-                                    <input type="hidden" name="faq_id" value="{{ $faq->id }}">
                                     <button class="btn btn-warning"><i class="fa-solid fa-pen"></i>
                                         Modifier / supprimer</button>
                                 </form>
