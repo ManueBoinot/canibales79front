@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container py-5 px-lg-5" id="contact">
-        <h1 class="mb-5 text-center fw-bold">FORMULAIRE DE CONTACT</h1>
+    <div class="container py-5 px-lg-5 text-center" id="contact">
+        <h1 class="mb-5 fw-bold">FORMULAIRE DE CONTACT</h1>
 
             <h2 class="fst-italic fw-light text-danger">(Cette section du site est en construction)</h2>
 
@@ -10,13 +10,13 @@
 
         {{-- Lien vers la FAQ --}}
         {{-- <div class="text-center">
-            <p class="mb-5 text-danger">Tu as une question ? Pense à consulter notre <a href="/faq"><button
+            <p class="mb-5 text-danger">Vous avez une question ? Pensez à consulter notre <a href="/faq"><button
                         type="button" class="btn red-button">FOIRE
                         AUX
                         QUESTIONS</button></a></p>
-            <p class="border-top pt-5">Tu n'as pas trouvé ta réponse et/ou tu as <strong>envie de nous rejoindre</strong> ?
+            <p class="border-top pt-5">Vous n'avez pas trouvé votre réponse et/ou vous avez <strong>envie de nous rejoindre</strong> ?
             </p>
-            <p class="pb-3">Alors remplis le formulaire ci-dessous et nous te répondrons dans les meilleurs délais <i
+            <p class="pb-3">Alors remplissez le formulaire ci-dessous et nous vous répondrons dans les meilleurs délais <i
                     class="fa-regular fa-face-smile-beam"></i></p>
         </div> --}}
 

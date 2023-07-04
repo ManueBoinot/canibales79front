@@ -14,13 +14,13 @@
         <section class="mt-5 pb-4">
             <h2 class="fw-bold">Envie de nous rejoindre ?</h2>
             <p class="fs-5">Rien de plus simple !</p>
-            <p>Écris-nous via notre <a href="/contact" class="link-danger fw-bold">formulaire de contact</a> et nous
-                planifierons ensemble tes <strong style="color: rgb(230, 0, 0)">séances d'essai gratuites</strong>
+            <p>Écrivez-nous via notre <a href="/contact" class="link-danger fw-bold">formulaire de contact</a> et nous
+                planifierons ensemble vos <strong style="color: rgb(230, 0, 0)">séances d'essai gratuites</strong>
                 <small>(voir
                     détails ci-après)</small>.<br>
-                Et si après cela tu souhaites rejoindre le club, sache que <strong>les inscriptions sont ouvertes toute
+                Et si après cela vous souhaitez rejoindre le club, sachez que <strong>les inscriptions sont ouvertes toute
                     l'année</strong> !<br>
-                Nous t'expliquerons le moment venu quelle est la démarche à suivre pour demander ta licence.
+                Nous vous expliquerons le moment venu quelle est la démarche à suivre pour demander votre licence.
             </p>
 
             {{-- VACCINS OBLIGATOIRES --}}
@@ -43,7 +43,7 @@
                 </a>
 
                 {{-- Lien vers ENTRAINEMENTS --}}
-                <a class="link-secondary" href="/le-club#entrainements"><i class="me-2 fa-solid fa-clock"></i>Horaires des
+                <a class="link-secondary" href="/infos-pratiques"><i class="me-2 fa-solid fa-clock"></i>Horaires des
                     entraînements</a>
             </div>
 
@@ -54,21 +54,21 @@
 
             <h2 class="fw-bold my-5">SÉANCES D'ESSAI</h2>
 
-            <p>La FSLC propose un <strong>PASS DÉCOUVERTE</strong> qui te permet de profiter de non pas une, non pas
+            <p>La FSLC propose un <strong>PASS DÉCOUVERTE</strong> qui vous permet de profiter de non pas une, non pas
                 deux, mais bien
                 <strong style="color: rgb(230, 0, 0)">3 SÉANCES
                     D'ESSAI GRATUITES</strong> avec prise en charge par ses assurances Responsabilité Civile et
                 Corporelle incluse !
             </p>
-            <p>Nous t'expliquerons comment cela fonctionne lorsque tu viendras à ton premier essai :)</p>
+            <p>Nous vous expliquerons comment cela fonctionne lorsque vous viendrez à votre premier essai :)</p>
 
             {{-- INFO PRET MATERIEL --}}
             <div class="mx-auto" style="width: 100%; max-width: 500px">
                 <div class="alert alert-dark d-flex align-items-center" role="alert">
                     <i class="fa-solid fa-lightbulb fs-1"></i>
                     <div>
-                        <strong>Tu n'as pas encore d'équipement ?</strong> Pas de panique !<br>
-                        Nous avons un large choix de harnais et accessoires pour que tu puisses t'initier avant
+                        <strong>Vous n'avez pas encore d'équipement ?</strong> Pas de panique !<br>
+                        Nous avons un large choix de harnais et accessoires pour que vous puissiez vous initier avant
                         d'investir.
                     </div>
                 </div>

@@ -2,9 +2,9 @@
     <div class="row g-5">
         <h2 class="text-white text-center fw-bold">NOS RUBRIQUES</h2>
 
-        <!-- Rubrique " LE CLUB " -->
+        <!-- Rubrique " INFOS PRATIQUES " -->
         <div class="col-12 col-md-6 col-xl-3">
-            <a href="/le-club">
+            <a href="/infos-pratiques">
                 <div class="card">
                     <img src="../assets/photos/card/card-club.jpeg" class="card-img-top"
                         alt="les canibales79 au cani-apéro">

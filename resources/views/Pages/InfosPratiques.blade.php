@@ -110,10 +110,11 @@
                             méteo.
                         </p>
 
-                        <div class="py-3"><a class="link-dark fw-bold" href="/les-disciplines"
-                                title="Aller à la rubrique LES DISCIPLINES">
-                                <p><i class="fa-regular fa-hand-pointer"></i>
-                                    Infos sur nos disciplines</p>
+                        {{-- Lien infos DISCIPLINES --}}
+                        <div class="py-4">
+                            <a class="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
+                                <i class="fa-regular fa-hand-pointer"></i>
+                                Infos sur nos disciplines
                             </a>
                         </div>
 
@@ -145,10 +146,11 @@
                             rythme :)
                         </p>
 
-                        <div class="py-3"><a class="link-dark fw-bold" href="/les-disciplines"
-                                title="Aller à la rubrique LES DISCIPLINES">
-                                <p><i class="fa-regular fa-hand-pointer"></i>
-                                    Infos sur nos disciplines</p>
+                        {{-- Lien infos DISCIPLINES --}}
+                        <div class="py-4">
+                            <a class="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
+                                <i class="fa-regular fa-hand-pointer"></i>
+                                Infos sur nos disciplines
                             </a>
                         </div>
 
@@ -189,8 +191,8 @@
 
                         {{-- Calendrier COMPET --}}
                         <div class="text-center">
-                            <a class="btn btn-dark mb-5" type="button"
-                                href="https://courses.fslc-canicross.net/fr/" target="blank">CALENDRIER
+                            <a class="btn btn-dark mb-5" type="button" href="https://courses.fslc-canicross.net/fr/"
+                                target="blank">CALENDRIER
                                 DES COMPÉTITIONS FSLC
                             </a>
                         </div>
@@ -207,7 +209,8 @@
                             style="max-width: 100%;" width="700px">
 
                         {{-- Invitation à nous rejoindre --}}
-                        <p class="pt-4">Tu veux découvrir nos disciplines ou tu les pratiques déjà, et tu souhaites venir
+                        <p class="pt-4">Vous voulez découvrir nos disciplines ou vous les pratiquez déjà, et vous
+                            souhaitez venir
                             faire
                             une <strong>séance
                                 d'essai</strong>
@@ -217,10 +220,11 @@
                             <a href="/nous-rejoindre"><button type="button" class="btn red-button fw-bold">INFOS
                                     INSCRIPTION</button></a>
 
-                        <div class="py-4"><a class="link-danger" href="/les-disciplines"
-                                title="Aller à la rubrique LES DISCIPLINES">
-                                <p><i class="fa-regular fa-hand-pointer"></i>
-                                    Infos sur nos disciplines</p>
+                        {{-- Lien infos DISCIPLINES --}}
+                        <div class="py-4">
+                            <a class="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
+                                <i class="fa-regular fa-hand-pointer"></i>
+                                Infos sur nos disciplines
                             </a>
                         </div>
 
@@ -230,7 +234,7 @@
                 {{-- VACCINS OBLIGATOIRES --}}
                 <div class="mx-auto" style="width: 100%; max-width: 500px">
                     <div class="alert alert-danger d-flex align-items-center" role="alert">
-                        <i class="fa-solid fa-triangle-exclamation fs-1"></i>
+                        <i class="fa-solid fa-triangle-exclamation fs-1 me-3"></i>
                         <div>
                             <strong>Les chiens doivent être à jour de leurs vaccins</strong> pour pouvoir participer
                             à tout

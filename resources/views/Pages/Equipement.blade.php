@@ -235,7 +235,7 @@
                 </ul>
             </div>
             <div class="col">
-                <p><i class="fa-regular fa-hand-pointer"></i><a target="blank" class="link-dark"
+                <p><i class="fa-regular fa-hand-pointer"></i> <a target="blank" class="link-dark"
                         href="https://www.fenril.fr/harnais-canicross/110-harnais-zerodc-faster.html">Zero DC
                         Faster</a>
                 </p>

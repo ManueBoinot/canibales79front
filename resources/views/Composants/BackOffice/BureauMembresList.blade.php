@@ -12,11 +12,14 @@
 
                 {{-- FAQ LOOP --}}
                 @foreach ($bureaumembres as $bureaumembre)
-                    <div class="card col-11 col-md-6 col-xl-2 my-3 mx-auto text-dark">
+                    <div class="card col-11 col-md-5 col-xl-2 my-3 mx-auto text-dark">
                         <div class="card-body">
-                            <h5 class="card-title text-uppercase fw-bold">{{ $bureaumembre->statut }}</h5>
-                            <p class="card-text">{{ $bureaumembre->prenom }}</p>
-                            <img class="pb-2" src="{{ asset('storage/uploads/'.$bureaumembre->image) }}" width="100px">
+                            <div style="height: 100px">
+                                <h5 class="card-title text-uppercase fw-bold" style="height: 50px">{{ $bureaumembre->statut }}</h5>
+                                <p class="card-text">{{ $bureaumembre->prenom }}</p>
+                            </div>
+                            <img class="pb-2" src="{{ asset('storage/uploads/' . $bureaumembre->image) }}"
+                                width="100px">
 
                             <div class="d-flex justify-content-around">
                                 <form method="post" action="{{ route('bureaumembre.edit', $bureaumembre) }}">
