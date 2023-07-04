@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-    content="CANIBALES79 est un club de CANICROSS - CANIVTT - CANIMARCHE basé près de Niort dans les Deux-Sèvres (79), pour la pratique en loisir comme en compétition. Venez nous rencontrer et essayer nos sports !">
+        content="CANIBALES79 est un club de CANICROSS - CANIVTT - CANIMARCHE basé près de Niort dans les Deux-Sèvres (79), pour la pratique en loisir comme en compétition. Venez nous rencontrer et essayer nos sports !">
     <title>CANIBALES 79 NIORT - Canicross caniVTT canimarche Deux-Sèvres</title>
 
     <!-- Banque d'icônes -->
@@ -48,8 +48,13 @@
         @endif
 
         {{-- Corps de la page selon la route ------------------------------------- --}}
-        <main>
+        <main class="position-relative">
             @yield('content')
+            {{-- Balise retour haut de page --}}
+            <div class="back_top"><a href="#" title="Haut de page"><i
+                        class="fa-solid fa-angles-up p-1 me-1 
+                        mb-1 border rounded text-secondary"></i></a>
+            </div>
         </main>
 
         {{-- Header ------------------------------------- --}}

@@ -16,33 +16,16 @@
                 Le Bureau de l'association est composé de :
             </p>
             <div class="row my-4 text-center justify-content-around">
-                <div class="col-auto mb-2">
-                    <img src="../assets/photos/bureau-laura.jpg" alt="Laura la présidente du club" class="illu-bureau">
-                    <p class="m-0">Laura</p>
-                    <small class="fw-bold">Présidente</small>
-                </div>
-                <div class="col-auto mb-2">
-                    <img src="../assets/photos/bureau-marion.jpg" alt="Marion la secrétaire du club" class="illu-bureau">
-                    <p class="m-0">Marion</p>
-                    <small class="fw-bold">Sécrétaire</small>
-                </div>
-                <div class="col-auto mb-2">
-                    <img src="../assets/photos/bureau-lea.jpg" alt="Léa la secrétaire-adjointe du club" class="illu-bureau">
-                    <p class="m-0">Léa</p>
-                    <small class="fw-bold">Secrétaire-adjointe</small>
-                </div>
-                <div class="col-auto mb-2">
-                    <img src="../assets/photos/bureau-stephanie.jpg" alt="Stéphanie la trésorière du club"
-                        class="illu-bureau">
-                    <p class="m-0">Stéphanie</p>
-                    <small class="fw-bold">Trésorière</small>
-                </div>
-                <div class="col-auto mb-2">
-                    <img src="../assets/photos/bureau-stephane.jpg" alt="Stéphane le trésorier-adjoint du club"
-                        class="illu-bureau">
-                    <p class="m-0">Stéphane</p>
-                    <small class="fw-bold">Trésorier-adjoint</small>
-                </div>
+
+
+                @foreach ($bureaumembres as $bureaumembre)
+                    <div class="col-auto mb-2">
+                        <img src="{{ asset('storage/uploads/' . $bureaumembre->image) }}" alt="{{ $bureaumembre->prenom }} {{ $bureaumembre->statut }} du club"
+                            class="illu-bureau">
+                        <p class="m-0">{{ $bureaumembre->prenom }}</p>
+                        <small class="fw-bold">{{ $bureaumembre->statut }}</small>
+                    </div>
+                @endforeach
             </div>
         </div>
 

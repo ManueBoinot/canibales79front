@@ -68,23 +68,43 @@
                             </li> --}}
 
                             {{-- Lien ADMIN vers BACK OFFICE --------------------- --}}
-                            {{-- @if (Auth::user()->isAdmin())
-                                    <li class="nav-item">
-                                        <a class="nav-link text-danger" href="/admin"><i
-                                                class="fa-solid fa-lock p-2"></i>Accès back office</a>
-                                    </li>
-                                @endif --}}
+                            @if (Auth::user())
+                                {{-- lien pour se déconnecter --}}
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-danger border border-danger rounded"
+                                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-lock mx-2"></i>ADMIN
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                                        <li>
+                                            <a class="dropdown-item" href="/admin">INTERFACE ADMIN</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="{{ route('logout') }}"
+                                                onclick="event.preventDefault();
+                                                                         document.getElementById('logout-form').submit();">
+                                                {{ __('DÉCONNEXION') }}
+                                            </a>
 
-                            {{-- Lien vers ESPACE ADHERENT SI PAS CONNECTÉ --------------------- --}}
-                            {{-- @else
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                class="d-none">
+                                                @csrf
+                                            </form>
+                                        </li>
+
+                                </li>
+                        </ul>
+                        @endif
+
+                        {{-- Lien vers ESPACE ADHERENT SI PAS CONNECTÉ --------------------- --}}
+                        {{-- @else
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false" title="Réservé aux licenciés">
                                         <i class="fa-regular fa-user fs-4 me-3 fw-bold"></i>ESPACE PERSONNEL
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-dark bg-black"> --}}
-                            {{-- Lien pour se connecter --}}
-                            {{-- <li class="nav-item">
+                        {{-- Lien pour se connecter --}}
+                        {{-- <li class="nav-item">
                                             <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
                                         </li>
                                         <li class="nav-item">
@@ -97,54 +117,57 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 @endif --}}
-                            {{-- 
+                        {{-- 
 
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li> --}}
 
-                            <!-- Lien vers ACCUEIL -->
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/"><i
-                                        class="fa-solid fa-house me-3 d-lg-none"></i>ACCUEIL</a>
-                            </li>
+                        <!-- Lien vers ACCUEIL -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/"><i
+                                    class="fa-solid fa-house me-3 d-lg-none"></i>ACCUEIL</a>
+                        </li>
 
-                            <!-- Liens vers LE CLUB -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    LE CLUB
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark bg-black">
-                                    <li><a class="dropdown-item" href="/le-club">Qui sommes-nous ?</a></li>
-                                    <li><a class="dropdown-item" href="/les-disciplines">Nos disciplines</a></li>
-                                    <li><a class="dropdown-item" href="/les-partenaires">Nos partenaires</a></li>
-                                    <li><a class="dropdown-item" href="/reglementation">Réglementation</a></li>
-                                </ul>
-                            </li>
+                        <!-- Liens vers LE CLUB -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                LE CLUB
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                                <li><a class="dropdown-item" href="/le-club">Qui sommes-nous ?</a></li>
+                                <li><a class="dropdown-item" href="/les-disciplines">Nos disciplines</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/les-partenaires">Nos partenaires</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/reglementation">Réglementation</a></li>
+                            </ul>
+                        </li>
 
-                            <!-- Liens vers INFOS PRATIQUES -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    INFOS PRATIQUES
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark bg-black">
-                                    <li><a class="dropdown-item" href="/infos-pratiques">Horaires et compétition</a></li>
-                                    <li><a class="dropdown-item" href="/nous-rejoindre">Infos licences</a></li>
-                                    <li><a class="dropdown-item" href="/equipement">Équipement</a></li>
-                                </ul>
-                            </li>
+                        <!-- Liens vers INFOS PRATIQUES -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                INFOS PRATIQUES
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                                <li><a class="dropdown-item" href="/infos-pratiques">Horaires et
+                                        compétition</a></li>
+                                <li><a class="dropdown-item" href="/nous-rejoindre">Infos licences</a></li>
+                                <li><a class="dropdown-item" href="/equipement">Équipement</a></li>
+                            </ul>
+                        </li>
 
-                            <!-- Lien vers FAQ -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="/faq">FAQ</a>
-                            </li>
+                        <!-- Lien vers FAQ -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/faq">FAQ</a>
+                        </li>
 
-                            <!-- Lien vers PARTENAIRES -->
-                            <li class="nav-item ">
-                                <a class="nav-link fw-bold" href="/nous-rejoindre">NOUS REJOINDRE</a>
-                            </li>
+                        <!-- Lien vers PARTENAIRES -->
+                        <li class="nav-item ">
+                            <a class="nav-link fw-bold" href="/nous-rejoindre">NOUS REJOINDRE</a>
+                        </li>
 
                         </ul>
                     </div>

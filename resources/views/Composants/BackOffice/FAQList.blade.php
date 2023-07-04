@@ -1,29 +1,29 @@
 <div class="my-5">
     <p>
-        <button class="btn btn-danger btn-lg" type="button" data-bs-toggle="collapse"
+        <button class="btn btn-outline-warning btn-lg" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
             Gestion de la FAQ
         </button>
     </p>
-    <div style="min-height: 120px;">
         <div class="collapse" id="collapseWidthExample">
-            <div class="card card-body">
+            <div class="card card-body bg-dark border">
 
-                {{-- Bouton de création --}}
+                {{-- Bouton de création de questions/réponses --}}
                 @include('Composants.BackOffice.FAQModalCrea')
 
+                <h2 class="mt-2 pt-4 border-top fs-3">Liste des questions/réponses de la FAQ</h2>
                 {{-- FAQ LOOP --}}
                 @foreach ($faqs as $faq)
-                    <div class="card my-3 mx-auto text-dark" style="width: 800px; max-width: 80vw">
+                    <div class="card my-3 mx-auto text-dark w-100">
                         <div class="card-body">
-                            <h5 class="card-title">Question n°{{ $loop->iteration }} : {{ $faq->question }}</h5>
-                            <p class="card-text">{{ substr($faq->reponse, 0, 100) . ' ... ' }}</p>
+                            <p class="card-title fs-5">Question n°{{ $loop->iteration }} : {{ $faq->question }}</p>
+                            <p class="card-text fs-6 fst-italic">Réponse : {{ substr($faq->reponse, 0, 80) . ' ... ' }}</p>
                             <div class="d-flex justify-content-around">
 
                                 <form method="post" action="{{ route('faq.edit', $faq) }}">
                                     @method('get')
                                     @csrf
-                                    <button class="btn btn-warning"><i class="fa-solid fa-pen"></i>
+                                    <button class="btn btn-outline-success"><i class="fa-solid fa-pen"></i>
                                         Modifier / supprimer</button>
                                 </form>
 
@@ -33,5 +33,4 @@
                 @endforeach
             </div>
         </div>
-    </div>
 </div>

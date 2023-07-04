@@ -14,5 +14,15 @@
         {{-- LISTE DES QUESTIONS/REPONSES FAQ --}}
         @include('Composants.BackOffice.FAQList')
 
+        <a class="btn btn-outline-danger" type="button" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                                                                         document.getElementById('logout-form').submit();">
+            {{ __('DÉCONNEXION') }}
+        </a>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
+
     </div>
 @endsection

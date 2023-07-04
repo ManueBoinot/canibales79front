@@ -19,7 +19,7 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::view('/les-disciplines', 'Pages/LesDisciplines');
+Route::view('/les-disciplines', 'Pages.LesDisciplines');
 Route::view('/reglementation','Pages.LaFederation');
 Route::view('/le-club', 'Pages.LeClub');
 Route::view('/infos-pratiques', 'Pages.InfosPratiques');
@@ -39,7 +39,7 @@ Route::put('/users/{user}/modifier-mot-de-passe', [App\Http\Controllers\UserCont
 // ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
 Route::resource('/user', App\Http\Controllers\UserController::class)->middleware('auth');
 Route::resource('/chiens', App\Http\Controllers\ChienController::class)->middleware('auth');
-Route::resource('/faq', App\Http\Controllers\FaqController::class);
+Route::resource('/faq', App\Http\Controllers\FaqController::class)->middleware('auth');
 Route::resource('/chienuser', App\Http\Controllers\ChienUserController::class)->middleware('auth');
 Route::resource('/bureaumembre', App\Http\Controllers\BureauMembreController::class)->middleware('auth')->except(['create', 'show', 'store', 'destroy']);
 

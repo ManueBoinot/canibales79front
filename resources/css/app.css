@@ -36,6 +36,17 @@ h2 {
     padding-top: 150px;
 }
 
+.back_top {
+    position: sticky;
+    bottom: 0px;
+    left: 100%;
+    text-align: right;
+}
+
+.back_top i {
+    font-size: 50px;
+}
+
 /* NAVBAR ------------------------------------------ */
 
 .reseaux-header {
@@ -180,13 +191,13 @@ h2 {
 }
 
 #nav-pill .nav-link.active {
-background-color: rgb(28, 28, 28);
-color: white;
+    background-color: rgb(28, 28, 28);
+    color: white;
 }
 
 #nav-pill .nav-link {
-color: black;
-background-color: rgb(215, 212, 212);
+    color: black;
+    background-color: rgb(215, 212, 212);
 }
 
 /* DISCIPLINES --------------------------------------------------------------------- */
@@ -201,7 +212,9 @@ background-color: rgb(215, 212, 212);
 }
 
 /* LES PARTENAIRES -------------------------------------------------- */
-
+.logo_partner {
+    width: 150px;
+}
 
 /* FOOTER -------------------------------------------------- */
 footer a {
@@ -223,7 +236,6 @@ footer a {
     font-weight: bold;
 }
 
-
 /* MEDIA QUERIES -------------------------------------------------- */
 
 @media screen and (max-width: 320px) {}
@@ -237,8 +249,11 @@ footer a {
     }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+    .back_top {
+        visibility: hidden;
+    }
+}
 
 @media screen and (min-width: 1024px) {}
-
-/* VIDEO FSLC ------------------------------------------ */

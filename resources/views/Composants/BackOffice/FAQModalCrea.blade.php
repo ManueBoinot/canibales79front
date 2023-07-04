@@ -1,7 +1,7 @@
 <div class="text-center">
     <!-- Button trigger modal CREATE QR -->
-    <button type="button" class="btn btn-info btn-lg my-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Ajouter une QUESTION / RÉPONSE
+    <button type="button" class="btn btn-warning btn-lg my-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Ajouter une nouvelle Q/R
     </button>
 
     <!-- Modal -->
