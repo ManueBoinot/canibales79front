@@ -48,8 +48,15 @@ class FaqController extends Controller
     {
         if (Auth::user()->isAdmin()) {
             $request->validate([
-                'question' => 'required',
-                'reponse' => 'required',
+                'question' => 'required|min:25|max:1000',
+                'reponse' => 'required|min:25|max:1000',
+            ], [
+                'question.required' => 'Merci de taper une question ou d\'annuler l\'action.',
+                'question.min' => 'La question doit comporter au moins 25 caractères.',
+                'question.max' => 'La question doit comporter maximum 1000 caractères.',
+                'reponse.required' => 'Merci de taper une réponse ou d\'annuler l\'action.',
+                'reponse.min' => 'La réponse doit comporter au moins 25 caractères.',
+                'reponse.max' => 'La réponse doit comporter maximum 1000 caractères.'
             ]);
 
             Faq::create([
@@ -73,8 +80,15 @@ class FaqController extends Controller
     {
         if (Auth::user()->isAdmin()) {
             $request->validate([
-                'question' => 'required',
-                'reponse' => 'required',
+                'question' => 'required|min:25|max:1000',
+                'reponse' => 'required|min:25|max:1000',
+            ], [
+                'question.required' => 'Merci de taper une question ou d\'annuler l\'action.',
+                'question.min' => 'La question doit comporter au moins 25 caractères.',
+                'question.max' => 'La question doit comporter maximum 1000 caractères.',
+                'reponse.required' => 'Merci de taper une réponse ou d\'annuler l\'action.',
+                'reponse.min' => 'La réponse doit comporter au moins 25 caractères.',
+                'reponse.max' => 'La réponse doit comporter maximum 1000 caractères.'
             ]);
 
             $faq->update([

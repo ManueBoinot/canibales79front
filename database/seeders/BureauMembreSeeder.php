@@ -18,31 +18,31 @@ class BureauMembreSeeder extends Seeder
         BureauMembre::create([
             'statut' => 'Président(e)',
             'prenom' => 'Laura',
-            'image' => 'default.jpg'
+            'image' => 'laura-photo.jpg'
         ]);
 
         BureauMembre::create([
             'statut' => 'Trésorier(e)',
             'prenom' => 'Marion',
-            'image' => 'default.jpg'
+            'image' => 'marion-photo.jpg'
         ]);
 
         BureauMembre::create([
             'statut' => 'Trésorier(e)-adjoint(e)',
             'prenom' => 'Léa',
-            'image' => 'default.jpg'
+            'image' => 'léa-photo.jpg'
         ]);
 
         BureauMembre::create([
             'statut' => 'Secrétaire',
             'prenom' => 'Stéphanie',
-            'image' => 'default.jpg'
+            'image' => 'stéphanie-photo.jpg'
         ]);
 
         BureauMembre::create([
             'statut' => 'Secrétaire-adjoint(e)',
             'prenom' => 'Stéphane',
-            'image' => 'default.jpg'
+            'image' => 'stéphane-photo.jpg'
         ]);
     }
 }

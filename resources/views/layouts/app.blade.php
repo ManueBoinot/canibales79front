@@ -26,7 +26,8 @@
         src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v16.0&appId=726488655856436&autoLogAppEvents=1"
         nonce="ktuzrnbz"></script>
     <div id="app">
-        {{-- Header ------------------------------------- --}}
+
+        {{-- HEADER ------------------------------------- --}}
         @include('Composants.Header')
 
         @if (session()->has('message'))
@@ -37,6 +38,7 @@
             <p class="alert alert-success text-center">{{ session()->get('status') }}</p>
         @endif
 
+        {{-- Affichage des erreurs --}}
         @if ($errors->any())
             <div class="alert alert-danger text-center">
                 <ul>
@@ -47,18 +49,22 @@
             </div>
         @endif
 
-        {{-- Corps de la page selon la route ------------------------------------- --}}
+        {{-- CORPS DE LA PAGE GÉNÉRÉ DYNAMIQUEMENT ------------------------------------- --}}
         <main class="position-relative">
+
             @yield('content')
+
             {{-- Balise retour haut de page --}}
             <div class="back_top"><a href="#" title="Haut de page"><i
                         class="fa-solid fa-angles-up p-1 me-1 
                         mb-1 border rounded text-secondary"></i></a>
             </div>
+
         </main>
 
-        {{-- Header ------------------------------------- --}}
+        {{-- FOOTER ------------------------------------- --}}
         @include('Composants.Footer')
+
     </div>
 </body>
 

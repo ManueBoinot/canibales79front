@@ -1,10 +1,10 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger ms-5 mt-2" data-bs-toggle="modal" data-bs-target="#FAQDeleteModal">
+<button type="button" class="btn btn-danger btn-lg ms-5 mt-2" data-bs-toggle="modal" data-bs-target="#FAQDeleteModal">
     <i class="fa-regular fa-trash-can" title="Supprimer"></i>
 </button>
 
 <!-- Modal -->
-<div class="modal modal-lg fade text-dark" id="FAQDeleteModal" tabindex="-1" aria-labelledby="FAQDeleteModalLabel"
+<div class="modal modal-lg fade" id="FAQDeleteModal" tabindex="-1" aria-labelledby="FAQDeleteModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">

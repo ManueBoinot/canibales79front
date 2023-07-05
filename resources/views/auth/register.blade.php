@@ -19,12 +19,6 @@
                                     <input id="nom" type="text"
                                         class="form-control @error('nom') is-invalid @enderror" name="nom"
                                         value="{{ old('nom') }}" required autocomplete="nom">
-
-                                    @error('nom')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -36,12 +30,6 @@
                                     <input id="prenom" type="text"
                                         class="form-control @error('prenom') is-invalid @enderror" name="prenom"
                                         value="{{ old('prenom') }}" required autocomplete="prenom">
-
-                                    @error('prenom')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -54,12 +42,6 @@
                                     <input id="date_naissance" type="date"
                                         class="form-control @error('date_naissance') is-invalid @enderror"
                                         name="date_naissance" value="{{ old('date_naissance') }}" required>
-
-                                    @error('date_naissance')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -72,12 +54,6 @@
                                     <input id="numero_licence" type="text"
                                         class="form-control @error('numero_licence') is-invalid @enderror"
                                         name="numero_licence" value="{{ old('numero_licence') }}" required>
-
-                                    @error('numero_licence')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -95,12 +71,6 @@
                                         <option value="Compétition">Compétition</option>
                                         <option value="Junior">Junior</option>
                                     </select>
-
-                                    @error('type_licence')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -155,12 +125,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    @error('categorie')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -172,12 +136,6 @@
                                     <input id="email" type="email"
                                         class="form-control @error('email') is-invalid @enderror" name="email"
                                         value="{{ old('email') }}" required>
-
-                                    @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -189,12 +147,6 @@
                                     <input id="tel" type="tel"
                                         class="form-control @error('tel') is-invalid @enderror" name="tel"
                                         value="{{ old('tel') }}" required>
-
-                                    @error('tel')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -206,12 +158,6 @@
                                     <input id="adresse_ligne_1" type="text"
                                         class="form-control @error('adresse_ligne_1') is-invalid @enderror"
                                         name="adresse_ligne_1" value="{{ old('adresse_ligne_1') }}" required>
-
-                                    @error('adresse_ligne_1')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -224,12 +170,6 @@
                                     <input id="adresse_ligne_2" type="text"
                                         class="form-control @error('adresse_ligne_2') is-invalid @enderror"
                                         name="adresse_ligne_2" value="{{ old('adresse_ligne_2') }}">
-
-                                    @error('adresse_ligne_2')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -241,12 +181,6 @@
                                     <input id="code_postal" type="text"
                                         class="form-control @error('code_postal') is-invalid @enderror"
                                         name="code_postal" value="{{ old('code_postal') }}" required>
-
-                                    @error('code_postal')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -258,12 +192,6 @@
                                     <input id="commune" type="text"
                                         class="form-control @error('commune') is-invalid @enderror" name="commune"
                                         value="{{ old('commune') }}" required>
-
-                                    @error('commune')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 
@@ -279,12 +207,6 @@
                                     <div id="passwordHelp" class="form-text text-start">Le mot de passe doit contenir au
                                         moins 8
                                         caractères dont au moins 1 majuscule, 1 chiffre et 1 caractère spécial</div>
-
-                                    @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
 

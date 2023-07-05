@@ -8,6 +8,12 @@
             <h2 class="my-3 fw-medium">Réponses aux questions les plus fréquemment posées</h5>
         </div>
 
+        <div class="text-center">
+            <p class="my-4">Et si vous n'y trouvez pas votre réponse, alors <a href="/contact" type="button"
+                    class="btn red-button">CONTACTEZ-NOUS !</a>
+            </p>
+        </div>
+
         {{-- FAQ LOOP --}}
         @foreach ($faqs as $faq)
             <div class="accordion" id="accordionExample">
@@ -33,10 +39,5 @@
             </div>
         @endforeach
 
-        <div class="text-center">
-            <p class="my-4">Votre question reste sans réponse ? Alors <a href="/contact" type="button"
-                    class="btn red-button">CONTACTEZ-NOUS !</a>
-            </p>
-        </div>
     </div>
 @endsection

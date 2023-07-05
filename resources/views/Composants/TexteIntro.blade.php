@@ -7,7 +7,7 @@
         <!-- Présentation 3 disciplines -->
 
         <div class="col-12 col-lg-4">
-            <a href="/les-disciplines#canivtt#canicross">
+            <a href="/les-disciplines#canicross">
                 <div id="accueil-canicross" class="intro-sports mx-auto">
                     <h3 class="position-absolute top-50 start-50 translate-middle fw-bold text-white my-auto">
                         CANICROSS

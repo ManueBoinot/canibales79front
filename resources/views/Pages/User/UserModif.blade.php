@@ -16,12 +16,6 @@
                     <div class="col-md-6">
                         <input id="nom" type="text" class="form-control @error('nom') is-invalid @enderror"
                             name="nom" value="{{ $user->nom }}" autocomplete="nom" autofocus>
-
-                        @error('nom')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -32,12 +26,6 @@
                     <div class="col-md-6">
                         <input id="prenom" type="text" class="form-control @error('prenom') is-invalid @enderror"
                             name="prenom" value="{{ $user->prenom }}" autocomplete="prenom" autofocus>
-
-                        @error('prenom')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -50,12 +38,6 @@
                         <input id="date_naissance" type="date"
                             class="form-control @error('date_naissance') is-invalid @enderror" name="date_naissance"
                             value="{{ $user->date_naissance }}" autocomplete="date_naissance">
-
-                        @error('date_naissance')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -66,12 +48,6 @@
                     <div class="col-md-6">
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
                             name="email" value="{{ $user->email }}" autocomplete="email">
-
-                        @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -82,12 +58,6 @@
                     <div class="col-md-6">
                         <input id="tel" type="tel" class="form-control @error('tel') is-invalid @enderror"
                             name="tel" value="{{ $user->tel }}" autocomplete="tel">
-
-                        @error('tel')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -100,12 +70,6 @@
                         <input id="numero_licence" type="text"
                             class="form-control @error('numero_licence') is-invalid @enderror" name="numero_licence"
                             value="{{ $user->numero_licence }}" required>
-
-                        @error('numero_licence')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -122,12 +86,6 @@
                             <option value="Compétition">Compétition</option>
                             <option value="Junior">Junior</option>
                         </select>
-
-                        @error('type_licence')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -181,12 +139,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        @error('categorie')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -199,12 +151,6 @@
                         <input id="adresse_ligne_1" type="text"
                             class="form-control @error('adresse_ligne_1') is-invalid @enderror" name="adresse_ligne_1"
                             value="{{ $user->adresse_ligne_1 }}" autocomplete="adresse_ligne_1">
-
-                        @error('adresse_ligne_1')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -217,12 +163,6 @@
                         <input id="adresse_ligne_2" type="text"
                             class="form-control @error('adresse_ligne_2') is-invalid @enderror" name="adresse_ligne_2"
                             value="{{ $user->adresse_ligne_2 }}" autocomplete="adresse_ligne_2">
-
-                        @error('adresse_ligne_2')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -235,12 +175,6 @@
                         <input id="code_postal" type="text"
                             class="form-control @error('code_postal') is-invalid @enderror"
                             value="{{ $user->code_postal }}" name="code_postal" autocomplete="code_postal">
-
-                        @error('code_postal')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
                 </div>
 
@@ -251,13 +185,6 @@
                     <div class="col-md-6">
                         <input id="commune" type="text" class="form-control @error('commune') is-invalid @enderror"
                             value="{{ $user->commune }}" name="commune" autocomplete="commune">
-
-                        @error('commune')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-
                     </div>
                 </div>
 
@@ -295,12 +222,6 @@
                             <input id="old_password" type="password"
                                 class="form-control @error('old_password') is-invalid @enderror" name="old_password"
                                 required>
-
-                            @error('old_password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
                         </div>
                     </div>
 
@@ -316,12 +237,6 @@
 
                             <div id="passwordHelp" class="form-text text-start">Le mot de passe doit contenir au moins 8
                                 caractères dont au moins 1 majuscule, 1 chiffre et 1 caractère spécial</div>
-
-                            @error('new_password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
                         </div>
                     </div>
 
@@ -333,13 +248,6 @@
                         <div class="col-md-6">
                             <input id="password_confirmation" type="password" class="form-control"
                                 name="password_confirmation" required>
-
-                            @error('password_confirmation')
-                                <span class="invalid-feedback @error('password_confirmation') is-invalid @enderror"
-                                    role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
                         </div>
                     </div>
 

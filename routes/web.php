@@ -21,14 +21,17 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::view('/les-disciplines', 'Pages.LesDisciplines');
 Route::view('/reglementation','Pages.LaFederation');
-Route::view('/le-club', 'Pages.LeClub');
 Route::view('/infos-pratiques', 'Pages.InfosPratiques');
 Route::view('/equipement','Pages.Equipement');
 Route::view('/mentions-legales','Pages.MentionsLegales');
 Route::view('/nous-rejoindre','Pages.NousRejoindre');
 Route::view('/contact','Pages.NousContacter');
 Route::view('/les-partenaires','Pages.LesPartenaires');
-Route::view('/faq','Pages.FAQ');
+
+// Route vers la page LE CLUB avec affichage dynamique des membres du Bureau
+Route::get('/le-club', [App\Http\Controllers\BureauMembreController::class, 'index']);
+// Route vers la page FAQ avec affichage dynamique des Q/R
+Route::get('/faq', [App\Http\Controllers\FaqController::class, 'index']);
 
 // Route vers le BACK OFFICE -----------------------------------
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index')->middleware('auth');
@@ -39,7 +42,6 @@ Route::put('/users/{user}/modifier-mot-de-passe', [App\Http\Controllers\UserCont
 // ROUTES MODE RESSOURCE (crée automatiquement les routes de base CRUD)
 Route::resource('/user', App\Http\Controllers\UserController::class)->middleware('auth');
 Route::resource('/chiens', App\Http\Controllers\ChienController::class)->middleware('auth');
-Route::resource('/faq', App\Http\Controllers\FaqController::class)->middleware('auth');
+Route::resource('/faq', App\Http\Controllers\FaqController::class);
 Route::resource('/chienuser', App\Http\Controllers\ChienUserController::class)->middleware('auth');
-Route::resource('/bureaumembre', App\Http\Controllers\BureauMembreController::class)->middleware('auth')->except(['create', 'show', 'store', 'destroy']);
-
+Route::resource('/bureaumembre', App\Http\Controllers\BureauMembreController::class)->except(['create', 'show', 'store', 'destroy']);

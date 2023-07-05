@@ -15,7 +15,7 @@ class BureauMembre extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'nom',
+        'prenom',
         'image'
     ];
 }

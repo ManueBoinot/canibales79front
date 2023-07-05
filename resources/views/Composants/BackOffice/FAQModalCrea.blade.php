@@ -1,13 +1,13 @@
 <div class="text-center">
     <!-- Button trigger modal CREATE QR -->
-    <button type="button" class="btn btn-warning btn-lg my-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Ajouter une nouvelle Q/R
+    <button type="button" class="btn btn-info btn-lg my-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        + Ajouter une nouvelle Q/R
     </button>
 
     <!-- Modal -->
-    <div class="modal modal-xl fade text-dark" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal modal-xl fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog text-bg-light">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Création d'une nouvelle QUESTION / RÉPONSE
@@ -22,28 +22,37 @@
                         {{-- input QUESTION --}}
                         <div class="mb-3">
                             <label for="question" class="form-label fw-bold">QUESTION</label>
-                            <input class="form-control" id="question" name="question" type="text"
-                                value="{{ old('question') }}"
-                                placeholder="Ex. : Je n'aime pas courir, est-ce que je peux quand même aimer le canicross ?"
-                                required>
+                            <textarea class="form-control @error('question') is-invalid @enderror" id="question" name="question" type="text"
+                                placeholder="Ex. : Je n'aime pas courir, est-ce que je peux quand même aimer le canicross ?" required>{{ old('question') }}</textarea>
+                            @error('question')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         {{-- input REPONSE --}}
                         <div class="mb-3">
                             <label for="reponse" class="form-label fw-bold">RÉPONSE</label>
-                            <input type="text" class="form-control" id="reponse" name="reponse"
+                            <textarea type="text" class="form-control @error('reponse') is-invalid @enderror" id="reponse" name="reponse"
                                 placeholder="Ex. : Tout à fait ! Le canicross est une autre dimension de la course à pied, et nombreux sont les pratiquants qui se surprennent à aimer courir une fois qu'ils se mettent au canicross. Courir avec son chien, ça change tout ;)"
-                                value="{{ old('reponse') }}" required>
+                                required>{{ old('reponse') }}</textarea>
+                            @error('reponse')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         {{-- bouton VALIDER --}}
                         <div class="text-center">
-                            <button type="submit" class="btn btn-success btn-lg">AJOUTER CETTE NOUVELLE QUESTION/RÉPONSE</button>
+                            <button type="submit" class="btn btn-success btn-lg">AJOUTER CETTE NOUVELLE
+                                QUESTION/RÉPONSE</button>
                         </div>
                     </form>
                 </div>
 
                 {{-- bouton ANNULER --}}
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                 </div>
             </div>
         </div>

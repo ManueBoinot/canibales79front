@@ -19,11 +19,11 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 30%, rgba(255,0,0,0.9) 100%);"
                     <li class="list-item"><a href="/nous-rejoindre">Inscription</a></li>
                 </div>
                 <div class="col-md-6">
-                    <li class="list-item"><a href="/la-federation">Réglementation</a></li>
+                    <li class="list-item"><a href="/reglementation">Réglementation</a></li>
                     <li class="list-item"><a href="/faq">Foire
                             aux
                             questions</a></li>
-                    <li class="list-item"><a href="/nos-partenaires">Nos partenaires</a></li>
+                    <li class="list-item"><a href="/les-partenaires">Nos partenaires</a></li>
                     <li class="list-item"><a href="/contact">Contact</a></li>
                     <li class="list-item"><a href="/mentions-legales">Mentions légales</a></li>
                 </div>

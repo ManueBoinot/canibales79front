@@ -51,7 +51,7 @@
                         au moins 24 mois.</span><br>
                     Cette discipline s’adresse à tous les humains et toutes les races de chiens (sauf catégorie 1).
                 </p>
-                <a href="/equipement" type="button" class="btn black-button">Infos ÉQUIPEMENT</a>
+                <a href="/equipement" type="button" class="btn black-button" id="canivtt">Infos ÉQUIPEMENT</a>
             </div>
         </div>
 
@@ -78,7 +78,7 @@
                 <p>NB : il existe une autre discipline semblable au caniVTT mais qui se pratique avec une trottinette
                     spécifique : le <strong>CANIPÉDICYCLE</strong>. Méconnu, il nécessite une certaine technique et demande
                     un plus gros effort encore que le caniVTT. Les prérequis sont les mêmes que pour le caniVTT.</p>
-                <a href="/equipement" type="button" class="btn black-button">Infos ÉQUIPEMENT</a>
+                <a href="/equipement" type="button" class="btn black-button" id="canimarche">Infos ÉQUIPEMENT</a>
             </div>
         </div>
 

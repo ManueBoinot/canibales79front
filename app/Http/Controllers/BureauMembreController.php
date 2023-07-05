@@ -44,16 +44,23 @@ class BureauMembreController extends Controller
     public function update(Request $request, BureauMembre $bureaumembre)
     {
         if (Auth::user()->isAdmin()) {
-            
+
             $request->validate([
-                'prenom' => 'string|max:40',
+                'prenom' => 'string|regex:/^[a-zA-Z]+$/|min:2|max:40|required',
                 'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            ], [
+                'prenom.required' => 'Merci d\'entrer un prénom ou d\'annuler l\'action',
+                'prenom.min' => 'Le prénom doit comporter au moins 2 caractères.',
+                'prenom.max' => 'Le prénom doit comporter maximum 40 caractères.',
+                'prenom.regex' => 'Le prénom doit être composé uniquement de lettres.',
+                'image.mimes' => 'L\'image doit être au format png, jpg, jpeg, gif ou svg.',
+                'image.image' => 'L\'image ne doit pas dépasser 2 Mo.'
             ]);
 
             $fileName = '';
 
             if ($request->hasFile('image')) {
-                $fileName = strtolower($request->prenom) . time() . '.' . $request->image->extension();
+                $fileName = strtolower($bureaumembre->prenom) . '-photo.' . $request->image->extension();
                 $request->image->storeAs('public/uploads', $fileName);
                 if ($bureaumembre->image) {
                     Storage::delete('public/uploads/' . $bureaumembre->image);
@@ -63,7 +70,7 @@ class BureauMembreController extends Controller
             }
 
             $bureaumembre->update([
-                'prenom' => $request->input('prenom'),
+                'prenom' => ucwords($request->input('prenom')),
                 'image' => $fileName
             ]);
 
