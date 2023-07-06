@@ -4,7 +4,6 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -15,8 +14,13 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    # Send Requests To Front Controller...
+    # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    # Force HTTPS redirection
+    RewriteCond %{SERVER_PORT} !=443
+    RewriteRule ^(.*)$ http://canibales79.emmanuelle-boinot.fr/$1 [R=301,L]
+    
 </IfModule>
