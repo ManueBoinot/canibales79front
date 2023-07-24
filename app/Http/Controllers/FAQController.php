@@ -18,7 +18,7 @@ class FaqController extends Controller
     public function index()
     {
         $faqs = Faq::all();
-        return view('Pages.FAQ', ['faqs' => $faqs]);
+        return view('PageFAQ', ['faqs' => $faqs]);
     }
 
     // ___________________________________________________________________________
@@ -31,7 +31,7 @@ class FaqController extends Controller
     public function edit(Faq $faq)
     {
         if (Auth::user()->isAdmin()) {
-            return view('Pages.BackOffice.FAQModif', ['faq' => $faq]);
+            return view('backOffice.FAQModif', ['faq' => $faq]);
         }
         abort(403);
     }

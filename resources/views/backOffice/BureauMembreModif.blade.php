@@ -18,7 +18,7 @@
                         <p class="text-uppercase fs-3">{{ $bureaumembre->statut }}</p>
                     </div>
                     {{-- IMAGE APERÇU --}}
-                    <img src="{{ asset('storage/uploads/' . $bureaumembre->image) }}" width="150px">
+                    <img src="{{ asset('storage/' . $bureaumembre->image) }}" width="150px">
                 </div>
 
                 <div class="col mx-auto">

@@ -8,15 +8,15 @@
             {{-- Images entrainements --}}
             <div class="col-auto d-none d-md-block">
                 <div>
-                    <img class="m-2 illu-sorties" src="../assets/photos/canicross-montage-01.jpeg"
+                    <img class="m-2 illu-sorties" src="assets/photos/canicross-montage-01.jpeg"
                         alt="Canicross vu depuis le coureur">
                 </div>
                 <div class="col">
-                    <img class="m-2 illu-sorties" src="../assets/photos/photo_entrainement.jpg"
+                    <img class="m-2 illu-sorties" src="assets/photos/photo_entrainement.jpg"
                         alt="Les canibales 79 font du gainage">
                 </div>
                 <div class="col">
-                    <img class="m-2 illu-sorties" src="../assets/photos/photo_entrainement_pluie.jpg"
+                    <img class="m-2 illu-sorties" src="assets/photos/photo_entrainement_pluie.jpg"
                         alt="Les canibales 79 en sortie même sous la pluie">
                 </div>
             </div>
@@ -163,8 +163,8 @@
 
                         {{-- Logos compet --}}
                         <div class="d-flex justify-content-center gap-5 my-4">
-                            <img class="logo-compet" src="../assets/logos/logo_fslc.png" alt="logo fslc">
-                            <img class="logo-compet" src="../assets/logos/chien-or.jpg" alt="logo trophée chien d'or">
+                            <img class="logo-compet" src="assets/logos/logo_fslc.png" alt="logo fslc">
+                            <img class="logo-compet" src="assets/logos/chien-or.jpg" alt="logo trophée chien d'or">
                         </div>
 
                         <p class="mb-2">Les CANIBALES 79 étant adhérents de la Fédération des Sports et Loisirs
@@ -205,7 +205,7 @@
                         <h2 class="my-4">REJOINDRE LE CLUB</h2>
 
                         {{-- Image club plage --}}
-                        <img class="img-fluid " src="../assets/photos/club-plage.jpg" alt="les canibales79 sur la plage"
+                        <img class="img-fluid " src="assets/photos/club-plage.jpg" alt="les canibales79 sur la plage"
                             style="max-width: 100%;" width="700px">
 
                         {{-- Invitation à nous rejoindre --}}

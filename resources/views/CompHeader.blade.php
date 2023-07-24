@@ -176,6 +176,6 @@
         </nav>
 
         <!-- BANDEAU SOUS NAVBAR RESEAUX SOCIAUX -->
-        @include('Composants.BandeauReseaux')
+        @include('CompBandeauReseaux')
 
     </header>

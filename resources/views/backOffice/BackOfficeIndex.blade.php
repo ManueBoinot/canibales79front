@@ -5,16 +5,13 @@
 
         <h1>INTERFACE ADMINISTRATEUR</h1>
         
-        <h2></h2>
-
-        {{-- LISTE DES UTILISATEURS --}}
-        {{-- @include('Composants.BackOffice.UsersList') --}}
+        <p>Vous pouvez ici mettre à jour les membres du Bureau de l'association ainsi que gérer la Foire Aux Questions</p>
 
         {{-- LISTE DES MEMBRES DU BUREAU --}}
-        @include('Composants.BackOffice.BureauMembresList')
+        @include('backOffice.BureauMembresList')
 
         {{-- LISTE DES QUESTIONS/REPONSES FAQ --}}
-        @include('Composants.BackOffice.FAQList')
+        @include('backOffice.FAQList')
 
     </div>
 @endsection

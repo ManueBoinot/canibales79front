@@ -28,7 +28,7 @@
     <div id="app">
 
         {{-- HEADER ------------------------------------- --}}
-        @include('Composants.Header')
+        @include('CompHeader')
 
         @if (session()->has('message'))
             <p class="alert alert-success text-center">{{ session()->get('message') }}</p>
@@ -63,7 +63,7 @@
         </main>
 
         {{-- FOOTER ------------------------------------- --}}
-        @include('Composants.Footer')
+        @include('CompFooter')
 
     </div>
 </body>

@@ -20,7 +20,7 @@
                     <figure>
                         <a target="blank"
                             href="https://www.fenril.fr/kit-canicross/1438-kit-canicross-inlandsis-3760264640080.html"
-                            target="blank"><img src="../assets/photos/materiel/kit-canicross-inlandsis.jpg"
+                            target="blank"><img src="assets/photos/materiel/kit-canicross-inlandsis.jpg"
                                 alt="kit complet canicross"></a>
                         <figcaption class="fst-italic text-secondary"><small>Le kit complet Canicross de Inlandsis</small>
                         </figcaption>
@@ -69,7 +69,7 @@
                 <div class="col-auto">
                     <figure><a target="blank" href="https://www.fenril.fr/kits-cani-vtt/1425-kit-canivtt-inlandsis.html"
                             target="blank">
-                            <img src="../assets/photos/materiel/kit-canivtt-inlandsis.jpg" alt="kit complet canivtt"
+                            <img src="assets/photos/materiel/kit-canivtt-inlandsis.jpg" alt="kit complet canivtt"
                                 title="Kit complet CANIVTT de Inlandsis"></a>
                         <figcaption class="fst-italic text-secondary"><small>Le kit complet CaniVTT de Inlandsis</small>
                         </figcaption>

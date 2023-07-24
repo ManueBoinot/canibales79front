@@ -10,7 +10,7 @@
                 <div class="row align-items-center mt-5 justify-content-between">
                     <div class="col">
                         <a href="https://acticani-shop.fr/fr/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_acticanishop.jpg" class="logo_partner"
+                            <img src="assets/logos/partenaires/logo_acticanishop.jpg" class="logo_partner"
                                 alt="logo acticanishop"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -42,7 +42,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.alltricks.fr/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_alltricks.jpg" class="logo_partner"
+                            <img src="assets/logos/partenaires/logo_alltricks.jpg" class="logo_partner"
                                 alt="logo alltricks"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -73,7 +73,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.canigourmand.com/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_canigourmand.jpg" class="logo_partner"
+                            <img src="assets/logos/partenaires/logo_canigourmand.jpg" class="logo_partner"
                                 alt="logo canigourmand"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -105,7 +105,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.canisportshop.be/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_canisportshop.jpg" class="logo_partner"
+                            <img src="assets/logos/partenaires/logo_canisportshop.jpg" class="logo_partner"
                                 alt="logo canisportshop"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -128,7 +128,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.fenril.fr/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_fenril.png" class="logo_partner"
+                            <img src="assets/logos/partenaires/logo_fenril.png" class="logo_partner"
                                 alt="logo fenril"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -151,7 +151,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://foulees.com/-niort-" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_foulees.png" class="logo_partner"
+                            <img src="assets/logos/partenaires/logo_foulees.png" class="logo_partner"
                                 alt="logo foulees"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -179,7 +179,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.jmt-alimentation-animale.com/magasins/jmt-niort/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_jmt.jpg" alt="logo jmt" class="logo_partner"></a>
+                            <img src="assets/logos/partenaires/logo_jmt.jpg" alt="logo jmt" class="logo_partner"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
                         <h2>JMT</h2>
@@ -207,7 +207,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="http://miliemilie.com/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_miliemilie.jpg" alt="logo miliemilie"
+                            <img src="assets/logos/partenaires/logo_miliemilie.jpg" alt="logo miliemilie"
                                 class="logo_partner"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -224,7 +224,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.nonstopdogwear.com/fr/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_nonstopdogwear.png" alt="logo nonstop dogwear"
+                            <img src="assets/logos/partenaires/logo_nonstopdogwear.png" alt="logo nonstop dogwear"
                                 class="logo_partner"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -253,7 +253,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.nourrircommelanature.com/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_nourrir_comme_la_nature.png"
+                            <img src="assets/logos/partenaires/logo_nourrir_comme_la_nature.png"
                                 alt="logo nourrir comme la nature" class="logo_partner"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -289,7 +289,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.poli.fr/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_poli.png" alt="logo poli"
+                            <img src="assets/logos/partenaires/logo_poli.png" alt="logo poli"
                                 class="logo_partner"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">
@@ -319,7 +319,7 @@
                 <div class="row align-items-center pt-5 border-top">
                     <div class="col">
                         <a href="https://www.terranimo.fr/" target="_blank">
-                            <img src="../assets/logos/partenaires/logo_terranimo.png" alt="logo terranimo"
+                            <img src="assets/logos/partenaires/logo_terranimo.png" alt="logo terranimo"
                                 class="logo_partner"></a>
                     </div>
                     <div class="col-md-9 col-lg-10">

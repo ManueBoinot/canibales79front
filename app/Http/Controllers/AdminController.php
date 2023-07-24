@@ -26,7 +26,7 @@ class AdminController extends Controller
             $users = User::all()->sortBy('nom');
             $faqs = Faq::all();
             $bureaumembres = BureauMembre::all();
-            return view('Pages.BackOffice.BackOfficeIndex', ['users' => $users, 'faqs' => $faqs, 'bureaumembres' => $bureaumembres]);
+            return view('backOffice.BackOfficeIndex', ['users' => $users, 'faqs' => $faqs, 'bureaumembres' => $bureaumembres]);
         }
         abort(403);
     }

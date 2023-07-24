@@ -1,5 +1,5 @@
 <!-- CARROUSEL DES PARTENAIRES -->
-@include('Composants.PartnersCarousel')
+@include('CompPartnersCarousel')
 
 <footer class="container-fluid text-white pt-3 px-5"
     style="font-size: 0.7rem; background: rgb(0,0,0);

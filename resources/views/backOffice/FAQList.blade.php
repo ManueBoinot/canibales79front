@@ -9,9 +9,9 @@
             <div class="card card-body text-bg-dark">
 
                 {{-- Bouton de création de questions/réponses --}}
-                @include('Composants.BackOffice.FAQModalCrea')
+                @include('backOffice.FAQModalCrea')
 
-                <h3 class="mt-2 pt-4 border-top fs-3">Liste des questions/réponses de la FAQ</h3>
+                <h2 class="mt-2 pt-4 border-top fs-3">Liste des questions/réponses de la FAQ</h2>
                 {{-- FAQ LOOP --}}
                 @foreach ($faqs as $faq)
                     <div class="card my-3 mx-auto w-100 text-bg-light">

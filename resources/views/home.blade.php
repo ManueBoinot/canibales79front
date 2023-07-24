@@ -3,12 +3,12 @@
 @section('content')
 
     {{-- Intégration du texte d'INTRODUCTION --}}
-    @include('Composants.TexteIntro')
+    @include('CompAccueilIntro')
 
     {{-- Intégration RUBRIQUES --}}
-    @include('Composants.RubriquesAccueil')
+    @include('CompAccueilRubriques')
 
     {{-- Intégration ACTU --}}
-    @include('Composants.ActuAccueil')
+    @include('CompAccueilActu')
     
 @endsection

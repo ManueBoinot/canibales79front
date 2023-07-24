@@ -11,10 +11,10 @@
 
             <div class="d-flex justify-content-center gap-5 fs-1">
                 <a href="https://www.facebook.com/Canibales79" target="blank" title="Notre page Facebook"><img
-                        src="../assets/logos/logo_facebook.png" class="logo-60" alt="logo Instagram">
+                        src="assets/logos/logo_facebook.png" class="logo-60" alt="logo Instagram">
                 </a>
                 <a href="https://www.instagram.com/canibales_79/" target="blank" title="Notre page Instagram"><img
-                        src="../assets/logos/logo_instagram.png" class="logo-60" alt="logo Instagram">
+                        src="assets/logos/logo_instagram.png" class="logo-60" alt="logo Instagram">
                 </a>
             </div>
         </div>
@@ -29,7 +29,7 @@
                 target="_blank">
 
                 <div class="card text-bg-dark mx-auto">
-                    <img src="../assets/presse/article-nr-2022.jpg" class="card-img"
+                    <img src="assets/presse/article-nr-2022.jpg" class="card-img"
                         alt="article Nouvelle République 2022">
                     <div class="card-img-overlay py-4 py-lg-3 py-xxl-2">
                         <h5 class="card-title pt-4 pt-lg-2 pt-xxl-5 text-uppercase fw-bold">La Nouvelle République</h5>
@@ -47,7 +47,7 @@
                 target="_blank">
 
                 <div class="card text-bg-dark mx-auto">
-                    <img src="../assets/presse/article-ouestfr-2022.jpg" class="card-img"
+                    <img src="assets/presse/article-ouestfr-2022.jpg" class="card-img"
                         alt="article Nouvelle République 2017">
                     <div class="card-img-overlay py-4 py-lg-3 py-xxl-2">
                         <h5 class="card-title pt-4 pt-lg-2 pt-xxl-5 text-uppercase fw-bold">Ouest France</h5>
@@ -64,7 +64,7 @@
                 target="_blank">
 
                 <div class="card text-bg-dark mx-auto">
-                    <img src="../assets/presse/article-nr-2017.jpg" class="card-img"
+                    <img src="assets/presse/article-nr-2017.jpg" class="card-img"
                         alt="article Nouvelle République 2017">
                     <div class="card-img-overlay py-4 py-lg-3 py-xxl-2">
                         <h5 class="card-title pt-4 pt-lg-2 pt-xxl-5 text-uppercase fw-bold">La Nouvelle République</h5>

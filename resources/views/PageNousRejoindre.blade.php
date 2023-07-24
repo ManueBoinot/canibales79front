@@ -7,7 +7,7 @@
 
         {{-- Image club plage --}}
         <div>
-            <img class="img-fluid" src="../assets/photos/club-plage.jpg" alt="les canibales79 sur la plage"
+            <img class="img-fluid" src="assets/photos/club-plage.jpg" alt="les canibales79 sur la plage"
                 style="max-width: 100%" width="700px">
         </div>
 

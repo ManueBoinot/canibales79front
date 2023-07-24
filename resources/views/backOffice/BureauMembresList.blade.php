@@ -16,7 +16,7 @@
                         <p class="card-text" style="height: 20px">{{ $bureaumembre->prenom }}</p>
                         <p class="card-title text-uppercase fw-bold" style="height: 50px">
                             {{ $bureaumembre->statut }}</p>
-                        <img class="pb-2" src="{{ asset('storage/uploads/' . $bureaumembre->image) }}" height="100px">
+                        <img class="pb-2" src="{{ asset('storage/' . $bureaumembre->image) }}" height="100px">
                         <div class="d-flex justify-content-around">
                             <form method="post" action="{{ route('bureaumembre.edit', $bureaumembre) }}">
                                 @method('get')

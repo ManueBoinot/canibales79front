@@ -18,7 +18,7 @@
             <div class="row my-4 text-center justify-content-around">
 
                 {{-- Affichage dynamique du Bureau --}}
-                @include('Composants.BureauMembresPublic')
+                @include('CompBureauMembresPublic')
 
             </div>
         </div>

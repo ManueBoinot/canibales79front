@@ -6,6 +6,7 @@ use App\Models\BureauMembre;
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\Storage;
+use File;
 
 class BureauMembreController extends Controller
 {
@@ -17,7 +18,7 @@ class BureauMembreController extends Controller
     public function index()
     {
         $bureaumembres = BureauMembre::all();
-        return view('Pages.LeClub', ['bureaumembres' => $bureaumembres]);
+        return view('PageLeClub', ['bureaumembres' => $bureaumembres]);
     }
 
     /**
@@ -29,7 +30,7 @@ class BureauMembreController extends Controller
     public function edit(BureauMembre $bureaumembre)
     {
         if (Auth::user()->isAdmin()) {
-            return view('Pages.BackOffice.BureauMembreModif', ['bureaumembre' => $bureaumembre]);
+            return view('backOffice.BureauMembreModif', ['bureaumembre' => $bureaumembre]);
         }
         abort(403);
     }
@@ -46,7 +47,7 @@ class BureauMembreController extends Controller
         if (Auth::user()->isAdmin()) {
 
             $request->validate([
-                'prenom' => 'string|regex:/^[a-zA-Z]+$/|min:2|max:40|required',
+                'prenom' => 'string|regex:/^[A-zÀ-ÿ]+$/|min:2|max:40|required',
                 'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
             ], [
                 'prenom.required' => 'Merci d\'entrer un prénom ou d\'annuler l\'action',
@@ -60,10 +61,10 @@ class BureauMembreController extends Controller
             $fileName = '';
 
             if ($request->hasFile('image')) {
-                $fileName = strtolower($bureaumembre->prenom) . '-photo.' . $request->image->extension();
-                $request->image->storeAs('public/uploads', $fileName);
+                $fileName = strtolower($request->prenom) . '-photo.' . $request->image->extension();
+                $request->file('image')->storeAs('public', $fileName);
                 if ($bureaumembre->image) {
-                    Storage::delete('public/uploads/' . $bureaumembre->image);
+                    File::delete(storage_path('storage/' . $bureaumembre->image));
                 }
             } else {
                 $fileName = $bureaumembre->image;

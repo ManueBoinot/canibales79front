@@ -59,12 +59,6 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class);
     }
 
-    // Fonction qui précise la relation avec la table "Chiens"
-    public function chiens()
-    {
-        return $this->belongsToMany(Chien::class)->using(ChienUser::class);
-    }
-
     // Fonction qui définit que le role_id (1) est un Admin
     public function isAdmin()
     {

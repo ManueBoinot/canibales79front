@@ -6,7 +6,7 @@
         <div class="text-end">
 
             {{-- Bouton modal SUPPRESSION QUESTION/REPONSE --}}
-            @include('Composants.BackOffice.FAQModalDelete')
+            @include('backOffice.FAQModalDelete')
 
             {{-- début formulaire modif QUESTION/REPONSE --}}
             <form method="post" action="{{ route('faq.update', $faq) }}" class="text-start">

@@ -6,7 +6,7 @@
         <div class="col-12 col-md-6 col-xl-3">
             <a href="/infos-pratiques">
                 <div class="card">
-                    <img src="../assets/photos/card/card-club.jpeg" class="card-img-top"
+                    <img src="assets/photos/card/card-club.jpeg" class="card-img-top"
                         alt="les canibales79 au cani-apéro">
                     <div class="card-body px-lg-4 text-black">
                         <h5 class="fw-bold">INFOS PRATIQUES</h5>
@@ -21,7 +21,7 @@
         <div class="col-12 col-md-6 col-xl-3">
             <a href="/les-disciplines">
                 <div class="card">
-                    <img src="../assets/photos/card/card-disciplines.jpg" class="card-img-top"
+                    <img src="assets/photos/card/card-disciplines.jpg" class="card-img-top"
                         alt="course de canicross en forêt">
                     <div class="card-body px-lg-4 text-black">
                         <h5 class="fw-bold">NOS DISCIPLINES</h5>
@@ -38,7 +38,7 @@
         <div class="col-12 col-md-6 col-xl-3">
             <a href="/equipement">
                 <div class="card">
-                    <img src="../assets/photos/card/card-materiel.jpg" class="card-img-top" alt="binôme en canicross">
+                    <img src="assets/photos/card/card-materiel.jpg" class="card-img-top" alt="binôme en canicross">
                     <div class="card-body px-lg-4 text-black">
                         <h5 class="fw-bold">L'ÉQUIPEMENT</h5>
                         <p class="card-text">Sécurité et bien-être du binôme ! Vous trouverez ici des conseils pour
@@ -57,7 +57,7 @@
         <div class="col-12 col-md-6 col-xl-3">
             <a href="/faq">
                 <div class="card">
-                    <img src="../assets/photos/card/card-faq.jpeg" class="card-img-top"
+                    <img src="assets/photos/card/card-faq.jpeg" class="card-img-top"
                         alt="chiens courant sur la plage">
                     <div class="card-body px-lg-4 text-black">
                         <h5 class="fw-bold">FOIRE AUX QUESTIONS</h5>

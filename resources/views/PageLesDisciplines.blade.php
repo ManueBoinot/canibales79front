@@ -7,8 +7,8 @@
 
         {{-- INFO CANICROSS --}}
         <div class="row pt-4 pb-5 align-items-center">
-            <div class="col-auto mx-auto mb-3">
-                <img src="../../../assets/photos/carre/carre-canicross.jpeg" alt="illustration canicross"
+            <div class="col-12 col-md-auto mx-auto mb-3">
+                <img src="assets/photos/carre/carre-canicross.jpeg" alt="illustration canicross"
                     class="illu-disciplines">
             </div>
             <div class="col mx-lg-5">
@@ -33,8 +33,8 @@
 
         {{-- INFO CANITRAIL --}}
         <div class="row pt-4 pb-5 align-items-center">
-            <div class="col-auto mx-auto mb-3">
-                <img src="../../../assets/photos/carre/carre-canitrail.jpg" alt="illustration canitrail"
+            <div class="col-12 col-md-auto mx-auto mb-3">
+                <img src="assets/photos/carre/carre-canitrail.jpg" alt="illustration canitrail"
                     class="illu-disciplines">
             </div>
             <div class="col mx-lg-5">
@@ -57,8 +57,8 @@
 
         {{-- INFO CANIVTT --}}
         <div class="row pt-4 pb-5 align-items-center">
-            <div class="col-auto mx-auto mb-3">
-                <img src="../../../assets/photos/carre/carre-canivtt.jpg" alt="illustration canivtt"
+            <div class="col-12 col-md-auto mx-auto mb-3">
+                <img src="assets/photos/carre/carre-canivtt.jpg" alt="illustration canivtt"
                     class="illu-disciplines">
             </div>
             <div class="col mx-lg-5">
@@ -84,8 +84,8 @@
 
         {{-- INFO CANIMARCHE --}}
         <div class="row pt-4 pb-5 align-items-center">
-            <div class="col-auto mx-auto">
-                <img src="../../../assets/photos/carre/carre-canimarche.jpg" alt="illustration canimarche"
+            <div class="col-12 col-md-auto mx-auto mb-3">
+                <img src="assets/photos/carre/carre-canimarche.jpg" alt="illustration canimarche"
                     class="illu-disciplines">
             </div>
             <div class="col mx-lg-5">
