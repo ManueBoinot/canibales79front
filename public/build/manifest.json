@@ -1,0 +1,24 @@
+{
+  "public/assets/photos/carre/carre-canicross.jpeg": {
+    "file": "assets/carre-canicross-9a097fd4.jpeg",
+    "src": "public/assets/photos/carre/carre-canicross.jpeg"
+  },
+  "public/assets/photos/carre/carre-canimarche.jpeg": {
+    "file": "assets/carre-canimarche-7d973c85.jpeg",
+    "src": "public/assets/photos/carre/carre-canimarche.jpeg"
+  },
+  "public/assets/photos/carre/carre-canivtt.jpg": {
+    "file": "assets/carre-canivtt-6fe4c1b2.jpg",
+    "src": "public/assets/photos/carre/carre-canivtt.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-db476c74.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-254b86fa.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
