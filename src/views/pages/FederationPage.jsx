@@ -23,7 +23,7 @@ const Federation = () => {
 
         {/* Logo de la FSLC */}
         <div className="logo-fslc text-center">
-          <img src={process.env.PUBLIC_URL + "assets/logos/logo_fslc.png"} alt="logo de la FSLC" height="200px" />
+          <img src="/logos/logo_fslc.png" alt="logo de la FSLC" height="200px" />
         </div>
 
         {/* Texte intro sur la FSLC */}

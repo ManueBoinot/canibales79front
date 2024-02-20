@@ -61,7 +61,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_canisportshop.jpg"
+                    "/logos/partenaires/logo_canisportshop.jpg"
                   }
                   className="d-block logo-part"
                   alt="logo Canisportshop"
@@ -69,7 +69,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_fenril.png"
+                    "/logos/partenaires/logo_fenril.png"
                   }
                   className="d-block logo-part"
                   alt="logo Fenril"
@@ -77,7 +77,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_foulees.png"
+                    "/logos/partenaires/logo_foulees.png"
                   }
                   className="d-block logo-part"
                   alt="logo Foulées"
@@ -85,7 +85,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_acticanishop.jpg"
+                    "/logos/partenaires/logo_acticanishop.jpg"
                   }
                   className="d-block logo-part"
                   alt="logo Acticanishop"
@@ -93,7 +93,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_alltricks.jpg"
+                    "/logos/partenaires/logo_alltricks.jpg"
                   }
                   className="d-block logo-part"
                   alt="logo Alltricks"
@@ -101,7 +101,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_canigourmand.jpg"
+                    "/logos/partenaires/logo_canigourmand.jpg"
                   }
                   className="d-block logo-part"
                   alt="logo Canigourmand"
@@ -109,7 +109,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_jmt.jpg"
+                    "/logos/partenaires/logo_jmt.jpg"
                   }
                   className="d-block logo-part"
                   alt="logo JMT"
@@ -117,7 +117,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_miliemilie.jpg"
+                    "/logos/partenaires/logo_miliemilie.jpg"
                   }
                   className="d-block logo-part"
                   alt="logo MiliEmilie"
@@ -125,7 +125,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_nonstopdogwear.png"
+                    "/logos/partenaires/logo_nonstopdogwear.png"
                   }
                   className="d-block logo-part"
                   alt="logo Non Stop Dogwear"
@@ -133,7 +133,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_nourrir_comme_la_nature.png"
+                    "/logos/partenaires/logo_nourrir_comme_la_nature.png"
                   }
                   className="d-block logo-part"
                   alt="logo Nourrir comme la Nature"
@@ -141,7 +141,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_poli.png"
+                    "/logos/partenaires/logo_poli.png"
                   }
                   className="d-block logo-part"
                   alt="logo Poli"
@@ -149,7 +149,7 @@ const PartnersCarousel = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/logos/partenaires/logo_terranimo.png"
+                    "/logos/partenaires/logo_terranimo.png"
                   }
                   className="d-block logo-part"
                   alt="logo Terranimo"

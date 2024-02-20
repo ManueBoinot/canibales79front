@@ -7,7 +7,7 @@ const JoinUs = () => {
 
       {/* Image club plage */}
       <div>
-        <img className="img-fluid" src={process.env.PUBLIC_URL + "assets/photos/club-plage.jpg"} alt="les canibales79 sur la plage" style={{ maxWidth: '100%' }} width="700px" />
+        <img className="img-fluid" src="/photos/club-plage.jpg" alt="les canibales79 sur la plage" style={{ maxWidth: '100%' }} width="700px" />
       </div>
 
       <section className="mt-5 pb-4">

@@ -7,15 +7,15 @@ const PracticalInfo = () => {
         {/* Images entrainements */}
         <div className="col-auto d-none d-md-block">
           <div>
-            <img className="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/canicross-montage-01.jpeg"}
+            <img className="m-2 illu-sorties" src="/photos/canicross-montage-01.jpeg"
               alt="Canicross vu depuis le coureur" />
           </div>
           <div className="col">
-            <img className="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/photo_entrainement.jpg"}
+            <img className="m-2 illu-sorties" src="/photos/photo_entrainement.jpg"
               alt="Les canibales 79 font du gainage" />
           </div>
           <div className="col">
-            <img className="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/photo_entrainement_pluie.jpg"}
+            <img className="m-2 illu-sorties" src="/photos/photo_entrainement_pluie.jpg"
               alt="Les canibales 79 en sortie même sous la pluie" />
           </div>
         </div>
@@ -160,8 +160,8 @@ const PracticalInfo = () => {
 
               {/* Logos compet */}
               <div className="d-flex justify-content-center gap-5 my-4">
-                <img className="logo-compet" src={process.env.PUBLIC_URL + "assets/logos/logo_fslc.png"} alt="logo fslc" />
-                <img className="logo-compet" src={process.env.PUBLIC_URL + "assets/logos/chien-or.jpg"} alt="logo trophée chien d'or" />
+                <img className="logo-compet" src="/logos/logo_fslc.png" alt="logo fslc" />
+                <img className="logo-compet" src="/logos/chien-or.jpg" alt="logo trophée chien d'or" />
               </div>
 
               <p className="mb-2">Les CANIBALES 79 étant adhérents de la Fédération des Sports et Loisirs
@@ -202,7 +202,7 @@ const PracticalInfo = () => {
               <h2 className="my-4">REJOINDRE LE CLUB</h2>
 
               {/* Image club plage */}
-              <img className="img-fluid " src={process.env.PUBLIC_URL + "assets/photos/club-plage.jpg"} alt="les canibales79 sur la plage"
+              <img className="img-fluid " src="/photos/club-plage.jpg" alt="les canibales79 sur la plage"
                 style="max-width: 100%;" width="700px" />
 
               {/* Invitation à nous rejoindre */}

@@ -171,7 +171,7 @@ const Register = () => {
 													</div>
 													<div className="modal-body overflow-auto text-center">
 														<img
-															src="../assets/categories-fslc.png"
+															src="../public/categories-fslc.png"
 															// style="width: fit-content"
 															alt="infos sur les catégories d'âge en sport"
 														/>

@@ -17,7 +17,7 @@ const Sports = () => {
           <img
             src={
               process.env.PUBLIC_URL +
-              "assets/photos/carre/carre-canicross.jpeg"
+              "/photos/carre/carre-canicross.jpeg"
             }
             alt="illustration canicross"
             className="illu-disciplines"
@@ -70,7 +70,7 @@ const Sports = () => {
         <div className="col-12 col-md-auto mx-auto mb-3">
           <img
             src={
-              process.env.PUBLIC_URL + "assets/photos/carre/carre-canitrail.jpg"
+              process.env.PUBLIC_URL + "/photos/carre/carre-canitrail.jpg"
             }
             alt="illustration canitrail"
             className="illu-disciplines"
@@ -121,7 +121,7 @@ const Sports = () => {
         <div className="col-12 col-md-auto mx-auto mb-3">
           <img
             src={
-              process.env.PUBLIC_URL + "assets/photos/carre/carre-canivtt.jpg"
+              process.env.PUBLIC_URL + "/photos/carre/carre-canivtt.jpg"
             }
             alt="illustration canivtt"
             className="illu-disciplines"
@@ -183,7 +183,7 @@ const Sports = () => {
           <img
             src={
               process.env.PUBLIC_URL +
-              "assets/photos/carre/carre-canimarche.jpg"
+              "/photos/carre/carre-canimarche.jpg"
             }
             alt="illustration canimarche"
             className="illu-disciplines"

@@ -64,7 +64,7 @@ const Footer = () => {
         <div id="reseaux-footer" className="col-12 col-sm-4 text-center">
           <a href="/">
             <img
-              src="../../assets/logos/logo-canibales-contour.png"
+              src="/logos/logo-canibales-contour.png"
               style={{ width: "150px" }}
               title="Retour à l'accueil"
               alt="logo Canibales"

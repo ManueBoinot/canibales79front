@@ -1,9 +1,9 @@
 /* CSS GLOBAL SITE ------------------------------------------ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 
 * {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .red-button {
@@ -67,15 +67,15 @@ h2 {
 
 /* TEXTE INTRO ACCUEIL ------------------------------------------ */
 #accueil-canicross {
-    background-image: url('../../public/assets/photos/carre/carre-canicross.jpeg');
+    background-image: url("../../public/photos/carre/carre-canicross.jpeg");
 }
 
 #accueil-canivtt {
-    background-image: url('../../public/assets/photos/carre/carre-canivtt.jpg');
+    background-image: url("../../public/photos/carre/carre-canivtt.jpg");
 }
 
 #accueil-canimarche {
-    background-image: url('../../public/assets/photos/carre/carre-canimarche.jpeg');
+    background-image: url("../../public/photos/carre/carre-canimarche.jpeg");
 }
 
 .intro-sports {
@@ -157,7 +157,9 @@ h2 {
 #partners-carousel .image-wrapper {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+    grid-auto-columns: calc(
+        (100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view)
+    );
     grid-gap: 1.5rem;
     position: relative;
     left: 0;
@@ -238,10 +240,11 @@ footer a {
 
 /* MEDIA QUERIES -------------------------------------------------- */
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+}
 
-@media screen and (min-width: 375px) {}
-
+@media screen and (min-width: 375px) {
+}
 
 @media screen and (min-width: 424px) {
     .description {
@@ -250,10 +253,10 @@ footer a {
 }
 
 @media screen and (min-width: 768px) {
-
     .back_top {
         display: none;
     }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+}

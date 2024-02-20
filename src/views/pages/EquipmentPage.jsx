@@ -30,7 +30,7 @@ const Equipment = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/photos/materiel/kit-canicross-inlandsis.jpg"
+                    "/photos/materiel/kit-canicross-inlandsis.jpg"
                   }
                   alt="kit complet canicross"
                 />
@@ -120,7 +120,7 @@ const Equipment = () => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "assets/photos/materiel/kit-canivtt-inlandsis.jpg"
+                    "/photos/materiel/kit-canivtt-inlandsis.jpg"
                   }
                   alt="kit complet canivtt"
                   title="Kit complet CANIVTT de Inlandsis"
