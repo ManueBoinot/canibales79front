@@ -4,7 +4,7 @@ import FAQList from "./FAQList";
 
 const BackOfficeIndex = () => {
     return (
-<div class="container py-5 px-md-5 text-center h-100">
+<div className="container py-5 px-md-5 text-center h-100">
 
         <h1>INTERFACE ADMINISTRATEUR</h1>
         

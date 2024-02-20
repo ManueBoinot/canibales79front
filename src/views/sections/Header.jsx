@@ -69,19 +69,19 @@ const Header = () => {
 
               {/* Example for Admin link */}
               {/* @if (Auth::user()) */}
-              {/* <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-danger border border-danger rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-lock mx-2"></i>ADMIN
+              {/* <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-danger border border-danger rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i className="fa-solid fa-lock mx-2"></i>ADMIN
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                <ul className="dropdown-menu dropdown-menu-dark bg-black">
                   <li>
-                    <a class="dropdown-item" href="/admin">INTERFACE ADMIN</a>
+                    <a className="dropdown-item" href="/admin">INTERFACE ADMIN</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <a className="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                       {{ __('DÉCONNEXION') }}
                     </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" className="d-none">
                       @csrf
                     </form>
                   </li>

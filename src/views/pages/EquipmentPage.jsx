@@ -7,21 +7,21 @@ const Equipment = () => {
   };
 
   return (
-    <div class="container py-5 px-lg-5">
-      <h1 class="mb-5 text-center font-bold">L'ÉQUIPEMENT</h1>
+    <div className="container py-5 px-lg-5">
+      <h1 className="mb-5 text-center font-bold">L'ÉQUIPEMENT</h1>
 
       {/* Intro */}
-      <div class="row mb-5">
-        <div class="row mb-4">
-          <p class="text-center">
+      <div className="row mb-5">
+        <div className="row mb-4">
+          <p className="text-center">
             Les sports de traction en binôme nécessitent un équipement adapté
             pour garantir confort et bien-être du chien comme de l'humain.
           </p>
         </div>
 
         {/* Equipement CANICROSS */}
-        <div class="row mb-5 mt-5">
-          <div class="col-auto">
+        <div className="row mb-5 mt-5">
+          <div className="col-auto">
             <figure>
               <a
                 target="__blank"
@@ -35,20 +35,20 @@ const Equipment = () => {
                   alt="kit complet canicross"
                 />
               </a>
-              <figcaption class="italic text-secondary">
+              <figcaption className="italic text-secondary">
                 <small>Le kit complet Canicross de Inlandsis</small>
               </figcaption>
             </figure>
           </div>
-          <div class="col">
-            <h2 class="pb-3">
-              <i class="fa-solid fa-person-running"></i>
-              <i class="fa-solid fa-dog"></i> CANICROSS | CANIMARCHE
+          <div className="col">
+            <h2 className="pb-3">
+              <i className="fa-solid fa-person-running"></i>
+              <i className="fa-solid fa-dog"></i> CANICROSS | CANIMARCHE
             </h2>
             <p>
               <strong>
                 Pour le chien, il faut{" "}
-                <span class="text-decoration-underline">un harnais</span>
+                <span className="text-decoration-underline">un harnais</span>
               </strong>
               dont le choix est primordial pour éviter toute blessure et lui
               permettre de libérer son énergie sans limite.
@@ -56,18 +56,18 @@ const Equipment = () => {
               Il doit être adapté à la morphologie de votre chien.
               <br />
               <span
-                class="font-bold"
+                className="font-bold"
                 style="color:#e70000"
               >
-                <i class="fa-solid fa-triangle-exclamation"></i> Les harnais de
+                <i className="fa-solid fa-triangle-exclamation"></i> Les harnais de
                 type " JULIUS K-9 " SONT TOTALEMENT PROSCRITS !{" "}
-                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i className="fa-solid fa-triangle-exclamation"></i>
               </span>
             </p>
             <p>
               <strong>
                 Pour l'humain, il y a le choix entre{" "}
-                <span class="text-decoration-underline">
+                <span className="text-decoration-underline">
                   baudrier et ceinture
                 </span>
               </strong>{" "}
@@ -77,13 +77,13 @@ const Equipment = () => {
               demande).
               <br />
               Il ne faut pas non plus négliger le choix de ses{" "}
-              <strong class="text-decoration-underline">chaussures</strong> !
+              <strong className="text-decoration-underline">chaussures</strong> !
               <br />
               Et pour cela, nous vous invitons à rencontrer Yannick à son
               magasin{" "}
               <strong>
                 <a
-                  class="link-secondary"
+                  className="link-secondary"
                   href="https://foulees.com/-niort-"
                   target="__blank"
                 >
@@ -97,7 +97,7 @@ const Equipment = () => {
               Enfin,{" "}
               <strong>
                 pour relier chien et humain on utilise{" "}
-                <span class="text-decoration-underline">
+                <span className="text-decoration-underline">
                   une laisse à amortisseur
                 </span>
               </strong>{" "}
@@ -110,8 +110,8 @@ const Equipment = () => {
         </div>
 
         {/* Equipement CANIVTT */}
-        <div class="row mt-3">
-          <div class="col-auto">
+        <div className="row mt-3">
+          <div className="col-auto">
             <figure>
               <a
                 target="__blank"
@@ -126,21 +126,21 @@ const Equipment = () => {
                   title="Kit complet CANIVTT de Inlandsis"
                 />
               </a>
-              <figcaption class="italic text-secondary">
+              <figcaption className="italic text-secondary">
                 <small>Le kit complet CaniVTT de Inlandsis</small>
               </figcaption>
             </figure>
           </div>
-          <div class="col">
-            <h2 class="pb-3">
-              <i class="fa-solid fa-person-biking"></i>{" "}
-              <i class="fa-solid fa-dog"></i> CANIVTT
+          <div className="col">
+            <h2 className="pb-3">
+              <i className="fa-solid fa-person-biking"></i>{" "}
+              <i className="fa-solid fa-dog"></i> CANIVTT
             </h2>
             <p>
               <strong>
                 Pour le caniVTT, le harnais du chien est le même que pour le
                 canicross/la canimarche mais
-                <span class="text-decoration-underline">
+                <span className="text-decoration-underline">
                   la laisse est plus longue
                 </span>
               </strong>
@@ -155,7 +155,7 @@ const Equipment = () => {
               De plus,{" "}
               <strong>
                 le port d'
-                <span class="text-decoration-underline">
+                <span className="text-decoration-underline">
                   un casque et de gants
                 </span>{" "}
                 est obligatoire
@@ -164,10 +164,10 @@ const Equipment = () => {
               aguerris, les chutes peuvent être dangereuses.
             </p>
             <p>
-              <i class="fa-solid fa-triangle-exclamation"></i>{" "}
+              <i className="fa-solid fa-triangle-exclamation"></i>{" "}
               <strong>
                 Équipement supplémentaire du caniVTT :{" "}
-                <span class="text-decoration-underline">la barre caniVTT</span>.
+                <span className="text-decoration-underline">la barre caniVTT</span>.
               </strong>
               <br />
               C'est une tige souple fixée sous le guidon du VTT dans laquelle on
@@ -180,48 +180,48 @@ const Equipment = () => {
           </div>
         </div>
 
-        <div class="text-center py-4">
+        <div className="text-center py-4">
           <a
-            class="link-danger"
+            className="link-danger"
             href="/les-disciplines"
           >
             <p>
-              <i class="fa-regular fa-hand-pointer"></i> Infos sur nos
+              <i className="fa-regular fa-hand-pointer"></i> Infos sur nos
               disciplines
             </p>
           </a>
         </div>
 
-        <div class="d-flex justify-content-around">
+        <div className="d-flex justify-content-around">
           <a
             href="/infos-pratiques"
             type="button"
-            class="btn black-button"
+            className="btn black-button"
           >
             INFOS PRATIQUES
           </a>
           <a
             href="/contact"
             type="button"
-            class="btn red-button"
+            className="btn red-button"
           >
-            <i class="fa-solid fa-envelope me-2"></i>CONTACT
+            <i className="fa-solid fa-envelope me-2"></i>CONTACT
           </a>
         </div>
       </div>
 
       {/* CONSEILS SUR CHOIX DE HARNAIS PAR FENRIL */}
       {/* Harnais X-BACK */}
-      <div class="row mb-5 border-top pt-5">
-        <h2 class="font-bold text-center mb-4">
+      <div className="row mb-5 border-top pt-5">
+        <h2 className="font-bold text-center mb-4">
           CHOISIR LE BON HARNAIS POUR SON CHIEN
         </h2>
-        <p class="text-center">
+        <p className="text-center">
           Vous trouverez ci-dessous les conseils de notre partenaire{" "}
           <strong>
             <a
               target="__blank"
-              class="link-secondary"
+              className="link-secondary"
               href="https://www.fenril.fr/"
             >
               FENRIL
@@ -232,19 +232,19 @@ const Equipment = () => {
         </p>
       </div>
 
-      <div class="row mb-5 pb-3 border-bottom">
-        <div class="col">
-          <h3 class="font-bold">LES HARNAIS DE TYPE " X-BACK "</h3>
+      <div className="row mb-5 pb-3 border-bottom">
+        <div className="col">
+          <h3 className="font-bold">LES HARNAIS DE TYPE " X-BACK "</h3>
           <p>
             Dénommés ainsi en raison du X que forment les sangles sur le dos du
             chien, les harnais x-back sont le type de harnais le plus éprouvé et
             le plus populaire.
           </p>
-          <p class="italic">
-            <i class="fa-regular fa-hand-pointer"></i> Exemples :{" "}
+          <p className="italic">
+            <i className="fa-regular fa-hand-pointer"></i> Exemples :{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-canicross/1303-harnais-polar-quest.html"
             >
               Inlandsis Polar Quest
@@ -252,7 +252,7 @@ const Equipment = () => {
             ,{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-canicross/378-x-back-sprint.html?search_query=lightweight&results=1"
             >
               Manmat Lightweight
@@ -260,19 +260,19 @@ const Equipment = () => {
           </p>
           <ul>
             <li>
-              <span class="font-bold">Avantages</span> : répartition optimale de
+              <span className="font-bold">Avantages</span> : répartition optimale de
               la traction, confortables même sur de longues distances, plusieurs
               coupes disponibles en fonction des différents morphotypes,
               relativement stables
             </li>
             <li>
-              <span class="font-bold">Inconvénients</span> : pendouillent si le
+              <span className="font-bold">Inconvénients</span> : pendouillent si le
               chien ne tracte pas, pas de tailles pour les très petits ou très
               grands chiens, inadaptés aux chiens compacts type staff/staffie
             </li>
           </ul>
           <p>
-            <span class="font-bold">Conclusion</span> :
+            <span className="font-bold">Conclusion</span> :
           </p>
           <ul>
             <li>
@@ -291,7 +291,7 @@ const Equipment = () => {
             </li>
           </ul>
         </div>
-        <div class="col-auto mx-auto">
+        <div className="col-auto mx-auto">
           <img
             src="http://www.fenril.fr/img/cms/mms_img1701974663.jpg"
             alt="Inlandsis Polar Quest"
@@ -301,14 +301,14 @@ const Equipment = () => {
       </div>
 
       {/* Harnais COURTS */}
-      <div class="row mb-5 pb-3 border-bottom">
-        <div class="col">
-          <h3 class="font-bold">LES HARNAIS COURTS</h3>
-          <p class="italic">
-            <i class="fa-regular fa-hand-pointer"></i> Exemples :{" "}
+      <div className="row mb-5 pb-3 border-bottom">
+        <div className="col">
+          <h3 className="font-bold">LES HARNAIS COURTS</h3>
+          <p className="italic">
+            <i className="fa-regular fa-hand-pointer"></i> Exemples :{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-canicross/107-harnais-canicross-zerodcshort.html"
             >
               DC Short
@@ -316,7 +316,7 @@ const Equipment = () => {
             ,{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-chien-traineau/1362-long-distance-harness-manmat.html"
             >
               Manmat Long Distance
@@ -324,7 +324,7 @@ const Equipment = () => {
           </p>
           <ul>
             <li>
-              <span class="font-bold">Avantages</span> : pas de pression sur les
+              <span className="font-bold">Avantages</span> : pas de pression sur les
               hanches, polyvalence vers la marche et la promenade, tailles
               disponibles pour tous les gabarits de chiens, réglables
             </li>
@@ -334,7 +334,7 @@ const Equipment = () => {
             </li>
           </ul>
           <p>
-            <span class="font-bold">Conclusion</span> : nous recommandons les
+            <span className="font-bold">Conclusion</span> : nous recommandons les
             harnais courts pour{" "}
           </p>
           <ul>
@@ -353,7 +353,7 @@ const Equipment = () => {
             <li>globalement pour une utilisation loisir polyvalente.</li>
           </ul>
         </div>
-        <div class="col-auto mx-auto">
+        <div className="col-auto mx-auto">
           <img
             src="http://www.fenril.fr/img/cms/griff-in-zero-short.jpg"
             alt="Zero DC Short"
@@ -363,14 +363,14 @@ const Equipment = () => {
       </div>
 
       {/* Harnais REGLABLES */}
-      <div class="row mb-5 pb-3 border-bottom">
-        <div class="col">
-          <h3 class="font-bold">LES HARNAIS MULTI-RÉGLAGES</h3>
-          <p class="italic">
-            <i class="fa-regular fa-hand-pointer"></i> Exemples :{" "}
+      <div className="row mb-5 pb-3 border-bottom">
+        <div className="col">
+          <h3 className="font-bold">LES HARNAIS MULTI-RÉGLAGES</h3>
+          <p className="italic">
+            <i className="fa-regular fa-hand-pointer"></i> Exemples :{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-canicross/1270-omnijore-ruffwear-harnais.html"
             >
               Ruffwear Omnijore
@@ -378,7 +378,7 @@ const Equipment = () => {
             ,{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-canicross/876-confort-harnais-canicross.html"
             >
               Difac Confort
@@ -386,21 +386,21 @@ const Equipment = () => {
           </p>
           <ul>
             <li>
-              <span class="font-bold">Avantages</span> : réglables
+              <span className="font-bold">Avantages</span> : réglables
             </li>
             <li>
-              <span class="font-bold">Inconvénients</span> : les réglages se
+              <span className="font-bold">Inconvénients</span> : les réglages se
               desserrent à l’utilisation et les boucles peuvent provoquer des
               blessures par pression et/ou frottement
             </li>
           </ul>
           <p>
-            <span class="font-bold">Conclusion</span> : pour possesseurs de
+            <span className="font-bold">Conclusion</span> : pour possesseurs de
             plusieurs chiens souhaitant acquérir 1 seul harnais pour tous leurs
             chiens ou pour une utilisation loisir.
           </p>
         </div>
-        <div class="col-auto mx-auto">
+        <div className="col-auto mx-auto">
           <img
             style="margin-left:auto;margin-right:auto;"
             src="http://www.fenril.fr/img/cms/1237_1.jpg"
@@ -411,14 +411,14 @@ const Equipment = () => {
       </div>
 
       {/* Cas particuliers */}
-      <div class="row mb-5 pb-3 border-bottom">
-        <h3 class="font-bold">CAS PARTICULIERS</h3>
-        <div class="col">
+      <div className="row mb-5 pb-3 border-bottom">
+        <h3 className="font-bold">CAS PARTICULIERS</h3>
+        <div className="col">
           <p>
-            <i class="fa-regular fa-hand-pointer"></i>{" "}
+            <i className="fa-regular fa-hand-pointer"></i>{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-canicross/1788-inlandsis-open-back.html"
             >
               Inlandsis Open-Back
@@ -426,23 +426,23 @@ const Equipment = () => {
           </p>
           <ul>
             <li>
-              <span class="font-bold">Avantages</span> : conception idéale petits
+              <span className="font-bold">Avantages</span> : conception idéale petits
               chiens et chiens compacts, réglage longueur de dos + cage
               thoracique
             </li>
             <li>
-              <span class="font-bold">Inconvénients</span> : moins adapté pour les
+              <span className="font-bold">Inconvénients</span> : moins adapté pour les
               chiens de taille moyenne et grande pour lesquels un x-back sera
               plus stable
             </li>
           </ul>
         </div>
-        <div class="col">
+        <div className="col">
           <p>
-            <i class="fa-regular fa-hand-pointer"></i>{" "}
+            <i className="fa-regular fa-hand-pointer"></i>{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-canicross/110-harnais-zerodc-faster.html"
             >
               Zero DC Faster
@@ -450,24 +450,24 @@ const Equipment = () => {
           </p>
           <ul>
             <li>
-              <span class="font-bold">Avantages</span> : modèle le plus stable sur
+              <span className="font-bold">Avantages</span> : modèle le plus stable sur
               les cages thoraciques profondes, le Faster a été à la base conçu
               spécifiquement pour les Greysters et Braques avec une cage
               thoracique très volumineuse
             </li>
             <li>
-              <span class="font-bold">Inconvénients</span> : encolure ronde et
+              <span className="font-bold">Inconvénients</span> : encolure ronde et
               large ayant tendance à gêner le mouvement des épaules et à
               comprimer la gorge.
             </li>
           </ul>
         </div>
-        <div class="col">
+        <div className="col">
           <p>
-            <i class="fa-regular fa-hand-pointer"></i>{" "}
+            <i className="fa-regular fa-hand-pointer"></i>{" "}
             <a
               target="__blank"
-              class="link-dark"
+              className="link-dark"
               href="https://www.fenril.fr/harnais-canicross/443-harnais-free-motion.html"
             >
               Non Stop Free Motion
@@ -475,40 +475,40 @@ const Equipment = () => {
           </p>
           <ul>
             <li>
-              <span class="font-bold">Avantages</span> : relativement stable,
+              <span className="font-bold">Avantages</span> : relativement stable,
               partie arrière réglable en longueur
             </li>
             <li>
-              <span class="font-bold">Inconvénients</span> : encombrant et rigide
+              <span className="font-bold">Inconvénients</span> : encombrant et rigide
             </li>
           </ul>
         </div>
 
-        <div class="d-flex justify-content-around mt-3">
+        <div className="d-flex justify-content-around mt-3">
           <a
             href="/infos-pratiques"
             type="button"
-            class="btn black-button"
+            className="btn black-button"
           >
             INFOS PRATIQUES
           </a>
           <a
             href="/contact"
             type="button"
-            class="btn red-button"
+            className="btn red-button"
           >
-            <i class="fa-solid fa-envelope me-2"></i>CONTACT
+            <i className="fa-solid fa-envelope me-2"></i>CONTACT
           </a>
         </div>
       </div>
 
       {/* Tableau de synthèse harnais */}
-      <div class="row overflow-auto">
-        <h3 class="font-bold text-center mb-4">
+      <div className="row overflow-auto">
+        <h3 className="font-bold text-center mb-4">
           Tableau de synthèse avec les modèles de harnais les plus populaires
         </h3>
         <table
-          class="table table-striped-columns"
+          className="table table-striped-columns"
           style="height:259px"
           width="888"
         >
@@ -521,7 +521,7 @@ const Equipment = () => {
               <th scope="col text-center align-items-center">
                 <a
                   target="__blank"
-                  class="btn btn-default"
+                  className="btn btn-default"
                   href="https://www.fenril.fr/harnais-canicross/1303-harnais-polar-quest.html"
                 >
                   Inlandsis Polar Quest
@@ -531,7 +531,7 @@ const Equipment = () => {
               <th scope="col">
                 <a
                   target="__blank"
-                  class="btn btn-default"
+                  className="btn btn-default"
                   href="https://www.fenril.fr/harnais-canicross/325-x-back-classique.html"
                 >
                   Manmat X-back classique
@@ -541,7 +541,7 @@ const Equipment = () => {
               <th scope="col">
                 <a
                   target="__blank"
-                  class="btn btn-default"
+                  className="btn btn-default"
                   href="https://www.fenril.fr/harnais-canicross/1788-inlandsis-open-back.html"
                 >
                   Inlandsis Open-Back
@@ -551,7 +551,7 @@ const Equipment = () => {
               <th scope="col">
                 <a
                   target="__blank"
-                  class="btn btn-default"
+                  className="btn btn-default"
                   href="https://www.fenril.fr/harnais-canicross/325-x-back-classique.html"
                 >
                   Inlandsis Blizzard Beast
@@ -561,7 +561,7 @@ const Equipment = () => {
               <th scope="col">
                 <a
                   target="__blank"
-                  class="btn btn-default"
+                  className="btn btn-default"
                   href="https://www.fenril.fr/harnais-canicross/107-harnais-canicross-zerodcshort.html"
                 >
                   Zero DC Short
@@ -571,7 +571,7 @@ const Equipment = () => {
               <th scope="col">
                 <a
                   target="__blank"
-                  class="btn btn-default"
+                  className="btn btn-default"
                   href="https://www.fenril.fr/harnais-canicross/110-harnais-zerodc-faster.html"
                 >
                   Zero DC Faster
@@ -581,7 +581,7 @@ const Equipment = () => {
               <th scope="col">
                 <a
                   target="__blank"
-                  class="btn btn-default"
+                  className="btn btn-default"
                   href="https://www.fenril.fr/harnais-canicross/378-x-back-sprint.html"
                 >
                   Manmat x-back Lightweight
@@ -591,7 +591,7 @@ const Equipment = () => {
               <th scope="col">
                 <a
                   target="__blank"
-                  class="btn btn-default"
+                  className="btn btn-default"
                   href="https://www.fenril.fr/harnais-chien-traineau/1362-long-distance-harness-manmat.html"
                 >
                   Manmat Long Distance
@@ -786,12 +786,12 @@ const Equipment = () => {
       </div>
 
       {/* Crédits */}
-      <div class="row pb-5 text-end">
-        <small class="italic text-secondary">
+      <div className="row pb-5 text-end">
+        <small className="italic text-secondary">
           (Source :{" "}
           <a
             href="https://www.fenril.fr/content/59-choix-harnais-canicross"
-            class="link-secondary"
+            className="link-secondary"
           >
             https://www.fenril.fr/content/59-choix-harnais-canicross)
           </a>

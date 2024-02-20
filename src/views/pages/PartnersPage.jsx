@@ -2,23 +2,23 @@ import React from 'react';
 
 const Partners = () => {
     return (
-        <div class="container py-5 px-lg-5">
-            <h1 class="mb-5 text-center font-bold">NOS PARTENAIRES</h1>
+        <div className="container py-5 px-lg-5">
+            <h1 className="mb-5 text-center font-bold">NOS PARTENAIRES</h1>
 
-            <div class="row">
+            <div className="row">
 
                 {/* ACTICANI SHOP */}
-                <div class="row align-items-center mt-5 justify-content-between">
-                    <div class="col">
+                <div className="row align-items-center mt-5 justify-content-between">
+                    <div className="col">
                         <a href="https://acticani-shop.fr/fr/" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_acticanishop.jpg"} class="logo_partner"
+                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_acticanishop.jpg"} className="logo_partner"
                                 alt="logo acticanishop" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>ACTICANI SHOP</h2>
-                        <h3 class="fs-4">Équipement de sports et loisirs canins, nutrition du chien</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot d'Acticani Shop :</h4>
-                        <p class="italic text-secondary">Forte d'une grande expérience canine personnelle et
+                        <h3 className="fs-4">Équipement de sports et loisirs canins, nutrition du chien</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot d'Acticani Shop :</h4>
+                        <p className="italic text-secondary">Forte d'une grande expérience canine personnelle et
                             professionnelle
                             depuis plus de 30 ans, j'ai
                             ouvert
@@ -40,17 +40,17 @@ const Partners = () => {
                 </div>
 
                 {/* ALLTRICKS */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.alltricks.fr/" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_alltricks.jpg"} class="logo_partner"
+                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_alltricks.jpg"} className="logo_partner"
                                 alt="logo alltricks" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>ALLTRICKS</h2>
-                        <h3 class="fs-4">Vélos et équipement de running</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot d'Alltricks :</h4>
-                        <p class="italic text-secondary">Alltricks, c'est plus de 200 passionnés de sport : vélo,
+                        <h3 className="fs-4">Vélos et équipement de running</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot d'Alltricks :</h4>
+                        <p className="italic text-secondary">Alltricks, c'est plus de 200 passionnés de sport : vélo,
                             running,
                             triathlon et activités outdoor en
                             tout
@@ -71,17 +71,17 @@ const Partners = () => {
                 </div>
 
                 {/* CANIGOURMAND */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.canigourmand.com/" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_canigourmand.jpg"} class="logo_partner"
+                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_canigourmand.jpg"} className="logo_partner"
                                 alt="logo canigourmand" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>CANIGOURMAND</h2>
-                        <h3 class="fs-4">Nutrition du chien</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de Canigourmand :</h4>
-                        <p class="italic text-secondary">Cani-gourmand, c’est la Startup française qui régale vos boules
+                        <h3 className="fs-4">Nutrition du chien</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de Canigourmand :</h4>
+                        <p className="italic text-secondary">Cani-gourmand, c’est la Startup française qui régale vos boules
                             de
                             poils depuis 3 ans déjà.
                             Spécialistes
@@ -103,17 +103,17 @@ const Partners = () => {
                 </div>
 
                 {/* CANISPORTSHOP */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.canisportshop.be/" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_canisportshop.jpg"} class="logo_partner"
+                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_canisportshop.jpg"} className="logo_partner"
                                 alt="logo canisportshop" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>CANISPORTSHOP</h2>
-                        <h3 class="fs-4">Équipement de sports et loisirs canins, nutrition du chien</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de Canisportshop :</h4>
-                        <p class="italic text-secondary">Canisportshop.be est une entreprise familiale qui existe depuis
+                        <h3 className="fs-4">Équipement de sports et loisirs canins, nutrition du chien</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de Canisportshop :</h4>
+                        <p className="italic text-secondary">Canisportshop.be est une entreprise familiale qui existe depuis
                             2017
                             <br />
                             Au fil des années, nous avons su apporter notre expertise à nos clients, à notre communauté et
@@ -126,17 +126,17 @@ const Partners = () => {
                 </div>
 
                 {/* FENRIL */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.fenril.fr/" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_fenril.png"} class="logo_partner"
+                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_fenril.png"} className="logo_partner"
                                 alt="logo fenril" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>FENRIL</h2>
-                        <h3 class="fs-4">Équipement de sports et loisirs canins, nutrition du chien</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de Fenril :</h4>
-                        <p class="italic text-secondary">
+                        <h3 className="fs-4">Équipement de sports et loisirs canins, nutrition du chien</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de Fenril :</h4>
+                        <p className="italic text-secondary">
                             Depuis 2010, Fenril.fr met à votre service son expertise technique et sa passion pour les sports
                             de
                             traction avec un ou plusieurs chiens.
@@ -149,17 +149,17 @@ const Partners = () => {
                 </div>
 
                 {/* FOULEES */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://foulees.com/-niort-" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_foulees.png"} class="logo_partner"
+                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_foulees.png"} className="logo_partner"
                                 alt="logo foulees" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>FOULÉES</h2>
-                        <h3 class="fs-4">Équipement de running</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de Foulées :</h4>
-                        <p class="italic text-secondary">
+                        <h3 className="fs-4">Équipement de running</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de Foulées :</h4>
+                        <p className="italic text-secondary">
                             Le magasin Foulées 79 a ouvert ses portes le 31 août 2014 et c’est le second magasin spécialisé
                             sur
                             Niort.
@@ -177,16 +177,16 @@ const Partners = () => {
                 </div>
 
                 {/* JMT */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.jmt-alimentation-animale.com/magasins/jmt-niort/" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_jmt.jpg"} alt="logo jmt" class="logo_partner" /></a>
+                            <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_jmt.jpg"} alt="logo jmt" className="logo_partner" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>JMT</h2>
-                        <h3 class="fs-4">Animalerie</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de JMT :</h4>
-                        <p class="italic text-secondary">
+                        <h3 className="fs-4">Animalerie</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de JMT :</h4>
+                        <p className="italic text-secondary">
                             JMT Niort est installé au centre commercial Intermarché Niort Aiffres à côté du centre auto
                             Roady.
                             <br />
@@ -205,34 +205,34 @@ const Partners = () => {
                 </div>
 
                 {/* MILIEMILIE */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="http://miliemilie.com/" target="_blank" rel="noopener noreferrer">
                             <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_miliemilie.jpg"} alt="logo miliemilie"
-                                class="logo_partner" /></a>
+                                className="logo_partner" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>MILIEMILIE</h2>
-                        <h3 class="fs-4">Bien-être de l'humain</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de MiliEmilie :</h4>
-                        <p class="italic text-secondary">Le site de MiliEmilie est actuellement en reconstruction, plus
+                        <h3 className="fs-4">Bien-être de l'humain</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de MiliEmilie :</h4>
+                        <p className="italic text-secondary">Le site de MiliEmilie est actuellement en reconstruction, plus
                             d'information à venir prochainement.
                         </p>
                     </div>
                 </div>
 
                 {/* NONSTOP DOGWEAR */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.nonstopdogwear.com/fr/" target="_blank" rel="noopener noreferrer">
                             <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_nonstopdogwear.png"} alt="logo nonstop dogwear"
-                                class="logo_partner" /></a>
+                                className="logo_partner" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>NON-STOP DOGWEAR</h2>
-                        <h3 class="fs-4">Équipement de sports et loisirs canins, nutrition du chien</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de Non-Stop Dogwear :</h4>
-                        <p class="italic text-secondary">
+                        <h3 className="fs-4">Équipement de sports et loisirs canins, nutrition du chien</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de Non-Stop Dogwear :</h4>
+                        <p className="italic text-secondary">
                             Le bien-être des animaux est la priorité lorsque nous fabriquons des équipements. Un équipement
                             confortable et fonctionnel qui ne limite pas le chien a été le point de départ et la raison pour
                             laquelle nous avons créé Non-stop dogwear. Seul le meilleur est assez bon pour nos amis à quatre
@@ -251,17 +251,17 @@ const Partners = () => {
                 </div>
 
                 {/* NOURRIR COMME LA NATURE */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.nourrircommelanature.com/" target="_blank" rel="noopener noreferrer">
                             <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_nourrir_comme_la_nature.png"}
-                                alt="logo nourrir comme la nature" class="logo_partner" /></a>
+                                alt="logo nourrir comme la nature" className="logo_partner" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>NOURRIR COMME LA NATURE</h2>
-                        <h3 class="fs-4">Nutrition du chien</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de Nourrir Comme La Nature :</h4>
-                        <p class="italic text-secondary">
+                        <h3 className="fs-4">Nutrition du chien</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de Nourrir Comme La Nature :</h4>
+                        <p className="italic text-secondary">
                             Nourrir Comme La Nature, c’est la rencontre de 2 hommes passionnés d’animaux et de nutrition.
                             Jean-Michel est spécialisé dans l’agro-alimentaire. Dominique est spécialiste en nutrition
                             canine et
@@ -287,17 +287,17 @@ const Partners = () => {
                 </div>
 
                 {/* POLI */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.poli.fr/" target="_blank" rel="noopener noreferrer">
                             <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_poli.png"} alt="logo poli"
-                                class="logo_partner" /></a>
+                                className="logo_partner" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>POLI</h2>
-                        <h3 class="fs-4">Habillement sportif</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de Poli :</h4>
-                        <p class="italic text-secondary">
+                        <h3 className="fs-4">Habillement sportif</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de Poli :</h4>
+                        <p className="italic text-secondary">
                             POLI est présent dans l’habillement sportif depuis 1979. La société, créée par Michel POLI, a
                             depuis
                             gravi tous les échelons pour atteindre une notoriété internationale.
@@ -317,17 +317,17 @@ const Partners = () => {
 
 
                 {/* TERRANIMO */}
-                <div class="row align-items-center pt-5 border-top">
-                    <div class="col">
+                <div className="row align-items-center pt-5 border-top">
+                    <div className="col">
                         <a href="https://www.terranimo.fr/" target="_blank" rel="noopener noreferrer">
                             <img src={process.env.PUBLIC_URL + "assets/logos/partenaires/logo_terranimo.png"} alt="logo terranimo"
-                                class="logo_partner" /></a>
+                                className="logo_partner" /></a>
                     </div>
-                    <div class="col-md-9 col-lg-10">
+                    <div className="col-md-9 col-lg-10">
                         <h2>TERRANIMO</h2>
-                        <h3 class="fs-4">Animalerie</h3>
-                        <h4 class="italic fs-5 text-secondary">Le petit mot de Terranimo :</h4>
-                        <p class="italic text-secondary">
+                        <h3 className="fs-4">Animalerie</h3>
+                        <h4 className="italic fs-5 text-secondary">Le petit mot de Terranimo :</h4>
+                        <p className="italic text-secondary">
                             Proximité, Fiabilité, Complicité : telle est la devise qui nous fait grandir depuis 2008. Avec
                             des
                             magasins aux 4 coins de la France ainsi qu’une équipe web Nantaise et un entrepôt « 100% pur

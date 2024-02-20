@@ -29,7 +29,7 @@ const Sports = () => {
             Le Canicross est une course à pied, coureur et chien sont reliés par
             une longe avec amortisseur.
             <br />
-            C’est une <span class="font-bold">discipline de vitesse</span>.
+            C’est une <span className="font-bold">discipline de vitesse</span>.
             L’athlète éprouve des sensations formidables : il peut gagner de
             deux à quatre kilomètres à l’heure.
             <br />
@@ -40,7 +40,7 @@ const Sports = () => {
             des athlètes (harnais, baudrier, ceinture, ligne de trait).
             <br />
             <span
-              class="font-bold"
+              className="font-bold"
               style={redText}
             >
               Le chien doit avoir 18 mois
@@ -52,7 +52,7 @@ const Sports = () => {
             interdites pour éviter de blesser nos compagnons canins.
             <br />
             La distance du parcours en Canicross est comprise{" "}
-            <span class="font-bold">entre 5 et 9 km</span> en fonction des
+            <span className="font-bold">entre 5 et 9 km</span> en fonction des
             températures.
           </p>
           <a
@@ -66,24 +66,24 @@ const Sports = () => {
       </div>
 
       {/* INFO CANITRAIL */}
-      <div class="row pt-4 pb-5 align-items-center">
-        <div class="col-12 col-md-auto mx-auto mb-3">
+      <div className="row pt-4 pb-5 align-items-center">
+        <div className="col-12 col-md-auto mx-auto mb-3">
           <img
             src={
               process.env.PUBLIC_URL + "assets/photos/carre/carre-canitrail.jpg"
             }
             alt="illustration canitrail"
-            class="illu-disciplines"
+            className="illu-disciplines"
           />
         </div>
-        <div class="col mx-lg-5">
+        <div className="col mx-lg-5">
           <h2>LE CANITRAIL</h2>
           <p>
             Le Canitrail est plus une{" "}
-            <span class="font-bold">discipline d’endurance</span>. L'équipement
+            <span className="font-bold">discipline d’endurance</span>. L'équipement
             est le même que pour le Canicross. Le parcours de Canitrail est plus
             long que celui du Canicross avec une distance comprise{" "}
-            <span class="font-bold">entre 10 et 20 km</span> et un dénivelé plus
+            <span className="font-bold">entre 10 et 20 km</span> et un dénivelé plus
             important. L’allure est par contre différente car il faut en général
             alterner course et marche.
             <br />
@@ -96,7 +96,7 @@ const Sports = () => {
             <br />
             Pour commencer la compétition,{" "}
             <span
-              class="font-bold"
+              className="font-bold"
               style={redText}
             >
               le chien doit avoir au moins 24 mois.
@@ -108,7 +108,7 @@ const Sports = () => {
           <a
             href="/equipement"
             type="button"
-            class="btn black-button"
+            className="btn black-button"
             id="canivtt"
           >
             Infos ÉQUIPEMENT
@@ -117,27 +117,27 @@ const Sports = () => {
       </div>
 
       {/* INFO CANIVTT */}
-      <div class="row pt-4 pb-5 align-items-center">
-        <div class="col-12 col-md-auto mx-auto mb-3">
+      <div className="row pt-4 pb-5 align-items-center">
+        <div className="col-12 col-md-auto mx-auto mb-3">
           <img
             src={
               process.env.PUBLIC_URL + "assets/photos/carre/carre-canivtt.jpg"
             }
             alt="illustration canivtt"
-            class="illu-disciplines"
+            className="illu-disciplines"
           />
         </div>
-        <div class="col mx-lg-5">
+        <div className="col mx-lg-5">
           <h2>LE CANIVTT</h2>
           <p>
             Le CaniVTT est une discipline{" "}
-            <span class="font-bold">
+            <span className="font-bold">
               réservée aux adultes et juniors (à partir de 15 ans)
             </span>
             , le chien est relié au VTT par une longe de 1m50 à 2m00 maximum.
             <br />
             Le vététiste doit suivre le rythme de son chien sur des parcours de{" "}
-            <span class="font-bold">5 à 9 km</span>.<br />
+            <span className="font-bold">5 à 9 km</span>.<br />
             C’est un sport technique, où l’on peut atteindre des vitesses de
             pointe impressionnantes de plus de 50 km/h et des vitesses moyennes
             allant jusqu’à 35 km/h.
@@ -149,7 +149,7 @@ const Sports = () => {
             sport à sensations fortes.
             <br />
             <span
-              class="font-bold"
+              className="font-bold"
               style={redText}
             >
               Le chien doit avoir au minimum 18 mois
@@ -169,7 +169,7 @@ const Sports = () => {
           <a
             href="/equipement"
             type="button"
-            class="btn black-button"
+            className="btn black-button"
             id="canimarche"
           >
             Infos ÉQUIPEMENT
@@ -178,18 +178,18 @@ const Sports = () => {
       </div>
 
       {/* INFO CANIMARCHE */}
-      <div class="row pt-4 pb-5 align-items-center">
-        <div class="col-12 col-md-auto mx-auto mb-3">
+      <div className="row pt-4 pb-5 align-items-center">
+        <div className="col-12 col-md-auto mx-auto mb-3">
           <img
             src={
               process.env.PUBLIC_URL +
               "assets/photos/carre/carre-canimarche.jpg"
             }
             alt="illustration canimarche"
-            class="illu-disciplines"
+            className="illu-disciplines"
           />
         </div>
-        <div class="col mx-lg-5">
+        <div className="col mx-lg-5">
           <h2>LA CANIMARCHE</h2>
           <p>
             La Canimarche (ou Canirando) est une activité qui met l’accent sur
@@ -203,7 +203,7 @@ const Sports = () => {
             lien entre vous et votre animal.
             <br />
             <span
-              class="font-bold"
+              className="font-bold"
               style={redText}
             >
               Le chien doit avoir 18 mois
@@ -213,7 +213,7 @@ const Sports = () => {
           <a
             href="/equipement"
             type="button"
-            class="btn black-button"
+            className="btn black-button"
           >
             Infos ÉQUIPEMENT
           </a>

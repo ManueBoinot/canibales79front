@@ -2,23 +2,23 @@ import React from "react";
 
 const BureauMembreModif = () => {
 	return (
-		<div class="container py-5 px-md-5">
-			<h1 class="text-center mb-5">MISE À JOUR D'UN MEMBRE DU BUREAU</h1>
+		<div className="container py-5 px-md-5">
+			<h1 className="text-center mb-5">MISE À JOUR D'UN MEMBRE DU BUREAU</h1>
 
 			{/* {{-- début formulaire mise à jour MEMBRE --}} */}
 			<form
 				method="post"
 				action="{{ route('bureaumembre.update', $bureaumembre) }}"
-				class="text-start pt-5 border-top"
+				className="text-start pt-5 border-top"
 				enctype="multipart/form-data">
-				<div class="row mx-auto">
-					<div class="col-10 col-md-4 text-center mx-auto mb-5 mb-md-0">
+				<div className="row mx-auto">
+					<div className="col-10 col-md-4 text-center mx-auto mb-5 mb-md-0">
 						{/* {{-- STATUT (non modifiable) --}} */}
-						<div class="mb-3">
-							<label for="prenom" class="form-label font-bold">
+						<div className="mb-3">
+							<label for="prenom" className="form-label font-bold">
 								STATUT
 							</label>
-							{/* <p class="text-uppercase fs-3">{{ $bureaumembre->statut }}</p> */}
+							{/* <p className="text-uppercase fs-3">{{ $bureaumembre->statut }}</p> */}
 						</div>
 						{/* {{-- IMAGE APERÇU --}} */}
 						<img
@@ -28,14 +28,14 @@ const BureauMembreModif = () => {
 						/>
 					</div>
 
-					<div class="col mx-auto">
+					<div className="col mx-auto">
 						{/* {{-- input PRENOM --}} */}
-						<div class="mb-5">
-							<label for="prenom" class="form-label fs-5">
+						<div className="mb-5">
+							<label for="prenom" className="form-label fs-5">
 								Mise à jour du PRÉNOM
 							</label>
 							<input
-								class="form-control text-secondary @error('prenom') is-invalid @enderror"
+								className="form-control text-secondary @error('prenom') is-invalid @enderror"
 								// style="max-width: 500px"
 								name="prenom"
 								type="text"
@@ -47,18 +47,18 @@ const BureauMembreModif = () => {
 
 						{/* {{-- input IMAGE --}} */}
 						<div>
-							<label for="image" class="form-label fs-5">
+							<label for="image" className="form-label fs-5">
 								Mise à jour de la PHOTO
 							</label>
 							<input
 								type="file"
 								name="image"
-								class="form-control mb-1 @error('image') is-invalid @enderror"
+								className="form-control mb-1 @error('image') is-invalid @enderror"
 								// style="max-width: 500px"
 								aria-describedby="imageHelp"
 							/>
-							<small id="imageHelp" class="form-text text-secondary italic">
-								<i class="fa-solid fa-triangle-exclamation fs-3"></i> FORMAT
+							<small id="imageHelp" className="form-text text-secondary italic">
+								<i className="fa-solid fa-triangle-exclamation fs-3"></i> FORMAT
 								CARRÉ IMPÉRATIF ! | Taille max. : 2 Mo | Fichiers acceptés :
 								.jpg |.jpeg |.png |.gif |.svg
 							</small>
@@ -66,18 +66,18 @@ const BureauMembreModif = () => {
 					</div>
 
 					{/* {{-- bouton SUBMIT --}} */}
-					<div class="row text-center">
-						<div class="col">
+					<div className="row text-center">
+						<div className="col">
 							<button
 								type="submit"
-								class="btn btn-success mt-2"
+								className="btn btn-success mt-2"
 								title="Valider">
 								VALIDER
 							</button>
 							<a
 								type="button"
 								href="/admin"
-								class="btn btn-secondary mt-2 mx-2"
+								className="btn btn-secondary mt-2 mx-2"
 								title="Annuler">
 								Annuler
 							</a>

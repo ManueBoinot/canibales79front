@@ -5,17 +5,17 @@ const PracticalInfo = () => {
     <div className="container py-5 px-lg-5">
       <div className="row">
         {/* Images entrainements */}
-        <div class="col-auto d-none d-md-block">
+        <div className="col-auto d-none d-md-block">
           <div>
-            <img class="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/canicross-montage-01.jpeg"}
+            <img className="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/canicross-montage-01.jpeg"}
               alt="Canicross vu depuis le coureur" />
           </div>
-          <div class="col">
-            <img class="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/photo_entrainement.jpg"}
+          <div className="col">
+            <img className="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/photo_entrainement.jpg"}
               alt="Les canibales 79 font du gainage" />
           </div>
-          <div class="col">
-            <img class="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/photo_entrainement_pluie.jpg"}
+          <div className="col">
+            <img className="m-2 illu-sorties" src={process.env.PUBLIC_URL + "assets/photos/photo_entrainement_pluie.jpg"}
               alt="Les canibales 79 en sortie même sous la pluie" />
           </div>
         </div>
@@ -24,23 +24,23 @@ const PracticalInfo = () => {
           <h1 className="font-bold pb-3 text-center">INFOS PRATIQUES</h1>
 
           {/* NAV */}
-          <nav class="mb-5">
-            <div class="nav nav-pills me-3 justify-content-center gap-1" role="tablist" id="nav-pill">
+          <nav className="mb-5">
+            <div className="nav nav-pills me-3 justify-content-center gap-1" role="tablist" id="nav-pill">
 
-              <button class="nav-link active" id="nav-horaires-pill" data-bs-toggle="tab"
+              <button className="nav-link active" id="nav-horaires-pill" data-bs-toggle="tab"
                 data-bs-target="#pills-horaires" type="button" role="tab" aria-controls="pills-horaires"
                 aria-selected="true">Horaires des
                 entraînements</button>
 
-              <button class="nav-link" id="nav-types-pill" data-bs-toggle="pill" data-bs-target="#pills-types"
+              <button className="nav-link" id="nav-types-pill" data-bs-toggle="pill" data-bs-target="#pills-types"
                 type="button" role="tab" aria-controls="pills-types" aria-selected="false">Types
                 d'entraînements</button>
 
-              <button class="nav-link" id="nav-competition-pill" data-bs-toggle="pill"
+              <button className="nav-link" id="nav-competition-pill" data-bs-toggle="pill"
                 data-bs-target="#pills-competition" type="button" role="tab"
                 aria-controls="pills-competition" aria-selected="false">Compétition</button>
 
-              <button class="nav-link bg-danger" id="nav-rejoindre-pill" data-bs-toggle="pill"
+              <button className="nav-link bg-danger" id="nav-rejoindre-pill" data-bs-toggle="pill"
                 data-bs-target="#pills-rejoindre" type="button" role="tab" aria-controls="pills-rejoindre"
                 aria-selected="false">Rejoindre le
                 club</button>
@@ -48,12 +48,12 @@ const PracticalInfo = () => {
             </div>
           </nav>
 
-          <div class="tab-content text-start" id="nav-tabContent">
+          <div className="tab-content text-start" id="nav-tabContent">
             {/* HORAIRES ENTRAINEMENTS */}
-            <div class="tab-pane fade show active" id="pills-horaires" role="tabpanel"
+            <div className="tab-pane fade show active" id="pills-horaires" role="tabpanel"
               aria-labelledby="nav-horaires-pill" tabindex="0">
 
-              <h2 class="font-bold my-4">HORAIRES DES ENTRAÎNEMENTS</h2>
+              <h2 className="font-bold my-4">HORAIRES DES ENTRAÎNEMENTS</h2>
 
               <p>
                 Chez les CANIBALES 79, nous faisons des sorties et entraînements toute l'année et par tous les
@@ -63,7 +63,7 @@ const PracticalInfo = () => {
                 généralement une
                 pause en juillet et août.</p>
 
-              <table class="table table-striped table-secondary w-75 mx-auto">
+              <table className="table table-striped table-secondary w-75 mx-auto">
                 <thead>
                   <tr>
                     <th scope="col">Jour</th>
@@ -88,7 +88,7 @@ const PracticalInfo = () => {
                     <td>CANICROSS</td>
                   </tr>
                   <tr>
-                    <td rowspan="2" class="py-4">DIMANCHE</td>
+                    <td rowspan="2" className="py-4">DIMANCHE</td>
                     <td>09h00</td>
                     <td>CANIMARCHE</td>
                   </tr>
@@ -99,7 +99,7 @@ const PracticalInfo = () => {
                 </tbody>
               </table>
 
-              <p class="italic text-center">
+              <p className="italic text-center">
                 NB : Lorsque les températures commencent à monter, l'heure des sorties du matin est adaptée en
                 fonction
                 de la
@@ -107,9 +107,9 @@ const PracticalInfo = () => {
               </p>
 
               {/* Lien infos DISCIPLINES */}
-              <div class="py-4">
-                <a class="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
-                  <i class="fa-regular fa-hand-pointer"></i>
+              <div className="py-4">
+                <a className="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
+                  <i className="fa-regular fa-hand-pointer"></i>
                   Infos sur nos disciplines
                 </a>
               </div>
@@ -118,11 +118,11 @@ const PracticalInfo = () => {
 
 
             {/* TYPES ENTRAINEMENTS */}
-            <div class="tab-pane fade" id="pills-types" role="tabpanel" aria-labelledby="nav-types-pill"
+            <div className="tab-pane fade" id="pills-types" role="tabpanel" aria-labelledby="nav-types-pill"
               tabindex="0">
 
               {/* Types de sorties */}
-              <h2 class="my-4">TYPES D'ENTRAÎNEMENTS</h2>
+              <h2 className="my-4">TYPES D'ENTRAÎNEMENTS</h2>
               <p>
                 En semaine, nous nous répartissons en deux groupes en fonction de l'objectif visé :</p>
               <p>
@@ -144,9 +144,9 @@ const PracticalInfo = () => {
               </p>
 
               {/* Lien infos DISCIPLINES */}
-              <div class="py-4">
-                <a class="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
-                  <i class="fa-regular fa-hand-pointer"></i>
+              <div className="py-4">
+                <a className="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
+                  <i className="fa-regular fa-hand-pointer"></i>
                   Infos sur nos disciplines
                 </a>
               </div>
@@ -154,17 +154,17 @@ const PracticalInfo = () => {
             </div>
 
             {/* COMPETITION */}
-            <div class="tab-pane fade" id="pills-competition" role="tabpanel" aria-labelledby="nav-competition-pill"
+            <div className="tab-pane fade" id="pills-competition" role="tabpanel" aria-labelledby="nav-competition-pill"
               tabindex="0">
-              <h2 class="my-4">COMPÉTITION</h2>
+              <h2 className="my-4">COMPÉTITION</h2>
 
               {/* Logos compet */}
-              <div class="d-flex justify-content-center gap-5 my-4">
-                <img class="logo-compet" src={process.env.PUBLIC_URL + "assets/logos/logo_fslc.png"} alt="logo fslc" />
-                <img class="logo-compet" src={process.env.PUBLIC_URL + "assets/logos/chien-or.jpg"} alt="logo trophée chien d'or" />
+              <div className="d-flex justify-content-center gap-5 my-4">
+                <img className="logo-compet" src={process.env.PUBLIC_URL + "assets/logos/logo_fslc.png"} alt="logo fslc" />
+                <img className="logo-compet" src={process.env.PUBLIC_URL + "assets/logos/chien-or.jpg"} alt="logo trophée chien d'or" />
               </div>
 
-              <p class="mb-2">Les CANIBALES 79 étant adhérents de la Fédération des Sports et Loisirs
+              <p className="mb-2">Les CANIBALES 79 étant adhérents de la Fédération des Sports et Loisirs
                 Canins,
                 toutes les
                 compétitions de la FSLC sont accessibles à nos licenciés.<br />
@@ -180,15 +180,15 @@ const PracticalInfo = () => {
                 sur
                 leurs 5
                 meilleurs résultats de la saison sur les courses concernées par ce trophée.<br />
-                <i class="fa-regular fa-hand-pointer"></i> <a class="link-secondary"
+                <i className="fa-regular fa-hand-pointer"></i> <a className="link-secondary"
                   href="https://www.fslc-canicross.net/wp-content/uploads/2021/05/REG-03.C02-Mode-demploi-Chien-dOr.pdf"
                   target="blank">Plus
                   d'information sur le trophée Chien d'Or</a>
               </p>
 
               {/* Calendrier COMPET */}
-              <div class="text-center">
-                <a class="btn btn-dark mb-5" type="button" href="https://courses.fslc-canicross.net/fr/"
+              <div className="text-center">
+                <a className="btn btn-dark mb-5" type="button" href="https://courses.fslc-canicross.net/fr/"
                   target="blank">CALENDRIER
                   DES COMPÉTITIONS FSLC
                 </a>
@@ -196,17 +196,17 @@ const PracticalInfo = () => {
             </div>
 
             {/* NOUS REJOINDRE */}
-            <div class="tab-pane fade" id="pills-rejoindre" role="tabpanel" aria-labelledby="nav-rejoindre-pill"
+            <div className="tab-pane fade" id="pills-rejoindre" role="tabpanel" aria-labelledby="nav-rejoindre-pill"
               tabindex="0">
 
-              <h2 class="my-4">REJOINDRE LE CLUB</h2>
+              <h2 className="my-4">REJOINDRE LE CLUB</h2>
 
               {/* Image club plage */}
-              <img class="img-fluid " src={process.env.PUBLIC_URL + "assets/photos/club-plage.jpg"} alt="les canibales79 sur la plage"
+              <img className="img-fluid " src={process.env.PUBLIC_URL + "assets/photos/club-plage.jpg"} alt="les canibales79 sur la plage"
                 style="max-width: 100%;" width="700px" />
 
               {/* Invitation à nous rejoindre */}
-              <p class="pt-4">Vous voulez découvrir nos disciplines ou vous les pratiquez déjà, et vous
+              <p className="pt-4">Vous voulez découvrir nos disciplines ou vous les pratiquez déjà, et vous
                 souhaitez venir<br />
                 faire
                 une <strong>séance
@@ -214,13 +214,13 @@ const PracticalInfo = () => {
                 ?</p>
               <p>
                 Les infos sur nos licences et comment s'inscrire, c'est par ici :
-                <a href="/nous-rejoindre"><button type="button" class="btn red-button font-bold">INFOS
+                <a href="/nous-rejoindre"><button type="button" className="btn red-button font-bold">INFOS
                   INSCRIPTION</button></a>
               </p>
               {/* Lien infos DISCIPLINES */}
-              <div class="py-4">
-                <a class="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
-                  <i class="fa-regular fa-hand-pointer"></i>
+              <div className="py-4">
+                <a className="link-danger" href="/les-disciplines" title="Aller à la rubrique LES DISCIPLINES">
+                  <i className="fa-regular fa-hand-pointer"></i>
                   Infos sur nos disciplines
                 </a>
               </div>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const LegalNotice = () => {
     return (
-        <div class="container text-bg-light p-2 p-md-5" style="font-size: 0.7rem">
-            <h1 class="text-center">MENTIONS LÉGALES</h1>
+        <div className="container text-bg-light p-2 p-md-5" style="font-size: 0.7rem">
+            <h1 className="text-center">MENTIONS LÉGALES</h1>
             <h5>Définitions</h5>
             <p><b>Client :</b> tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code
                 civil,

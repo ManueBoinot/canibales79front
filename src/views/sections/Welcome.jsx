@@ -2,7 +2,7 @@ import React from "react";
 
 const Welcome = () => {
 	return (
-		<section id="intro-accueil" class="container py-5 mx-auto">
+		<section id="intro-accueil" className="container py-5 mx-auto">
 			<div
 				id="disciplines-accueil"
 				className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 py-4">
@@ -76,7 +76,7 @@ const Welcome = () => {
 					Vous découvrirez les Deux-Sèvres (79) sous un nouveau jour !
 				</p>
 
-				<p class="mb-4 font-bold">
+				<p className="mb-4 font-bold">
 					Seuls prérequis : BONNE HUMEUR et MOTIVATION !
 				</p>
 
@@ -85,27 +85,27 @@ const Welcome = () => {
 					CANIMARCHE avec nous,
 					<br />
 					promis nous ne vous mordrons pas{" "}
-					<small class="italic">
+					<small className="italic">
 						(ou seulement un petit peu, nous avons une réputation à tenir)
 					</small>
 					...
 				</p>
 
-				<p class="mt-5 italic">
+				<p className="mt-5 italic">
 					Explorez nos rubriques pour en apprendre plus à notre sujet,
 					<br />
 					découvrir les disciplines, les bonnes pratiques et plus encore !
 				</p>
 
-				<div class="row g-3 mt-4">
-					<div class="col-12 col-sm-6">
-						<a href="/faq" type="button" class="btn black-button">
+				<div className="flex flex-wrap -mx-3 mt-4">
+					<div className="w-full sm:w-1/2 px-3 mb-3 sm:mb-0">
+						<a href="/faq" type="button" className="btn black-button">
 							FOIRE AUX QUESTIONS
 						</a>
 					</div>
-					<div class="col-12 col-sm-6">
-						<a href="/contact" type="button" class="btn red-button">
-							<i class="fa-solid fa-envelope me-2"></i>CONTACT
+					<div className="w-full sm:w-1/2 px-3">
+						<a href="/contact" type="button" className="btn red-button">
+							<i className="fa-solid fa-envelope me-2"></i>CONTACT
 						</a>
 					</div>
 				</div>

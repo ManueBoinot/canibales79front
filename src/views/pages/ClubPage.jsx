@@ -58,7 +58,7 @@ const ClubPresentation = () => {
           </p>
         </div>
 
-        <div class="mb-3">
+        <div className="mb-3">
           <h3>RÉFÉRENTE CANICROSS</h3>
           <p>
             <strong>Laura est référente canicross</strong>, elle propose des
@@ -68,7 +68,7 @@ const ClubPresentation = () => {
           </p>
         </div>
 
-        <div class="mb-3">
+        <div className="mb-3">
           <h3>RÉFÉRENTE CANIMARCHE</h3>
           <p>
             <strong>Karine est la référente canimarche</strong>, elle essaie de

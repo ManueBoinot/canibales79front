@@ -2,20 +2,20 @@ import React from "react";
 
 const Verify = () => {
 	return (
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-8">
-					<div class="card">
-						<div class="card-header">Verify Your Email Address</div>
+		<div className="container">
+			<div className="row justify-content-center">
+				<div className="col-md-8">
+					<div className="card">
+						<div className="card-header">Verify Your Email Address</div>
 
-						<div class="card-body">
+						<div className="card-body">
 							<form
-								class="d-inline"
+								className="d-inline"
 								method="POST"
 								action="{{ route('verification.resend') }}">
 								<button
 									type="submit"
-									class="btn btn-link p-0 m-0 align-baseline">
+									className="btn btn-link p-0 m-0 align-baseline">
 									click here to request another
 								</button>
 								.
